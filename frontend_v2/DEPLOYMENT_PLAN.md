@@ -26,10 +26,11 @@ Netlify build does not publish documentation, tests, the Sites hosting manifest,
 backend files or local databases. The existing Sites project is retained during
 migration; its hosting manifest does not control Netlify deployment.
 
-Migration is pending Netlify login. The GitHub OAuth screen requests read-only
-email-address access for Netlify Auth; automatic approval review blocked that
-grant pending explicit user authorization. No Netlify site has been created or
-published yet, and the existing Render CORS setting remains unchanged.
+Migration is pending Netlify login. The user explicitly authorized Netlify Auth
+to read the GitHub account's email addresses, but two authorization submissions
+returned GitHub HTTP 500 error pages. A Netlify login tab has been left open for
+the user to complete sign-in. No Netlify site has been created or published yet,
+and the existing Render CORS setting remains unchanged.
 
 After login, import the personal repository with the settings above, confirm
 the actual Netlify hostname, and update Render's `CORS_ALLOW_ORIGIN` and
