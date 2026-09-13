@@ -7,10 +7,8 @@
 const IS_LOCAL = ['localhost', '127.0.0.1', ''].includes(location.hostname);
 
 const Api = {
-  // Local dev talks to the stdlib server on 8765. Deployed, this must point at
-  // the Render backend's URL -- replace the placeholder below after creating
-  // the Render web service (or call Api.configure(url, caseId) before use).
-  base: IS_LOCAL ? 'http://127.0.0.1:8765' : 'https://REPLACE-WITH-YOUR-RENDER-BACKEND.onrender.com',
+  // Local development uses port 8765; hosted assets use the temporary demo API.
+  base: IS_LOCAL ? 'http://127.0.0.1:8765' : 'https://regulation-to-action-demo-api.onrender.com',
   caseId: null,
   mode: 'live',
 

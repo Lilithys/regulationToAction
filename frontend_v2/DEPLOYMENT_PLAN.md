@@ -7,6 +7,8 @@ The user authorized deployment with disposable storage on 2026-09-13.
 - Original repository: https://github.com/Ruigithu/regulationToAction (read-only).
 - Personal fork: https://github.com/Lilithys/regulationToAction.
 - Deployment branch: `deploy/temporary-demo`.
+- Render backend: https://regulation-to-action-demo-api.onrender.com.
+- Frontend: https://northstar-regulation-demo.yishanmai330.chatgpt.site.
 - Local remote `origin` still points to the original repository; `personal`
   points to the fork. Deployments use the personal branch.
 
@@ -59,6 +61,7 @@ Run from the repository root:
 
 ```bash
 node --test frontend_v2/tests/display_text.test.js
+python3 frontend_v2/build_static.py
 python3 -m unittest discover -s reguagent-main/agent -p 'test_serve_demo.py'
 python3 -m unittest discover -s reguagent-main/agent -p 'test_m5_interface.py'
 ```
