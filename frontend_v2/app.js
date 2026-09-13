@@ -11,10 +11,11 @@ let selectedCaseId = null;
 // Case selection -- the backend runs and persists cases on its own; the
 // frontend only ever reads a case and posts human decisions against it.
 // ---------------------------------------------------------------
-function openCase(caseId) {
+function openCase(caseId, mode) {
   selectedCaseId = caseId;
   loaded = true;
   Api.caseId = caseId;
+  if (mode) Api.mode = mode;
   renderEventDetail(caseId);
 }
 
@@ -635,7 +636,7 @@ function renderFactForm(item, container) {
 // (with its restricted overrides) and reject_action.
 function renderResponseForm(item, container) {
   const p = item.payload;
-  const stepsText = (p.steps || []).join('\n');
+  const stepsText = Array.isArray(p.steps) ? p.steps.join('\n') : (p.steps || '');
   const card = document.createElement('div');
   card.className = 'form-card';
   card.innerHTML = `

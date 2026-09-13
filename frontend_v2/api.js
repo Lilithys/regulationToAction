@@ -75,7 +75,9 @@ const Api = {
         `api_server.py needs an Access-Control-Allow-Origin header added.`
       );
     }
-    return Api._parse(res);
+    // Normalize legacy replay prose for display, including nested audit details.
+    // POST bodies and the server's stored records keep their original content.
+    return EnglishDisplay.project(await Api._parse(res));
   },
 
   async _post(path, body) {

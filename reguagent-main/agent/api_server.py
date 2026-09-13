@@ -17,6 +17,7 @@ import argparse
 import base64
 import binascii
 import json
+import os
 import re
 import sys
 import tempfile
@@ -33,6 +34,7 @@ from tool_runtime import RunBudget, ToolRunner
 import view_adapter
 
 ROUTES = [
+    (re.compile(r'^/api/health$'), 'GET', 'health'),
     (re.compile(r'^/api/cases/start$'), 'POST', 'start'),
     (re.compile(r'^/api/cases$'), 'GET', 'cases'),
     (re.compile(r'^/api/cases/(?P<case_id>[^/]+)$'), 'GET', 'overview'),
@@ -71,6 +73,7 @@ def _run_case(store, case_id, body):
 class Handler(BaseHTTPRequestHandler):
     store = None
     artifact_root = None
+    replay_only = False
 
     def log_message(self, fmt, *args):pass
 
@@ -78,13 +81,15 @@ class Handler(BaseHTTPRequestHandler):
         body = json.dumps(payload, ensure_ascii=False, default=str).encode('utf-8')
         self.send_response(status)
         self.send_header('Content-Type', 'application/json; charset=utf-8')
-        self.send_header('Access-Control-Allow-Origin', '*')
+        self.send_header('Access-Control-Allow-Origin', os.environ.get('CORS_ALLOW_ORIGIN', '*'))
         self.send_header('Content-Length', str(len(body)))
         self.end_headers()
         self.wfile.write(body)
 
     def _read_json_body(self):
         length = int(self.headers.get('Content-Length', 0) or 0)
+        if length < 0 or length > 41_000_000:
+            raise ValueError('Request body exceeds the 41 MB limit')
         if length == 0:return {}
         raw = self.rfile.read(length)
         try:return json.loads(raw)
@@ -103,10 +108,13 @@ class Handler(BaseHTTPRequestHandler):
         if name is None:
             self._send(404, dict(error='not_found', message='No matching route'));return
         try:
+            if name == 'health':
+                self._send(200, dict(status='ok', replay_only=self.replay_only));return
             if name == 'start':
                 body=self._read_json_body()
-                mode=body.get('mode','live')
+                mode=body.get('mode','replay' if self.replay_only else 'live')
                 if mode not in ('live','replay'):raise ValueError('mode must be live or replay')
+                if self.replay_only and mode != 'replay':raise PermissionError('This temporary demo supports replay mode only')
                 goal=body.get('goal')
                 if goal is not None and (not isinstance(goal,str) or not goal.strip()):raise ValueError('goal must be a non-empty string')
                 case_id,created=open_registered_case(self.store,goal or 'Investigate the registered ESG regulatory change and produce supported findings; no legal approval.',mode,nonce='api-registered-case')
@@ -114,6 +122,8 @@ class Handler(BaseHTTPRequestHandler):
                 if body.get('run',True):result['run']=_run_case(self.store,case_id,body)
             elif name != 'cases':
                 case_id = params['case_id']
+                if self.replay_only and method == 'POST' and self.store.case(case_id)['mode'] != 'replay':
+                    raise PermissionError('This temporary demo supports replay mode only')
             if name == 'start':pass
             elif name == 'cases':result = view_adapter.case_list(self.store)
             elif name == 'overview':result = view_adapter.case_overview(self.store, case_id)
@@ -134,8 +144,11 @@ class Handler(BaseHTTPRequestHandler):
                 for field in ('action_key', 'evidence_slot', 'evidence_type', 'submitted_by_role_id', 'filename', 'content_base64'):
                     if field not in body:raise ValueError(f'Missing field: {field}')
                 raw = base64.b64decode(body['content_base64'], validate=True)
+                filename=body['filename']
+                if not isinstance(filename,str) or not filename or '/' in filename or '\\' in filename or filename in ('.','..'):
+                    raise ValueError('filename must be a plain file name')
                 with tempfile.TemporaryDirectory() as tmp:
-                    path = Path(tmp) / body['filename']
+                    path = Path(tmp) / filename
                     path.write_bytes(raw)
                     submitted = view_adapter.submit_evidence_item(self.store, case_id, body['action_key'],
                         body['evidence_slot'], body['evidence_type'], path, body['submitted_by_role_id'], self.artifact_root)
@@ -158,16 +171,16 @@ class Handler(BaseHTTPRequestHandler):
 
     def do_OPTIONS(self):
         self.send_response(204)
-        self.send_header('Access-Control-Allow-Origin', '*')
+        self.send_header('Access-Control-Allow-Origin', os.environ.get('CORS_ALLOW_ORIGIN', '*'))
         self.send_header('Access-Control-Allow-Methods', 'GET, POST, OPTIONS')
         self.send_header('Access-Control-Allow-Headers', 'Content-Type')
         self.send_header('Content-Length', '0')
         self.end_headers()
 
 
-def make_server(db_path, host='127.0.0.1', port=8765):
+def make_server(db_path, host='127.0.0.1', port=8765, replay_only=False):
     store = CaseStore(db_path)
-    handler = type('BoundHandler', (Handler,), dict(store=store, artifact_root=Path(store.path).parent / 'evidence_artifacts'))
+    handler = type('BoundHandler', (Handler,), dict(store=store, artifact_root=Path(store.path).parent / 'evidence_artifacts', replay_only=replay_only))
     server = HTTPServer((host, port), handler)
     server.case_store = store
     return server

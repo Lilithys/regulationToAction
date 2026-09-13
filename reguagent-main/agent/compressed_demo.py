@@ -26,7 +26,7 @@ def _llm_text(mode, requirement, control, process, part_b, max_output_tokens):
     prompt=json.dumps(dict(requirement=requirement['requirement_text'],part_b=part_b,
         control=dict(title=control['title'],objective=control['objective'],frequency=control['frequency'],coverage=control['coverage']),
         process=dict(name=process['name'],current_state_as_documented=process['current_state_as_documented'])),ensure_ascii=False)
-    return complete('You are the Bank Investigator. Return exactly 2 concise sentences. Assess only whether the supplied control evidences recurring ESG monitoring for the existing SME lending book. Cite the supplied control frequency/coverage and Part B facts. Do not make a legal approval.',prompt,max_tokens=max_output_tokens)
+    return complete('You are the Bank Investigator. Return exactly 2 concise sentences in English, even if the supplied material is in another language. Assess only whether the supplied control evidences recurring ESG monitoring for the existing SME lending book. Cite the supplied control frequency/coverage and Part B facts. Do not make a legal approval.',prompt,max_tokens=max_output_tokens)
 
 def run(store, request_file, mode='replay', answer_file=PROJECT_ROOT/'materials/esg_demo/energy_answer.synthetic.json', max_output_tokens=1600, model=None):
     if model:os.environ['LLM_MODEL']=model

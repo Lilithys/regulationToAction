@@ -79,8 +79,8 @@ class ReplayClient:
                 task=f"Review submitted evidence {target['key']}; read its actual text before judging content relevance and type match.")
         waiting=any(o['kind']=='Question' and o['status']=='open' for o in last[2]['objects'])
         return call('finish',status='waiting' if waiting else 'completed',
-            summary=('调查及条件性成本已保存；等待明确分母的能源数据答复。' if waiting else
-                     '已根据答复更新能源数据完整度；原有来源和成本发现保留。来源全文、法律审核及后续行动实施仍待完成。'))
+            summary=('Investigation findings and conditional costs have been saved; awaiting an energy-data answer with an explicit denominator.' if waiting else
+                     'Energy-data completeness has been updated from the answer; existing source and cost findings have been retained. Full source text, legal review and subsequent action implementation remain outstanding.'))
 
     def regulation(self,seen):
         names=[name for name,_,_ in seen];results={name:result for name,_,result in seen}
@@ -92,9 +92,9 @@ class ReplayClient:
         if 'record_finding' not in names:
             scope=results['applicability'];versions=results['source_versions']
             return call('record_finding',key='source-summary',category='source',
-                summary=f"来源为已登记候选；版本检查={versions['status']}。候选范围={scope['legal_scope']}，时间={scope['temporal_status']}。使用整理后的条款转述，未独立完成原文抽取或法律审核。",
+                summary=f"The source is a registered candidate; version check={versions['status']}. Candidate scope={scope['legal_scope']}; timing={scope['temporal_status']}. This uses curated clause paraphrases; independent source-text extraction and legal review have not been completed.",
                 reference_ids=[req['reference_id'],results['source_citation']['reference_id'],versions['reference_id'],scope['reference_id']])
-        return call('finish',status='completed',summary='来源限制、日期与候选范围已记录，法律解释保持 provisional。')
+        return call('finish',status='completed',summary='Source limitations, dates and candidate scope have been recorded; the legal interpretation remains provisional.')
 
     def bank(self,seen,task):
         names=[name for name,_,_ in seen];results={name:result for name,_,result in seen}
@@ -107,10 +107,10 @@ class ReplayClient:
                 plausible='esg' in text and ('control' in text or 'test' in text or 'monitor' in text)
                 return call('review_evidence',evidence_key=evidence_key,
                     content_assessment='plausibly_responsive' if plausible else 'unrelated_content',
-                    rationale=('文本提及ESG存量监测控制/测试相关内容，与该证据类型声明相符。' if plausible else
-                               '文本未提及ESG、控制或监测，疑似与声明的证据类型无关。'),
+                    rationale=('The text refers to ESG monitoring controls or tests for the existing portfolio, consistent with the declared evidence type.' if plausible else
+                               'The text lacks relevant ESG, control or monitoring content and appears unrelated to the declared evidence type.'),
                     reference_ids=[ev['reference_id']])
-            return call('finish',status='completed',summary='已读取并给出证据内容判断；最终认定与结案仍需人工决定。')
+            return call('finish',status='completed',summary='The evidence has been read and its content assessed; final verification and closure still require human decisions.')
         refresh=task.startswith('Recompute')
         if not refresh:
             if not seen:return call('get_record',record_id='REQ-ESG-CREDIT-MONITORING-001')
@@ -123,19 +123,19 @@ class ReplayClient:
                 per_application=control['record'].get('frequency')=='per_new_credit_application'
                 return call('propose_mapping',requirement_id=req['record_id'],control_id=control['record_id'],
                     support='related_not_supporting' if per_application else 'unknown',
-                    rationale='控制按新申请执行，不能证明存量持续监测。' if per_application else '需要审核控制频率与持续监测之间的支持关系。',
+                    rationale='The control runs for each new application and does not demonstrate ongoing monitoring of the existing portfolio.' if per_application else 'The relationship between control frequency and ongoing monitoring needs review.',
                     reference_ids=[req['reference_id'],control['reference_id']])
             if 'walk_dependencies' not in names:return call('walk_dependencies',record_id=control['record_id'],depth=1)
             if 'portfolio_facts' not in names:return call('portfolio_facts')
         if 'energy_coverage' not in names:return call('energy_coverage')
         energy=results['energy_coverage']
         if energy['coverage_pct'] is None and 'request_question' not in names:
-            return call('request_question',fact_id='FACT-ESG-ENERGY-COVERAGE',decision_reason='确定能源数据采集的缺失客户规模；不把该比例推断为风险水平或自动化率。')
+            return call('request_question',fact_id='FACT-ESG-ENERGY-COVERAGE',decision_reason='Determine how many borrowers need energy-data collection; do not interpret this percentage as a risk level or automation rate.')
         if 'record_finding' not in names:
-            summary=('能源数据覆盖仍未知；保留采集工作量的不确定性。' if energy['coverage_pct'] is None else
-                     f"按归属明确的答复：{energy['denominator']}个存量SME客户中，{energy['usable_borrower_count']}个有可用能源数据，{energy['missing_borrower_count']}个待补齐。答复不是实操证据。")
+            summary=('Energy-data coverage remains unknown; the data-collection workload is still uncertain.' if energy['coverage_pct'] is None else
+                     f"According to the attributed answer: of {energy['denominator']} existing SME borrowers, {energy['usable_borrower_count']} have usable energy data and {energy['missing_borrower_count']} still need data. The answer is not operating evidence.")
             return call('record_finding',key='energy-data',category='data_quality',summary=summary,reference_ids=[energy['reference_id']])
-        return call('finish',status='waiting' if energy['coverage_pct'] is None else 'completed',summary='能源数据问题及相关发现已保存。')
+        return call('finish',status='waiting' if energy['coverage_pct'] is None else 'completed',summary='The energy-data question and related findings have been saved.')
 
     def costs(self,seen):
         names=[name for name,_,_ in seen];results={name:result for name,_,result in seen}
@@ -143,22 +143,22 @@ class ReplayClient:
         if 'record_finding' not in names:
             result=results['compare_costs']
             amounts={o['option_id']:o['scenarios']['base']['three_year_tco_eur'] for o in result['options']}
-            return call('record_finding',key='conditional-costs',category='cost',summary=f'两条要求的模板三年TCO：{amounts}。团队产能未知，最低成本不等于获批建议。',reference_ids=[result['reference_id']])
+            return call('record_finding',key='conditional-costs',category='cost',summary=f'Template three-year TCO for the two requirements: {amounts}. Team capacity is unknown; the lowest cost is not an approved recommendation.',reference_ids=[result['reference_id']])
         if 'find_roles' not in names:return call('find_roles',process_id='PROC-CREDIT-RISK-MONITORING')
         if 'propose_plan' not in names:
             costs=results['compare_costs']
             return call('propose_plan',option_id='OPT-ESG-AUTOMATED',requirement_ids=['REQ-ESG-CREDIT-MONITORING-001'],
-                rationale='本任务范围仅为存量客户ESG监测要求；自动化模板三年期成本最低，但产能与法律审核未决，先按此单一要求提出方案，其余ESG要求分开处理。',
+                rationale='This task covers only ESG monitoring for existing borrowers. The automated template has the lowest three-year cost, but capacity and legal review remain unresolved. Propose a plan for this requirement and address other ESG requirements separately.',
                 reference_ids=[costs['reference_id']])
         if 'propose_action' not in names:
             plan=results['propose_plan'];roles=results['find_roles']
-            return call('propose_action',plan_key=plan['object_key'],title='部署自动化存量ESG监测控制',
-                steps='确认自动化监测所需数据字段与实施步骤；小范围试点验证准确性；扩大到全部存量SME客户并保留运行证据。',
+            return call('propose_action',plan_key=plan['object_key'],title='Implement automated ESG monitoring controls for the existing portfolio',
+                steps='Confirm the data fields and implementation steps for automated monitoring; validate accuracy in a small pilot; extend coverage to all existing SME borrowers and retain operating evidence.',
                 target_date=plan['payload']['calculation']['projected_delivery_date'],
                 accountable_role_id=roles['candidates'][0]['role_id'],
-                dependency_note='依赖治理映射审核结论（per-application控制不能直接证明存量监测）先确认，避免重复计入同一控制的覆盖范围。',
-                required_evidence=[dict(evidence_key='design',evidence_type='control_design',title='存量自动化ESG监测控制设计文档'),
-                                    dict(evidence_key='test',evidence_type='control_effectiveness_test',title='控制有效性测试结果')],
+                dependency_note='First confirm the governance mapping review: a per-application control does not directly demonstrate existing-portfolio monitoring. Avoid double-counting the coverage of the same control.',
+                required_evidence=[dict(evidence_key='design',evidence_type='control_design',title='Control design document for automated ESG monitoring of the existing portfolio'),
+                                    dict(evidence_key='test',evidence_type='control_effectiveness_test',title='Control effectiveness test results')],
                 reference_ids=[roles['reference_id']])
         return call('finish',status='completed',
-            summary='条件性经济比较、按存量ESG监测要求单独提出的分阶段方案与责任指派（草案）已保存；责任接受、执行与证据审核仍需人工在调查之外确认，不构成已批准资源或最终整改承诺。')
+            summary='The conditional cost comparison, phased plan scoped to existing-portfolio ESG monitoring and draft responsibility assignment have been saved. Acceptance, execution and evidence review still require human confirmation outside the investigation; resources and final remediation commitments have not been approved.')

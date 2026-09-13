@@ -6,6 +6,21 @@ A/B/C/D pipeline). It is built directly against the real backend in
 anywhere in this version -- every screen calls a real endpoint and shows an
 error if that call fails, rather than falling back to fixtures.
 
+## English display
+
+`display_text.js` translates known legacy replay prose when the API client reads
+case data, including nested audit details and queue labels. It keeps identifiers,
+numbers, dates and unknown text intact. It does not modify the SQLite database,
+audit history, or POST payloads. New replay output is English, and the shared live
+role prompt also requests English user-facing output. This is a compatibility
+catalog for legacy replay text, not a general translation service for user content.
+
+Run the display regression checks from the repository root:
+
+```bash
+node --test frontend_v2/tests/display_text.test.js
+```
+
 ## Known blocker: CORS
 
 `api_server.py`, as currently written, sends no `Access-Control-Allow-Origin`
