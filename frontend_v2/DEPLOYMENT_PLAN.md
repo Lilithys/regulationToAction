@@ -8,10 +8,10 @@ The user selected a public Netlify frontend with disposable Render storage.
 The current frontend URL is https://regulation2action.netlify.app.
 The Netlify project dashboard is https://app.netlify.com/projects/regulation2action.
 
-The initial Netlify Drop deployment contained only `index.html`; the other five
-required assets returned HTTP 404. A complete six-file deployment archive is
-prepared locally, pending browser file-upload access. Do not treat this initial
-publication as a working demo.
+Deployment completed on 2026-09-13. The complete six-file frontend was published
+through Netlify Drop, replacing an incomplete HTML-only upload. All six live
+assets return HTTP 200 and match the validated local source byte-for-byte.
+Published deploy: `6aa666a55a330d9194e4bc56`.
 
 Render now permits `https://regulation2action.netlify.app` through
 `CORS_ALLOW_ORIGIN`. Health and case-list requests returned HTTP 200, and POST
@@ -100,6 +100,12 @@ but live model calls are disabled in this disposable deployment.
 
 ## Validation
 
+- The Netlify production site serves all six assets with HTTP 200 and exact
+  local-source matches. Browser checks confirmed the English case registry,
+  case overview, queue and action-acceptance form, plans/actions, and audit log.
+  No human decisions were submitted during validation.
+- Render health, two-case registry and POST preflight checks pass with the
+  Netlify origin after the CORS configuration deployment.
 - Six frontend checks, five disposable-demo checks and 21 existing interface
   tests passed locally.
 - The deployed backend passed health, two-case registry, 14 view projection,
