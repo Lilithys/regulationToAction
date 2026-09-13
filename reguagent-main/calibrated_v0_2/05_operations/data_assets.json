@@ -1,0 +1,266 @@
+{
+  "_meta": {
+    "file": "05_operations/data_assets.json",
+    "owner": "Person 3 - Operations and technology",
+    "purpose": "Fictional Northstar current-state records; peer reports inform design only.",
+    "generated_at": "2026-09-03",
+    "as_of_date": "2026-09-08",
+    "entity_id": "ENT-NDB-PLC",
+    "design_references": [
+      "Bank_Context_Fictional_Digital_Bank.md — Data Available For Regulatory Assessment table"
+    ],
+    "calibration_version": "0.2.1"
+  },
+  "data_assets": [
+    {
+      "data_asset_id": "DATA-CUSTOMER-LEGAL-ENTITY",
+      "name": "Customer and Legal Entity Data",
+      "coverage": "high",
+      "known_limitation": "SME ownership structures may require manual verification.",
+      "systems_of_record": [
+        "SYS-CRM",
+        "SYS-ONBOARDING",
+        "SYS-CORE-BANKING"
+      ],
+      "contains_personal_data": true,
+      "notes": null,
+      "synthetic": true,
+      "provenance": {
+        "origin": "synthetic_bank_design",
+        "source_file": "person3/data_assets.json",
+        "calibration_version": "0.2.1",
+        "notes": [
+          "Preserved synthetic scenario fact; not a fact about bunq."
+        ]
+      }
+    },
+    {
+      "data_asset_id": "DATA-LOANS-EXPOSURES",
+      "name": "Loans and Exposures Data",
+      "coverage": "high",
+      "known_limitation": "Loan-purpose codes are inconsistent for older loans.",
+      "systems_of_record": [
+        "SYS-LOAN-ORIG",
+        "SYS-RISK-ENGINE",
+        "SYS-DATA-PLATFORM"
+      ],
+      "contains_personal_data": true,
+      "notes": "lending_portfolio.csv contains cohorts, not individual loan accounts.",
+      "synthetic": true,
+      "provenance": {
+        "origin": "synthetic_bank_design",
+        "source_file": "person3/data_assets.json",
+        "calibration_version": "0.2.1",
+        "notes": [
+          "Preserved synthetic scenario fact; not a fact about bunq."
+        ]
+      }
+    },
+    {
+      "data_asset_id": "DATA-MORTGAGE-ARREARS-ARA",
+      "name": "Mortgage Arrears and ARA Case Data",
+      "coverage": "high",
+      "known_limitation": "Third-party servicer sends a monthly extract; some supporting documents are held outside NDB systems.",
+      "systems_of_record": [
+        "SYS-MORTGAGE-SERVICING"
+      ],
+      "contains_personal_data": true,
+      "notes": null,
+      "synthetic": true,
+      "provenance": {
+        "origin": "synthetic_bank_design",
+        "source_file": "person3/data_assets.json",
+        "calibration_version": "0.2.1",
+        "notes": [
+          "Preserved synthetic scenario fact; not a fact about bunq."
+        ]
+      }
+    },
+    {
+      "data_asset_id": "DATA-SME-SECTOR-CLASSIFICATION",
+      "name": "SME Sector Classification Data",
+      "coverage": "medium",
+      "known_limitation": "20% of borrowers have broad/missing NACE, weighted by borrower_count; exposure-weighted rate differs.",
+      "systems_of_record": [
+        "SYS-LOAN-ORIG",
+        "SYS-DATA-PLATFORM"
+      ],
+      "contains_personal_data": false,
+      "notes": "Join cohort borrower_count to sector_data_quality; do not use row count as customer count.",
+      "synthetic": true,
+      "provenance": {
+        "origin": "synthetic_bank_design",
+        "source_file": "person3/data_assets.json",
+        "calibration_version": "0.2.1",
+        "notes": [
+          "Preserved synthetic scenario fact; not a fact about bunq."
+        ]
+      }
+    },
+    {
+      "data_asset_id": "DATA-GEOGRAPHY",
+      "name": "Geography Data",
+      "coverage": "high",
+      "known_limitation": "Customer domicile and borrower operating country available.",
+      "systems_of_record": [
+        "SYS-CRM",
+        "SYS-LOAN-ORIG"
+      ],
+      "contains_personal_data": true,
+      "notes": null,
+      "synthetic": true,
+      "provenance": {
+        "origin": "synthetic_bank_design",
+        "source_file": "person3/data_assets.json",
+        "calibration_version": "0.2.1",
+        "notes": [
+          "Preserved synthetic scenario fact; not a fact about bunq."
+        ]
+      }
+    },
+    {
+      "data_asset_id": "DATA-CONSUMER-CIRCUMSTANCES",
+      "name": "Consumer Circumstances and Material Changes Data",
+      "coverage": "medium",
+      "known_limitation": "Customer profile exists, but a structured re-confirmation event is not captured before every further sale.",
+      "systems_of_record": [
+        "SYS-CRM"
+      ],
+      "contains_personal_data": true,
+      "notes": "This is the specific data gap behind the Consumer Protection Code exposure noted in the bank context.",
+      "synthetic": true,
+      "provenance": {
+        "origin": "synthetic_bank_design",
+        "source_file": "person3/data_assets.json",
+        "calibration_version": "0.2.1",
+        "notes": [
+          "Preserved synthetic scenario fact; not a fact about bunq."
+        ]
+      }
+    },
+    {
+      "data_asset_id": "DATA-PAYMENT-OPERATIONS",
+      "name": "Payment Operations Data",
+      "coverage": "high",
+      "known_limitation": "Volumes, channel, latency, failures, beneficiary data, pricing, and sanctions outcomes available.",
+      "systems_of_record": [
+        "SYS-PAYMENTS-HUB",
+        "SYS-BENEFICIARY-STORE",
+        "SYS-SANCTIONS-ENGINE"
+      ],
+      "contains_personal_data": true,
+      "notes": "Feeds 03_exposure/payments.csv.",
+      "synthetic": true,
+      "provenance": {
+        "origin": "synthetic_bank_design",
+        "source_file": "person3/data_assets.json",
+        "calibration_version": "0.2.1",
+        "notes": [
+          "Preserved synthetic scenario fact; not a fact about bunq."
+        ]
+      }
+    },
+    {
+      "data_asset_id": "DATA-ICT-ASSETS-THIRD-PARTIES",
+      "name": "ICT Assets and Third Parties Data",
+      "coverage": "medium",
+      "known_limitation": "Application and vendor inventories exist; end-to-end dependencies and subcontractors are incomplete.",
+      "systems_of_record": [
+        "SYS-ICT-REGISTER"
+      ],
+      "contains_personal_data": false,
+      "notes": "This is the data domain behind the DORA-relevant dependency-mapping gap - see 05_operations/dependencies.json for the concrete, per-vendor form of the gap.",
+      "synthetic": true,
+      "provenance": {
+        "origin": "synthetic_bank_design",
+        "source_file": "person3/data_assets.json",
+        "calibration_version": "0.2.1",
+        "notes": [
+          "Preserved synthetic scenario fact; not a fact about bunq."
+        ]
+      }
+    },
+    {
+      "data_asset_id": "DATA-FINANCIAL-PERFORMANCE",
+      "name": "Financial Performance Data",
+      "coverage": "high",
+      "known_limitation": "Product-level profitability refreshed monthly.",
+      "systems_of_record": [
+        "SYS-DATA-PLATFORM",
+        "SYS-CORE-BANKING"
+      ],
+      "contains_personal_data": false,
+      "notes": null,
+      "synthetic": true,
+      "provenance": {
+        "origin": "synthetic_bank_design",
+        "source_file": "person3/data_assets.json",
+        "calibration_version": "0.2.1",
+        "notes": [
+          "Preserved synthetic scenario fact; not a fact about bunq."
+        ]
+      }
+    },
+    {
+      "data_asset_id": "DATA-ESG-CLIMATE-RISK",
+      "name": "ESG / Climate-Risk Data",
+      "coverage": "low",
+      "known_limitation": "No complete borrower emissions or physical-risk dataset.",
+      "systems_of_record": [
+        "SYS-RISK-ENGINE",
+        "SYS-DATA-PLATFORM"
+      ],
+      "contains_personal_data": false,
+      "notes": "Matches ghg_emissions_data_status and physical_risk_data_source values already recorded in 03_exposure/esg_assessment_snapshot.csv.",
+      "synthetic": true,
+      "provenance": {
+        "origin": "synthetic_bank_design",
+        "source_file": "person3/data_assets.json",
+        "calibration_version": "0.2.1",
+        "notes": [
+          "Preserved synthetic scenario fact; not a fact about bunq."
+        ]
+      }
+    },
+    {
+      "data_asset_id": "DATA-CONTROLS-POLICIES",
+      "name": "Controls and Policies Data",
+      "coverage": "medium",
+      "known_limitation": "Existing control inventory is current; evidence links vary in quality.",
+      "systems_of_record": [
+        "SYS-GRC"
+      ],
+      "contains_personal_data": false,
+      "notes": null,
+      "synthetic": true,
+      "provenance": {
+        "origin": "synthetic_bank_design",
+        "source_file": "person3/data_assets.json",
+        "calibration_version": "0.2.1",
+        "notes": [
+          "Preserved synthetic scenario fact; not a fact about bunq."
+        ]
+      }
+    },
+    {
+      "data_asset_id": "DATA-TREASURY-LIQUIDITY",
+      "name": "Treasury Liquidity Portfolio Data",
+      "coverage": "high",
+      "known_limitation": "Position and instrument-level detail is complete for the small liquidity book, but the snapshot in 03_exposure/trading_book.csv is dated 2026-06-30 - over two months stale relative to this dataset's as_of_date of 2026-09-03. Fine for a static/derogation-eligibility read, not sufficient on its own for a requirement needing a current threshold check.",
+      "systems_of_record": [
+        "SYS-TREASURY-LIQUIDITY"
+      ],
+      "contains_personal_data": false,
+      "notes": "Was missing from the first pass of this file, since the original 11-row source table in Bank_Context_Fictional_Digital_Bank.md doesn't list treasury data separately - added to keep every business line covered by at least one data asset.",
+      "synthetic": true,
+      "provenance": {
+        "origin": "synthetic_bank_design",
+        "source_file": "person3/data_assets.json",
+        "calibration_version": "0.2.1",
+        "notes": [
+          "Preserved synthetic scenario fact; not a fact about bunq."
+        ]
+      }
+    }
+  ]
+}

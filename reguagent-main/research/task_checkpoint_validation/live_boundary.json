@@ -1,0 +1,5 @@
+{
+  "case_id": "CASE-cb4fa9d654e14a34b4df0a8ea7109e56",
+  "start_audit_seq": 80,
+  "backup": "backups/2026-09-12-before-task-checkpoints/esg_live.sqlite3"
+}

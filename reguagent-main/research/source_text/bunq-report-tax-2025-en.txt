@@ -1,0 +1,220 @@
+bunq Tax Report
+
+
+
+
+     2025
+At bunq, we always pay taxes at the standard rates in every country where we operate. We
+don’t use offshore jurisdictions (often called “tax havens”) to lower our tax bills — because
+we believe in doing our fair share, everywhere we do business.
+
+
+We keep things simple and transparent. bunq operates only within the European
+Economic Area and Türkiye, with the following organizational structure:
+
+
+
+
+At bunq, we maintain open and constructive relationships with tax authorities, and we
+work closely with them to ensure full compliance with all applicable regulations. We’re
+committed to transparency and cooperation at every step.
+
+
+We can also confirm that, during the reporting period, neither bunq nor any of its
+subsidiaries have been involved in any adjudication or arbitration proceedings related to
+tax disputes.
+
+
+Our European branches play an important role by supporting bunq B.V. in providing local
+IBANs to our users. These branches do not generate revenue themselves. Instead,
+Corporate Income Tax for these branches is calculated based on a cost-plus model. This
+approach is fully documented in both our Master and Local Transfer Pricing files, in line
+with international standards.
+
+
+We apply the Authorized OECD Approach (“AOA”) as outlined in the OECD 2010 Report on
+the Attribution of Profits to Permanent Establishments.
+
+
+
+
+                                                                                            1
+In Türkiye, bunq Teknoloji is primarily set up to host outsourced support staff and does not
+generate revenue on its own. Corporate Income Tax for bunq Teknoloji is calculated based
+on an intercompany agreement, which covers the services provided by the entity to bunq
+B.V.
+
+
+Revenue per tax jurisdiction
+
+Presented below is a summary of the largest revenue generating jurisdictions in which
+bunq operates, and the revenue derived from business activities in those jurisdictions:
+
+                                                                   2025                   2024
+
+Country                                                       EUR ('000)          EUR ('000)
+
+Netherlands                                                      277 605             355 064
+
+Ireland                                                           79 225              77 330
+
+Total                                                           356 830             432 394
+
+
+
+
+All bunq users across our European markets hold their accounts with bunq B.V. in the
+Netherlands. This means that all fee and interest income from these users is reported
+under bunq B.V., no matter where the user is located.
+
+
+The revenue reported for Ireland reflects the activities of Capitalflow Group DAC. This is a
+separate legal entity and a subsidiary of bunq B.V., which focuses on lending and related
+services.
+
+
+Profit per tax jurisdiction
+
+Presented below is a summary of the profits after tax per jurisdiction in which bunq
+operates.
+
+                                                                  2025                    2024
+
+Country                                                      EUR ('000)           EUR ('000)
+
+Netherlands                                                       13 146              56 267
+
+Ireland                                                           8 824                7 226
+
+Other                                                               414                    153
+
+Total                                                            22 384              63 646
+
+
+
+
+                                                                                             2
+All bunq users across our European markets hold their accounts with bunq B.V. in the
+Netherlands. As a result, profit from these users is reported under bunq B.V., regardless of
+where the user is located.
+
+
+The profit reported for Ireland reflects the activities of Capitalflow Group DAC, which is a
+separate legal entity and a subsidiary of bunq B.V., focused on lending and related
+services.
+
+
+For our branches in other jurisdictions, profits are calculated using a cost-plus model. This
+approach ensures that taxes are paid fairly in the countries where the activities are
+actually performed.
+
+
+Assets per tax jurisdiction
+
+Presented below is a summary of the assets per jurisdiction in which bunq operates.
+
+                                                                   2025                 2024
+
+Country                                                       EUR ('000)           EUR ('000)
+
+Netherlands                                                    7 975 499            7 668 426
+
+Ireland                                                        1 074 474             885 890
+
+Other                                                              1 664                1 596
+
+Total                                                          9 051 637            8 555 912
+
+
+
+
+All bunq users across our European markets hold their accounts with bunq B.V. in the
+Netherlands. This means that deposits from these users — and all assets arising from
+those deposits — are reported under bunq B.V., no matter where the user is located.
+
+
+The assets reported under Ireland belong to Capitalflow Group DAC, bunq’s local
+subsidiary. This is also reflected in the standalone 2025 annual report of Capitalflow Group
+DAC.
+
+
+Tax per tax jurisdiction
+
+Presented below is a summary of the taxes paid per jurisdiction in which bunq operates.
+Corporate income tax expenses:
+
+                                                                   2025              2024
+
+Country                                                      EUR ('000)         EUR ('000)
+
+Netherlands                                                      10 863             20 490
+
+
+
+
+                                                                                             3
+Ireland                                                             1 290                 1 080
+
+Other                                                                  64                   126
+
+Total                                                               12 217               21 696
+
+
+In the Netherlands, bunq paid actual Corporate Income Taxes of €5,799,663 in 2025 (2024:
+€19,555,902). In 2025, we also used tax deductions from unutilized tax losses, totaling
+€5,466,000(2024: €10,876,753). The difference between the tax expenses shown in the
+earlier table and the amounts already paid will be settled in 2026.
+
+
+In Ireland, actual Corporate Income Taxes paid in 2025 were €1,290,000 (2024: €1,000,938 ).
+In 2025, bunq did not apply tax deductions from unutilized tax losses (2024: €76,708).
+
+
+Under “Other,” we report the taxes paid in our various branches and in Türkiye. This
+ensures that fair taxes are paid in each jurisdiction where our activities take place.
+
+
+Value Added Taxes paid/received
+
+                                                                       2025                 2024
+
+Country                                                          EUR ('000)          EUR ('000)
+
+Netherlands                                                           13 801                 5 861
+
+Ireland                                                                 500                 1 870
+
+Other                                                                   155                  - 184
+
+Total                                                               14 456                  7 547
+
+
+
+Social Security paid to tax authorities
+
+                                                                      2025                  2024
+
+Country                                                         EUR ('000)           EUR ('000)
+
+Netherlands                                                           5 045                  3 551
+
+Ireland                                                                887                    810
+
+Other                                                                 1 568                 1 033
+
+Total                                                                 7 500                 5 394
+
+
+
+
+In the Netherlands, bunq applied for and received WBSO tax credits for research and
+development activities during the year ended 31 December 2025. The amount received as
+subsidies was €400,700 (2024: €399,444 ).
+
+
+There are no other company-specific tax rulings in place between bunq, its subsidiaries, or
+its branches and any tax authorities.
+
+
+                                                                                                  4
+

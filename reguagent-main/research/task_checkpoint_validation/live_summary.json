@@ -1,0 +1,142 @@
+{
+  "case": {
+    "case_id": "CASE-cb4fa9d654e14a34b4df0a8ea7109e56",
+    "status": "failed",
+    "revision": 1
+  },
+  "audit_chain_valid": true,
+  "last_audit_seq": 225,
+  "new_audit_events": 145,
+  "new_api_requests": 10,
+  "successful_model_responses": 10,
+  "provider_reported_tokens": 33746,
+  "elapsed_run_seconds": 428.588,
+  "authorized_budget": {
+    "api_attempts": 12,
+    "seconds": 480
+  },
+  "runs": [
+    {
+      "api_requests_attempted": 3,
+      "budget": {
+        "delegations": 1,
+        "elapsed_seconds": 75.831,
+        "model_turn_attempts": 3,
+        "tokens": 5689,
+        "tool_calls": 3
+      },
+      "case_id": "CASE-cb4fa9d654e14a34b4df0a8ea7109e56",
+      "mode": "live",
+      "outcome": {
+        "error_type": "BudgetExceeded",
+        "message": "Model call budget exhausted",
+        "status": "failed"
+      }
+    },
+    {
+      "api_requests_attempted": 6,
+      "budget": {
+        "delegations": 1,
+        "elapsed_seconds": 340.699,
+        "model_turn_attempts": 6,
+        "tokens": 23327,
+        "tool_calls": 7
+      },
+      "case_id": "CASE-cb4fa9d654e14a34b4df0a8ea7109e56",
+      "mode": "live",
+      "outcome": {
+        "error_type": "BudgetExceeded",
+        "message": "Required wait exceeds remaining run time; case can be resumed later",
+        "status": "failed"
+      }
+    },
+    {
+      "api_requests_attempted": 1,
+      "budget": {
+        "delegations": 1,
+        "elapsed_seconds": 12.058,
+        "model_turn_attempts": 1,
+        "tokens": 4730,
+        "tool_calls": 2
+      },
+      "case_id": "CASE-cb4fa9d654e14a34b4df0a8ea7109e56",
+      "mode": "live",
+      "outcome": {
+        "error_type": "BudgetExceeded",
+        "message": "Required wait exceeds remaining run time; case can be resumed later",
+        "status": "failed"
+      }
+    }
+  ],
+  "provider_errors": [],
+  "waits_by_reason": {
+    "minimum_request_interval": 9,
+    "tokens_per_minute_window": 7
+  },
+  "requested_wait_seconds": 383.888,
+  "completed_tool_counts": {
+    "case_context": 1,
+    "source_versions": 1,
+    "search_records": 2,
+    "get_record": 5
+  },
+  "tool_errors": [],
+  "repeated_identical_tools": [],
+  "task_resumes": [
+    {
+      "observation_count": 0,
+      "pending": true,
+      "role": "coordinator",
+      "task_id": "644bb37877a42eba33c2b702952bca900edad3d6d9c95c1975e055cd1a8438e1",
+      "turns": 2
+    },
+    {
+      "observation_count": 1,
+      "pending": false,
+      "role": "regulatory_analyst",
+      "task_id": "b842f224b5106776630c3ebd636a4412ad985970ef4f6aad68ef84fef566e126",
+      "turns": 1
+    },
+    {
+      "observation_count": 0,
+      "pending": true,
+      "role": "coordinator",
+      "task_id": "644bb37877a42eba33c2b702952bca900edad3d6d9c95c1975e055cd1a8438e1",
+      "turns": 2
+    },
+    {
+      "observation_count": 10,
+      "pending": false,
+      "role": "regulatory_analyst",
+      "task_id": "b842f224b5106776630c3ebd636a4412ad985970ef4f6aad68ef84fef566e126",
+      "turns": 7
+    }
+  ],
+  "current_tasks": [
+    {
+      "task_id": "644bb37877a42eba33c2b702952bca900edad3d6d9c95c1975e055cd1a8438e1",
+      "role": "coordinator",
+      "status": "failed",
+      "turns": 2,
+      "observations": 0,
+      "pending": true,
+      "task": "Investigate the SME ESG credit-monitoring change, source limitations, governance gaps and missing energy-data facts. Compare conditional economics when useful; resume affected findings after an owner answer. No final legal approval or action closure.",
+      "checkpoint_integrity_valid": true
+    },
+    {
+      "task_id": "b842f224b5106776630c3ebd636a4412ad985970ef4f6aad68ef84fef566e126",
+      "role": "regulatory_analyst",
+      "status": "failed",
+      "turns": 8,
+      "observations": 10,
+      "pending": false,
+      "task": "Using the registered SourceVersion SRC-ESG-EBA-GL-2025-01 (EBA Guidelines on the management of ESG risks), scope and extract obligations relevant to SME credit monitoring. Focus on these requirement_ids: REQ-ESG-CREDIT-MONITORING-001, REQ-ESG-CREDIT-POLICY-001, REQ-ESG-DATA-GAPS-001, REQ-ESG-DATA-SELECTION-001, REQ-ESG-LONG-HORIZON-001, REQ-ESG-RISK-APPETITE-001, REQ-ESG-RISK-INTEGRATION-001, REQ-ESG-RISK-KRI-001. For each, record a Finding with: (a) a concise paraphrase of the obligation; (b) provisional applicability to SME retail/corporate exposures and specifically to ongoing credit monitoring; (c) any timing/horizon nuances; (d) explicit source limitations from the case note (registered replay; no amendment audit; unknown if later corrections exist); and (e) open questions that need bank-owner input. Also record a separate Finding capturing the source limitations/uncertainty for this SourceVersion, with clear locator. Keep scope tight to monitoring and data expectations; do not attempt full guideline coverage.",
+      "checkpoint_integrity_valid": true
+    }
+  ],
+  "findings": [],
+  "object_counts": {
+    "SourceVersion": 1,
+    "Task": 3
+  }
+}

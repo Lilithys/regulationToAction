@@ -1,0 +1,518 @@
+                   bunq - Tax Policy
+                                   May 2026
+                                   To our users,
+ At bunq, we believe in transparency and having an inside=outside approach to our
+ policies and procedures. We want to be fully transparent with our users and inform
+them of anything you may want to know. For this reason, we aim to make our policies
+                     publicly available, where we (legally) can!
+   Table of Contents
+
+   Table of Contents​                           1
+1. Purpose​                                    2
+2. Scope of policy​                            2
+3. Governance​                                 3
+   The role of the Head of Finance​            3
+   The role of the Risk and Audit Committee​   3
+   The role of the Managing Board​             3
+4. Tax principles​                             3
+5. Tax matters​                                5
+   5a. Corporate Income Tax​                   5
+   5b. Value Added Tax​                        6
+   5c Wage tax​                                8
+   5d. Other Tax Matters and Tax Reporting​    9
+6. Documentation and Retention​                11
+
+
+
+
+                                                1
+   1.​ Purpose
+At bunq, we believe in doing things the right way — not just because we have to, but
+because we want to. That includes how we handle taxes.
+This policy explains how we deal with tax matters across our business. It's built around one
+key principle:
+
+
+      We pay our fair share. Always.
+
+
+Whether it’s in the Netherlands, or anywhere else we operate, we follow the rules, avoid
+aggressive tax strategies, and contribute to the communities we’re part of.
+The goal of this policy is simple: to lay out how bunq approaches tax matters across all
+jurisdictions where we operate.
+
+
+We aim to be:
+   ●​ Transparent — no hidden tactics or risky loopholes;
+   ●​ Fair — paying what’s due, where it’s due;
+   ●​ Efficient — smart structuring that respects the rules;
+   ●​ Sustainable — always thinking long term.
+
+
+   2.​ Scope of policy
+This policy applies to bunq b.v. and bunq holding b.v. as entities supervised by De
+Nederlandsche Bank (DNB). It also applies to all its subsidiaries and branches as disclosed in
+the graph below:
+
+
+
+
+                                                                                            2
+   3.​ Governance
+At bunq, we treat tax the same way we treat every other important part of our business —
+with clear ownership, strong oversight, and built-in accountability. Tax responsibilities are
+shared across three key roles:
+
+The role of the Head of Finance
+The Head of Finance is responsible for the day to day tax compliance. That includes::
+
+   ●​ Implementing the tax policy;
+   ●​ Managing tax compliance;
+   ●​ Liaising with tax authorities; and
+   ●​   Keeping accurate and up-to-date documentation.
+
+
+The role of the Risk and Audit Committee
+The Risk and Audit Committee makes sure we're staying on track by:
+
+   ●​ Monitoring our tax risk exposure;
+   ●​ Ensuring we follow proper governance and compliance practices.
+
+
+The role of the Managing Board
+The MB has ultimate responsibility for:
+
+   ●​ Approving this policy;
+   ●​ Reviewing tax risk reports as part of bunq’s broader risk management framework.
+
+
+   4.​Tax principles
+
+We’ve boiled down our approach to tax into a few key principles that guide all our decisions:
+
+
+Compliance​
+bunq is committed to complying with all applicable tax laws, regulations, and disclosure
+requirements in the jurisdictions where it operates.
+
+
+Transparency​
+bunq aims to maintain transparent and cooperative relationships with tax authorities,
+providing accurate and timely information.
+
+
+Risk Management​
+bunq identifies, assesses, and manages tax risks as part of its overall risk management
+
+
+                                                                                                3
+framework. Tax positions with material risk are escalated to senior management and/or the
+Board.
+
+
+bunq has a management system which results in immediate actions if suspicions arise that
+employees or suppliers are guilty of facilitating tax avoidance or evasion.
+
+
+Transfer Pricing​
+bunq adheres to the OECD Transfer Pricing Guidelines, ensuring that intercompany
+transactions are priced on an arm's length basis.
+
+
+Tax Planning​
+bunq engages in responsible tax planning aligned with its commercial business activities. It
+does not engage in artificial or aggressive tax arrangements intended solely for tax
+avoidance.
+
+
+Tax rulings and government grants
+bunq does not have any specific tax rulings with the Dutch tax authorities or in any other
+jurisdiction. bunq receives a government grant related to WBSO (Wet Bevordering Speur- en
+Ontwikkelwerk).
+
+
+Tax ethics
+bunq does not have subsidiaries, branches or associates in jurisdictions with no or zero
+corporate tax or in jurisdictions with harmful corporate tax practices, unless they have
+substance and their profits are generated from local economic activities.
+
+
+bunq focuses its international enterprise structure and their international transactions in a
+way that reflects the economic substance of the activities and transactions undertaken,
+without any steps made primarily to secure a tax advantage.
+
+
+bunq does not provide financial services to companies in tax havens, unless the company
+has substance and its profits are generated from local economic activities.
+
+
+When bunq has activities in jurisdictions with no or zero corporate tax or in jurisdictions with
+harmful corporate tax practices, it will publish in its Tax Report        an explanation of the
+activities, functions and ultimate shareholder of every subsidiary, branch, joint venture, or
+affiliate located in jurisdictions with no or zero corporate tax practices or in jurisdictions with
+harmful corporate tax practices.
+
+bunq does not advise clients to set up international structures with the main purpose to
+avoid or evade taxes.
+
+
+
+
+                                                                                                 4
+bunq does not participate in transactions with international structures of which the main
+purpose is to avoid or evade taxes.
+
+
+   5.​ Tax matters
+bunq deals with a range of taxes across the countries we operate in. Here's how we manage
+our responsibilities:
+
+
+   Covered Areas:
+
+
+   ●​ Corporate Income Tax (CIT);
+   ●​ Value Added Tax (VAT);
+   ●​ Wage Tax;
+   ●​ Other tax matters & international tax reporting.
+
+
+   5a. Corporate Income Tax
+
+1. Purpose​
+This section of the tax policy governs how bunq manages its Corporate Income Tax (CIT)
+obligations in the Netherlands and other jurisdictions where it operates. It ensures
+compliance with Dutch tax law and supports transparency, integrity, and sustainable tax
+practices.
+
+2. Scope​
+This policy applies to all legal entities within bunq b.v. and bunq holding b.v. that are subject
+to Dutch CIT or equivalent foreign taxes on corporate profits.
+
+
+3. Policy Principles
+
+
+             Principle                                 What It Means
+
+ Full Compliance               We follow the Dutch Corporate Income Tax Act (Wet op de
+                               vennootschapsbelasting 1969) and international treaties.
+
+ Timely & Accurate             All CIT returns are submitted correctly and on time, with
+                               strong documentation to back them up, especially for
+                               intercompany financing and service arrangements.
+
+ Fair Transfer Pricing         We adhere to the OECD Transfer Pricing Guidelines.
+                               Intra-group transactions are priced at arm’s length and
+                               documented accordingly, especially for intercompany
+                               financing and service arrangements. For the subsidiaries
+
+
+
+                                                                                               5
+                              and/or branches that are not revenue generating entities,
+                              bunq applies a cost plus approach to ensure honest taxes
+                              are paid in the different jurisdictions.
+
+
+
+ Standard Tax Rates           We apply the official Dutch rates (19% up to €200k, 25.8%
+                              above), subject to changes by the Dutch tax authority.
+
+ Responsible Use of Tax       We responsibly utilize tax losses carried forward or carried
+ Losses & Incentives          back and apply tax incentives (e.g., innovation box) only
+                              where justified under the law and aligned with bunq’s actual
+                              economic activities.
+
+
+
+ No Aggressive Planning       We do not engage in artificial arrangements lacking
+                              commercial substance or created solely to avoid paying CIT.
+
+
+
+
+4. Governance and Oversight
+
+
+   ●​ Tax matters are overseen by the CFO and managed by the Head of Finance;
+   ●​ Material CIT issues are reported to the Risk and Audit Committee of the Supervisory
+      Board;
+   ●​ External advisors are engaged for complex or cross-border matters.
+
+
+5. Reporting and Disclosure
+
+
+   ●​ bunq discloses its CIT obligations in its annual financial statements in line with Dutch
+      GAAP or IFRS.
+   ●​ Country-by-country reporting (CbCR) obligations are fulfilled for the Dutch tax
+      authority, and summaries are disclosed publicly when required.
+
+
+   5b. Value Added Tax
+
+1. Purpose
+
+
+This section of the tax policy governs how bunq manages its Value Added Tax (VAT)
+obligations. It ensures compliance with the Dutch VAT Act (Wet op de omzetbelasting 1968)
+and EU VAT Directive, while minimizing VAT risks and ensuring proper recovery of input VAT
+where allowed.
+
+
+
+
+                                                                                             6
+2. Scope
+
+
+This policy applies to all Dutch and foreign entities within bunq b.v and bunq holding b.v.
+that are subject to VAT obligations or have partial VAT recovery rights. It covers:
+
+
+   ●​ Taxable and exempt services;
+   ●​ Input VAT recovery;
+   ●​ VAT invoicing and recordkeeping;
+   ●​ Reverse charge obligations.
+
+
+3. Policy Principles
+
+
+        Principle                                     What It Means
+
+ Compliance                Full compliance with Dutch VAT law and EU VAT regulations.
+
+ Correct VAT               We distinguish between taxable and exempt services (e.g. loans
+ Treatment                 vs. consultancy).
+
+ Input VAT Recovery        Implement a pro-rata recovery method (pro rata BTW-aftrek) for
+                           input VAT, consistent with bunq’s mix of exempt and taxable
+                           services. Where applicable, allocate overheads using a fair and
+                           supportable allocation key.
+
+ Registration &            VAT (registration, returns & liabilities) are filed, paid, and reported
+ Reporting                 without delay in all jurisdictions.
+
+ Reverse Charge            Properly apply the reverse charge for intra-EU and international
+                           service purchases to avoid underreporting VAT liabilities.
+
+ Documentation             VAT invoices and records are kept for at least 7 years.
+
+
+
+
+4. Governance and Oversight
+
+
+   ●​ VAT matters are overseen by the CFO and managed by the Head of Finance;
+   ●​ Material VAT issues are reported to the Risk and Audit Committee of the Supervisory
+       Board;
+   ●​ External advisors are engaged for complex or cross-border matters.
+
+
+
+
+                                                                                                     7
+5. Reporting and Disclosure
+
+
+   ●​ bunq discloses its VAT obligations in its annual financial statements in line with Dutch
+       GAAP or IFRS.
+
+
+   5c Wage tax
+
+1. Purpose
+
+
+This section of the tax policy governs how bunq manages its Dutch wage tax (loonbelasting)
+obligations. It aims to ensure accurate withholding, reporting, and payment of wage taxes for
+all employees, in accordance with the Dutch Wage Tax Act (Wet op de loonbelasting 1964)
+and relevant labor regulations.
+
+
+2. Scope
+
+
+This policy applies to all employees, board members, and contractors of [Bank Name] in the
+Netherlands. It includes:
+
+
+   ●​ Wage tax withholding;
+   ●​ Social security contributions;
+   ●​ Payroll administration;
+   ●​ Employee benefits and reimbursements.
+
+
+3. Policy Principles
+
+      Principle                                    What It Means
+
+ Legal Compliance      We fully comply with Dutch wage tax legislation, including rules on
+                       tax withholding, payroll tax credits, and fringe benefits.
+
+ Withholding           Covers wage tax, national insurance premiums (AOW, ANW, WLZ),
+ Accuracy              employee insurance premiums (WW, WIA), and Health care
+                       insurance contributions (Zvw).
+
+ Timely Payments       Monthly wage tax returns are filed with the Belastingdienst (Dutch
+                       Tax Authority) and wage tax amounts are paid on time, in
+                       accordance with statutory deadlines.
+
+ WKR Compliance        Application of the Work-Related Costs Scheme (Werkkostenregeling
+                       – WKR) is properly managed. Tax-free reimbursements (e.g., for
+                       travel, telework, training) and taxable benefits are tracked and
+                       reported as required.
+
+
+
+                                                                                             8
+ Cross-Border Tax      We comply with the 30%-ruling and other cross-border tax
+                       obligations for expatriate employees. Tax equalization policies are
+                       applied where applicable.
+
+ Grants                We receive WBSO (Wet Bevordering Speur- en Ontwikkelwerk)
+                       government grant and are dedicated to fulfilling all legal
+                       requirements regarding this grant.
+
+ Outsourced            If external payroll providers are used, bunq ensures clear contractual
+ Payroll               arrangements, data protection compliance, and proper oversight of
+                       all payroll-related tax obligations.
+
+
+
+
+4. Roles and Responsibilities
+
+
+   ●​ Head of People: Ensures correct payroll setup and coordinates tax withholding and
+       benefit reporting with the payroll outsource party..
+
+
+   ●​ Head of Finance: Advises on wage tax rules, monitors changes in legislation, and
+       supports audits or reviews.​
+       Handles wage tax payments and reconciliations.
+
+
+   ●​ External Auditors / Advisors: Periodically review payroll and tax compliance
+       procedures.
+
+
+5. Risk Management
+
+
+   ●​ Wage tax risks (e.g., misclassification of employees, incorrect tax treatment of bonuses
+       or stock options) are regularly assessed.
+   ●​ Corrective action is taken promptly when errors or non-compliance are identified.
+
+
+   5d. Other Tax Matters and Tax Reporting
+
+1. Purpose
+
+This section of the tax policy governs how bunq manages its compliance with a range of
+other tax obligations and tax-related regulatory reporting, including withholding tax,
+financial sector levies, transaction taxes, and international disclosure obligations such as
+DAC6, CESOP, CRS, and FATCA.
+
+
+
+
+                                                                                                9
+2. Scope
+
+This policy applies to all entities within bunq b.v. and bunq holding b.v. and covers:
+
+   ●​ Dividend, interest, and royalty withholding taxes;
+   ●​ Dutch bank tax (bankenbelasting);
+   ●​ Insurance premium tax;
+   ●​ Real estate transfer tax;
+   ●​ International tax reporting (DAC6, CRS, FATCA);
+   ●​ Local and sector-specific levies (e.g., resolution levy).
+
+
+3. Policy Framework
+
+3.1 Withholding Tax (WHT)
+
+
+   ●​ Obligations: bunq complies with Dutch and treaty-based withholding tax obligations
+       on dividends, interest, and royalties.
+   ●​ Relief Mechanisms: Treaty benefits and EU directives are applied only where
+       sufficient documentation and beneficial ownership evidence is in place.
+   ●​ Filing and Reporting: Withholding taxes are declared and remitted accurately and
+       timely to the Belastingdienst.
+
+
+3.2 Financial Sector Taxes
+
+
+   ●​ Bank Levy: bunq assesses and pays, if applicable, the annual Dutch bank levy based
+       on its balance sheet total as prescribed by law.
+   ●​ Resolution Fund Contributions: If required, bunq contributes to the Single
+       Resolution Fund (SRF) in line with regulatory assessments.
+
+
+4. International Tax Reporting
+
+4.1 DAC6 (EU Mandatory Disclosure)
+
+
+   ●​ Scope: All cross-border arrangements are reviewed for potential reporting under the
+       EU Directive on Administrative Cooperation (DAC6).
+   ●​ Responsibility: The finance and legal teams collaborate to identify and report
+       qualifying arrangements to the Dutch Tax Authority within 30 days.
+
+
+4.3 CESOP (Central Electronic System of Payment Information)
+
+
+   ●​ Scope: All cross-border payments made to payees in the EU as defined in Regulation
+       (EU) 2020/283 and Directive (EU) 2020/284.
+
+
+
+                                                                                         10
+   ●​ Reporting: Quarterly reports are submitted to the Belastingdienst or international
+       equivalent where applicable.
+
+
+4.3 CRS (Common Reporting Standard)
+
+
+   ●​ Due Diligence: Account holders are subject to CRS classification and due diligence
+       processes.
+   ●​ Reporting: Annual reports are submitted to the Belastingdienst covering reportable
+       accounts and jurisdictions.
+
+
+4.4 FATCA (Foreign Account Tax Compliance Act)
+
+
+   ●​ Classification: bunq complies with U.S. FATCA obligations as a participating financial
+       institution.
+   ●​ TIN Collection & Reporting: U.S. persons are identified, and relevant accounts are
+       reported to the Dutch Tax Authority for onward transmission to the IRS.
+
+
+4.5. Governance and Controls
+
+
+   ●​ Finance Department: Responsible for identifying, assessing, and reporting on these
+       other tax obligations.
+   ●​ Legal & Compliance: Works with Head of Finance to ensure reporting compliance
+       with DAC6, CRS, FATCA, and AML-related tax disclosures.
+
+
+6. Documentation and Retention
+All returns, filings, and supporting documentation are retained for the legally required
+periods. Audit trails and rationale for tax positions are documented and available upon
+request by regulators.
+
+
+
+
+                                                                                          11
+

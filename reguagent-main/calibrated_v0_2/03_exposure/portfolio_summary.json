@@ -1,0 +1,32 @@
+{
+  "synthetic": true,
+  "as_of_date": "2026-06-30",
+  "currency": "EUR",
+  "unit": "EUR_million",
+  "non_overlapping_balances": {
+    "consumer_loans": 4700,
+    "home_improvement_loans": 1100,
+    "sme_working_capital": 2300,
+    "mortgages": 1100,
+    "liquidity": 3000,
+    "other_assets": 300
+  },
+  "loan_book_total": 9200,
+  "total_assets": 12500,
+  "sme_borrowers": 10000,
+  "annual_sme_applications": 32000,
+  "annual_instant_payment_volume": 8600000,
+  "direct_channel_mobile_share_pct": 71,
+  "direct_channel_share_denominator": "mobile_app + web payment instructions; API share is not supplied",
+  "mortgage_accounts_in_arrears": 3800,
+  "mortgage_accounts_active_ara": 650,
+  "missing_or_broad_nace_borrower_pct": 20,
+  "provenance": {
+    "origin": "synthetic_bank_design",
+    "source_file": "Bank_Context_Fictional_Digital_Bank.md",
+    "calibration_version": "0.2.1",
+    "notes": [
+      "Amounts preserve the agreed bank scale. Borrower counts and asset reconciliation are explicit calibration assumptions."
+    ]
+  }
+}

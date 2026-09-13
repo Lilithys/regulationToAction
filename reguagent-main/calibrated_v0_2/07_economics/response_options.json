@@ -1,0 +1,110 @@
+[
+  {
+    "option_id": "OPT-ESG-MANUAL",
+    "title": "Manual review",
+    "synthetic": true,
+    "requirement_ids": [
+      "REQ-ESG-DATA-GAPS-001",
+      "REQ-ESG-CREDIT-MONITORING-001"
+    ],
+    "effort_days_by_cost_centre": {
+      "CC-100": 20,
+      "CC-200": 12,
+      "CC-300": 5,
+      "CC-400": 2,
+      "CC-500": 3
+    },
+    "technology_setup_eur": 0,
+    "data_vendor_setup_eur": 0,
+    "training_setup_eur": 2000,
+    "legal_setup_eur": 3000,
+    "annual_fixed_run_eur": 0,
+    "automation_rate": 0.0,
+    "delivery_months": 2,
+    "review_minutes_low": 20,
+    "review_minutes_base": 30,
+    "review_minutes_high": 45,
+    "scope": "Existing SME borrower population, one review annually; excludes new applications",
+    "implementation_assumptions": [
+      "All prices and effort are synthetic, unapproved estimates.",
+      "Automation rate describes reduced manual handling, not legal compliance or control effectiveness."
+    ],
+    "risk_probability": null,
+    "expected_loss_eur": null,
+    "revenue_activity_change_pct": null,
+    "compliance_review_status": "pending",
+    "delivery_team_capacity_days": null
+  },
+  {
+    "option_id": "OPT-ESG-AUTOMATED",
+    "title": "Automated data and workflow",
+    "synthetic": true,
+    "requirement_ids": [
+      "REQ-ESG-DATA-GAPS-001",
+      "REQ-ESG-CREDIT-MONITORING-001"
+    ],
+    "effort_days_by_cost_centre": {
+      "CC-100": 10,
+      "CC-200": 20,
+      "CC-300": 90,
+      "CC-400": 4,
+      "CC-500": 5
+    },
+    "technology_setup_eur": 30000,
+    "data_vendor_setup_eur": 20000,
+    "training_setup_eur": 3000,
+    "legal_setup_eur": 5000,
+    "annual_fixed_run_eur": 60000,
+    "automation_rate": 0.85,
+    "delivery_months": 6,
+    "review_minutes_low": 20,
+    "review_minutes_base": 30,
+    "review_minutes_high": 45,
+    "scope": "Existing SME borrower population, one review annually; excludes new applications",
+    "implementation_assumptions": [
+      "All prices and effort are synthetic, unapproved estimates.",
+      "Automation rate describes reduced manual handling, not legal compliance or control effectiveness."
+    ],
+    "risk_probability": null,
+    "expected_loss_eur": null,
+    "revenue_activity_change_pct": null,
+    "compliance_review_status": "pending",
+    "delivery_team_capacity_days": null
+  },
+  {
+    "option_id": "OPT-ESG-HYBRID",
+    "title": "Hybrid review",
+    "synthetic": true,
+    "requirement_ids": [
+      "REQ-ESG-DATA-GAPS-001",
+      "REQ-ESG-CREDIT-MONITORING-001"
+    ],
+    "effort_days_by_cost_centre": {
+      "CC-100": 15,
+      "CC-200": 16,
+      "CC-300": 35,
+      "CC-400": 3,
+      "CC-500": 4
+    },
+    "technology_setup_eur": 12000,
+    "data_vendor_setup_eur": 12000,
+    "training_setup_eur": 2500,
+    "legal_setup_eur": 4000,
+    "annual_fixed_run_eur": 30000,
+    "automation_rate": 0.6,
+    "delivery_months": 4,
+    "review_minutes_low": 20,
+    "review_minutes_base": 30,
+    "review_minutes_high": 45,
+    "scope": "Existing SME borrower population, one review annually; excludes new applications",
+    "implementation_assumptions": [
+      "All prices and effort are synthetic, unapproved estimates.",
+      "Automation rate describes reduced manual handling, not legal compliance or control effectiveness."
+    ],
+    "risk_probability": null,
+    "expected_loss_eur": null,
+    "revenue_activity_change_pct": null,
+    "compliance_review_status": "pending",
+    "delivery_team_capacity_days": null
+  }
+]

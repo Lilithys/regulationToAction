@@ -1,0 +1,31 @@
+{
+  "case_id": "CASE-cb4fa9d654e14a34b4df0a8ea7109e56",
+  "outcome": {
+    "status": "failed",
+    "error_type": "BudgetExceeded",
+    "message": "Investigation stopped; committed case state is retained. Inspect audit events and provider configuration before resuming.",
+    "provider_diagnostic": {
+      "http_status": 429,
+      "provider_code": "rate_limit_exceeded",
+      "category": "rate_limit",
+      "retryable": true,
+      "retry_after_seconds": 24.0,
+      "rate_limits": {
+        "limit-tokens": 10000.0,
+        "remaining-tokens": 1282.0,
+        "limit-requests": 50.0,
+        "remaining-requests": 33.0
+      },
+      "request_id_sha256": "0f6444e40e4171b4e1e13dd196ddd396eacd6236a79ccca848d132a4451cc72c"
+    }
+  },
+  "budget": {
+    "model_turn_attempts": 9,
+    "tool_calls": 6,
+    "delegations": 0,
+    "tokens": 27217,
+    "elapsed_seconds": 138.545
+  },
+  "api_requests_attempted": 9,
+  "mode": "live"
+}

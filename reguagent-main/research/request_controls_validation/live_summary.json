@@ -1,0 +1,124 @@
+{
+  "case_id": "CASE-cb4fa9d654e14a34b4df0a8ea7109e56",
+  "case_status": "failed",
+  "audit_chain_valid": true,
+  "resumed_runs": [
+    {
+      "api_requests_attempted": 3,
+      "budget": {
+        "delegations": 0,
+        "elapsed_seconds": 39.777,
+        "model_turn_attempts": 3,
+        "tokens": 10638,
+        "tool_calls": 10
+      },
+      "case_id": "CASE-cb4fa9d654e14a34b4df0a8ea7109e56",
+      "mode": "live",
+      "outcome": {
+        "error_type": "RequestTooLarge",
+        "message": "Request exceeds configured input budget; narrow tool results or split the specialist task. No API call sent.",
+        "status": "failed"
+      }
+    },
+    {
+      "api_requests_attempted": 9,
+      "budget": {
+        "delegations": 0,
+        "elapsed_seconds": 138.545,
+        "model_turn_attempts": 9,
+        "tokens": 27217,
+        "tool_calls": 6
+      },
+      "case_id": "CASE-cb4fa9d654e14a34b4df0a8ea7109e56",
+      "mode": "live",
+      "outcome": {
+        "error_type": "BudgetExceeded",
+        "message": "Investigation stopped; committed case state is retained. Inspect audit events and provider configuration before resuming.",
+        "provider_diagnostic": {
+          "category": "rate_limit",
+          "http_status": 429,
+          "provider_code": "rate_limit_exceeded",
+          "rate_limits": {
+            "limit-requests": 50.0,
+            "limit-tokens": 10000.0,
+            "remaining-requests": 33.0,
+            "remaining-tokens": 1282.0
+          },
+          "request_id_sha256": "0f6444e40e4171b4e1e13dd196ddd396eacd6236a79ccca848d132a4451cc72c",
+          "retry_after_seconds": 24.0,
+          "retryable": true
+        },
+        "status": "failed"
+      }
+    }
+  ],
+  "api_requests_attempted": 12,
+  "elapsed_run_seconds": 178.322,
+  "reported_tokens": 37855,
+  "successful_responses": 9,
+  "provider_errors": [
+    {
+      "api_requests_attempted": 1,
+      "attempt": 1,
+      "category": "rate_limit",
+      "error_type": "RateLimitError",
+      "http_status": 429,
+      "provider_code": "rate_limit_exceeded",
+      "rate_limits": {
+        "limit-requests": 50.0,
+        "limit-tokens": 10000.0,
+        "remaining-requests": 37.0,
+        "remaining-tokens": 2165.0
+      },
+      "request_id_sha256": "f5587de3aec483b4bef18868a2d6350e87a70d7d4ef91da4ad9b89bff00e36ef",
+      "retry_after_seconds": 18.0,
+      "retryable": true,
+      "role": "coordinator"
+    },
+    {
+      "api_requests_attempted": 1,
+      "attempt": 1,
+      "category": "rate_limit",
+      "error_type": "RateLimitError",
+      "http_status": 429,
+      "provider_code": "rate_limit_exceeded",
+      "rate_limits": {
+        "limit-requests": 50.0,
+        "limit-tokens": 10000.0,
+        "remaining-requests": 35.0,
+        "remaining-tokens": 1251.0
+      },
+      "request_id_sha256": "3e490be4244dd77d3a689957012f4817ee19463d1ddab816455ce84014bcb6c9",
+      "retry_after_seconds": 20.0,
+      "retryable": true,
+      "role": "coordinator"
+    },
+    {
+      "api_requests_attempted": 1,
+      "attempt": 1,
+      "category": "rate_limit",
+      "error_type": "RateLimitError",
+      "http_status": 429,
+      "provider_code": "rate_limit_exceeded",
+      "rate_limits": {
+        "limit-requests": 50.0,
+        "limit-tokens": 10000.0,
+        "remaining-requests": 33.0,
+        "remaining-tokens": 1282.0
+      },
+      "request_id_sha256": "0f6444e40e4171b4e1e13dd196ddd396eacd6236a79ccca848d132a4451cc72c",
+      "retry_after_seconds": 24.0,
+      "retryable": true,
+      "role": "coordinator"
+    }
+  ],
+  "tool_counts": {
+    "case_context": 2,
+    "search_records": 8,
+    "get_record": 6
+  },
+  "current_object_kinds": {
+    "SourceVersion": 1,
+    "Task": 1
+  }
+}

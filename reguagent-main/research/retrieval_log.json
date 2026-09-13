@@ -1,0 +1,64 @@
+[
+  {
+    "file": "eba_esg_final_2025.pdf",
+    "url": "https://www.eba.europa.eu/sites/default/files/2025-01/fb22982a-d69d-42cc-9d62-1023497ad58a/Final%20Guidelines%20on%20the%20management%20of%20ESG%20risks.pdf",
+    "error": "HTTP Error 403: Forbidden",
+    "outcome": "retrieval_failed"
+  },
+  {
+    "file": "dora_2022_2554.html",
+    "url": "https://eur-lex.europa.eu/eli/reg/2022/2554/oj/eng",
+    "bytes": 0,
+    "attempt_response_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "outcome": "empty_response_not_a_source_snapshot",
+    "artifact_preserved": false
+  },
+  {
+    "file": "ips_2024_886.html",
+    "url": "https://eur-lex.europa.eu/eli/reg/2024/886/oj/eng",
+    "bytes": 0,
+    "attempt_response_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "outcome": "empty_response_not_a_source_snapshot",
+    "artifact_preserved": false
+  },
+  {
+    "file": "crr_20260101.html",
+    "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02013R0575-20260101",
+    "bytes": 0,
+    "attempt_response_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "outcome": "empty_response_not_a_source_snapshot",
+    "artifact_preserved": false
+  },
+  {
+    "file": "frtb_2025_1496.html",
+    "url": "https://eur-lex.europa.eu/eli/reg_del/2025/1496/oj/eng",
+    "bytes": 0,
+    "attempt_response_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "outcome": "empty_response_not_a_source_snapshot",
+    "artifact_preserved": false
+  },
+  {
+    "file": "obliqa_readme.md",
+    "url": "https://raw.githubusercontent.com/RegNLP/ObliQADataset/main/README.md",
+    "bytes": 11927,
+    "sha256": "6a155f2fc9362b4c09b3aa1c31be12106a8f348288a80b4fa4803e38d40e5146",
+    "outcome": "downloaded_reference_documentation",
+    "artifact_preserved": true
+  },
+  {
+    "file": "rag_readme.md",
+    "url": "https://raw.githubusercontent.com/RegNLP/MultiPassage-RegulatoryRAG/main/README.md",
+    "bytes": 11606,
+    "sha256": "83fe89a35fe51101d9a1bd455060a8fec96a363e8c7afbcd9841dee33d175274",
+    "outcome": "downloaded_reference_documentation",
+    "artifact_preserved": true
+  },
+  {
+    "file": "ciso_license.md",
+    "url": "https://raw.githubusercontent.com/intuitem/ciso-assistant-community/main/LICENSE.md",
+    "bytes": 817,
+    "sha256": "5d880897167f748de8e9750feebd8331c04b06daba8f829ace3cbfc13866d13a",
+    "outcome": "downloaded_reference_documentation",
+    "artifact_preserved": true
+  }
+]

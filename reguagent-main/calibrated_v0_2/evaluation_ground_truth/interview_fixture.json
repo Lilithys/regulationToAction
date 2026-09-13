@@ -1,0 +1,14 @@
+{
+  "fixture_id": "INTERVIEW-ESG-ENERGY",
+  "synthetic": true,
+  "fact_id": "FACT-ESG-ENERGY-COVERAGE",
+  "initial_value": null,
+  "simulated_user_answer": {
+    "value": 65,
+    "unit": "percent_of_existing_sme_borrowers",
+    "as_of_date": "2026-06-30",
+    "evidence_kind": "synthetic_owner_response"
+  },
+  "expected_effect": "Update this one completeness input; retain legal-review and evidence limitations.",
+  "must_not": "Treat an interview answer as verified source law or operating-control evidence."
+}

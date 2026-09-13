@@ -1,0 +1,19 @@
+test_case_capacity_unknown (__main__.EvalGroundTruthCases.test_case_capacity_unknown) ... ok
+test_case_dora_base_testable_parts (__main__.EvalGroundTruthCases.test_case_dora_base_testable_parts) ... ok
+test_case_dora_base_vendor_specific_naming_PENDING (__main__.EvalGroundTruthCases.test_case_dora_base_vendor_specific_naming_PENDING) ... skipped 'PENDING: expected.confirmed_synthetic_gap_vendors names specific vendor IDs (VND-CLOUD-INFRA, VND-MORTGAGE-SERVICER); gap_assessment.py reads control-level coverage[], not vendors.json subcontractor status -- new code required.'
+test_case_esg_base (__main__.EvalGroundTruthCases.test_case_esg_base) ... ok
+test_case_evidence_hash (__main__.EvalGroundTruthCases.test_case_evidence_hash) ... ok
+test_case_evidence_required (__main__.EvalGroundTruthCases.test_case_evidence_required) ... ok
+test_case_frtb_base (__main__.EvalGroundTruthCases.test_case_frtb_base) ... ok
+test_case_ips_base_channel_scope_PENDING (__main__.EvalGroundTruthCases.test_case_ips_base_channel_scope_PENDING) ... skipped 'PENDING: expected.unresolved_scope=[standard_sct, api] needs per-channel applicability; applicability.py currently treats all 3 payment products uniformly as direct -- the channel split only lives in the missing_facts fixture today, not a real applicability determination. New code required.'
+test_case_ips_base_testable_parts (__main__.EvalGroundTruthCases.test_case_ips_base_testable_parts) ... ok
+test_case_nace_weight (__main__.EvalGroundTruthCases.test_case_nace_weight) ... ok
+test_case_payment_sample (__main__.EvalGroundTruthCases.test_case_payment_sample) ... ok
+test_case_peer_separation (__main__.EvalGroundTruthCases.test_case_peer_separation) ... ok
+test_case_risk_cost_unknown (__main__.EvalGroundTruthCases.test_case_risk_cost_unknown) ... ok
+test_case_version_pair (__main__.EvalGroundTruthCases.test_case_version_pair) ... ok
+
+----------------------------------------------------------------------
+Ran 14 tests in 0.033s
+
+OK (skipped=2)

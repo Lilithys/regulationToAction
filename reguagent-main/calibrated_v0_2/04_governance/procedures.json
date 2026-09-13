@@ -1,0 +1,695 @@
+{
+  "schema_version": "1.0.0",
+  "dataset_scope": "person_1_regulatory_governance",
+  "as_of_date": "2026-09-08",
+  "generated_at": "2026-09-11T23:37:51Z",
+  "procedures": [
+    {
+      "procedure_id": "PRCD-DORA-DEPENDENCY-MAP",
+      "title": "Critical-function dependency mapping procedure",
+      "version": "1.0",
+      "lifecycle_status": "active",
+      "effective_date": "2025-01-01",
+      "next_review_date": null,
+      "owner_role_id": "ROLE-CIO",
+      "purpose": "Describes how the bank identifies and documents critical or important functions and their ICT-asset dependencies for the currently known subset.",
+      "trigger": "Scheduled annual review, or an ad hoc change to a known critical function or its supporting ICT assets.",
+      "frequency": "at_least_annually_with_ad_hoc_updates",
+      "scope": {
+        "business_line_ids": [
+          "BL-LENDING",
+          "BL-MORTGAGE",
+          "BL-PAYMENTS",
+          "BL-RETAIL",
+          "BL-SME",
+          "BL-TREASURY"
+        ],
+        "product_ids": [],
+        "process_ids": [
+          "PROC-ICT-RESILIENCE",
+          "PROC-THIRD-PARTY-MGMT"
+        ],
+        "system_ids": [
+          "SYS-GRC",
+          "SYS-ICT-REGISTER"
+        ],
+        "data_asset_ids": [
+          "DATA-ICT-ASSETS-THIRD-PARTIES"
+        ],
+        "vendor_ids": [
+          "VND-CLOUD-INFRA",
+          "VND-CORE-BANKING",
+          "VND-IDENTITY-VERIFICATION",
+          "VND-MORTGAGE-SERVICER"
+        ],
+        "critical_service_ids": [
+          "CIF-LOAN-ORIGINATION",
+          "CIF-LOGIN-ACCESS",
+          "CIF-MORTGAGE-SERVICING",
+          "CIF-ONBOARDING",
+          "CIF-PAYMENTS"
+        ]
+      },
+      "requirement_ids": [
+        "REQ-DORA-DEPENDENCY-MAP-001"
+      ],
+      "policy_ids": [
+        "POL-ICT-OPERATIONAL-RESILIENCE"
+      ],
+      "control_ids": [
+        "CTRL-DORA-DEPENDENCY-MAP"
+      ],
+      "steps": [
+        {
+          "step_number": 1,
+          "action": "Function owner confirms whether a known function remains critical or important and lists its directly supporting ICT/information assets.",
+          "performer_role_id": "ROLE-CIO",
+          "system_ids": [
+            "SYS-GRC",
+            "SYS-ICT-REGISTER"
+          ],
+          "data_asset_ids": [
+            "DATA-ICT-ASSETS-THIRD-PARTIES"
+          ],
+          "control_ids": [
+            "CTRL-DORA-DEPENDENCY-MAP"
+          ],
+          "output_description": "Updated function-to-asset listing for the known subset.",
+          "exception_handling": "A function outside the currently known subset is logged as an open mapping item pending confirmation against the complete underlying function inventory, not assumed absent."
+        },
+        {
+          "step_number": 2,
+          "action": "ICT risk team records dependencies between the listed assets, systems and processes, including known third-party dependencies.",
+          "performer_role_id": "ROLE-CIO",
+          "system_ids": [
+            "SYS-GRC",
+            "SYS-ICT-REGISTER"
+          ],
+          "data_asset_ids": [
+            "DATA-ICT-ASSETS-THIRD-PARTIES"
+          ],
+          "control_ids": [
+            "CTRL-DORA-DEPENDENCY-MAP"
+          ],
+          "output_description": "Updated dependency map for the known subset.",
+          "exception_handling": "Unmapped or unconfirmed dependencies are logged as open items."
+        }
+      ],
+      "escalation_conditions": [],
+      "expected_evidence_types": [
+        "dependency map export",
+        "review sign-off record"
+      ],
+      "evidence_item_ids": [],
+      "record_status": "needs_review",
+      "synthetic": true,
+      "provenance": {
+        "origin": "synthetic_bank_design",
+        "source_ids": [],
+        "created_at": "2026-09-05T02:25:45Z",
+        "created_by": "coding_agent",
+        "last_verified_at": null,
+        "notes": [
+          "Synthetic current-state design for the first-demo scenario; not copied from any real institution.",
+          "Joined with canonical Persons 2–4 IDs; owners are synthetic scenario assignments."
+        ]
+      },
+      "annotation": {
+        "label_status": "silver",
+        "annotated_by": "coding_agent",
+        "reviewed_by": null,
+        "reviewed_at": null,
+        "notes": []
+      },
+      "missing_evidence": [
+        {
+          "field": "human_approval",
+          "reason": "Synthetic allocation has not been approved by a human reviewer.",
+          "required_input": "Synthetic allocation has not been approved by a human reviewer.",
+          "responsible_scope": "user",
+          "blocking": false
+        }
+      ]
+    },
+    {
+      "procedure_id": "PRCD-DORA-ICT-REGISTER-UPDATE",
+      "title": "ICT third-party register of information update procedure",
+      "version": "1.0",
+      "lifecycle_status": "active",
+      "effective_date": "2025-01-01",
+      "next_review_date": null,
+      "owner_role_id": "ROLE-CIO",
+      "purpose": "Describes how known ICT third-party contractual arrangements are recorded and kept up to date in the register of information.",
+      "trigger": "A new ICT third-party contractual arrangement is signed, amended, or terminated, or a scheduled periodic reconciliation falls due.",
+      "frequency": "continuous_with_periodic_review",
+      "scope": {
+        "business_line_ids": [
+          "BL-LENDING",
+          "BL-MORTGAGE",
+          "BL-PAYMENTS",
+          "BL-RETAIL",
+          "BL-SME",
+          "BL-TREASURY"
+        ],
+        "product_ids": [],
+        "process_ids": [
+          "PROC-ICT-RESILIENCE",
+          "PROC-THIRD-PARTY-MGMT"
+        ],
+        "system_ids": [
+          "SYS-GRC",
+          "SYS-ICT-REGISTER"
+        ],
+        "data_asset_ids": [
+          "DATA-ICT-ASSETS-THIRD-PARTIES"
+        ],
+        "vendor_ids": [
+          "VND-CLOUD-INFRA",
+          "VND-CORE-BANKING",
+          "VND-IDENTITY-VERIFICATION",
+          "VND-MORTGAGE-SERVICER"
+        ],
+        "critical_service_ids": [
+          "CIF-LOAN-ORIGINATION",
+          "CIF-LOGIN-ACCESS",
+          "CIF-MORTGAGE-SERVICING",
+          "CIF-ONBOARDING",
+          "CIF-PAYMENTS"
+        ]
+      },
+      "requirement_ids": [
+        "REQ-DORA-ICT-REGISTER-001"
+      ],
+      "policy_ids": [
+        "POL-ICT-OPERATIONAL-RESILIENCE"
+      ],
+      "control_ids": [
+        "CTRL-DORA-ICT-REGISTER"
+      ],
+      "steps": [
+        {
+          "step_number": 1,
+          "action": "Vendor/procurement contact notifies the ICT risk team of a new, amended, or terminated ICT third-party contractual arrangement.",
+          "performer_role_id": "ROLE-CIO",
+          "system_ids": [
+            "SYS-GRC",
+            "SYS-ICT-REGISTER"
+          ],
+          "data_asset_ids": [
+            "DATA-ICT-ASSETS-THIRD-PARTIES"
+          ],
+          "control_ids": [
+            "CTRL-DORA-ICT-REGISTER"
+          ],
+          "output_description": "Notification recorded for register update.",
+          "exception_handling": "Arrangements outside the currently known population are logged as an open item pending reconciliation against the complete contractual and vendor population."
+        },
+        {
+          "step_number": 2,
+          "action": "ICT risk team records or updates the arrangement's entry in the register, including service description, data location, and whether it supports a critical or important function.",
+          "performer_role_id": "ROLE-CIO",
+          "system_ids": [
+            "SYS-GRC",
+            "SYS-ICT-REGISTER"
+          ],
+          "data_asset_ids": [
+            "DATA-ICT-ASSETS-THIRD-PARTIES"
+          ],
+          "control_ids": [
+            "CTRL-DORA-ICT-REGISTER"
+          ],
+          "output_description": "Updated register entry.",
+          "exception_handling": "Incomplete entries are flagged for follow-up rather than recorded as complete."
+        },
+        {
+          "step_number": 3,
+          "action": "ICT risk team performs a periodic reconciliation of the register against known active contracts.",
+          "performer_role_id": "ROLE-CIO",
+          "system_ids": [
+            "SYS-GRC",
+            "SYS-ICT-REGISTER"
+          ],
+          "data_asset_ids": [
+            "DATA-ICT-ASSETS-THIRD-PARTIES"
+          ],
+          "control_ids": [
+            "CTRL-DORA-ICT-REGISTER"
+          ],
+          "output_description": "Reconciliation record noting any discrepancies.",
+          "exception_handling": "Discrepancies are logged as open items; the register is not asserted complete until the full contractual population, including relevant subcontractors, is reconciled and reviewed."
+        }
+      ],
+      "escalation_conditions": [],
+      "expected_evidence_types": [
+        "reconciliation record",
+        "register export"
+      ],
+      "evidence_item_ids": [],
+      "record_status": "needs_review",
+      "synthetic": true,
+      "provenance": {
+        "origin": "synthetic_bank_design",
+        "source_ids": [],
+        "created_at": "2026-09-05T02:25:45Z",
+        "created_by": "coding_agent",
+        "last_verified_at": null,
+        "notes": [
+          "Synthetic current-state design for the first-demo scenario; not copied from any real institution.",
+          "Joined with canonical Persons 2–4 IDs; owners are synthetic scenario assignments."
+        ]
+      },
+      "annotation": {
+        "label_status": "silver",
+        "annotated_by": "coding_agent",
+        "reviewed_by": null,
+        "reviewed_at": null,
+        "notes": []
+      },
+      "missing_evidence": [
+        {
+          "field": "human_approval",
+          "reason": "Synthetic allocation has not been approved by a human reviewer.",
+          "required_input": "Synthetic allocation has not been approved by a human reviewer.",
+          "responsible_scope": "user",
+          "blocking": false
+        }
+      ]
+    },
+    {
+      "procedure_id": "PRCD-ESG-ONBOARD-SCREEN",
+      "title": "SME/corporate credit onboarding ESG screening procedure",
+      "version": "1.0",
+      "lifecycle_status": "active",
+      "effective_date": "2025-06-01",
+      "next_review_date": null,
+      "owner_role_id": "ROLE-HEAD-LENDING",
+      "purpose": "Describes how sector-level ESG screening is applied to a new SME/corporate lending application.",
+      "trigger": "A relationship manager submits a new SME/corporate credit application.",
+      "frequency": "per_new_credit_application",
+      "scope": {
+        "business_line_ids": [
+          "BL-LENDING",
+          "BL-SME"
+        ],
+        "product_ids": [
+          "PRD-SME-WORKING-CAPITAL"
+        ],
+        "process_ids": [
+          "PROC-CREDIT-ORIGINATION",
+          "PROC-CREDIT-RISK-MONITORING",
+          "PROC-DATA-GOVERNANCE"
+        ],
+        "system_ids": [
+          "SYS-DATA-PLATFORM",
+          "SYS-GRC",
+          "SYS-LOAN-ORIG",
+          "SYS-RISK-ENGINE"
+        ],
+        "data_asset_ids": [
+          "DATA-ESG-CLIMATE-RISK",
+          "DATA-LOANS-EXPOSURES",
+          "DATA-SME-SECTOR-CLASSIFICATION"
+        ],
+        "vendor_ids": [],
+        "critical_service_ids": [
+          "CIF-LOAN-ORIGINATION"
+        ]
+      },
+      "requirement_ids": [
+        "REQ-ESG-CREDIT-POLICY-001",
+        "REQ-ESG-RISK-INTEGRATION-001"
+      ],
+      "policy_ids": [
+        "POL-CREDIT-RISK-ESG"
+      ],
+      "control_ids": [
+        "CTRL-ESG-ONBOARD-SCREEN"
+      ],
+      "steps": [
+        {
+          "step_number": 1,
+          "action": "Relationship manager records the applicant's economic sector/activity as part of the application file.",
+          "performer_role_id": "ROLE-HEAD-LENDING",
+          "system_ids": [
+            "SYS-DATA-PLATFORM",
+            "SYS-GRC",
+            "SYS-LOAN-ORIG",
+            "SYS-RISK-ENGINE"
+          ],
+          "data_asset_ids": [
+            "DATA-ESG-CLIMATE-RISK",
+            "DATA-LOANS-EXPOSURES",
+            "DATA-SME-SECTOR-CLASSIFICATION"
+          ],
+          "control_ids": [
+            "CTRL-ESG-ONBOARD-SCREEN"
+          ],
+          "output_description": "Sector/activity classification recorded on the application.",
+          "exception_handling": "If sector cannot be determined, the application is held pending clarification."
+        },
+        {
+          "step_number": 2,
+          "action": "Credit analyst applies the sector-level ESG screening checklist and flags applications in higher-risk sectors.",
+          "performer_role_id": "ROLE-HEAD-LENDING",
+          "system_ids": [
+            "SYS-DATA-PLATFORM",
+            "SYS-GRC",
+            "SYS-LOAN-ORIG",
+            "SYS-RISK-ENGINE"
+          ],
+          "data_asset_ids": [
+            "DATA-ESG-CLIMATE-RISK",
+            "DATA-LOANS-EXPOSURES",
+            "DATA-SME-SECTOR-CLASSIFICATION"
+          ],
+          "control_ids": [
+            "CTRL-ESG-ONBOARD-SCREEN"
+          ],
+          "output_description": "Completed screening checklist with a flag outcome.",
+          "exception_handling": "Flagged applications are routed to step 3; unflagged applications proceed through normal credit decisioning."
+        },
+        {
+          "step_number": 3,
+          "action": "Flagged applications are escalated to senior credit risk review before a decision is made.",
+          "performer_role_id": "ROLE-HEAD-CREDIT-RISK",
+          "system_ids": [
+            "SYS-DATA-PLATFORM",
+            "SYS-GRC",
+            "SYS-LOAN-ORIG",
+            "SYS-RISK-ENGINE"
+          ],
+          "data_asset_ids": [
+            "DATA-ESG-CLIMATE-RISK",
+            "DATA-LOANS-EXPOSURES",
+            "DATA-SME-SECTOR-CLASSIFICATION"
+          ],
+          "control_ids": [
+            "CTRL-ESG-ONBOARD-SCREEN"
+          ],
+          "output_description": "Senior review decision recorded on the application file.",
+          "exception_handling": "No defined process currently exists for periodic re-screening of the same counterparty later in the lending relationship; this is a recorded, intentional gap, not a step of this procedure."
+        }
+      ],
+      "escalation_conditions": [
+        "Application flagged as higher ESG risk under the sector screening checklist."
+      ],
+      "expected_evidence_types": [
+        "screening checklist record",
+        "senior review sign-off"
+      ],
+      "evidence_item_ids": [],
+      "record_status": "needs_review",
+      "synthetic": true,
+      "provenance": {
+        "origin": "synthetic_bank_design",
+        "source_ids": [],
+        "created_at": "2026-09-05T02:25:45Z",
+        "created_by": "coding_agent",
+        "last_verified_at": null,
+        "notes": [
+          "Synthetic current-state design for the first-demo scenario; not copied from any real institution.",
+          "Joined with canonical Persons 2–4 IDs; owners are synthetic scenario assignments."
+        ]
+      },
+      "annotation": {
+        "label_status": "silver",
+        "annotated_by": "coding_agent",
+        "reviewed_by": null,
+        "reviewed_at": null,
+        "notes": []
+      },
+      "missing_evidence": [
+        {
+          "field": "human_approval",
+          "reason": "Synthetic allocation has not been approved by a human reviewer.",
+          "required_input": "Synthetic allocation has not been approved by a human reviewer.",
+          "responsible_scope": "user",
+          "blocking": false
+        }
+      ]
+    },
+    {
+      "procedure_id": "PRCD-FRTB-THRESHOLD-MONITOR",
+      "title": "Small-trading-book-business threshold monitoring procedure",
+      "version": "1.0",
+      "lifecycle_status": "active",
+      "effective_date": "2025-01-01",
+      "next_review_date": null,
+      "owner_role_id": "ROLE-HEAD-TREASURY",
+      "purpose": "Describes how the bank monitors its trading-book business volume against the CRR small-trading-book-business threshold.",
+      "trigger": "Monthly scheduled review, or a material change in trading-book positions.",
+      "frequency": "monthly",
+      "scope": {
+        "business_line_ids": [
+          "BL-TREASURY"
+        ],
+        "product_ids": [
+          "PRD-LIQUIDITY-PORTFOLIO"
+        ],
+        "process_ids": [
+          "PROC-LIQUIDITY-MANAGEMENT"
+        ],
+        "system_ids": [
+          "SYS-TREASURY-LIQUIDITY"
+        ],
+        "data_asset_ids": [
+          "DATA-TREASURY-LIQUIDITY"
+        ],
+        "vendor_ids": [],
+        "critical_service_ids": []
+      },
+      "requirement_ids": [
+        "REQ-FRTB-SMALL-BOOK-001"
+      ],
+      "policy_ids": [
+        "POL-MARKET-RISK-TRADING-BOOK"
+      ],
+      "control_ids": [
+        "CTRL-FRTB-THRESHOLD-MONITOR"
+      ],
+      "steps": [
+        {
+          "step_number": 1,
+          "action": "Market risk team compiles the aggregated absolute value of long positions plus the absolute value of short trading-book positions for the month.",
+          "performer_role_id": "ROLE-HEAD-TREASURY",
+          "system_ids": [
+            "SYS-TREASURY-LIQUIDITY"
+          ],
+          "data_asset_ids": [
+            "DATA-TREASURY-LIQUIDITY"
+          ],
+          "control_ids": [
+            "CTRL-FRTB-THRESHOLD-MONITOR"
+          ],
+          "output_description": "Aggregated trading-book business volume figure.",
+          "exception_handling": "If trading-book position data is unavailable, the result is recorded as insufficient_evidence rather than assumed to be within threshold."
+        },
+        {
+          "step_number": 2,
+          "action": "After the current legal rule, measurement scope and complete monthly inventory are reviewed, compare the documented positions with all applicable Article 94 conditions.",
+          "performer_role_id": "ROLE-HEAD-TREASURY",
+          "system_ids": [
+            "SYS-TREASURY-LIQUIDITY"
+          ],
+          "data_asset_ids": [
+            "DATA-TREASURY-LIQUIDITY"
+          ],
+          "control_ids": [
+            "CTRL-FRTB-THRESHOLD-MONITOR"
+          ],
+          "output_description": "Conditional comparison, or insufficient_evidence when the legal rule or current population is unverified.",
+          "exception_handling": "The current fixture lacks a verified rule and complete current scope: record insufficient_evidence and do not execute an automatic derogation decision."
+        },
+        {
+          "step_number": 3,
+          "action": "Market risk team records the monthly result and escalates if the threshold is approached or exceeded.",
+          "performer_role_id": "ROLE-HEAD-TREASURY",
+          "system_ids": [
+            "SYS-TREASURY-LIQUIDITY"
+          ],
+          "data_asset_ids": [
+            "DATA-TREASURY-LIQUIDITY"
+          ],
+          "control_ids": [
+            "CTRL-FRTB-THRESHOLD-MONITOR"
+          ],
+          "output_description": "Monthly monitoring record, escalated where applicable.",
+          "exception_handling": "Escalate missing scope evidence or a confirmed breach to the designated Treasury and Risk roles; their synthetic allocation still requires human approval."
+        }
+      ],
+      "escalation_conditions": [
+        "Aggregated trading-book business volume approaches or exceeds the small-trading-book-business threshold."
+      ],
+      "expected_evidence_types": [
+        "monthly threshold calculation record"
+      ],
+      "evidence_item_ids": [],
+      "record_status": "needs_review",
+      "synthetic": true,
+      "provenance": {
+        "origin": "synthetic_bank_design",
+        "source_ids": [],
+        "created_at": "2026-09-05T02:25:45Z",
+        "created_by": "coding_agent",
+        "last_verified_at": null,
+        "notes": [
+          "Synthetic current-state design for the first-demo scenario; not copied from any real institution.",
+          "Joined with canonical Persons 2–4 IDs; owners are synthetic scenario assignments."
+        ]
+      },
+      "annotation": {
+        "label_status": "silver",
+        "annotated_by": "coding_agent",
+        "reviewed_by": null,
+        "reviewed_at": null,
+        "notes": []
+      },
+      "missing_evidence": [
+        {
+          "field": "human_approval",
+          "reason": "Synthetic allocation has not been approved by a human reviewer.",
+          "required_input": "Synthetic allocation has not been approved by a human reviewer.",
+          "responsible_scope": "user",
+          "blocking": false
+        }
+      ]
+    },
+    {
+      "procedure_id": "PRCD-VOP-WEB",
+      "title": "Web-channel Verification of Payee procedure",
+      "version": "1.0",
+      "lifecycle_status": "active",
+      "effective_date": "2025-01-01",
+      "next_review_date": null,
+      "owner_role_id": "ROLE-HEAD-PAYMENTS",
+      "purpose": "Describes how the web/online-banking channel performs Verification of Payee before a credit transfer is authorised.",
+      "trigger": "A payer initiates a credit transfer through web/online banking and enters or selects a payee.",
+      "frequency": "per_transaction",
+      "scope": {
+        "business_line_ids": [
+          "BL-PAYMENTS"
+        ],
+        "product_ids": [
+          "PRD-SEPA-INSTANT"
+        ],
+        "process_ids": [
+          "PROC-PAYMENT-INITIATION"
+        ],
+        "system_ids": [
+          "SYS-PAYMENTS-HUB",
+          "SYS-VOP",
+          "SYS-WEB-BANKING"
+        ],
+        "data_asset_ids": [
+          "DATA-PAYMENT-OPERATIONS"
+        ],
+        "vendor_ids": [
+          "VND-VOP-PROVIDER"
+        ],
+        "critical_service_ids": [
+          "CIF-PAYMENTS"
+        ]
+      },
+      "requirement_ids": [
+        "REQ-IPS-VOP-001"
+      ],
+      "policy_ids": [
+        "POL-PAYMENTS-SECURITY"
+      ],
+      "control_ids": [
+        "CTRL-VOP-WEB"
+      ],
+      "steps": [
+        {
+          "step_number": 1,
+          "action": "System captures the payee name and IBAN entered or selected by the payer.",
+          "performer_role_id": "ROLE-HEAD-PAYMENTS",
+          "system_ids": [
+            "SYS-PAYMENTS-HUB",
+            "SYS-VOP",
+            "SYS-WEB-BANKING"
+          ],
+          "data_asset_ids": [
+            "DATA-PAYMENT-OPERATIONS"
+          ],
+          "control_ids": [
+            "CTRL-VOP-WEB"
+          ],
+          "output_description": "Captured payee name/IBAN pair ready for verification.",
+          "exception_handling": "If capture fails, the transfer cannot proceed to authorisation."
+        },
+        {
+          "step_number": 2,
+          "action": "System performs the Verification of Payee check comparing the entered payee name against the account holder name for the given IBAN.",
+          "performer_role_id": "ROLE-HEAD-PAYMENTS",
+          "system_ids": [
+            "SYS-PAYMENTS-HUB",
+            "SYS-VOP",
+            "SYS-WEB-BANKING"
+          ],
+          "data_asset_ids": [
+            "DATA-PAYMENT-OPERATIONS"
+          ],
+          "control_ids": [
+            "CTRL-VOP-WEB"
+          ],
+          "output_description": "A match, close-match, or no-match result.",
+          "exception_handling": "On a no-match or close-match result, the payer is shown a warning before being able to proceed."
+        },
+        {
+          "step_number": 3,
+          "action": "System displays the verification result to the payer before offering the option to authorise the transfer.",
+          "performer_role_id": "ROLE-HEAD-PAYMENTS",
+          "system_ids": [
+            "SYS-PAYMENTS-HUB",
+            "SYS-VOP",
+            "SYS-WEB-BANKING"
+          ],
+          "data_asset_ids": [
+            "DATA-PAYMENT-OPERATIONS"
+          ],
+          "control_ids": [
+            "CTRL-VOP-WEB"
+          ],
+          "output_description": "Payer decision to proceed or cancel, recorded against the transaction.",
+          "exception_handling": "Payer may proceed after an explicit acknowledgement of a no-match/close-match warning, or cancel the transfer."
+        }
+      ],
+      "escalation_conditions": [],
+      "expected_evidence_types": [
+        "transaction log",
+        "verification-result record"
+      ],
+      "evidence_item_ids": [],
+      "record_status": "needs_review",
+      "synthetic": true,
+      "provenance": {
+        "origin": "synthetic_bank_design",
+        "source_ids": [],
+        "created_at": "2026-09-05T02:25:45Z",
+        "created_by": "coding_agent",
+        "last_verified_at": null,
+        "notes": [
+          "Synthetic current-state design for the first-demo scenario; not copied from any real institution.",
+          "Joined with canonical Persons 2–4 IDs; owners are synthetic scenario assignments."
+        ]
+      },
+      "annotation": {
+        "label_status": "silver",
+        "annotated_by": "coding_agent",
+        "reviewed_by": null,
+        "reviewed_at": null,
+        "notes": []
+      },
+      "missing_evidence": [
+        {
+          "field": "human_approval",
+          "reason": "Synthetic allocation has not been approved by a human reviewer.",
+          "required_input": "Synthetic allocation has not been approved by a human reviewer.",
+          "responsible_scope": "user",
+          "blocking": false
+        }
+      ]
+    }
+  ]
+}

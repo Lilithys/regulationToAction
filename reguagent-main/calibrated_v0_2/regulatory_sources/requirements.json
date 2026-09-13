@@ -1,0 +1,3067 @@
+{
+  "schema_version": "1.0.0",
+  "dataset_scope": "person_1_regulatory_governance",
+  "as_of_date": "2026-09-08",
+  "generated_at": "2026-09-11T23:37:51Z",
+  "requirements": [
+    {
+      "requirement_id": "REQ-DORA-DEPENDENCY-MAP-001",
+      "change_id": "REG-DORA-2022-2554",
+      "title": "Identification, classification and dependency mapping of critical or important functions and supporting ICT assets",
+      "requirement_text": "Financial entities shall identify, classify and document ICT-supported business functions and supporting information and ICT assets, their roles and dependencies; critical-function and ICT-provider dependencies require the additional mapping specified in Article 8.",
+      "legal_force": "obligation",
+      "addressee_types": [
+        "credit_institution",
+        "financial_entity"
+      ],
+      "jurisdictions": [
+        "EU",
+        "IE"
+      ],
+      "applicability_conditions": [
+        {
+          "condition_id": "COND-REQ-DORA-DEPENDENCY-MAP-001-ENTITY",
+          "description": "Confirm the legal entity classification against the cited scope.",
+          "condition_type": "bank_fact",
+          "fact_path": "01_entity/bank_profile.json#/entity_classification",
+          "operator": "equals",
+          "expected_value": [
+            "credit_institution"
+          ],
+          "source_citation_ids": [
+            "CIT-REQ-DORA-DEPENDENCY-MAP-001-01"
+          ],
+          "evidence_status": "verified"
+        }
+      ],
+      "exclusions_and_exemptions": [],
+      "compliance_events": [
+        {
+          "event_type": "application",
+          "date": "2025-01-17",
+          "condition": "In-scope credit institution; retained Article 64 date pending source recheck",
+          "source_citation_ids": [
+            "CIT-REQ-DORA-DEPENDENCY-MAP-001-01"
+          ],
+          "verification_status": "needs_review"
+        }
+      ],
+      "source_citations": [
+        {
+          "citation_id": "CIT-REQ-DORA-DEPENDENCY-MAP-001-01",
+          "source_id": "SRC-DORA-EURLEX-2022-2554",
+          "locator_type": "article",
+          "locator": "Articles 8(1), 8(4) and 8(5); pinpoint wording requires primary-text recheck",
+          "evidence_type": "paraphrase",
+          "evidence_text": "Financial entities shall identify, classify and document ICT-supported business functions and supporting information and ICT assets, their roles and dependencies; critical-function and ICT-provider dependencies require the additional mapping specified in Article 8.",
+          "supports_fields": [
+            "requirement_text"
+          ],
+          "verification_status": "needs_review"
+        }
+      ],
+      "required_bank_facts": [
+        {
+          "fact_ref": "01_entity/bank_profile.json#/entity_classification",
+          "purpose": "Scenario input; file presence does not establish legal compliance or evidence completeness.",
+          "evidence_status": "verified"
+        },
+        {
+          "fact_ref": "05_operations/critical_services.json",
+          "purpose": "Scenario input; file presence does not establish legal compliance or evidence completeness.",
+          "evidence_status": "verified"
+        },
+        {
+          "fact_ref": "05_operations/dependencies.json",
+          "purpose": "Scenario input; file presence does not establish legal compliance or evidence completeness.",
+          "evidence_status": "verified"
+        },
+        {
+          "fact_ref": "05_operations/vendors.json",
+          "purpose": "Scenario input; file presence does not establish legal compliance or evidence completeness.",
+          "evidence_status": "verified"
+        }
+      ],
+      "capability_domains": [
+        "ict_risk",
+        "operational_resilience",
+        "third_party_risk"
+      ],
+      "policy_ids": [
+        "POL-ICT-OPERATIONAL-RESILIENCE"
+      ],
+      "control_ids": [
+        "CTRL-DORA-DEPENDENCY-MAP"
+      ],
+      "procedure_ids": [
+        "PRCD-DORA-DEPENDENCY-MAP"
+      ],
+      "current_coverage": {
+        "rating": "partial",
+        "assessment_basis": "joined_dataset",
+        "rationale": "Mapping describes supplied synthetic design only; operating effectiveness remains unproven.",
+        "control_ids": [
+          "CTRL-DORA-DEPENDENCY-MAP"
+        ],
+        "uncovered_dimensions": [
+          "complete_critical_function_inventory",
+          "third_party_dependency_completeness"
+        ],
+        "verification_status": "needs_review"
+      },
+      "interpretation_notes": [],
+      "record_status": "needs_review",
+      "synthetic": false,
+      "provenance": {
+        "origin": "authoritative_external_source",
+        "source_ids": [
+          "SRC-DORA-EURLEX-2022-2554"
+        ],
+        "created_at": "2026-09-05T02:25:45Z",
+        "created_by": "coding_agent",
+        "last_verified_at": "2026-09-05T01:45:00Z",
+        "notes": [
+          "Refresh separates legal extraction, current synthetic capability, and human approval."
+        ]
+      },
+      "annotation": {
+        "label_status": "silver",
+        "annotated_by": "coding_agent",
+        "reviewed_by": null,
+        "reviewed_at": null,
+        "notes": []
+      },
+      "missing_evidence": [
+        {
+          "field": "legal_review",
+          "reason": "Qualified reviewer has not approved this extraction and the selected institution-specific interpretation.",
+          "required_input": "Qualified reviewer has not approved this extraction and the selected institution-specific interpretation.",
+          "responsible_scope": "legal_reviewer",
+          "blocking": true
+        },
+        {
+          "field": "source_citations",
+          "reason": "Current operative source text/version could not be fully rechecked through available retrieval; retained sources are not upgraded.",
+          "required_input": "Current operative source text/version could not be fully rechecked through available retrieval; retained sources are not upgraded.",
+          "responsible_scope": "legal_reviewer",
+          "blocking": true
+        }
+      ],
+      "extensions": {
+        "applicability_logic_status": "candidate_requires_legal_review",
+        "unresolved_bank_fact_register": "03_exposure/missing_facts.json",
+        "assessment_contract_version": "0.2.1",
+        "jurisdiction_basis": "institution",
+        "coverage_criteria": [
+          {
+            "dimension_type": "critical_service",
+            "dimension_ref": "known_subset"
+          },
+          {
+            "dimension_type": "vendor",
+            "dimension_ref": "third_party_dependency_mapping"
+          }
+        ]
+      }
+    },
+    {
+      "requirement_id": "REQ-DORA-ICT-FRAMEWORK-001",
+      "change_id": "REG-DORA-2022-2554",
+      "title": "Comprehensive ICT risk management framework",
+      "requirement_text": "A financial entity shall put in place, maintain and regularly review a comprehensive ICT risk management framework, proportionate to its nature, scale and complexity, that enables it to address ICT risk quickly, efficiently and comprehensively and to ensure a high level of digital operational resilience, encompassing identification, protection and prevention, detection, response and recovery, and learning and evolving capabilities.",
+      "legal_force": "obligation",
+      "addressee_types": [
+        "credit_institution",
+        "financial_entity"
+      ],
+      "jurisdictions": [
+        "EU",
+        "IE"
+      ],
+      "applicability_conditions": [
+        {
+          "condition_id": "COND-REQ-DORA-ICT-FRAMEWORK-001-ENTITY",
+          "description": "Confirm the legal entity classification against the cited scope.",
+          "condition_type": "bank_fact",
+          "fact_path": "01_entity/bank_profile.json#/entity_classification",
+          "operator": "equals",
+          "expected_value": [
+            "credit_institution"
+          ],
+          "source_citation_ids": [
+            "CIT-REQ-DORA-ICT-FRAMEWORK-001-01"
+          ],
+          "evidence_status": "verified"
+        }
+      ],
+      "exclusions_and_exemptions": [],
+      "compliance_events": [
+        {
+          "event_type": "application",
+          "date": "2025-01-17",
+          "condition": "In-scope credit institution; retained Article 64 date pending source recheck",
+          "source_citation_ids": [
+            "CIT-REQ-DORA-ICT-FRAMEWORK-001-01"
+          ],
+          "verification_status": "needs_review"
+        }
+      ],
+      "source_citations": [
+        {
+          "citation_id": "CIT-REQ-DORA-ICT-FRAMEWORK-001-01",
+          "source_id": "SRC-DORA-EURLEX-2022-2554",
+          "locator_type": "article",
+          "locator": "Article 6(1) and 6(2)",
+          "evidence_type": "paraphrase",
+          "evidence_text": "A financial entity shall put in place, maintain and regularly review a comprehensive ICT risk management framework, proportionate to its nature, scale and complexity, that enables it to address ICT risk quickly, efficiently and comprehensively and to ensure a high level of digital operational resilience, encompassing identification, protection and prevention, detection, response and recovery, and learning and evolving capabilities.",
+          "supports_fields": [
+            "requirement_text"
+          ],
+          "verification_status": "needs_review"
+        }
+      ],
+      "required_bank_facts": [
+        {
+          "fact_ref": "01_entity/bank_profile.json#/entity_classification",
+          "purpose": "Scenario input; file presence does not establish legal compliance or evidence completeness.",
+          "evidence_status": "verified"
+        },
+        {
+          "fact_ref": "05_operations/critical_services.json",
+          "purpose": "Scenario input; file presence does not establish legal compliance or evidence completeness.",
+          "evidence_status": "verified"
+        },
+        {
+          "fact_ref": "05_operations/dependencies.json",
+          "purpose": "Scenario input; file presence does not establish legal compliance or evidence completeness.",
+          "evidence_status": "verified"
+        },
+        {
+          "fact_ref": "05_operations/vendors.json",
+          "purpose": "Scenario input; file presence does not establish legal compliance or evidence completeness.",
+          "evidence_status": "verified"
+        }
+      ],
+      "capability_domains": [
+        "ict_risk",
+        "operational_resilience"
+      ],
+      "policy_ids": [
+        "POL-ICT-OPERATIONAL-RESILIENCE"
+      ],
+      "control_ids": [],
+      "procedure_ids": [],
+      "current_coverage": {
+        "rating": "unknown",
+        "assessment_basis": "joined_dataset",
+        "rationale": "Mapping describes supplied synthetic design only; operating effectiveness remains unproven.",
+        "control_ids": [],
+        "uncovered_dimensions": [],
+        "verification_status": "needs_review"
+      },
+      "interpretation_notes": [],
+      "record_status": "needs_review",
+      "synthetic": false,
+      "provenance": {
+        "origin": "authoritative_external_source",
+        "source_ids": [
+          "SRC-DORA-EURLEX-2022-2554"
+        ],
+        "created_at": "2026-09-05T02:25:45Z",
+        "created_by": "coding_agent",
+        "last_verified_at": "2026-09-05T01:45:00Z",
+        "notes": [
+          "Refresh separates legal extraction, current synthetic capability, and human approval."
+        ]
+      },
+      "annotation": {
+        "label_status": "silver",
+        "annotated_by": "coding_agent",
+        "reviewed_by": null,
+        "reviewed_at": null,
+        "notes": []
+      },
+      "missing_evidence": [
+        {
+          "field": "legal_review",
+          "reason": "Qualified reviewer has not approved this extraction and the selected institution-specific interpretation.",
+          "required_input": "Qualified reviewer has not approved this extraction and the selected institution-specific interpretation.",
+          "responsible_scope": "legal_reviewer",
+          "blocking": true
+        },
+        {
+          "field": "source_citations",
+          "reason": "Current operative source text/version could not be fully rechecked through available retrieval; retained sources are not upgraded.",
+          "required_input": "Current operative source text/version could not be fully rechecked through available retrieval; retained sources are not upgraded.",
+          "responsible_scope": "legal_reviewer",
+          "blocking": true
+        }
+      ],
+      "extensions": {
+        "applicability_logic_status": "candidate_requires_legal_review",
+        "unresolved_bank_fact_register": "03_exposure/missing_facts.json",
+        "assessment_contract_version": "0.2.1",
+        "jurisdiction_basis": "institution"
+      }
+    },
+    {
+      "requirement_id": "REQ-DORA-ICT-REGISTER-001",
+      "change_id": "REG-DORA-2022-2554",
+      "title": "Register of information on ICT third-party contractual arrangements",
+      "requirement_text": "Financial entities shall maintain and update a register of ICT third-party contractual arrangements at the relevant entity and group levels, distinguishing arrangements supporting critical or important functions.",
+      "legal_force": "obligation",
+      "addressee_types": [
+        "credit_institution",
+        "financial_entity"
+      ],
+      "jurisdictions": [
+        "EU",
+        "IE"
+      ],
+      "applicability_conditions": [
+        {
+          "condition_id": "COND-REQ-DORA-ICT-REGISTER-001-ENTITY",
+          "description": "Confirm the legal entity classification against the cited scope.",
+          "condition_type": "bank_fact",
+          "fact_path": "01_entity/bank_profile.json#/entity_classification",
+          "operator": "equals",
+          "expected_value": [
+            "credit_institution"
+          ],
+          "source_citation_ids": [
+            "CIT-REQ-DORA-ICT-REGISTER-001-01"
+          ],
+          "evidence_status": "verified"
+        }
+      ],
+      "exclusions_and_exemptions": [],
+      "compliance_events": [
+        {
+          "event_type": "application",
+          "date": "2025-01-17",
+          "condition": "In-scope credit institution; retained Article 64 date pending source recheck",
+          "source_citation_ids": [
+            "CIT-REQ-DORA-ICT-REGISTER-001-01"
+          ],
+          "verification_status": "needs_review"
+        }
+      ],
+      "source_citations": [
+        {
+          "citation_id": "CIT-REQ-DORA-ICT-REGISTER-001-01",
+          "source_id": "SRC-DORA-EURLEX-2022-2554",
+          "locator_type": "article",
+          "locator": "Article 28(3); Article 64 for application date",
+          "evidence_type": "paraphrase",
+          "evidence_text": "Financial entities shall maintain and update a register of ICT third-party contractual arrangements at the relevant entity and group levels, distinguishing arrangements supporting critical or important functions.",
+          "supports_fields": [
+            "requirement_text"
+          ],
+          "verification_status": "needs_review"
+        }
+      ],
+      "required_bank_facts": [
+        {
+          "fact_ref": "01_entity/bank_profile.json#/entity_classification",
+          "purpose": "Scenario input; file presence does not establish legal compliance or evidence completeness.",
+          "evidence_status": "verified"
+        },
+        {
+          "fact_ref": "05_operations/critical_services.json",
+          "purpose": "Scenario input; file presence does not establish legal compliance or evidence completeness.",
+          "evidence_status": "verified"
+        },
+        {
+          "fact_ref": "05_operations/dependencies.json",
+          "purpose": "Scenario input; file presence does not establish legal compliance or evidence completeness.",
+          "evidence_status": "verified"
+        },
+        {
+          "fact_ref": "05_operations/vendors.json",
+          "purpose": "Scenario input; file presence does not establish legal compliance or evidence completeness.",
+          "evidence_status": "verified"
+        }
+      ],
+      "capability_domains": [
+        "ict_risk",
+        "third_party_risk"
+      ],
+      "policy_ids": [
+        "POL-ICT-OPERATIONAL-RESILIENCE"
+      ],
+      "control_ids": [
+        "CTRL-DORA-ICT-REGISTER"
+      ],
+      "procedure_ids": [
+        "PRCD-DORA-ICT-REGISTER-UPDATE"
+      ],
+      "current_coverage": {
+        "rating": "partial",
+        "assessment_basis": "joined_dataset",
+        "rationale": "Mapping describes supplied synthetic design only; operating effectiveness remains unproven.",
+        "control_ids": [
+          "CTRL-DORA-ICT-REGISTER"
+        ],
+        "uncovered_dimensions": [
+          "full_third_party_contract_population"
+        ],
+        "verification_status": "needs_review"
+      },
+      "interpretation_notes": [
+        "Register maintenance and specific supervisory reporting are separate obligations. Any reporting reference date and submission deadline require a verified authority-specific source; no universal reporting date is inferred here."
+      ],
+      "record_status": "needs_review",
+      "synthetic": false,
+      "provenance": {
+        "origin": "authoritative_external_source",
+        "source_ids": [
+          "SRC-DORA-EURLEX-2022-2554"
+        ],
+        "created_at": "2026-09-05T02:25:45Z",
+        "created_by": "coding_agent",
+        "last_verified_at": "2026-09-05T01:45:00Z",
+        "notes": [
+          "Refresh separates legal extraction, current synthetic capability, and human approval."
+        ]
+      },
+      "annotation": {
+        "label_status": "silver",
+        "annotated_by": "coding_agent",
+        "reviewed_by": null,
+        "reviewed_at": null,
+        "notes": []
+      },
+      "missing_evidence": [
+        {
+          "field": "legal_review",
+          "reason": "Qualified reviewer has not approved this extraction and the selected institution-specific interpretation.",
+          "required_input": "Qualified reviewer has not approved this extraction and the selected institution-specific interpretation.",
+          "responsible_scope": "legal_reviewer",
+          "blocking": true
+        },
+        {
+          "field": "source_citations",
+          "reason": "Current operative source text/version could not be fully rechecked through available retrieval; retained sources are not upgraded.",
+          "required_input": "Current operative source text/version could not be fully rechecked through available retrieval; retained sources are not upgraded.",
+          "responsible_scope": "legal_reviewer",
+          "blocking": true
+        }
+      ],
+      "extensions": {
+        "applicability_logic_status": "candidate_requires_legal_review",
+        "unresolved_bank_fact_register": "03_exposure/missing_facts.json",
+        "assessment_contract_version": "0.2.1",
+        "jurisdiction_basis": "institution",
+        "coverage_criteria": [
+          {
+            "dimension_type": "vendor",
+            "dimension_ref": "known_ict_third_parties"
+          }
+        ]
+      }
+    },
+    {
+      "requirement_id": "REQ-DORA-TPRM-STRATEGY-001",
+      "change_id": "REG-DORA-2022-2554",
+      "title": "Management-body-adopted ICT third-party risk strategy",
+      "requirement_text": "Financial entities other than microenterprises and entities covered by Article 16(1) shall adopt and regularly review an ICT third-party risk strategy, including a policy for ICT services supporting critical or important functions.",
+      "legal_force": "governance",
+      "addressee_types": [
+        "credit_institution",
+        "financial_entity"
+      ],
+      "jurisdictions": [
+        "EU",
+        "IE"
+      ],
+      "applicability_conditions": [
+        {
+          "condition_id": "COND-REQ-DORA-TPRM-STRATEGY-001-ENTITY",
+          "description": "Confirm the legal entity classification against the cited scope.",
+          "condition_type": "bank_fact",
+          "fact_path": "01_entity/bank_profile.json#/entity_classification",
+          "operator": "equals",
+          "expected_value": [
+            "credit_institution"
+          ],
+          "source_citation_ids": [
+            "CIT-REQ-DORA-TPRM-STRATEGY-001-01"
+          ],
+          "evidence_status": "verified"
+        }
+      ],
+      "exclusions_and_exemptions": [],
+      "compliance_events": [
+        {
+          "event_type": "application",
+          "date": "2025-01-17",
+          "condition": "In-scope credit institution; retained Article 64 date pending source recheck",
+          "source_citation_ids": [
+            "CIT-REQ-DORA-TPRM-STRATEGY-001-01"
+          ],
+          "verification_status": "needs_review"
+        }
+      ],
+      "source_citations": [
+        {
+          "citation_id": "CIT-REQ-DORA-TPRM-STRATEGY-001-01",
+          "source_id": "SRC-DORA-EURLEX-2022-2554",
+          "locator_type": "article",
+          "locator": "Article 28(2); Article 5(2)(h) for management-body responsibilities",
+          "evidence_type": "paraphrase",
+          "evidence_text": "Financial entities other than microenterprises and entities covered by Article 16(1) shall adopt and regularly review an ICT third-party risk strategy, including a policy for ICT services supporting critical or important functions.",
+          "supports_fields": [
+            "requirement_text"
+          ],
+          "verification_status": "needs_review"
+        }
+      ],
+      "required_bank_facts": [
+        {
+          "fact_ref": "01_entity/bank_profile.json#/entity_classification",
+          "purpose": "Scenario input; file presence does not establish legal compliance or evidence completeness.",
+          "evidence_status": "verified"
+        },
+        {
+          "fact_ref": "05_operations/critical_services.json",
+          "purpose": "Scenario input; file presence does not establish legal compliance or evidence completeness.",
+          "evidence_status": "verified"
+        },
+        {
+          "fact_ref": "05_operations/dependencies.json",
+          "purpose": "Scenario input; file presence does not establish legal compliance or evidence completeness.",
+          "evidence_status": "verified"
+        },
+        {
+          "fact_ref": "05_operations/vendors.json",
+          "purpose": "Scenario input; file presence does not establish legal compliance or evidence completeness.",
+          "evidence_status": "verified"
+        }
+      ],
+      "capability_domains": [
+        "governance",
+        "ict_risk",
+        "third_party_risk"
+      ],
+      "policy_ids": [
+        "POL-ICT-OPERATIONAL-RESILIENCE"
+      ],
+      "control_ids": [],
+      "procedure_ids": [],
+      "current_coverage": {
+        "rating": "unknown",
+        "assessment_basis": "joined_dataset",
+        "rationale": "Mapping describes supplied synthetic design only; operating effectiveness remains unproven.",
+        "control_ids": [],
+        "uncovered_dimensions": [],
+        "verification_status": "needs_review"
+      },
+      "interpretation_notes": [],
+      "record_status": "needs_review",
+      "synthetic": false,
+      "provenance": {
+        "origin": "authoritative_external_source",
+        "source_ids": [
+          "SRC-DORA-EURLEX-2022-2554"
+        ],
+        "created_at": "2026-09-05T02:25:45Z",
+        "created_by": "coding_agent",
+        "last_verified_at": "2026-09-05T01:45:00Z",
+        "notes": [
+          "Refresh separates legal extraction, current synthetic capability, and human approval."
+        ]
+      },
+      "annotation": {
+        "label_status": "silver",
+        "annotated_by": "coding_agent",
+        "reviewed_by": null,
+        "reviewed_at": null,
+        "notes": []
+      },
+      "missing_evidence": [
+        {
+          "field": "legal_review",
+          "reason": "Qualified reviewer has not approved this extraction and the selected institution-specific interpretation.",
+          "required_input": "Qualified reviewer has not approved this extraction and the selected institution-specific interpretation.",
+          "responsible_scope": "legal_reviewer",
+          "blocking": true
+        },
+        {
+          "field": "source_citations",
+          "reason": "Current operative source text/version could not be fully rechecked through available retrieval; retained sources are not upgraded.",
+          "required_input": "Current operative source text/version could not be fully rechecked through available retrieval; retained sources are not upgraded.",
+          "responsible_scope": "legal_reviewer",
+          "blocking": true
+        }
+      ],
+      "extensions": {
+        "applicability_logic_status": "candidate_requires_legal_review",
+        "unresolved_bank_fact_register": "03_exposure/missing_facts.json",
+        "assessment_contract_version": "0.2.1",
+        "jurisdiction_basis": "institution"
+      }
+    },
+    {
+      "requirement_id": "REQ-ESG-CREDIT-MONITORING-001",
+      "change_id": "REG-ESG-EBA-GL-2025-01",
+      "title": "ESG integration in credit monitoring",
+      "requirement_text": "Institutions should embed ESG risks in credit monitoring, with environmental-risk metrics reflecting materiality, risk appetite and significant segments.",
+      "legal_force": "supervisory_expectation",
+      "addressee_types": [
+        "credit_institution"
+      ],
+      "jurisdictions": [
+        "EU",
+        "IE"
+      ],
+      "applicability_conditions": [
+        {
+          "condition_id": "COND-REQ-ESG-CREDIT-MONITORING-001-ENTITY",
+          "description": "Confirm the legal entity classification against the cited scope.",
+          "condition_type": "bank_fact",
+          "fact_path": "01_entity/bank_profile.json#/entity_classification",
+          "operator": "equals",
+          "expected_value": [
+            "credit_institution"
+          ],
+          "source_citation_ids": [
+            "CIT-REQ-ESG-CREDIT-MONITORING-001-SCOPE"
+          ],
+          "evidence_status": "verified"
+        }
+      ],
+      "exclusions_and_exemptions": [],
+      "compliance_events": [
+        {
+          "event_type": "application",
+          "date": "2026-01-11",
+          "condition": "Institutions other than small and non-complex institutions (SNCIs)",
+          "source_citation_ids": [
+            "CIT-REQ-ESG-CREDIT-MONITORING-001-DATE"
+          ],
+          "verification_status": "verified",
+          "extensions": {
+            "snci_selector": false
+          }
+        },
+        {
+          "event_type": "application",
+          "date": "2027-01-11",
+          "condition": "Small and non-complex institutions (SNCIs) - latest application date",
+          "source_citation_ids": [
+            "CIT-REQ-ESG-CREDIT-MONITORING-001-DATE"
+          ],
+          "verification_status": "verified",
+          "extensions": {
+            "snci_selector": true
+          }
+        }
+      ],
+      "source_citations": [
+        {
+          "citation_id": "CIT-REQ-ESG-CREDIT-MONITORING-001-01",
+          "source_id": "SRC-ESG-EBA-GL-2025-01",
+          "locator_type": "paragraph",
+          "locator": "Section 5.6.1, paragraphs 68–69; PDF page 32",
+          "evidence_type": "paraphrase",
+          "evidence_text": "Institutions should embed ESG risks in credit monitoring, with environmental-risk metrics reflecting materiality, risk appetite and significant segments.",
+          "supports_fields": [
+            "requirement_text"
+          ],
+          "verification_status": "verified"
+        },
+        {
+          "citation_id": "CIT-REQ-ESG-CREDIT-MONITORING-001-SCOPE",
+          "source_id": "SRC-ESG-EBA-GL-2025-01",
+          "locator_type": "paragraph",
+          "locator": "Paragraph 8; PDF page 17",
+          "evidence_type": "paraphrase",
+          "evidence_text": "Addressees include the institutions specified through the CRR definition.",
+          "supports_fields": [
+            "applicability_conditions"
+          ],
+          "verification_status": "verified"
+        },
+        {
+          "citation_id": "CIT-REQ-ESG-CREDIT-MONITORING-001-DATE",
+          "source_id": "SRC-ESG-EBA-GL-2025-01",
+          "locator_type": "paragraph",
+          "locator": "Paragraph 10; PDF page 17",
+          "evidence_type": "paraphrase",
+          "evidence_text": "Application is 11 January 2026 for other institutions and at latest 11 January 2027 for SNCIs.",
+          "supports_fields": [
+            "compliance_events"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "required_bank_facts": [
+        {
+          "fact_ref": "01_entity/bank_profile.json#/entity_classification",
+          "purpose": "Scenario input; file presence does not establish legal compliance or evidence completeness.",
+          "evidence_status": "verified"
+        },
+        {
+          "fact_ref": "01_entity/bank_profile.json#/snci_status",
+          "purpose": "Scenario input; file presence does not establish legal compliance or evidence completeness.",
+          "evidence_status": "verified"
+        },
+        {
+          "fact_ref": "03_exposure/lending_portfolio.csv",
+          "purpose": "Scenario input; file presence does not establish legal compliance or evidence completeness.",
+          "evidence_status": "verified"
+        },
+        {
+          "fact_ref": "03_exposure/esg_assessment_snapshot.csv",
+          "purpose": "Scenario input; file presence does not establish legal compliance or evidence completeness.",
+          "evidence_status": "verified"
+        }
+      ],
+      "capability_domains": [
+        "credit_risk",
+        "esg_risk"
+      ],
+      "policy_ids": [],
+      "control_ids": [],
+      "procedure_ids": [],
+      "current_coverage": {
+        "rating": "unknown",
+        "assessment_basis": "joined_dataset",
+        "rationale": "Prior onboarding link withdrawn after semantic review; investigate requirement-specific design and operating evidence.",
+        "control_ids": [],
+        "uncovered_dimensions": [],
+        "verification_status": "needs_review"
+      },
+      "interpretation_notes": [
+        "legal_force recorded as supervisory_expectation; source uses 'should'."
+      ],
+      "record_status": "needs_review",
+      "synthetic": false,
+      "provenance": {
+        "origin": "authoritative_external_source",
+        "source_ids": [
+          "SRC-ESG-EBA-GL-2025-01"
+        ],
+        "created_at": "2026-09-05T02:25:45Z",
+        "created_by": "coding_agent",
+        "last_verified_at": "2026-09-05T01:45:00Z",
+        "notes": [
+          "Refresh separates legal extraction, current synthetic capability, and human approval.",
+          "M1 semantic review supersedes the archived 2026-09-11 lineage-based mapping; see extensions."
+        ]
+      },
+      "annotation": {
+        "label_status": "silver",
+        "annotated_by": "coding_agent",
+        "reviewed_by": null,
+        "reviewed_at": null,
+        "notes": []
+      },
+      "missing_evidence": [
+        {
+          "field": "legal_review",
+          "reason": "Qualified reviewer has not approved this extraction and the selected institution-specific interpretation.",
+          "required_input": "Qualified reviewer has not approved this extraction and the selected institution-specific interpretation.",
+          "responsible_scope": "legal_reviewer",
+          "blocking": true
+        }
+      ],
+      "extensions": {
+        "split_from_requirement_id": "REQ-ESG-CREDIT-POLICY-001",
+        "applicability_logic_status": "candidate_requires_legal_review",
+        "date_locator": "EBA/GL/2025/01 paragraph 10, PDF page 17; separate from substantive citation",
+        "unresolved_bank_fact_register": "03_exposure/missing_facts.json",
+        "assessment_contract_version": "0.2.1",
+        "jurisdiction_basis": "institution",
+        "mapping_review": {
+          "method_version": "semantic-mapping-v1",
+          "review_status": "provisional",
+          "candidate_control_id": "CTRL-ESG-ONBOARD-SCREEN",
+          "relationship": "related_not_supporting",
+          "rationale": "Per-application sector screening does not establish ongoing existing-book monitoring.",
+          "evidence_fields": [
+            "objective",
+            "frequency",
+            "coverage"
+          ],
+          "note": "Requirement split lineage is not evidence of substantive coverage."
+        },
+        "coverage_criteria": [
+          {
+            "dimension_type": "population",
+            "dimension_ref": "existing_portfolio"
+          },
+          {
+            "dimension_type": "frequency",
+            "dimension_ref": "ongoing_monitoring"
+          },
+          {
+            "dimension_type": "design",
+            "dimension_ref": "environmental_risk_metrics"
+          }
+        ],
+        "criteria_basis": {
+          "review_status": "provisional",
+          "source_citation_ids": [
+            "CIT-REQ-ESG-CREDIT-MONITORING-001-01"
+          ],
+          "scope": "Selected credit-risk investigation criteria; not a claim of exhaustive bank-wide compliance."
+        },
+        "superseded_mapping_annotations": [
+          "2026-09-11: control_ids/current_coverage backfilled with CTRL-ESG-ONBOARD-SCREEN. This requirement split from REQ-ESG-CREDIT-POLICY-001, which the control was already linked to; the control's own requirement_ids was never updated to also include this split-off requirement -- a bidirectional-mapping gap, not a newly designed capability."
+        ]
+      }
+    },
+    {
+      "requirement_id": "REQ-ESG-CREDIT-POLICY-001",
+      "change_id": "REG-ESG-EBA-GL-2025-01",
+      "title": "ESG-inclusive credit sectoral policies cascaded into origination criteria and credit-risk monitoring",
+      "requirement_text": "Institutions should translate ESG-sensitive sectoral credit policies into clear origination criteria for business staff and credit decision-makers.",
+      "legal_force": "supervisory_expectation",
+      "addressee_types": [
+        "credit_institution"
+      ],
+      "jurisdictions": [
+        "EU",
+        "IE"
+      ],
+      "applicability_conditions": [
+        {
+          "condition_id": "COND-REQ-ESG-CREDIT-POLICY-001-ENTITY",
+          "description": "Confirm the legal entity classification against the cited scope.",
+          "condition_type": "bank_fact",
+          "fact_path": "01_entity/bank_profile.json#/entity_classification",
+          "operator": "equals",
+          "expected_value": [
+            "credit_institution"
+          ],
+          "source_citation_ids": [
+            "CIT-REQ-ESG-CREDIT-POLICY-001-SCOPE"
+          ],
+          "evidence_status": "verified"
+        }
+      ],
+      "exclusions_and_exemptions": [],
+      "compliance_events": [
+        {
+          "event_type": "application",
+          "date": "2026-01-11",
+          "condition": "Institutions other than small and non-complex institutions (SNCIs)",
+          "source_citation_ids": [
+            "CIT-REQ-ESG-CREDIT-POLICY-001-DATE"
+          ],
+          "verification_status": "verified",
+          "extensions": {
+            "snci_selector": false
+          }
+        },
+        {
+          "event_type": "application",
+          "date": "2027-01-11",
+          "condition": "Small and non-complex institutions (SNCIs) - latest application date",
+          "source_citation_ids": [
+            "CIT-REQ-ESG-CREDIT-POLICY-001-DATE"
+          ],
+          "verification_status": "verified",
+          "extensions": {
+            "snci_selector": true
+          }
+        }
+      ],
+      "source_citations": [
+        {
+          "citation_id": "CIT-REQ-ESG-CREDIT-POLICY-001-01",
+          "source_id": "SRC-ESG-EBA-GL-2025-01",
+          "locator_type": "paragraph",
+          "locator": "Section 5.6.1, paragraph 68; PDF page 32",
+          "evidence_type": "paraphrase",
+          "evidence_text": "Institutions should translate ESG-sensitive sectoral credit policies into clear origination criteria for business staff and credit decision-makers.",
+          "supports_fields": [
+            "requirement_text"
+          ],
+          "verification_status": "verified"
+        },
+        {
+          "citation_id": "CIT-REQ-ESG-CREDIT-POLICY-001-SCOPE",
+          "source_id": "SRC-ESG-EBA-GL-2025-01",
+          "locator_type": "paragraph",
+          "locator": "Paragraph 8; PDF page 17",
+          "evidence_type": "paraphrase",
+          "evidence_text": "Addressees include the institutions specified through the CRR definition.",
+          "supports_fields": [
+            "applicability_conditions"
+          ],
+          "verification_status": "verified"
+        },
+        {
+          "citation_id": "CIT-REQ-ESG-CREDIT-POLICY-001-DATE",
+          "source_id": "SRC-ESG-EBA-GL-2025-01",
+          "locator_type": "paragraph",
+          "locator": "Paragraph 10; PDF page 17",
+          "evidence_type": "paraphrase",
+          "evidence_text": "Application is 11 January 2026 for other institutions and at latest 11 January 2027 for SNCIs.",
+          "supports_fields": [
+            "compliance_events"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "required_bank_facts": [
+        {
+          "fact_ref": "01_entity/bank_profile.json#/entity_classification",
+          "purpose": "Scenario input; file presence does not establish legal compliance or evidence completeness.",
+          "evidence_status": "verified"
+        },
+        {
+          "fact_ref": "01_entity/bank_profile.json#/snci_status",
+          "purpose": "Scenario input; file presence does not establish legal compliance or evidence completeness.",
+          "evidence_status": "verified"
+        },
+        {
+          "fact_ref": "03_exposure/lending_portfolio.csv",
+          "purpose": "Scenario input; file presence does not establish legal compliance or evidence completeness.",
+          "evidence_status": "verified"
+        },
+        {
+          "fact_ref": "03_exposure/esg_assessment_snapshot.csv",
+          "purpose": "Scenario input; file presence does not establish legal compliance or evidence completeness.",
+          "evidence_status": "verified"
+        }
+      ],
+      "capability_domains": [
+        "credit_risk",
+        "esg_risk"
+      ],
+      "policy_ids": [
+        "POL-CREDIT-RISK-ESG"
+      ],
+      "control_ids": [
+        "CTRL-ESG-ONBOARD-SCREEN"
+      ],
+      "procedure_ids": [
+        "PRCD-ESG-ONBOARD-SCREEN"
+      ],
+      "current_coverage": {
+        "rating": "partial",
+        "assessment_basis": "joined_dataset",
+        "rationale": "Mapping describes supplied synthetic design only; operating effectiveness remains unproven.",
+        "control_ids": [
+          "CTRL-ESG-ONBOARD-SCREEN"
+        ],
+        "uncovered_dimensions": [
+          "existing_book_periodic_rescreening"
+        ],
+        "verification_status": "needs_review"
+      },
+      "interpretation_notes": [
+        "legal_force recorded as supervisory_expectation; source uses 'should'."
+      ],
+      "record_status": "needs_review",
+      "synthetic": false,
+      "provenance": {
+        "origin": "authoritative_external_source",
+        "source_ids": [
+          "SRC-ESG-EBA-GL-2025-01"
+        ],
+        "created_at": "2026-09-05T02:25:45Z",
+        "created_by": "coding_agent",
+        "last_verified_at": "2026-09-05T01:45:00Z",
+        "notes": [
+          "Refresh separates legal extraction, current synthetic capability, and human approval."
+        ]
+      },
+      "annotation": {
+        "label_status": "silver",
+        "annotated_by": "coding_agent",
+        "reviewed_by": null,
+        "reviewed_at": null,
+        "notes": []
+      },
+      "missing_evidence": [
+        {
+          "field": "legal_review",
+          "reason": "Qualified reviewer has not approved this extraction and the selected institution-specific interpretation.",
+          "required_input": "Qualified reviewer has not approved this extraction and the selected institution-specific interpretation.",
+          "responsible_scope": "legal_reviewer",
+          "blocking": true
+        }
+      ],
+      "extensions": {
+        "applicability_logic_status": "candidate_requires_legal_review",
+        "date_locator": "EBA/GL/2025/01 paragraph 10, PDF page 17; separate from substantive citation",
+        "unresolved_bank_fact_register": "03_exposure/missing_facts.json",
+        "assessment_contract_version": "0.2.1",
+        "jurisdiction_basis": "institution",
+        "coverage_criteria": [
+          {
+            "dimension_type": "population",
+            "dimension_ref": "new_lending_applications"
+          },
+          {
+            "dimension_type": "design",
+            "dimension_ref": "esg_origination_criteria"
+          }
+        ],
+        "criteria_basis": {
+          "review_status": "provisional",
+          "source_citation_ids": [
+            "CIT-REQ-ESG-CREDIT-POLICY-001-01"
+          ],
+          "scope": "Selected credit-risk investigation criteria; not a claim of exhaustive bank-wide compliance."
+        }
+      }
+    },
+    {
+      "requirement_id": "REQ-ESG-DATA-GAPS-001",
+      "change_id": "REG-ESG-EBA-GL-2025-01",
+      "title": "Determining needed ESG data points and remediating data gaps for non-large-corporate counterparties (including SMEs)",
+      "requirement_text": "Where ESG data is insufficient for risk management, institutions should assess the gaps and impacts, document remediation, and progressively reduce reliance on estimates or proxies as data improves.",
+      "legal_force": "supervisory_expectation",
+      "addressee_types": [
+        "credit_institution"
+      ],
+      "jurisdictions": [
+        "EU",
+        "IE"
+      ],
+      "applicability_conditions": [
+        {
+          "condition_id": "COND-REQ-ESG-DATA-GAPS-001-ENTITY",
+          "description": "Confirm the legal entity classification against the cited scope.",
+          "condition_type": "bank_fact",
+          "fact_path": "01_entity/bank_profile.json#/entity_classification",
+          "operator": "equals",
+          "expected_value": [
+            "credit_institution"
+          ],
+          "source_citation_ids": [
+            "CIT-REQ-ESG-DATA-GAPS-001-SCOPE"
+          ],
+          "evidence_status": "verified"
+        }
+      ],
+      "exclusions_and_exemptions": [],
+      "compliance_events": [
+        {
+          "event_type": "application",
+          "date": "2026-01-11",
+          "condition": "Institutions other than small and non-complex institutions (SNCIs)",
+          "source_citation_ids": [
+            "CIT-REQ-ESG-DATA-GAPS-001-DATE"
+          ],
+          "verification_status": "verified",
+          "extensions": {
+            "snci_selector": false
+          }
+        },
+        {
+          "event_type": "application",
+          "date": "2027-01-11",
+          "condition": "Small and non-complex institutions (SNCIs) - latest application date",
+          "source_citation_ids": [
+            "CIT-REQ-ESG-DATA-GAPS-001-DATE"
+          ],
+          "verification_status": "verified",
+          "extensions": {
+            "snci_selector": true
+          }
+        }
+      ],
+      "source_citations": [
+        {
+          "citation_id": "CIT-REQ-ESG-DATA-GAPS-001-01",
+          "source_id": "SRC-ESG-EBA-GL-2025-01",
+          "locator_type": "paragraph",
+          "locator": "Section 4.2.2, paragraph 27; PDF page 22",
+          "evidence_type": "paraphrase",
+          "evidence_text": "Where ESG data is insufficient for risk management, institutions should assess the gaps and impacts, document remediation, and progressively reduce reliance on estimates or proxies as data improves.",
+          "supports_fields": [
+            "requirement_text"
+          ],
+          "verification_status": "verified"
+        },
+        {
+          "citation_id": "CIT-REQ-ESG-DATA-GAPS-001-SCOPE",
+          "source_id": "SRC-ESG-EBA-GL-2025-01",
+          "locator_type": "paragraph",
+          "locator": "Paragraph 8; PDF page 17",
+          "evidence_type": "paraphrase",
+          "evidence_text": "Addressees include the institutions specified through the CRR definition.",
+          "supports_fields": [
+            "applicability_conditions"
+          ],
+          "verification_status": "verified"
+        },
+        {
+          "citation_id": "CIT-REQ-ESG-DATA-GAPS-001-DATE",
+          "source_id": "SRC-ESG-EBA-GL-2025-01",
+          "locator_type": "paragraph",
+          "locator": "Paragraph 10; PDF page 17",
+          "evidence_type": "paraphrase",
+          "evidence_text": "Application is 11 January 2026 for other institutions and at latest 11 January 2027 for SNCIs.",
+          "supports_fields": [
+            "compliance_events"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "required_bank_facts": [
+        {
+          "fact_ref": "01_entity/bank_profile.json#/entity_classification",
+          "purpose": "Scenario input; file presence does not establish legal compliance or evidence completeness.",
+          "evidence_status": "verified"
+        },
+        {
+          "fact_ref": "01_entity/bank_profile.json#/snci_status",
+          "purpose": "Scenario input; file presence does not establish legal compliance or evidence completeness.",
+          "evidence_status": "verified"
+        },
+        {
+          "fact_ref": "03_exposure/lending_portfolio.csv",
+          "purpose": "Scenario input; file presence does not establish legal compliance or evidence completeness.",
+          "evidence_status": "verified"
+        },
+        {
+          "fact_ref": "03_exposure/esg_assessment_snapshot.csv",
+          "purpose": "Scenario input; file presence does not establish legal compliance or evidence completeness.",
+          "evidence_status": "verified"
+        }
+      ],
+      "capability_domains": [
+        "credit_risk",
+        "data_management",
+        "esg_risk"
+      ],
+      "policy_ids": [],
+      "control_ids": [],
+      "procedure_ids": [],
+      "current_coverage": {
+        "rating": "none",
+        "assessment_basis": "joined_dataset",
+        "rationale": "Mapping describes supplied synthetic design only; operating effectiveness remains unproven.",
+        "control_ids": [],
+        "uncovered_dimensions": [],
+        "verification_status": "needs_review"
+      },
+      "interpretation_notes": [
+        "legal_force recorded as supervisory_expectation; source uses 'should'."
+      ],
+      "record_status": "needs_review",
+      "synthetic": false,
+      "provenance": {
+        "origin": "authoritative_external_source",
+        "source_ids": [
+          "SRC-ESG-EBA-GL-2025-01"
+        ],
+        "created_at": "2026-09-05T02:25:45Z",
+        "created_by": "coding_agent",
+        "last_verified_at": "2026-09-05T01:45:00Z",
+        "notes": [
+          "Refresh separates legal extraction, current synthetic capability, and human approval."
+        ]
+      },
+      "annotation": {
+        "label_status": "silver",
+        "annotated_by": "coding_agent",
+        "reviewed_by": null,
+        "reviewed_at": null,
+        "notes": []
+      },
+      "missing_evidence": [
+        {
+          "field": "legal_review",
+          "reason": "Qualified reviewer has not approved this extraction and the selected institution-specific interpretation.",
+          "required_input": "Qualified reviewer has not approved this extraction and the selected institution-specific interpretation.",
+          "responsible_scope": "legal_reviewer",
+          "blocking": true
+        }
+      ],
+      "extensions": {
+        "applicability_logic_status": "candidate_requires_legal_review",
+        "date_locator": "EBA/GL/2025/01 paragraph 10, PDF page 17; separate from substantive citation",
+        "unresolved_bank_fact_register": "03_exposure/missing_facts.json",
+        "assessment_contract_version": "0.2.1",
+        "jurisdiction_basis": "institution"
+      }
+    },
+    {
+      "requirement_id": "REQ-ESG-DATA-SELECTION-001",
+      "change_id": "REG-ESG-EBA-GL-2025-01",
+      "title": "Proportionate data selection for non-large counterparties",
+      "requirement_text": "For non-large-corporate counterparties, institutions should determine necessary ESG data points, considering paragraph 28 and permitted gap-filling approaches.",
+      "legal_force": "supervisory_expectation",
+      "addressee_types": [
+        "credit_institution"
+      ],
+      "jurisdictions": [
+        "EU",
+        "IE"
+      ],
+      "applicability_conditions": [
+        {
+          "condition_id": "COND-REQ-ESG-DATA-SELECTION-001-ENTITY",
+          "description": "Confirm the legal entity classification against the cited scope.",
+          "condition_type": "bank_fact",
+          "fact_path": "01_entity/bank_profile.json#/entity_classification",
+          "operator": "equals",
+          "expected_value": [
+            "credit_institution"
+          ],
+          "source_citation_ids": [
+            "CIT-REQ-ESG-DATA-SELECTION-001-SCOPE"
+          ],
+          "evidence_status": "verified"
+        }
+      ],
+      "exclusions_and_exemptions": [],
+      "compliance_events": [
+        {
+          "event_type": "application",
+          "date": "2026-01-11",
+          "condition": "Institutions other than small and non-complex institutions (SNCIs)",
+          "source_citation_ids": [
+            "CIT-REQ-ESG-DATA-SELECTION-001-DATE"
+          ],
+          "verification_status": "verified",
+          "extensions": {
+            "snci_selector": false
+          }
+        },
+        {
+          "event_type": "application",
+          "date": "2027-01-11",
+          "condition": "Small and non-complex institutions (SNCIs) - latest application date",
+          "source_citation_ids": [
+            "CIT-REQ-ESG-DATA-SELECTION-001-DATE"
+          ],
+          "verification_status": "verified",
+          "extensions": {
+            "snci_selector": true
+          }
+        }
+      ],
+      "source_citations": [
+        {
+          "citation_id": "CIT-REQ-ESG-DATA-SELECTION-001-01",
+          "source_id": "SRC-ESG-EBA-GL-2025-01",
+          "locator_type": "paragraph",
+          "locator": "Section 4.2.2, paragraph 29; PDF page 23",
+          "evidence_type": "paraphrase",
+          "evidence_text": "For non-large-corporate counterparties, institutions should determine necessary ESG data points, considering paragraph 28 and permitted gap-filling approaches.",
+          "supports_fields": [
+            "requirement_text"
+          ],
+          "verification_status": "verified"
+        },
+        {
+          "citation_id": "CIT-REQ-ESG-DATA-SELECTION-001-SCOPE",
+          "source_id": "SRC-ESG-EBA-GL-2025-01",
+          "locator_type": "paragraph",
+          "locator": "Paragraph 8; PDF page 17",
+          "evidence_type": "paraphrase",
+          "evidence_text": "Addressees include the institutions specified through the CRR definition.",
+          "supports_fields": [
+            "applicability_conditions"
+          ],
+          "verification_status": "verified"
+        },
+        {
+          "citation_id": "CIT-REQ-ESG-DATA-SELECTION-001-DATE",
+          "source_id": "SRC-ESG-EBA-GL-2025-01",
+          "locator_type": "paragraph",
+          "locator": "Paragraph 10; PDF page 17",
+          "evidence_type": "paraphrase",
+          "evidence_text": "Application is 11 January 2026 for other institutions and at latest 11 January 2027 for SNCIs.",
+          "supports_fields": [
+            "compliance_events"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "required_bank_facts": [
+        {
+          "fact_ref": "01_entity/bank_profile.json#/entity_classification",
+          "purpose": "Scenario input; file presence does not establish legal compliance or evidence completeness.",
+          "evidence_status": "verified"
+        },
+        {
+          "fact_ref": "01_entity/bank_profile.json#/snci_status",
+          "purpose": "Scenario input; file presence does not establish legal compliance or evidence completeness.",
+          "evidence_status": "verified"
+        },
+        {
+          "fact_ref": "03_exposure/lending_portfolio.csv",
+          "purpose": "Scenario input; file presence does not establish legal compliance or evidence completeness.",
+          "evidence_status": "verified"
+        },
+        {
+          "fact_ref": "03_exposure/esg_assessment_snapshot.csv",
+          "purpose": "Scenario input; file presence does not establish legal compliance or evidence completeness.",
+          "evidence_status": "verified"
+        }
+      ],
+      "capability_domains": [
+        "credit_risk",
+        "data_management",
+        "esg_risk"
+      ],
+      "policy_ids": [],
+      "control_ids": [],
+      "procedure_ids": [],
+      "current_coverage": {
+        "rating": "unknown",
+        "assessment_basis": "joined_dataset",
+        "rationale": "Mapping describes supplied synthetic design only; operating effectiveness remains unproven.",
+        "control_ids": [],
+        "uncovered_dimensions": [],
+        "verification_status": "needs_review"
+      },
+      "interpretation_notes": [
+        "legal_force recorded as supervisory_expectation; source uses 'should'."
+      ],
+      "record_status": "needs_review",
+      "synthetic": false,
+      "provenance": {
+        "origin": "authoritative_external_source",
+        "source_ids": [
+          "SRC-ESG-EBA-GL-2025-01"
+        ],
+        "created_at": "2026-09-05T02:25:45Z",
+        "created_by": "coding_agent",
+        "last_verified_at": "2026-09-05T01:45:00Z",
+        "notes": [
+          "Refresh separates legal extraction, current synthetic capability, and human approval."
+        ]
+      },
+      "annotation": {
+        "label_status": "silver",
+        "annotated_by": "coding_agent",
+        "reviewed_by": null,
+        "reviewed_at": null,
+        "notes": []
+      },
+      "missing_evidence": [
+        {
+          "field": "legal_review",
+          "reason": "Qualified reviewer has not approved this extraction and the selected institution-specific interpretation.",
+          "required_input": "Qualified reviewer has not approved this extraction and the selected institution-specific interpretation.",
+          "responsible_scope": "legal_reviewer",
+          "blocking": true
+        }
+      ],
+      "extensions": {
+        "split_from_requirement_id": "REQ-ESG-DATA-GAPS-001",
+        "applicability_logic_status": "candidate_requires_legal_review",
+        "date_locator": "EBA/GL/2025/01 paragraph 10, PDF page 17; separate from substantive citation",
+        "unresolved_bank_fact_register": "03_exposure/missing_facts.json",
+        "assessment_contract_version": "0.2.1",
+        "jurisdiction_basis": "institution"
+      }
+    },
+    {
+      "requirement_id": "REQ-ESG-LONG-HORIZON-001",
+      "change_id": "REG-ESG-EBA-GL-2025-01",
+      "title": "Long-term ESG risk management",
+      "requirement_text": "Institutions should manage ESG risks over short, medium and at least ten-year long-term horizons.",
+      "legal_force": "supervisory_expectation",
+      "addressee_types": [
+        "credit_institution",
+        "investment_firm"
+      ],
+      "jurisdictions": [
+        "EU",
+        "IE"
+      ],
+      "applicability_conditions": [
+        {
+          "condition_id": "COND-REQ-ESG-LONG-HORIZON-001-ENTITY",
+          "description": "Confirm the legal entity classification against the cited scope.",
+          "condition_type": "bank_fact",
+          "fact_path": "01_entity/bank_profile.json#/entity_classification",
+          "operator": "equals",
+          "expected_value": [
+            "credit_institution"
+          ],
+          "source_citation_ids": [
+            "CIT-REQ-ESG-LONG-HORIZON-001-SCOPE"
+          ],
+          "evidence_status": "verified"
+        }
+      ],
+      "exclusions_and_exemptions": [
+        "Paragraph 10: small and non-complex institutions (SNCIs) have a later application date (11 January 2027) than other institutions (11 January 2026)."
+      ],
+      "compliance_events": [
+        {
+          "event_type": "application",
+          "date": "2026-01-11",
+          "condition": "Institutions other than small and non-complex institutions (SNCIs)",
+          "source_citation_ids": [
+            "CIT-REQ-ESG-LONG-HORIZON-001-DATE"
+          ],
+          "verification_status": "verified",
+          "extensions": {
+            "snci_selector": false
+          }
+        },
+        {
+          "event_type": "application",
+          "date": "2027-01-11",
+          "condition": "Small and non-complex institutions (SNCIs) - latest application date",
+          "source_citation_ids": [
+            "CIT-REQ-ESG-LONG-HORIZON-001-DATE"
+          ],
+          "verification_status": "verified",
+          "extensions": {
+            "snci_selector": true
+          }
+        }
+      ],
+      "source_citations": [
+        {
+          "citation_id": "CIT-REQ-ESG-LONG-HORIZON-001-01",
+          "source_id": "SRC-ESG-EBA-GL-2025-01",
+          "locator_type": "paragraph",
+          "locator": "Section 5.1, paragraph 45; PDF page 27",
+          "evidence_type": "paraphrase",
+          "evidence_text": "Institutions should manage ESG risks over short, medium and at least ten-year long-term horizons.",
+          "supports_fields": [
+            "requirement_text"
+          ],
+          "verification_status": "verified"
+        },
+        {
+          "citation_id": "CIT-REQ-ESG-LONG-HORIZON-001-SCOPE",
+          "source_id": "SRC-ESG-EBA-GL-2025-01",
+          "locator_type": "paragraph",
+          "locator": "Paragraph 8; PDF page 17",
+          "evidence_type": "paraphrase",
+          "evidence_text": "Addressees include the institutions specified through the CRR definition.",
+          "supports_fields": [
+            "applicability_conditions"
+          ],
+          "verification_status": "verified"
+        },
+        {
+          "citation_id": "CIT-REQ-ESG-LONG-HORIZON-001-DATE",
+          "source_id": "SRC-ESG-EBA-GL-2025-01",
+          "locator_type": "paragraph",
+          "locator": "Paragraph 10; PDF page 17",
+          "evidence_type": "paraphrase",
+          "evidence_text": "Application is 11 January 2026 for other institutions and at latest 11 January 2027 for SNCIs.",
+          "supports_fields": [
+            "compliance_events"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "required_bank_facts": [
+        {
+          "fact_ref": "01_entity/bank_profile.json#/entity_classification",
+          "purpose": "Scenario input; file presence does not establish legal compliance or evidence completeness.",
+          "evidence_status": "verified"
+        },
+        {
+          "fact_ref": "01_entity/bank_profile.json#/snci_status",
+          "purpose": "Scenario input; file presence does not establish legal compliance or evidence completeness.",
+          "evidence_status": "verified"
+        },
+        {
+          "fact_ref": "03_exposure/lending_portfolio.csv",
+          "purpose": "Scenario input; file presence does not establish legal compliance or evidence completeness.",
+          "evidence_status": "verified"
+        },
+        {
+          "fact_ref": "03_exposure/esg_assessment_snapshot.csv",
+          "purpose": "Scenario input; file presence does not establish legal compliance or evidence completeness.",
+          "evidence_status": "verified"
+        }
+      ],
+      "capability_domains": [
+        "credit_risk",
+        "esg_risk",
+        "risk_management"
+      ],
+      "policy_ids": [],
+      "control_ids": [],
+      "procedure_ids": [],
+      "current_coverage": {
+        "rating": "unknown",
+        "assessment_basis": "joined_dataset",
+        "rationale": "Prior onboarding link withdrawn after semantic review; investigate requirement-specific design and operating evidence.",
+        "control_ids": [],
+        "uncovered_dimensions": [],
+        "verification_status": "needs_review"
+      },
+      "interpretation_notes": [
+        "Source uses 'should', not 'shall'; legal_force is recorded as supervisory_expectation (Article 16 Regulation (EU) No 1093/2010 comply-or-explain guidance), not a statutory obligation."
+      ],
+      "record_status": "needs_review",
+      "synthetic": false,
+      "provenance": {
+        "origin": "authoritative_external_source",
+        "source_ids": [
+          "SRC-ESG-EBA-GL-2025-01"
+        ],
+        "created_at": "2026-09-05T02:25:45Z",
+        "created_by": "coding_agent",
+        "last_verified_at": "2026-09-05T01:45:00Z",
+        "notes": [
+          "Refresh separates legal extraction, current synthetic capability, and human approval.",
+          "M1 semantic review supersedes the archived 2026-09-11 lineage-based mapping; see extensions."
+        ]
+      },
+      "annotation": {
+        "label_status": "silver",
+        "annotated_by": "coding_agent",
+        "reviewed_by": null,
+        "reviewed_at": null,
+        "notes": []
+      },
+      "missing_evidence": [
+        {
+          "field": "legal_review",
+          "reason": "Qualified reviewer has not approved this extraction and the selected institution-specific interpretation.",
+          "required_input": "Qualified reviewer has not approved this extraction and the selected institution-specific interpretation.",
+          "responsible_scope": "legal_reviewer",
+          "blocking": true
+        }
+      ],
+      "extensions": {
+        "split_from_requirement_id": "REQ-ESG-RISK-INTEGRATION-001",
+        "applicability_logic_status": "candidate_requires_legal_review",
+        "date_locator": "EBA/GL/2025/01 paragraph 10, PDF page 17; separate from substantive citation",
+        "unresolved_bank_fact_register": "03_exposure/missing_facts.json",
+        "assessment_contract_version": "0.2.1",
+        "jurisdiction_basis": "institution",
+        "mapping_review": {
+          "method_version": "semantic-mapping-v1",
+          "review_status": "provisional",
+          "candidate_control_id": "CTRL-ESG-ONBOARD-SCREEN",
+          "relationship": "related_not_supporting",
+          "rationale": "No ten-year horizon or long-term analysis appears in the control objective/frequency.",
+          "evidence_fields": [
+            "objective",
+            "frequency",
+            "coverage"
+          ],
+          "note": "Requirement split lineage is not evidence of substantive coverage."
+        },
+        "coverage_criteria": [
+          {
+            "dimension_type": "horizon",
+            "dimension_ref": "at_least_ten_years"
+          },
+          {
+            "dimension_type": "horizon",
+            "dimension_ref": "short_and_medium_term"
+          }
+        ],
+        "criteria_basis": {
+          "review_status": "provisional",
+          "source_citation_ids": [
+            "CIT-REQ-ESG-LONG-HORIZON-001-01"
+          ],
+          "scope": "Selected credit-risk investigation criteria; not a claim of exhaustive bank-wide compliance."
+        },
+        "superseded_mapping_annotations": [
+          "2026-09-11: control_ids/current_coverage backfilled with CTRL-ESG-ONBOARD-SCREEN. This requirement split from REQ-ESG-RISK-INTEGRATION-001, which the control was already linked to; the control's own requirement_ids was never updated to also include this split-off requirement -- a bidirectional-mapping gap, not a newly designed capability."
+        ]
+      }
+    },
+    {
+      "requirement_id": "REQ-ESG-RISK-APPETITE-001",
+      "change_id": "REG-ESG-EBA-GL-2025-01",
+      "title": "ESG risks defined and addressed in the institution's risk appetite",
+      "requirement_text": "Institutions should define their willingness to assume material ESG risks in risk appetite, including portfolio concentration and diversification objectives.",
+      "legal_force": "supervisory_expectation",
+      "addressee_types": [
+        "credit_institution"
+      ],
+      "jurisdictions": [
+        "EU",
+        "IE"
+      ],
+      "applicability_conditions": [
+        {
+          "condition_id": "COND-REQ-ESG-RISK-APPETITE-001-ENTITY",
+          "description": "Confirm the legal entity classification against the cited scope.",
+          "condition_type": "bank_fact",
+          "fact_path": "01_entity/bank_profile.json#/entity_classification",
+          "operator": "equals",
+          "expected_value": [
+            "credit_institution"
+          ],
+          "source_citation_ids": [
+            "CIT-REQ-ESG-RISK-APPETITE-001-SCOPE"
+          ],
+          "evidence_status": "verified"
+        }
+      ],
+      "exclusions_and_exemptions": [],
+      "compliance_events": [
+        {
+          "event_type": "application",
+          "date": "2026-01-11",
+          "condition": "Institutions other than small and non-complex institutions (SNCIs)",
+          "source_citation_ids": [
+            "CIT-REQ-ESG-RISK-APPETITE-001-DATE"
+          ],
+          "verification_status": "verified",
+          "extensions": {
+            "snci_selector": false
+          }
+        },
+        {
+          "event_type": "application",
+          "date": "2027-01-11",
+          "condition": "Small and non-complex institutions (SNCIs) - latest application date",
+          "source_citation_ids": [
+            "CIT-REQ-ESG-RISK-APPETITE-001-DATE"
+          ],
+          "verification_status": "verified",
+          "extensions": {
+            "snci_selector": true
+          }
+        }
+      ],
+      "source_citations": [
+        {
+          "citation_id": "CIT-REQ-ESG-RISK-APPETITE-001-01",
+          "source_id": "SRC-ESG-EBA-GL-2025-01",
+          "locator_type": "paragraph",
+          "locator": "Section 5.3, paragraph 50; PDF page 29",
+          "evidence_type": "paraphrase",
+          "evidence_text": "Institutions should define their willingness to assume material ESG risks in risk appetite, including portfolio concentration and diversification objectives.",
+          "supports_fields": [
+            "requirement_text"
+          ],
+          "verification_status": "verified"
+        },
+        {
+          "citation_id": "CIT-REQ-ESG-RISK-APPETITE-001-SCOPE",
+          "source_id": "SRC-ESG-EBA-GL-2025-01",
+          "locator_type": "paragraph",
+          "locator": "Paragraph 8; PDF page 17",
+          "evidence_type": "paraphrase",
+          "evidence_text": "Addressees include the institutions specified through the CRR definition.",
+          "supports_fields": [
+            "applicability_conditions"
+          ],
+          "verification_status": "verified"
+        },
+        {
+          "citation_id": "CIT-REQ-ESG-RISK-APPETITE-001-DATE",
+          "source_id": "SRC-ESG-EBA-GL-2025-01",
+          "locator_type": "paragraph",
+          "locator": "Paragraph 10; PDF page 17",
+          "evidence_type": "paraphrase",
+          "evidence_text": "Application is 11 January 2026 for other institutions and at latest 11 January 2027 for SNCIs.",
+          "supports_fields": [
+            "compliance_events"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "required_bank_facts": [
+        {
+          "fact_ref": "01_entity/bank_profile.json#/entity_classification",
+          "purpose": "Scenario input; file presence does not establish legal compliance or evidence completeness.",
+          "evidence_status": "verified"
+        },
+        {
+          "fact_ref": "01_entity/bank_profile.json#/snci_status",
+          "purpose": "Scenario input; file presence does not establish legal compliance or evidence completeness.",
+          "evidence_status": "verified"
+        },
+        {
+          "fact_ref": "03_exposure/lending_portfolio.csv",
+          "purpose": "Scenario input; file presence does not establish legal compliance or evidence completeness.",
+          "evidence_status": "verified"
+        },
+        {
+          "fact_ref": "03_exposure/esg_assessment_snapshot.csv",
+          "purpose": "Scenario input; file presence does not establish legal compliance or evidence completeness.",
+          "evidence_status": "verified"
+        }
+      ],
+      "capability_domains": [
+        "esg_risk",
+        "risk_management"
+      ],
+      "policy_ids": [],
+      "control_ids": [],
+      "procedure_ids": [],
+      "current_coverage": {
+        "rating": "none",
+        "assessment_basis": "joined_dataset",
+        "rationale": "Mapping describes supplied synthetic design only; operating effectiveness remains unproven.",
+        "control_ids": [],
+        "uncovered_dimensions": [],
+        "verification_status": "needs_review"
+      },
+      "interpretation_notes": [
+        "legal_force recorded as supervisory_expectation; source uses 'should'."
+      ],
+      "record_status": "needs_review",
+      "synthetic": false,
+      "provenance": {
+        "origin": "authoritative_external_source",
+        "source_ids": [
+          "SRC-ESG-EBA-GL-2025-01"
+        ],
+        "created_at": "2026-09-05T02:25:45Z",
+        "created_by": "coding_agent",
+        "last_verified_at": "2026-09-05T01:45:00Z",
+        "notes": [
+          "Refresh separates legal extraction, current synthetic capability, and human approval."
+        ]
+      },
+      "annotation": {
+        "label_status": "silver",
+        "annotated_by": "coding_agent",
+        "reviewed_by": null,
+        "reviewed_at": null,
+        "notes": []
+      },
+      "missing_evidence": [
+        {
+          "field": "legal_review",
+          "reason": "Qualified reviewer has not approved this extraction and the selected institution-specific interpretation.",
+          "required_input": "Qualified reviewer has not approved this extraction and the selected institution-specific interpretation.",
+          "responsible_scope": "legal_reviewer",
+          "blocking": true
+        },
+        {
+          "field": "current_coverage",
+          "reason": "Risk-appetite statement and approved ESG limits/KRIs are not supplied.",
+          "required_input": "Risk-appetite statement and approved ESG limits/KRIs are not supplied.",
+          "responsible_scope": "person_1",
+          "blocking": true
+        }
+      ],
+      "extensions": {
+        "applicability_logic_status": "candidate_requires_legal_review",
+        "date_locator": "EBA/GL/2025/01 paragraph 10, PDF page 17; separate from substantive citation",
+        "unresolved_bank_fact_register": "03_exposure/missing_facts.json",
+        "assessment_contract_version": "0.2.1",
+        "jurisdiction_basis": "institution"
+      }
+    },
+    {
+      "requirement_id": "REQ-ESG-RISK-INTEGRATION-001",
+      "change_id": "REG-ESG-EBA-GL-2025-01",
+      "title": "Integration of ESG risks as drivers of traditional financial risk categories",
+      "requirement_text": "Institutions should embed ESG risks within regular risk-management systems and processes consistently with their business and risk strategies.",
+      "legal_force": "supervisory_expectation",
+      "addressee_types": [
+        "credit_institution",
+        "investment_firm"
+      ],
+      "jurisdictions": [
+        "EU",
+        "IE"
+      ],
+      "applicability_conditions": [
+        {
+          "condition_id": "COND-REQ-ESG-RISK-INTEGRATION-001-ENTITY",
+          "description": "Confirm the legal entity classification against the cited scope.",
+          "condition_type": "bank_fact",
+          "fact_path": "01_entity/bank_profile.json#/entity_classification",
+          "operator": "equals",
+          "expected_value": [
+            "credit_institution"
+          ],
+          "source_citation_ids": [
+            "CIT-REQ-ESG-RISK-INTEGRATION-001-SCOPE"
+          ],
+          "evidence_status": "verified"
+        }
+      ],
+      "exclusions_and_exemptions": [
+        "Paragraph 10: small and non-complex institutions (SNCIs) have a later application date (11 January 2027) than other institutions (11 January 2026)."
+      ],
+      "compliance_events": [
+        {
+          "event_type": "application",
+          "date": "2026-01-11",
+          "condition": "Institutions other than small and non-complex institutions (SNCIs)",
+          "source_citation_ids": [
+            "CIT-REQ-ESG-RISK-INTEGRATION-001-DATE"
+          ],
+          "verification_status": "verified",
+          "extensions": {
+            "snci_selector": false
+          }
+        },
+        {
+          "event_type": "application",
+          "date": "2027-01-11",
+          "condition": "Small and non-complex institutions (SNCIs) - latest application date",
+          "source_citation_ids": [
+            "CIT-REQ-ESG-RISK-INTEGRATION-001-DATE"
+          ],
+          "verification_status": "verified",
+          "extensions": {
+            "snci_selector": true
+          }
+        }
+      ],
+      "source_citations": [
+        {
+          "citation_id": "CIT-REQ-ESG-RISK-INTEGRATION-001-01",
+          "source_id": "SRC-ESG-EBA-GL-2025-01",
+          "locator_type": "paragraph",
+          "locator": "Section 5.1, paragraph 44; PDF page 27",
+          "evidence_type": "paraphrase",
+          "evidence_text": "Institutions should embed ESG risks within regular risk-management systems and processes consistently with their business and risk strategies.",
+          "supports_fields": [
+            "requirement_text"
+          ],
+          "verification_status": "verified"
+        },
+        {
+          "citation_id": "CIT-REQ-ESG-RISK-INTEGRATION-001-SCOPE",
+          "source_id": "SRC-ESG-EBA-GL-2025-01",
+          "locator_type": "paragraph",
+          "locator": "Paragraph 8; PDF page 17",
+          "evidence_type": "paraphrase",
+          "evidence_text": "Addressees include the institutions specified through the CRR definition.",
+          "supports_fields": [
+            "applicability_conditions"
+          ],
+          "verification_status": "verified"
+        },
+        {
+          "citation_id": "CIT-REQ-ESG-RISK-INTEGRATION-001-DATE",
+          "source_id": "SRC-ESG-EBA-GL-2025-01",
+          "locator_type": "paragraph",
+          "locator": "Paragraph 10; PDF page 17",
+          "evidence_type": "paraphrase",
+          "evidence_text": "Application is 11 January 2026 for other institutions and at latest 11 January 2027 for SNCIs.",
+          "supports_fields": [
+            "compliance_events"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "required_bank_facts": [
+        {
+          "fact_ref": "01_entity/bank_profile.json#/entity_classification",
+          "purpose": "Scenario input; file presence does not establish legal compliance or evidence completeness.",
+          "evidence_status": "verified"
+        },
+        {
+          "fact_ref": "01_entity/bank_profile.json#/snci_status",
+          "purpose": "Scenario input; file presence does not establish legal compliance or evidence completeness.",
+          "evidence_status": "verified"
+        },
+        {
+          "fact_ref": "03_exposure/lending_portfolio.csv",
+          "purpose": "Scenario input; file presence does not establish legal compliance or evidence completeness.",
+          "evidence_status": "verified"
+        },
+        {
+          "fact_ref": "03_exposure/esg_assessment_snapshot.csv",
+          "purpose": "Scenario input; file presence does not establish legal compliance or evidence completeness.",
+          "evidence_status": "verified"
+        }
+      ],
+      "capability_domains": [
+        "credit_risk",
+        "esg_risk",
+        "risk_management"
+      ],
+      "policy_ids": [
+        "POL-CREDIT-RISK-ESG"
+      ],
+      "control_ids": [
+        "CTRL-ESG-ONBOARD-SCREEN"
+      ],
+      "procedure_ids": [
+        "PRCD-ESG-ONBOARD-SCREEN"
+      ],
+      "current_coverage": {
+        "rating": "partial",
+        "assessment_basis": "joined_dataset",
+        "rationale": "Mapping describes supplied synthetic design only; operating effectiveness remains unproven.",
+        "control_ids": [
+          "CTRL-ESG-ONBOARD-SCREEN"
+        ],
+        "uncovered_dimensions": [
+          "ongoing_portfolio_monitoring",
+          "risk_appetite_integration"
+        ],
+        "verification_status": "needs_review"
+      },
+      "interpretation_notes": [
+        "Source uses 'should', not 'shall'; legal_force is recorded as supervisory_expectation (Article 16 Regulation (EU) No 1093/2010 comply-or-explain guidance), not a statutory obligation."
+      ],
+      "record_status": "needs_review",
+      "synthetic": false,
+      "provenance": {
+        "origin": "authoritative_external_source",
+        "source_ids": [
+          "SRC-ESG-EBA-GL-2025-01"
+        ],
+        "created_at": "2026-09-05T02:25:45Z",
+        "created_by": "coding_agent",
+        "last_verified_at": "2026-09-05T01:45:00Z",
+        "notes": [
+          "Refresh separates legal extraction, current synthetic capability, and human approval."
+        ]
+      },
+      "annotation": {
+        "label_status": "silver",
+        "annotated_by": "coding_agent",
+        "reviewed_by": null,
+        "reviewed_at": null,
+        "notes": []
+      },
+      "missing_evidence": [
+        {
+          "field": "legal_review",
+          "reason": "Qualified reviewer has not approved this extraction and the selected institution-specific interpretation.",
+          "required_input": "Qualified reviewer has not approved this extraction and the selected institution-specific interpretation.",
+          "responsible_scope": "legal_reviewer",
+          "blocking": true
+        }
+      ],
+      "extensions": {
+        "applicability_logic_status": "candidate_requires_legal_review",
+        "date_locator": "EBA/GL/2025/01 paragraph 10, PDF page 17; separate from substantive citation",
+        "unresolved_bank_fact_register": "03_exposure/missing_facts.json",
+        "assessment_contract_version": "0.2.1",
+        "jurisdiction_basis": "institution",
+        "coverage_criteria": [
+          {
+            "dimension_type": "process",
+            "dimension_ref": "credit_origination"
+          },
+          {
+            "dimension_type": "process",
+            "dimension_ref": "ongoing_risk_management"
+          }
+        ],
+        "criteria_basis": {
+          "review_status": "provisional",
+          "source_citation_ids": [
+            "CIT-REQ-ESG-RISK-INTEGRATION-001-01"
+          ],
+          "scope": "Selected credit-risk investigation criteria; not a claim of exhaustive bank-wide compliance."
+        }
+      }
+    },
+    {
+      "requirement_id": "REQ-ESG-RISK-KRI-001",
+      "change_id": "REG-ESG-EBA-GL-2025-01",
+      "title": "ESG indicators supporting risk appetite",
+      "requirement_text": "Institutions should implement ESG risk appetite using relevant key risk indicators informed by materiality and their business model.",
+      "legal_force": "supervisory_expectation",
+      "addressee_types": [
+        "credit_institution"
+      ],
+      "jurisdictions": [
+        "EU",
+        "IE"
+      ],
+      "applicability_conditions": [
+        {
+          "condition_id": "COND-REQ-ESG-RISK-KRI-001-ENTITY",
+          "description": "Confirm the legal entity classification against the cited scope.",
+          "condition_type": "bank_fact",
+          "fact_path": "01_entity/bank_profile.json#/entity_classification",
+          "operator": "equals",
+          "expected_value": [
+            "credit_institution"
+          ],
+          "source_citation_ids": [
+            "CIT-REQ-ESG-RISK-KRI-001-SCOPE"
+          ],
+          "evidence_status": "verified"
+        }
+      ],
+      "exclusions_and_exemptions": [],
+      "compliance_events": [
+        {
+          "event_type": "application",
+          "date": "2026-01-11",
+          "condition": "Institutions other than small and non-complex institutions (SNCIs)",
+          "source_citation_ids": [
+            "CIT-REQ-ESG-RISK-KRI-001-DATE"
+          ],
+          "verification_status": "verified",
+          "extensions": {
+            "snci_selector": false
+          }
+        },
+        {
+          "event_type": "application",
+          "date": "2027-01-11",
+          "condition": "Small and non-complex institutions (SNCIs) - latest application date",
+          "source_citation_ids": [
+            "CIT-REQ-ESG-RISK-KRI-001-DATE"
+          ],
+          "verification_status": "verified",
+          "extensions": {
+            "snci_selector": true
+          }
+        }
+      ],
+      "source_citations": [
+        {
+          "citation_id": "CIT-REQ-ESG-RISK-KRI-001-01",
+          "source_id": "SRC-ESG-EBA-GL-2025-01",
+          "locator_type": "paragraph",
+          "locator": "Section 5.3, paragraph 51; PDF page 29",
+          "evidence_type": "paraphrase",
+          "evidence_text": "Institutions should implement ESG risk appetite using relevant key risk indicators informed by materiality and their business model.",
+          "supports_fields": [
+            "requirement_text"
+          ],
+          "verification_status": "verified"
+        },
+        {
+          "citation_id": "CIT-REQ-ESG-RISK-KRI-001-SCOPE",
+          "source_id": "SRC-ESG-EBA-GL-2025-01",
+          "locator_type": "paragraph",
+          "locator": "Paragraph 8; PDF page 17",
+          "evidence_type": "paraphrase",
+          "evidence_text": "Addressees include the institutions specified through the CRR definition.",
+          "supports_fields": [
+            "applicability_conditions"
+          ],
+          "verification_status": "verified"
+        },
+        {
+          "citation_id": "CIT-REQ-ESG-RISK-KRI-001-DATE",
+          "source_id": "SRC-ESG-EBA-GL-2025-01",
+          "locator_type": "paragraph",
+          "locator": "Paragraph 10; PDF page 17",
+          "evidence_type": "paraphrase",
+          "evidence_text": "Application is 11 January 2026 for other institutions and at latest 11 January 2027 for SNCIs.",
+          "supports_fields": [
+            "compliance_events"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "required_bank_facts": [
+        {
+          "fact_ref": "01_entity/bank_profile.json#/entity_classification",
+          "purpose": "Scenario input; file presence does not establish legal compliance or evidence completeness.",
+          "evidence_status": "verified"
+        },
+        {
+          "fact_ref": "01_entity/bank_profile.json#/snci_status",
+          "purpose": "Scenario input; file presence does not establish legal compliance or evidence completeness.",
+          "evidence_status": "verified"
+        },
+        {
+          "fact_ref": "03_exposure/lending_portfolio.csv",
+          "purpose": "Scenario input; file presence does not establish legal compliance or evidence completeness.",
+          "evidence_status": "verified"
+        },
+        {
+          "fact_ref": "03_exposure/esg_assessment_snapshot.csv",
+          "purpose": "Scenario input; file presence does not establish legal compliance or evidence completeness.",
+          "evidence_status": "verified"
+        }
+      ],
+      "capability_domains": [
+        "esg_risk",
+        "risk_management"
+      ],
+      "policy_ids": [],
+      "control_ids": [],
+      "procedure_ids": [],
+      "current_coverage": {
+        "rating": "unknown",
+        "assessment_basis": "joined_dataset",
+        "rationale": "Mapping describes supplied synthetic design only; operating effectiveness remains unproven.",
+        "control_ids": [],
+        "uncovered_dimensions": [],
+        "verification_status": "needs_review"
+      },
+      "interpretation_notes": [
+        "legal_force recorded as supervisory_expectation; source uses 'should'."
+      ],
+      "record_status": "needs_review",
+      "synthetic": false,
+      "provenance": {
+        "origin": "authoritative_external_source",
+        "source_ids": [
+          "SRC-ESG-EBA-GL-2025-01"
+        ],
+        "created_at": "2026-09-05T02:25:45Z",
+        "created_by": "coding_agent",
+        "last_verified_at": "2026-09-05T01:45:00Z",
+        "notes": [
+          "Refresh separates legal extraction, current synthetic capability, and human approval."
+        ]
+      },
+      "annotation": {
+        "label_status": "silver",
+        "annotated_by": "coding_agent",
+        "reviewed_by": null,
+        "reviewed_at": null,
+        "notes": []
+      },
+      "missing_evidence": [
+        {
+          "field": "legal_review",
+          "reason": "Qualified reviewer has not approved this extraction and the selected institution-specific interpretation.",
+          "required_input": "Qualified reviewer has not approved this extraction and the selected institution-specific interpretation.",
+          "responsible_scope": "legal_reviewer",
+          "blocking": true
+        }
+      ],
+      "extensions": {
+        "split_from_requirement_id": "REQ-ESG-RISK-APPETITE-001",
+        "applicability_logic_status": "candidate_requires_legal_review",
+        "date_locator": "EBA/GL/2025/01 paragraph 10, PDF page 17; separate from substantive citation",
+        "unresolved_bank_fact_register": "03_exposure/missing_facts.json",
+        "assessment_contract_version": "0.2.1",
+        "jurisdiction_basis": "institution"
+      }
+    },
+    {
+      "requirement_id": "REQ-FRTB-APPLICATION-DATE-001",
+      "change_id": "REG-FRTB-CRR3-MKT-RISK",
+      "title": "Transitional application date for FRTB-based market-risk own funds requirements",
+      "requirement_text": "Until the currently governing application date for the FRTB alternative approaches (presently 1 January 2027 under Commission Delegated Regulation (EU) 2025/1496, itself subject to a further pending targeted-adjustment delegated act not yet confirmed in force), an institution not benefiting from the small-trading-book-business derogation shall continue to apply the market-risk own-funds framework as it stood on 8 July 2024, rather than the FRTB-based approaches introduced by CRR3.",
+      "legal_force": "obligation",
+      "addressee_types": [
+        "credit_institution",
+        "investment_firm"
+      ],
+      "jurisdictions": [
+        "EU",
+        "IE"
+      ],
+      "applicability_conditions": [
+        {
+          "condition_id": "COND-REQ-FRTB-APPLICATION-DATE-001-ENTITY",
+          "description": "Confirm the legal entity classification against the cited scope.",
+          "condition_type": "bank_fact",
+          "fact_path": "01_entity/bank_profile.json#/entity_classification",
+          "operator": "equals",
+          "expected_value": [
+            "credit_institution"
+          ],
+          "source_citation_ids": [
+            "CIT-REQ-FRTB-APPLICATION-DATE-001-01"
+          ],
+          "evidence_status": "verified"
+        }
+      ],
+      "exclusions_and_exemptions": [
+        "Article 94 derogation scope and remaining market-risk duties require separate review, including non-trading-book FX and commodity risks. Do not infer a blanket exemption from this timeline."
+      ],
+      "compliance_events": [
+        {
+          "event_type": "transition",
+          "date": "2027-01-01",
+          "condition": "Retained 2025/1496 transition date; current operative status and institution-specific scope require primary-source review.",
+          "source_citation_ids": [
+            "CIT-REQ-FRTB-APPLICATION-DATE-001-01"
+          ],
+          "verification_status": "needs_review"
+        }
+      ],
+      "source_citations": [
+        {
+          "citation_id": "CIT-REQ-FRTB-APPLICATION-DATE-001-01",
+          "source_id": "SRC-FRTB-EURLEX-DA-2025-1496",
+          "locator_type": "article",
+          "locator": "Commission Delegated Regulation (EU) 2025/1496 (recitals and operative provision deferring the FRTB application date)",
+          "evidence_type": "paraphrase",
+          "evidence_text": "Until the currently governing application date for the FRTB alternative approaches (presently 1 January 2027 under Commission Delegated Regulation (EU) 2025/1496, itself subject to a further pending targeted-adjustment delegated act not yet confirmed in force), an institution not benefiting from the small-trading-book-business derogation shall continue to apply the market-risk own-funds framework as it stood on 8 July 2024, rather than the FRTB-based approaches introduced by CRR3.",
+          "supports_fields": [
+            "requirement_text",
+            "compliance_events"
+          ],
+          "verification_status": "needs_review"
+        }
+      ],
+      "required_bank_facts": [
+        {
+          "fact_ref": "01_entity/bank_profile.json#/entity_classification",
+          "purpose": "Scenario input; file presence does not establish legal compliance or evidence completeness.",
+          "evidence_status": "verified"
+        },
+        {
+          "fact_ref": "03_exposure/trading_book.csv",
+          "purpose": "Scenario input; file presence does not establish legal compliance or evidence completeness.",
+          "evidence_status": "verified"
+        },
+        {
+          "fact_ref": "01_entity/bank_profile.json#/scale/total_assets_eur_millions",
+          "purpose": "Scenario input; file presence does not establish legal compliance or evidence completeness.",
+          "evidence_status": "verified"
+        }
+      ],
+      "capability_domains": [
+        "market_risk",
+        "trading_book"
+      ],
+      "policy_ids": [],
+      "control_ids": [],
+      "procedure_ids": [],
+      "current_coverage": {
+        "rating": "not_assessed",
+        "assessment_basis": "joined_dataset",
+        "rationale": "Mapping describes supplied synthetic design only; operating effectiveness remains unproven.",
+        "control_ids": [],
+        "uncovered_dimensions": [],
+        "verification_status": "needs_review"
+      },
+      "interpretation_notes": [
+        "Held at needs_review pending confirmation of whether the 4 June 2026 targeted-adjustment delegated act has entered into force as of the research cut-off; see REG-FRTB-CRR3-MKT-RISK missing_evidence."
+      ],
+      "record_status": "needs_review",
+      "synthetic": false,
+      "provenance": {
+        "origin": "authoritative_external_source",
+        "source_ids": [
+          "SRC-FRTB-EBA-STATEMENT-2025",
+          "SRC-FRTB-EURLEX-DA-2025-1496"
+        ],
+        "created_at": "2026-09-05T02:25:45Z",
+        "created_by": "coding_agent",
+        "last_verified_at": null,
+        "notes": [
+          "Current application date is corroborated by two independent official sources but not quote-verified against primary OJ text; the further pending 2026 act's status is unresolved.",
+          "Refresh separates legal extraction, current synthetic capability, and human approval."
+        ]
+      },
+      "annotation": {
+        "label_status": "silver",
+        "annotated_by": "coding_agent",
+        "reviewed_by": null,
+        "reviewed_at": null,
+        "notes": []
+      },
+      "missing_evidence": [
+        {
+          "field": "legal_review",
+          "reason": "Qualified reviewer has not approved this extraction and the selected institution-specific interpretation.",
+          "required_input": "Qualified reviewer has not approved this extraction and the selected institution-specific interpretation.",
+          "responsible_scope": "legal_reviewer",
+          "blocking": true
+        },
+        {
+          "field": "source_citations",
+          "reason": "Current operative source text/version could not be fully rechecked through available retrieval; retained sources are not upgraded.",
+          "required_input": "Current operative source text/version could not be fully rechecked through available retrieval; retained sources are not upgraded.",
+          "responsible_scope": "legal_reviewer",
+          "blocking": true
+        },
+        {
+          "field": "required_bank_facts",
+          "reason": "Current complete on/off-balance-sheet trading inventory and non-trading-book FX/commodity exposure are absent.",
+          "required_input": "Current complete on/off-balance-sheet trading inventory and non-trading-book FX/commodity exposure are absent.",
+          "responsible_scope": "person_2",
+          "blocking": true
+        }
+      ],
+      "extensions": {
+        "applicability_logic_status": "candidate_requires_legal_review",
+        "unresolved_bank_fact_register": "03_exposure/missing_facts.json",
+        "assessment_contract_version": "0.2.1",
+        "jurisdiction_basis": "institution"
+      }
+    },
+    {
+      "requirement_id": "REQ-FRTB-SMALL-BOOK-001",
+      "change_id": "REG-FRTB-CRR3-MKT-RISK",
+      "title": "Small trading-book-business exemption from market-risk own funds requirements",
+      "requirement_text": "An institution may use the small-trading-book derogation only if all conditions of CRR Article 94 are met, supported by the required position measurements and monitoring. This does not establish exemption from all market-risk requirements.",
+      "legal_force": "permission",
+      "addressee_types": [
+        "credit_institution",
+        "investment_firm"
+      ],
+      "jurisdictions": [
+        "EU",
+        "IE"
+      ],
+      "applicability_conditions": [
+        {
+          "condition_id": "COND-REQ-FRTB-SMALL-BOOK-001-ENTITY",
+          "description": "Confirm the legal entity classification against the cited scope.",
+          "condition_type": "bank_fact",
+          "fact_path": "01_entity/bank_profile.json#/entity_classification",
+          "operator": "equals",
+          "expected_value": [
+            "credit_institution"
+          ],
+          "source_citation_ids": [
+            "CIT-REQ-FRTB-SMALL-BOOK-001-01"
+          ],
+          "evidence_status": "verified"
+        }
+      ],
+      "exclusions_and_exemptions": [],
+      "compliance_events": [
+        {
+          "event_type": "review",
+          "date": null,
+          "condition": "Threshold to be assessed on at least a monthly basis for continued eligibility",
+          "source_citation_ids": [
+            "CIT-REQ-FRTB-SMALL-BOOK-001-01"
+          ],
+          "verification_status": "needs_review"
+        }
+      ],
+      "source_citations": [
+        {
+          "citation_id": "CIT-REQ-FRTB-SMALL-BOOK-001-01",
+          "source_id": "SRC-FRTB-EURLEX-CRR-575",
+          "locator_type": "article",
+          "locator": "CRR Article 94; current consolidated wording not retrieved",
+          "evidence_type": "paraphrase",
+          "evidence_text": "An institution may use the small-trading-book derogation only if all conditions of CRR Article 94 are met, supported by the required position measurements and monitoring. This does not establish exemption from all market-risk requirements.",
+          "supports_fields": [
+            "requirement_text",
+            "applicability_conditions"
+          ],
+          "verification_status": "needs_review"
+        }
+      ],
+      "required_bank_facts": [
+        {
+          "fact_ref": "01_entity/bank_profile.json#/entity_classification",
+          "purpose": "Scenario input; file presence does not establish legal compliance or evidence completeness.",
+          "evidence_status": "verified"
+        },
+        {
+          "fact_ref": "03_exposure/trading_book.csv",
+          "purpose": "Scenario input; file presence does not establish legal compliance or evidence completeness.",
+          "evidence_status": "verified"
+        },
+        {
+          "fact_ref": "01_entity/bank_profile.json#/scale/total_assets_eur_millions",
+          "purpose": "Scenario input; file presence does not establish legal compliance or evidence completeness.",
+          "evidence_status": "verified"
+        }
+      ],
+      "capability_domains": [
+        "market_risk",
+        "trading_book"
+      ],
+      "policy_ids": [
+        "POL-MARKET-RISK-TRADING-BOOK"
+      ],
+      "control_ids": [
+        "CTRL-FRTB-THRESHOLD-MONITOR"
+      ],
+      "procedure_ids": [
+        "PRCD-FRTB-THRESHOLD-MONITOR"
+      ],
+      "current_coverage": {
+        "rating": "unknown",
+        "assessment_basis": "joined_dataset",
+        "rationale": "Mapping describes supplied synthetic design only; operating effectiveness remains unproven.",
+        "control_ids": [
+          "CTRL-FRTB-THRESHOLD-MONITOR"
+        ],
+        "uncovered_dimensions": [],
+        "verification_status": "needs_review"
+      },
+      "interpretation_notes": [
+        "This citation and its requirement are held at needs_review because Article 94 CRR's exact current text/numbering was not confirmed against a Tier 1/2 primary source in this session (see SRC-FRTB-EURLEX-CRR-575 notes). Do not upgrade to verified/gold without that confirmation."
+      ],
+      "record_status": "needs_review",
+      "synthetic": false,
+      "provenance": {
+        "origin": "authoritative_external_source",
+        "source_ids": [
+          "SRC-FRTB-EURLEX-CRR-575"
+        ],
+        "created_at": "2026-09-05T02:25:45Z",
+        "created_by": "coding_agent",
+        "last_verified_at": null,
+        "notes": [
+          "Primary-text confirmation of Article 94's exact wording and numbering is outstanding; see missing_evidence.",
+          "Refresh separates legal extraction, current synthetic capability, and human approval."
+        ]
+      },
+      "annotation": {
+        "label_status": "silver",
+        "annotated_by": "coding_agent",
+        "reviewed_by": null,
+        "reviewed_at": null,
+        "notes": []
+      },
+      "missing_evidence": [
+        {
+          "field": "legal_review",
+          "reason": "Qualified reviewer has not approved this extraction and the selected institution-specific interpretation.",
+          "required_input": "Qualified reviewer has not approved this extraction and the selected institution-specific interpretation.",
+          "responsible_scope": "legal_reviewer",
+          "blocking": true
+        },
+        {
+          "field": "source_citations",
+          "reason": "Current operative source text/version could not be fully rechecked through available retrieval; retained sources are not upgraded.",
+          "required_input": "Current operative source text/version could not be fully rechecked through available retrieval; retained sources are not upgraded.",
+          "responsible_scope": "legal_reviewer",
+          "blocking": true
+        },
+        {
+          "field": "required_bank_facts",
+          "reason": "Current complete on/off-balance-sheet trading inventory and non-trading-book FX/commodity exposure are absent.",
+          "required_input": "Current complete on/off-balance-sheet trading inventory and non-trading-book FX/commodity exposure are absent.",
+          "responsible_scope": "person_2",
+          "blocking": true
+        }
+      ],
+      "extensions": {
+        "numeric_threshold_rule": null,
+        "rule_disabled_reason": "Original OR formulation is unsafe. No automated derogation until current Article 94 text and all conditions are verified.",
+        "applicability_logic_status": "candidate_requires_legal_review",
+        "unresolved_bank_fact_register": "03_exposure/missing_facts.json",
+        "assessment_contract_version": "0.2.1",
+        "jurisdiction_basis": "institution",
+        "coverage_criteria": [
+          {
+            "dimension_type": "population",
+            "dimension_ref": "trading_book_business_volume"
+          }
+        ]
+      }
+    },
+    {
+      "requirement_id": "REQ-IPS-CHARGES-PARITY-001",
+      "change_id": "REG-IPS-2024-886",
+      "title": "Prohibition on charging more for instant transfers than standard transfers",
+      "requirement_text": "Any charges levied by a PSP on payers and payees for sending and receiving instant credit transfers in euro shall not be higher than the charges levied by that PSP for sending and receiving other (standard) credit transfers of corresponding type.",
+      "legal_force": "prohibition",
+      "addressee_types": [
+        "credit_institution",
+        "electronic_money_institution",
+        "payment_institution",
+        "payment_service_provider"
+      ],
+      "jurisdictions": [
+        "EU",
+        "IE"
+      ],
+      "applicability_conditions": [
+        {
+          "condition_id": "COND-REQ-IPS-CHARGES-PARITY-001-ENTITY",
+          "description": "Confirm the legal entity classification against the cited scope.",
+          "condition_type": "bank_fact",
+          "fact_path": "01_entity/bank_profile.json#/entity_classification",
+          "operator": "equals",
+          "expected_value": [
+            "credit_institution"
+          ],
+          "source_citation_ids": [
+            "CIT-REQ-IPS-CHARGES-PARITY-001-01"
+          ],
+          "evidence_status": "verified"
+        }
+      ],
+      "exclusions_and_exemptions": [],
+      "compliance_events": [
+        {
+          "event_type": "institution_deadline",
+          "date": "2025-01-09",
+          "condition": "Euro-area PSPs",
+          "source_citation_ids": [
+            "CIT-REQ-IPS-CHARGES-PARITY-001-01"
+          ],
+          "verification_status": "verified"
+        },
+        {
+          "event_type": "institution_deadline",
+          "date": "2027-01-09",
+          "condition": "Non-euro-area PSPs",
+          "source_citation_ids": [
+            "CIT-REQ-IPS-CHARGES-PARITY-001-01"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "source_citations": [
+        {
+          "citation_id": "CIT-REQ-IPS-CHARGES-PARITY-001-01",
+          "source_id": "SRC-IPS-EURLEX-2024-886",
+          "locator_type": "article",
+          "locator": "Article 5b(1) and 5b(3) (as inserted into Regulation (EU) No 260/2012)",
+          "evidence_type": "paraphrase",
+          "evidence_text": "Any charges levied by a PSP on payers and payees for sending and receiving instant credit transfers in euro shall not be higher than the charges levied by that PSP for sending and receiving other (standard) credit transfers of corresponding type.",
+          "supports_fields": [
+            "requirement_text",
+            "compliance_events"
+          ],
+          "verification_status": "needs_review"
+        }
+      ],
+      "required_bank_facts": [
+        {
+          "fact_ref": "01_entity/bank_profile.json#/entity_classification",
+          "purpose": "Scenario input; file presence does not establish legal compliance or evidence completeness.",
+          "evidence_status": "verified"
+        },
+        {
+          "fact_ref": "02_business/products.json",
+          "purpose": "Scenario input; file presence does not establish legal compliance or evidence completeness.",
+          "evidence_status": "verified"
+        },
+        {
+          "fact_ref": "03_exposure/payments.csv",
+          "purpose": "Scenario input; file presence does not establish legal compliance or evidence completeness.",
+          "evidence_status": "verified"
+        },
+        {
+          "fact_ref": "05_operations/systems.json",
+          "purpose": "Scenario input; file presence does not establish legal compliance or evidence completeness.",
+          "evidence_status": "verified"
+        }
+      ],
+      "capability_domains": [
+        "payments"
+      ],
+      "policy_ids": [],
+      "control_ids": [],
+      "procedure_ids": [],
+      "current_coverage": {
+        "rating": "not_assessed",
+        "assessment_basis": "joined_dataset",
+        "rationale": "Mapping describes supplied synthetic design only; operating effectiveness remains unproven.",
+        "control_ids": [],
+        "uncovered_dimensions": [],
+        "verification_status": "needs_review"
+      },
+      "interpretation_notes": [],
+      "record_status": "needs_review",
+      "synthetic": false,
+      "provenance": {
+        "origin": "authoritative_external_source",
+        "source_ids": [
+          "SRC-IPS-EURLEX-2024-886"
+        ],
+        "created_at": "2026-09-05T02:25:45Z",
+        "created_by": "coding_agent",
+        "last_verified_at": "2026-09-05T01:45:00Z",
+        "notes": [
+          "Refresh separates legal extraction, current synthetic capability, and human approval."
+        ]
+      },
+      "annotation": {
+        "label_status": "silver",
+        "annotated_by": "coding_agent",
+        "reviewed_by": null,
+        "reviewed_at": null,
+        "notes": []
+      },
+      "missing_evidence": [
+        {
+          "field": "legal_review",
+          "reason": "Qualified reviewer has not approved this extraction and the selected institution-specific interpretation.",
+          "required_input": "Qualified reviewer has not approved this extraction and the selected institution-specific interpretation.",
+          "responsible_scope": "legal_reviewer",
+          "blocking": true
+        },
+        {
+          "field": "source_citations",
+          "reason": "Current operative source text/version could not be fully rechecked through available retrieval; retained sources are not upgraded.",
+          "required_input": "Current operative source text/version could not be fully rechecked through available retrieval; retained sources are not upgraded.",
+          "responsible_scope": "legal_reviewer",
+          "blocking": true
+        }
+      ],
+      "extensions": {
+        "applicability_logic_status": "candidate_requires_legal_review",
+        "unresolved_bank_fact_register": "03_exposure/missing_facts.json",
+        "assessment_contract_version": "0.2.1",
+        "jurisdiction_basis": "product"
+      }
+    },
+    {
+      "requirement_id": "REQ-IPS-SANCTIONS-SCREEN-001",
+      "change_id": "REG-IPS-2024-886",
+      "title": "Daily sanctions-list screening of payment service users, without additional per-transaction screening",
+      "requirement_text": "PSPs offering instant credit transfers shall verify whether their PSUs are persons or entities subject to targeted financial restrictive measures, performing such verification immediately after entry into force of any new or amended targeted financial restrictive measure and at least once every calendar day. During execution of an instant credit transfer, the payer's PSP and the payee's PSP shall not additionally verify the payer or payee against such measures beyond that daily/immediate screening.",
+      "legal_force": "obligation",
+      "addressee_types": [
+        "credit_institution",
+        "electronic_money_institution",
+        "payment_institution",
+        "payment_service_provider"
+      ],
+      "jurisdictions": [
+        "EU",
+        "IE"
+      ],
+      "applicability_conditions": [
+        {
+          "condition_id": "COND-REQ-IPS-SANCTIONS-SCREEN-001-ENTITY",
+          "description": "Confirm the legal entity classification against the cited scope.",
+          "condition_type": "bank_fact",
+          "fact_path": "01_entity/bank_profile.json#/entity_classification",
+          "operator": "equals",
+          "expected_value": [
+            "credit_institution"
+          ],
+          "source_citation_ids": [
+            "CIT-REQ-IPS-SANCTIONS-SCREEN-001-01"
+          ],
+          "evidence_status": "verified"
+        }
+      ],
+      "exclusions_and_exemptions": [
+        "Article 5d(2): additional per-transaction screening during execution of an instant credit transfer is prohibited beyond the daily/immediate screening baseline."
+      ],
+      "compliance_events": [
+        {
+          "event_type": "institution_deadline",
+          "date": "2025-01-09",
+          "condition": "Euro-area PSPs",
+          "source_citation_ids": [
+            "CIT-REQ-IPS-SANCTIONS-SCREEN-001-01"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "source_citations": [
+        {
+          "citation_id": "CIT-REQ-IPS-SANCTIONS-SCREEN-001-01",
+          "source_id": "SRC-IPS-EURLEX-2024-886",
+          "locator_type": "article",
+          "locator": "Article 5d(1), (2) and (3) (as inserted into Regulation (EU) No 260/2012); definition at Article 2(1e)",
+          "evidence_type": "paraphrase",
+          "evidence_text": "PSPs offering instant credit transfers shall verify whether their PSUs are persons or entities subject to targeted financial restrictive measures, performing such verification immediately after entry into force of any new or amended targeted financial restrictive measure and at least once every calendar day. During execution of an instant credit transfer, the payer's PSP and the payee's PSP shall not additionally verify the payer or payee against such measures beyond that daily/immediate screening.",
+          "supports_fields": [
+            "requirement_text",
+            "exclusions_and_exemptions"
+          ],
+          "verification_status": "needs_review"
+        }
+      ],
+      "required_bank_facts": [
+        {
+          "fact_ref": "01_entity/bank_profile.json#/entity_classification",
+          "purpose": "Scenario input; file presence does not establish legal compliance or evidence completeness.",
+          "evidence_status": "verified"
+        },
+        {
+          "fact_ref": "02_business/products.json",
+          "purpose": "Scenario input; file presence does not establish legal compliance or evidence completeness.",
+          "evidence_status": "verified"
+        },
+        {
+          "fact_ref": "03_exposure/payments.csv",
+          "purpose": "Scenario input; file presence does not establish legal compliance or evidence completeness.",
+          "evidence_status": "verified"
+        },
+        {
+          "fact_ref": "05_operations/systems.json",
+          "purpose": "Scenario input; file presence does not establish legal compliance or evidence completeness.",
+          "evidence_status": "verified"
+        }
+      ],
+      "capability_domains": [
+        "financial_crime",
+        "payments"
+      ],
+      "policy_ids": [],
+      "control_ids": [],
+      "procedure_ids": [],
+      "current_coverage": {
+        "rating": "not_assessed",
+        "assessment_basis": "joined_dataset",
+        "rationale": "Mapping describes supplied synthetic design only; operating effectiveness remains unproven.",
+        "control_ids": [],
+        "uncovered_dimensions": [],
+        "verification_status": "needs_review"
+      },
+      "interpretation_notes": [],
+      "record_status": "needs_review",
+      "synthetic": false,
+      "provenance": {
+        "origin": "authoritative_external_source",
+        "source_ids": [
+          "SRC-IPS-EURLEX-2024-886"
+        ],
+        "created_at": "2026-09-05T02:25:45Z",
+        "created_by": "coding_agent",
+        "last_verified_at": "2026-09-05T01:45:00Z",
+        "notes": [
+          "Refresh separates legal extraction, current synthetic capability, and human approval."
+        ]
+      },
+      "annotation": {
+        "label_status": "silver",
+        "annotated_by": "coding_agent",
+        "reviewed_by": null,
+        "reviewed_at": null,
+        "notes": []
+      },
+      "missing_evidence": [
+        {
+          "field": "legal_review",
+          "reason": "Qualified reviewer has not approved this extraction and the selected institution-specific interpretation.",
+          "required_input": "Qualified reviewer has not approved this extraction and the selected institution-specific interpretation.",
+          "responsible_scope": "legal_reviewer",
+          "blocking": true
+        },
+        {
+          "field": "source_citations",
+          "reason": "Current operative source text/version could not be fully rechecked through available retrieval; retained sources are not upgraded.",
+          "required_input": "Current operative source text/version could not be fully rechecked through available retrieval; retained sources are not upgraded.",
+          "responsible_scope": "legal_reviewer",
+          "blocking": true
+        }
+      ],
+      "extensions": {
+        "applicability_logic_status": "candidate_requires_legal_review",
+        "unresolved_bank_fact_register": "03_exposure/missing_facts.json",
+        "assessment_contract_version": "0.2.1",
+        "jurisdiction_basis": "product"
+      }
+    },
+    {
+      "requirement_id": "REQ-IPS-SEND-RECEIVE-001",
+      "change_id": "REG-IPS-2024-886",
+      "title": "Obligation to offer and reach instant credit transfers 24/7",
+      "requirement_text": "A PSP that offers its PSUs a payment service of sending and receiving credit transfers in euro shall offer to all of those PSUs a payment service of sending and receiving instant credit transfers in euro, and shall ensure that all payment accounts reachable for credit transfers are also reachable for instant credit transfers, 24 hours a day on any calendar day, subject to PSP-type- and euro-area-status-dependent application dates and a limited liquidity-based derogation for non-euro-area PSPs.",
+      "legal_force": "obligation",
+      "addressee_types": [
+        "credit_institution",
+        "electronic_money_institution",
+        "payment_institution",
+        "payment_service_provider"
+      ],
+      "jurisdictions": [
+        "EU",
+        "IE"
+      ],
+      "applicability_conditions": [
+        {
+          "condition_id": "COND-REQ-IPS-SEND-RECEIVE-001-ENTITY",
+          "description": "Confirm the legal entity classification against the cited scope.",
+          "condition_type": "bank_fact",
+          "fact_path": "01_entity/bank_profile.json#/entity_classification",
+          "operator": "equals",
+          "expected_value": [
+            "credit_institution"
+          ],
+          "source_citation_ids": [
+            "CIT-REQ-IPS-SEND-RECEIVE-001-01"
+          ],
+          "evidence_status": "verified"
+        }
+      ],
+      "exclusions_and_exemptions": [
+        "Article 5a(2): limited derogation for non-euro-area PSPs lacking euro liquidity outside business hours, subject to competent-authority approval and a EUR 25,000 minimum per-transaction limit."
+      ],
+      "compliance_events": [
+        {
+          "event_type": "institution_deadline",
+          "date": "2025-01-09",
+          "condition": "Euro-area PSPs: receive instant credit transfers",
+          "source_citation_ids": [
+            "CIT-REQ-IPS-SEND-RECEIVE-001-01"
+          ],
+          "verification_status": "verified"
+        },
+        {
+          "event_type": "institution_deadline",
+          "date": "2025-10-09",
+          "condition": "Euro-area PSPs: send instant credit transfers",
+          "source_citation_ids": [
+            "CIT-REQ-IPS-SEND-RECEIVE-001-01"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "source_citations": [
+        {
+          "citation_id": "CIT-REQ-IPS-SEND-RECEIVE-001-01",
+          "source_id": "SRC-IPS-EURLEX-2024-886",
+          "locator_type": "article",
+          "locator": "Article 5a(1) and 5a(8) (as inserted into Regulation (EU) No 260/2012 by Regulation (EU) 2024/886, Article 1(2))",
+          "evidence_type": "paraphrase",
+          "evidence_text": "A PSP that offers its PSUs a payment service of sending and receiving credit transfers in euro shall offer to all of those PSUs a payment service of sending and receiving instant credit transfers in euro, and shall ensure that all payment accounts reachable for credit transfers are also reachable for instant credit transfers, 24 hours a day on any calendar day, subject to PSP-type- and euro-area-status-dependent application dates and a limited liquidity-based derogation for non-euro-area PSPs.",
+          "supports_fields": [
+            "requirement_text",
+            "compliance_events"
+          ],
+          "verification_status": "needs_review"
+        }
+      ],
+      "required_bank_facts": [
+        {
+          "fact_ref": "01_entity/bank_profile.json#/entity_classification",
+          "purpose": "Scenario input; file presence does not establish legal compliance or evidence completeness.",
+          "evidence_status": "verified"
+        },
+        {
+          "fact_ref": "02_business/products.json",
+          "purpose": "Scenario input; file presence does not establish legal compliance or evidence completeness.",
+          "evidence_status": "verified"
+        },
+        {
+          "fact_ref": "03_exposure/payments.csv",
+          "purpose": "Scenario input; file presence does not establish legal compliance or evidence completeness.",
+          "evidence_status": "verified"
+        },
+        {
+          "fact_ref": "05_operations/systems.json",
+          "purpose": "Scenario input; file presence does not establish legal compliance or evidence completeness.",
+          "evidence_status": "verified"
+        }
+      ],
+      "capability_domains": [
+        "payments"
+      ],
+      "policy_ids": [],
+      "control_ids": [],
+      "procedure_ids": [],
+      "current_coverage": {
+        "rating": "not_assessed",
+        "assessment_basis": "joined_dataset",
+        "rationale": "Mapping describes supplied synthetic design only; operating effectiveness remains unproven.",
+        "control_ids": [],
+        "uncovered_dimensions": [],
+        "verification_status": "needs_review"
+      },
+      "interpretation_notes": [],
+      "record_status": "needs_review",
+      "synthetic": false,
+      "provenance": {
+        "origin": "authoritative_external_source",
+        "source_ids": [
+          "SRC-IPS-EURLEX-2024-886"
+        ],
+        "created_at": "2026-09-05T02:25:45Z",
+        "created_by": "coding_agent",
+        "last_verified_at": "2026-09-05T01:45:00Z",
+        "notes": [
+          "Refresh separates legal extraction, current synthetic capability, and human approval."
+        ]
+      },
+      "annotation": {
+        "label_status": "silver",
+        "annotated_by": "coding_agent",
+        "reviewed_by": null,
+        "reviewed_at": null,
+        "notes": []
+      },
+      "missing_evidence": [
+        {
+          "field": "legal_review",
+          "reason": "Qualified reviewer has not approved this extraction and the selected institution-specific interpretation.",
+          "required_input": "Qualified reviewer has not approved this extraction and the selected institution-specific interpretation.",
+          "responsible_scope": "legal_reviewer",
+          "blocking": true
+        },
+        {
+          "field": "source_citations",
+          "reason": "Current operative source text/version could not be fully rechecked through available retrieval; retained sources are not upgraded.",
+          "required_input": "Current operative source text/version could not be fully rechecked through available retrieval; retained sources are not upgraded.",
+          "responsible_scope": "legal_reviewer",
+          "blocking": true
+        }
+      ],
+      "extensions": {
+        "applicability_logic_status": "candidate_requires_legal_review",
+        "unresolved_bank_fact_register": "03_exposure/missing_facts.json",
+        "assessment_contract_version": "0.2.1",
+        "jurisdiction_basis": "product"
+      }
+    },
+    {
+      "requirement_id": "REQ-IPS-VOP-001",
+      "change_id": "REG-IPS-2024-886",
+      "title": "Verification of Payee service before credit-transfer authorisation",
+      "requirement_text": "The payer’s PSP shall offer payee verification before credit-transfer authorisation, subject to the operative conditions and exceptions of Article 5c. It concerns both standard and instant euro credit transfers.",
+      "legal_force": "obligation",
+      "addressee_types": [
+        "credit_institution",
+        "electronic_money_institution",
+        "payment_institution",
+        "payment_service_provider"
+      ],
+      "jurisdictions": [
+        "EU",
+        "IE"
+      ],
+      "applicability_conditions": [
+        {
+          "condition_id": "COND-REQ-IPS-VOP-001-ENTITY",
+          "description": "Confirm the legal entity classification against the cited scope.",
+          "condition_type": "bank_fact",
+          "fact_path": "01_entity/bank_profile.json#/entity_classification",
+          "operator": "equals",
+          "expected_value": [
+            "credit_institution"
+          ],
+          "source_citation_ids": [
+            "CIT-REQ-IPS-VOP-001-01"
+          ],
+          "evidence_status": "verified"
+        }
+      ],
+      "exclusions_and_exemptions": [],
+      "compliance_events": [
+        {
+          "event_type": "institution_deadline",
+          "date": "2025-10-09",
+          "condition": "Euro-area PSPs",
+          "source_citation_ids": [
+            "CIT-REQ-IPS-VOP-001-01"
+          ],
+          "verification_status": "verified"
+        },
+        {
+          "event_type": "institution_deadline",
+          "date": "2027-07-09",
+          "condition": "Non-euro-area PSPs",
+          "source_citation_ids": [
+            "CIT-REQ-IPS-VOP-001-01"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "source_citations": [
+        {
+          "citation_id": "CIT-REQ-IPS-VOP-001-01",
+          "source_id": "SRC-IPS-EURLEX-2024-886",
+          "locator_type": "article",
+          "locator": "Article 5c(1) and 5c(9) (as inserted into Regulation (EU) No 260/2012); free-of-charge requirement at Article 5b(2)",
+          "evidence_type": "paraphrase",
+          "evidence_text": "The payer’s PSP shall offer payee verification before credit-transfer authorisation, subject to the operative conditions and exceptions of Article 5c. It concerns both standard and instant euro credit transfers.",
+          "supports_fields": [
+            "requirement_text",
+            "applicability_conditions",
+            "compliance_events"
+          ],
+          "verification_status": "needs_review"
+        },
+        {
+          "citation_id": "CIT-REQ-IPS-VOP-001-CBI",
+          "source_id": "SRC-IPS-CBI-EXPLAINER",
+          "locator_type": "section",
+          "locator": "Verification of Payee",
+          "evidence_type": "paraphrase",
+          "evidence_text": "The CBI explains that VoP applies from 9 October 2025 to both standard and instant SEPA credit transfers.",
+          "supports_fields": [
+            "requirement_text",
+            "compliance_events"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "required_bank_facts": [
+        {
+          "fact_ref": "01_entity/bank_profile.json#/entity_classification",
+          "purpose": "Scenario input; file presence does not establish legal compliance or evidence completeness.",
+          "evidence_status": "verified"
+        },
+        {
+          "fact_ref": "02_business/products.json",
+          "purpose": "Scenario input; file presence does not establish legal compliance or evidence completeness.",
+          "evidence_status": "verified"
+        },
+        {
+          "fact_ref": "03_exposure/payments.csv",
+          "purpose": "Scenario input; file presence does not establish legal compliance or evidence completeness.",
+          "evidence_status": "verified"
+        },
+        {
+          "fact_ref": "05_operations/systems.json",
+          "purpose": "Scenario input; file presence does not establish legal compliance or evidence completeness.",
+          "evidence_status": "verified"
+        }
+      ],
+      "capability_domains": [
+        "payments"
+      ],
+      "policy_ids": [
+        "POL-PAYMENTS-SECURITY"
+      ],
+      "control_ids": [
+        "CTRL-VOP-WEB"
+      ],
+      "procedure_ids": [
+        "PRCD-VOP-WEB"
+      ],
+      "current_coverage": {
+        "rating": "partial",
+        "assessment_basis": "joined_dataset",
+        "rationale": "Mapping describes supplied synthetic design only; operating effectiveness remains unproven.",
+        "control_ids": [
+          "CTRL-VOP-WEB"
+        ],
+        "uncovered_dimensions": [
+          "mobile_channel"
+        ],
+        "verification_status": "needs_review"
+      },
+      "interpretation_notes": [
+        "Mobile is a synthetic implementation gap. Standard SCT and API coverage are unknown; outside demo does not mean legally exempt.",
+        "Free-of-charge duty is separately located at Article 5b(2); include it in an expanded scope."
+      ],
+      "record_status": "needs_review",
+      "synthetic": false,
+      "provenance": {
+        "origin": "authoritative_external_source",
+        "source_ids": [
+          "SRC-IPS-EURLEX-2024-886",
+          "SRC-IPS-CBI-EXPLAINER"
+        ],
+        "created_at": "2026-09-05T02:25:45Z",
+        "created_by": "coding_agent",
+        "last_verified_at": "2026-09-05T01:45:00Z",
+        "notes": [
+          "Core legal-extraction assertion is independently supported by a verified Tier 1 citation; required_bank_facts gaps affect applicability/coverage assessment only and are non-blocking.",
+          "Refresh separates legal extraction, current synthetic capability, and human approval."
+        ]
+      },
+      "annotation": {
+        "label_status": "silver",
+        "annotated_by": "coding_agent",
+        "reviewed_by": null,
+        "reviewed_at": null,
+        "notes": []
+      },
+      "missing_evidence": [
+        {
+          "field": "legal_review",
+          "reason": "Qualified reviewer has not approved this extraction and the selected institution-specific interpretation.",
+          "required_input": "Qualified reviewer has not approved this extraction and the selected institution-specific interpretation.",
+          "responsible_scope": "legal_reviewer",
+          "blocking": true
+        },
+        {
+          "field": "source_citations",
+          "reason": "Current operative source text/version could not be fully rechecked through available retrieval; retained sources are not upgraded.",
+          "required_input": "Current operative source text/version could not be fully rechecked through available retrieval; retained sources are not upgraded.",
+          "responsible_scope": "legal_reviewer",
+          "blocking": true
+        }
+      ],
+      "extensions": {
+        "applicability_logic_status": "candidate_requires_legal_review",
+        "unresolved_bank_fact_register": "03_exposure/missing_facts.json",
+        "assessment_contract_version": "0.2.1",
+        "jurisdiction_basis": "product",
+        "coverage_criteria": [
+          {
+            "dimension_type": "channel",
+            "dimension_ref": "web"
+          },
+          {
+            "dimension_type": "channel",
+            "dimension_ref": "mobile"
+          }
+        ]
+      }
+    }
+  ]
+}

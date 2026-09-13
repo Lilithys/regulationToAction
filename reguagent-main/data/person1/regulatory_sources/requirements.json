@@ -1,0 +1,1717 @@
+{
+  "schema_version": "1.0.0",
+  "dataset_scope": "person_1_regulatory_governance",
+  "as_of_date": "2026-09-05",
+  "generated_at": "2026-09-05T02:25:45Z",
+  "requirements": [
+    {
+      "requirement_id": "REQ-DORA-DEPENDENCY-MAP-001",
+      "change_id": "REG-DORA-2022-2554",
+      "title": "Identification, classification and dependency mapping of critical or important functions and supporting ICT assets",
+      "requirement_text": "A financial entity shall identify, classify and document all critical or important functions, and all information assets and ICT assets supporting those functions, including a mapping of dependencies of ICT assets, systems and processes on each other and on ICT third-party service providers.",
+      "legal_force": "obligation",
+      "addressee_types": [
+        "credit_institution",
+        "financial_entity"
+      ],
+      "jurisdictions": [
+        "EU",
+        "IE"
+      ],
+      "applicability_conditions": [
+        {
+          "condition_id": "COND-REQ-DORA-DEPENDENCY-MAP-001-01",
+          "description": "The institution is a financial entity within Article 2 DORA operating one or more critical or important functions.",
+          "condition_type": "bank_fact",
+          "fact_path": "05_operations/critical_services.json",
+          "operator": "exists",
+          "expected_value": [],
+          "source_citation_ids": [
+            "CIT-REQ-DORA-DEPENDENCY-MAP-001-01"
+          ],
+          "evidence_status": "insufficient_evidence"
+        }
+      ],
+      "exclusions_and_exemptions": [],
+      "compliance_events": [
+        {
+          "event_type": "application",
+          "date": "2025-01-17",
+          "condition": "All in-scope financial entities",
+          "source_citation_ids": [
+            "CIT-REQ-DORA-DEPENDENCY-MAP-001-01"
+          ],
+          "verification_status": "needs_review"
+        }
+      ],
+      "source_citations": [
+        {
+          "citation_id": "CIT-REQ-DORA-DEPENDENCY-MAP-001-01",
+          "source_id": "SRC-DORA-EURLEX-2022-2554",
+          "locator_type": "article",
+          "locator": "Article 8(1) and 8(4)",
+          "evidence_type": "quote",
+          "evidence_text": "\"Financial entities... identify, classify and document all critical or important functions, and all information assets and ICT assets supporting those functions\", including \"mapping of dependencies of ICT assets, systems and processes.\"",
+          "supports_fields": [
+            "requirement_text"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "required_bank_facts": [
+        {
+          "fact_ref": "05_operations/critical_services.json",
+          "purpose": "Identify the full inventory of critical or important functions.",
+          "evidence_status": "insufficient_evidence"
+        },
+        {
+          "fact_ref": "05_operations/dependencies.json",
+          "purpose": "Confirm completeness of the ICT-asset/system/process/third-party dependency mapping.",
+          "evidence_status": "insufficient_evidence"
+        }
+      ],
+      "capability_domains": [
+        "ict_risk",
+        "operational_resilience",
+        "third_party_risk"
+      ],
+      "policy_ids": [
+        "POL-ICT-OPERATIONAL-RESILIENCE"
+      ],
+      "control_ids": [
+        "CTRL-DORA-DEPENDENCY-MAP"
+      ],
+      "procedure_ids": [
+        "PRCD-DORA-DEPENDENCY-MAP"
+      ],
+      "current_coverage": {
+        "rating": "partial",
+        "assessment_basis": "person1_governance_only",
+        "rationale": "A dependency-mapping control exists and is applied to a known subset of functions/assets, but full critical-function and third-party dependency completeness cannot be confirmed without Person 3's critical-service, system, vendor and dependency records. This mirrors the scenario's designed gap: mapping is incomplete.",
+        "control_ids": [
+          "CTRL-DORA-DEPENDENCY-MAP"
+        ],
+        "uncovered_dimensions": [
+          "complete_critical_function_inventory",
+          "third_party_dependency_completeness"
+        ],
+        "verification_status": "verified"
+      },
+      "interpretation_notes": [],
+      "record_status": "verified",
+      "synthetic": false,
+      "provenance": {
+        "origin": "authoritative_external_source",
+        "source_ids": [
+          "SRC-DORA-EURLEX-2022-2554"
+        ],
+        "created_at": "2026-09-05T02:25:45Z",
+        "created_by": "coding_agent",
+        "last_verified_at": "2026-09-05T01:45:00Z",
+        "notes": []
+      },
+      "annotation": {
+        "label_status": "silver",
+        "annotated_by": "coding_agent",
+        "reviewed_by": null,
+        "reviewed_at": null,
+        "notes": []
+      },
+      "missing_evidence": [
+        {
+          "field": "required_bank_facts",
+          "reason": "Critical-service and dependency inventories are not yet recorded by Person 3.",
+          "required_input": "05_operations/critical_services.json and 05_operations/dependencies.json",
+          "responsible_scope": "person_3",
+          "blocking": false
+        }
+      ]
+    },
+    {
+      "requirement_id": "REQ-DORA-ICT-FRAMEWORK-001",
+      "change_id": "REG-DORA-2022-2554",
+      "title": "Comprehensive ICT risk management framework",
+      "requirement_text": "A financial entity shall put in place, maintain and regularly review a comprehensive ICT risk management framework, proportionate to its nature, scale and complexity, that enables it to address ICT risk quickly, efficiently and comprehensively and to ensure a high level of digital operational resilience, encompassing identification, protection and prevention, detection, response and recovery, and learning and evolving capabilities.",
+      "legal_force": "obligation",
+      "addressee_types": [
+        "credit_institution",
+        "financial_entity"
+      ],
+      "jurisdictions": [
+        "EU",
+        "IE"
+      ],
+      "applicability_conditions": [
+        {
+          "condition_id": "COND-REQ-DORA-ICT-FRAMEWORK-001-01",
+          "description": "The institution is a financial entity within Article 2 DORA (e.g. a credit institution), and the proportionality of the required framework depends on its nature, scale and complexity.",
+          "condition_type": "bank_fact",
+          "fact_path": "01_entity/bank_profile.json#/entity_classification",
+          "operator": "equals",
+          "expected_value": [
+            "credit_institution"
+          ],
+          "source_citation_ids": [
+            "CIT-REQ-DORA-ICT-FRAMEWORK-001-01"
+          ],
+          "evidence_status": "insufficient_evidence"
+        }
+      ],
+      "exclusions_and_exemptions": [],
+      "compliance_events": [
+        {
+          "event_type": "application",
+          "date": "2025-01-17",
+          "condition": "All in-scope financial entities",
+          "source_citation_ids": [
+            "CIT-REQ-DORA-ICT-FRAMEWORK-001-01"
+          ],
+          "verification_status": "needs_review"
+        }
+      ],
+      "source_citations": [
+        {
+          "citation_id": "CIT-REQ-DORA-ICT-FRAMEWORK-001-01",
+          "source_id": "SRC-DORA-EURLEX-2022-2554",
+          "locator_type": "article",
+          "locator": "Article 6(1) and 6(2)",
+          "evidence_type": "quote",
+          "evidence_text": "\"Financial entities... put in place, maintain and regularly review a comprehensive ICT risk management framework\", proportionate to nature, scale and complexity, encompassing \"identification, protection and prevention, detection, response and recovery, and learning and evolving\" capabilities.",
+          "supports_fields": [
+            "requirement_text"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "required_bank_facts": [
+        {
+          "fact_ref": "01_entity/bank_profile.json#/entity_classification",
+          "purpose": "Confirm DORA in-scope entity classification and proportionality category.",
+          "evidence_status": "insufficient_evidence"
+        },
+        {
+          "fact_ref": "05_operations/systems.json",
+          "purpose": "Identify existing ICT risk management framework documentation/processes.",
+          "evidence_status": "insufficient_evidence"
+        }
+      ],
+      "capability_domains": [
+        "ict_risk",
+        "operational_resilience"
+      ],
+      "policy_ids": [
+        "POL-ICT-OPERATIONAL-RESILIENCE"
+      ],
+      "control_ids": [],
+      "procedure_ids": [],
+      "current_coverage": {
+        "rating": "unknown",
+        "assessment_basis": "person1_governance_only",
+        "rationale": "A policy statement acknowledges the framework's high-level principles, but whether it constitutes an operating, comprehensive framework covering all five DORA capability areas cannot be assessed without Person 3 process/system facts.",
+        "control_ids": [],
+        "uncovered_dimensions": [],
+        "verification_status": "verified"
+      },
+      "interpretation_notes": [],
+      "record_status": "verified",
+      "synthetic": false,
+      "provenance": {
+        "origin": "authoritative_external_source",
+        "source_ids": [
+          "SRC-DORA-EURLEX-2022-2554"
+        ],
+        "created_at": "2026-09-05T02:25:45Z",
+        "created_by": "coding_agent",
+        "last_verified_at": "2026-09-05T01:45:00Z",
+        "notes": []
+      },
+      "annotation": {
+        "label_status": "silver",
+        "annotated_by": "coding_agent",
+        "reviewed_by": null,
+        "reviewed_at": null,
+        "notes": []
+      },
+      "missing_evidence": [
+        {
+          "field": "required_bank_facts",
+          "reason": "ICT risk management process/system facts are not yet recorded by Person 3.",
+          "required_input": "05_operations/processes.json and 05_operations/systems.json",
+          "responsible_scope": "person_3",
+          "blocking": false
+        }
+      ]
+    },
+    {
+      "requirement_id": "REQ-DORA-ICT-REGISTER-001",
+      "change_id": "REG-DORA-2022-2554",
+      "title": "Register of information on ICT third-party contractual arrangements",
+      "requirement_text": "A financial entity shall maintain and keep up to date, at entity, sub-consolidated and consolidated level, a register of information in relation to all contractual arrangements on the use of ICT services provided by ICT third-party service providers, recording details of the services, the location where data is processed, and whether the contractual arrangement supports a critical or important function.",
+      "legal_force": "obligation",
+      "addressee_types": [
+        "credit_institution",
+        "financial_entity"
+      ],
+      "jurisdictions": [
+        "EU",
+        "IE"
+      ],
+      "applicability_conditions": [
+        {
+          "condition_id": "COND-REQ-DORA-ICT-REGISTER-001-01",
+          "description": "The institution has one or more contractual arrangements with ICT third-party service providers.",
+          "condition_type": "bank_fact",
+          "fact_path": "05_operations/vendors.json",
+          "operator": "exists",
+          "expected_value": [],
+          "source_citation_ids": [
+            "CIT-REQ-DORA-ICT-REGISTER-001-01"
+          ],
+          "evidence_status": "insufficient_evidence"
+        }
+      ],
+      "exclusions_and_exemptions": [],
+      "compliance_events": [
+        {
+          "event_type": "reporting",
+          "date": "2025-04-30",
+          "condition": "First reporting-reference-date update of the register of information under related implementing technical standards",
+          "source_citation_ids": [
+            "CIT-REQ-DORA-ICT-REGISTER-001-01"
+          ],
+          "verification_status": "needs_review"
+        }
+      ],
+      "source_citations": [
+        {
+          "citation_id": "CIT-REQ-DORA-ICT-REGISTER-001-01",
+          "source_id": "SRC-DORA-EURLEX-2022-2554",
+          "locator_type": "article",
+          "locator": "Article 28(3) and 28(9)",
+          "evidence_type": "quote",
+          "evidence_text": "\"financial entities... maintain and keep up to date a register of information in relation to all contractual arrangements\" with ICT third-party service providers.",
+          "supports_fields": [
+            "requirement_text"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "required_bank_facts": [
+        {
+          "fact_ref": "05_operations/vendors.json",
+          "purpose": "Full population of ICT third-party contractual arrangements and whether each supports a critical or important function.",
+          "evidence_status": "insufficient_evidence"
+        }
+      ],
+      "capability_domains": [
+        "ict_risk",
+        "third_party_risk"
+      ],
+      "policy_ids": [
+        "POL-ICT-OPERATIONAL-RESILIENCE"
+      ],
+      "control_ids": [
+        "CTRL-DORA-ICT-REGISTER"
+      ],
+      "procedure_ids": [
+        "PRCD-DORA-ICT-REGISTER-UPDATE"
+      ],
+      "current_coverage": {
+        "rating": "partial",
+        "assessment_basis": "person1_governance_only",
+        "rationale": "A register-maintenance control and procedure exist and are applied to a known subset of contracts, but full population of all ICT third-party contractual arrangements is not confirmed, consistent with the scenario's incomplete third-party dependency mapping.",
+        "control_ids": [
+          "CTRL-DORA-ICT-REGISTER"
+        ],
+        "uncovered_dimensions": [
+          "full_third_party_contract_population"
+        ],
+        "verification_status": "verified"
+      },
+      "interpretation_notes": [
+        "The exact first reporting-reference-date for the register of information is sourced from general commentary on Commission Implementing Regulation (EU) 2024/2956 rather than a directly quoted primary text in this session; treat the 2025-04-30 date as indicative pending confirmation."
+      ],
+      "record_status": "verified",
+      "synthetic": false,
+      "provenance": {
+        "origin": "authoritative_external_source",
+        "source_ids": [
+          "SRC-DORA-EURLEX-2022-2554"
+        ],
+        "created_at": "2026-09-05T02:25:45Z",
+        "created_by": "coding_agent",
+        "last_verified_at": "2026-09-05T01:45:00Z",
+        "notes": []
+      },
+      "annotation": {
+        "label_status": "silver",
+        "annotated_by": "coding_agent",
+        "reviewed_by": null,
+        "reviewed_at": null,
+        "notes": []
+      },
+      "missing_evidence": [
+        {
+          "field": "required_bank_facts",
+          "reason": "Full vendor/contract population is not yet recorded by Person 3.",
+          "required_input": "05_operations/vendors.json",
+          "responsible_scope": "person_3",
+          "blocking": false
+        },
+        {
+          "field": "compliance_events[0].date",
+          "reason": "The 2025-04-30 reporting-reference date for the register of information is not confirmed against Commission Implementing Regulation (EU) 2024/2956's primary text in this session.",
+          "required_input": "Direct confirmation against the implementing technical standard",
+          "responsible_scope": "legal_reviewer",
+          "blocking": false
+        }
+      ]
+    },
+    {
+      "requirement_id": "REQ-DORA-TPRM-STRATEGY-001",
+      "change_id": "REG-DORA-2022-2554",
+      "title": "Management-body-adopted ICT third-party risk strategy",
+      "requirement_text": "The management body of a financial entity shall adopt, and periodically review, a dedicated strategy on ICT third-party risk, including a policy on the use of ICT services supporting critical or important functions provided by ICT third-party service providers, rooted in continuous screening of all ICT third-party dependencies.",
+      "legal_force": "governance",
+      "addressee_types": [
+        "credit_institution",
+        "financial_entity"
+      ],
+      "jurisdictions": [
+        "EU",
+        "IE"
+      ],
+      "applicability_conditions": [
+        {
+          "condition_id": "COND-REQ-DORA-TPRM-STRATEGY-001-01",
+          "description": "The institution is a financial entity within Article 2 DORA that relies on ICT third-party service providers for any function.",
+          "condition_type": "bank_fact",
+          "fact_path": "05_operations/vendors.json",
+          "operator": "exists",
+          "expected_value": [],
+          "source_citation_ids": [
+            "CIT-REQ-DORA-TPRM-STRATEGY-001-01"
+          ],
+          "evidence_status": "insufficient_evidence"
+        }
+      ],
+      "exclusions_and_exemptions": [],
+      "compliance_events": [
+        {
+          "event_type": "application",
+          "date": "2025-01-17",
+          "condition": "All in-scope financial entities",
+          "source_citation_ids": [
+            "CIT-REQ-DORA-TPRM-STRATEGY-001-01"
+          ],
+          "verification_status": "needs_review"
+        }
+      ],
+      "source_citations": [
+        {
+          "citation_id": "CIT-REQ-DORA-TPRM-STRATEGY-001-01",
+          "source_id": "SRC-DORA-EURLEX-2022-2554",
+          "locator_type": "article",
+          "locator": "Article 28(1) and 28(2)",
+          "evidence_type": "quote",
+          "evidence_text": "\"the management body... shall... adopt, oversee and be accountable for the implementation of\" a \"dedicated strategy on ICT third-party risk\" addressing \"the identification and management of all ICT third-party dependencies.\"",
+          "supports_fields": [
+            "requirement_text"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "required_bank_facts": [
+        {
+          "fact_ref": "05_operations/vendors.json",
+          "purpose": "Identify ICT third-party service providers and whether a board-level strategy document exists covering them.",
+          "evidence_status": "insufficient_evidence"
+        }
+      ],
+      "capability_domains": [
+        "governance",
+        "ict_risk",
+        "third_party_risk"
+      ],
+      "policy_ids": [
+        "POL-ICT-OPERATIONAL-RESILIENCE"
+      ],
+      "control_ids": [],
+      "procedure_ids": [],
+      "current_coverage": {
+        "rating": "unknown",
+        "assessment_basis": "person1_governance_only",
+        "rationale": "A policy statement records intent for management-body oversight of ICT third-party dependencies, but no dedicated, board-adopted strategy document or standalone control is modelled in this dataset; whether the policy statement alone satisfies Article 28(1) cannot be assessed by Person 1 alone.",
+        "control_ids": [],
+        "uncovered_dimensions": [],
+        "verification_status": "verified"
+      },
+      "interpretation_notes": [],
+      "record_status": "verified",
+      "synthetic": false,
+      "provenance": {
+        "origin": "authoritative_external_source",
+        "source_ids": [
+          "SRC-DORA-EURLEX-2022-2554"
+        ],
+        "created_at": "2026-09-05T02:25:45Z",
+        "created_by": "coding_agent",
+        "last_verified_at": "2026-09-05T01:45:00Z",
+        "notes": []
+      },
+      "annotation": {
+        "label_status": "silver",
+        "annotated_by": "coding_agent",
+        "reviewed_by": null,
+        "reviewed_at": null,
+        "notes": []
+      },
+      "missing_evidence": [
+        {
+          "field": "required_bank_facts",
+          "reason": "Vendor inventory and board-strategy documentation are not yet recorded by Person 3/4.",
+          "required_input": "05_operations/vendors.json",
+          "responsible_scope": "person_3",
+          "blocking": false
+        }
+      ]
+    },
+    {
+      "requirement_id": "REQ-ESG-CREDIT-POLICY-001",
+      "change_id": "REG-ESG-EBA-GL-2025-01",
+      "title": "ESG-inclusive credit sectoral policies cascaded into origination criteria and credit-risk monitoring",
+      "requirement_text": "Institutions should ensure that their credit sectoral policies, reflecting ESG risks, are cascaded down and translated into clear origination criteria available to business-line staff and credit decision-makers, and should ensure ESG risks are embedded into the credit-risk monitoring framework, including quantitative credit-risk metrics covering the most significant client segments, collateral types and risk-mitigation instruments.",
+      "legal_force": "supervisory_expectation",
+      "addressee_types": [
+        "credit_institution"
+      ],
+      "jurisdictions": [
+        "EU",
+        "IE"
+      ],
+      "applicability_conditions": [
+        {
+          "condition_id": "COND-REQ-ESG-CREDIT-POLICY-001-01",
+          "description": "The institution originates and monitors credit exposures (e.g. an SME lending portfolio) to which sectoral credit policies apply.",
+          "condition_type": "bank_fact",
+          "fact_path": "03_exposure/lending_portfolio.csv",
+          "operator": "exists",
+          "expected_value": [],
+          "source_citation_ids": [
+            "CIT-REQ-ESG-CREDIT-POLICY-001-01"
+          ],
+          "evidence_status": "insufficient_evidence"
+        }
+      ],
+      "exclusions_and_exemptions": [],
+      "compliance_events": [
+        {
+          "event_type": "application",
+          "date": "2026-01-11",
+          "condition": "Institutions other than SNCIs",
+          "source_citation_ids": [
+            "CIT-REQ-ESG-CREDIT-POLICY-001-01"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "source_citations": [
+        {
+          "citation_id": "CIT-REQ-ESG-CREDIT-POLICY-001-01",
+          "source_id": "SRC-ESG-EBA-GL-2025-01",
+          "locator_type": "paragraph",
+          "locator": "Guidelines, Section 5.6.1 'Credit risk', paragraphs 68-69",
+          "evidence_type": "quote",
+          "evidence_text": "\"institutions should ensure that their credit sectoral policies, reflecting ESG risks, are cascaded down and translated into clear origination criteria available to business lines staff and credit decision-makers, and should ensure that ESG risks are embedded into the credit risk monitoring framework.\"",
+          "supports_fields": [
+            "requirement_text"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "required_bank_facts": [
+        {
+          "fact_ref": "03_exposure/lending_portfolio.csv",
+          "purpose": "Confirm the SME/corporate credit portfolio's segments, sectors and materiality.",
+          "evidence_status": "insufficient_evidence"
+        }
+      ],
+      "capability_domains": [
+        "credit_risk",
+        "esg_risk"
+      ],
+      "policy_ids": [
+        "POL-CREDIT-RISK-ESG"
+      ],
+      "control_ids": [
+        "CTRL-ESG-ONBOARD-SCREEN"
+      ],
+      "procedure_ids": [
+        "PRCD-ESG-ONBOARD-SCREEN"
+      ],
+      "current_coverage": {
+        "rating": "partial",
+        "assessment_basis": "person1_governance_only",
+        "rationale": "Sector-level ESG screening is applied to new lending applications at origination; there is no periodic re-screening of the existing book and no quantitative ESG credit-risk metrics program, consistent with the scenario's intended partial state.",
+        "control_ids": [
+          "CTRL-ESG-ONBOARD-SCREEN"
+        ],
+        "uncovered_dimensions": [
+          "existing_book_periodic_rescreening"
+        ],
+        "verification_status": "verified"
+      },
+      "interpretation_notes": [
+        "legal_force recorded as supervisory_expectation; source uses 'should'."
+      ],
+      "record_status": "verified",
+      "synthetic": false,
+      "provenance": {
+        "origin": "authoritative_external_source",
+        "source_ids": [
+          "SRC-ESG-EBA-GL-2025-01"
+        ],
+        "created_at": "2026-09-05T02:25:45Z",
+        "created_by": "coding_agent",
+        "last_verified_at": "2026-09-05T01:45:00Z",
+        "notes": []
+      },
+      "annotation": {
+        "label_status": "silver",
+        "annotated_by": "coding_agent",
+        "reviewed_by": null,
+        "reviewed_at": null,
+        "notes": []
+      },
+      "missing_evidence": [
+        {
+          "field": "required_bank_facts",
+          "reason": "SME/corporate portfolio segment data is not yet recorded by Person 2.",
+          "required_input": "03_exposure/lending_portfolio.csv",
+          "responsible_scope": "person_2",
+          "blocking": false
+        }
+      ]
+    },
+    {
+      "requirement_id": "REQ-ESG-DATA-GAPS-001",
+      "change_id": "REG-ESG-EBA-GL-2025-01",
+      "title": "Determining needed ESG data points and remediating data gaps for non-large-corporate counterparties (including SMEs)",
+      "requirement_text": "For exposures towards counterparties other than large corporates (as defined by Article 3(4) of Directive 2013/34/EU), institutions should determine the ESG data points needed for identification, measurement and management of ESG risks, and, where data quality or availability is not sufficient, should assess the gaps and their potential impacts and take and document remediating actions, including use of estimates, proxies, expert judgment, qualitative data or portfolio-level assessments, seeking to reduce reliance on estimates as data availability improves.",
+      "legal_force": "supervisory_expectation",
+      "addressee_types": [
+        "credit_institution"
+      ],
+      "jurisdictions": [
+        "EU",
+        "IE"
+      ],
+      "applicability_conditions": [
+        {
+          "condition_id": "COND-REQ-ESG-DATA-GAPS-001-01",
+          "description": "The institution has exposures to counterparties other than large corporates (e.g. SMEs) for which ESG data may be limited.",
+          "condition_type": "bank_fact",
+          "fact_path": "03_exposure/lending_portfolio.csv#/counterparty_segments",
+          "operator": "exists",
+          "expected_value": [],
+          "source_citation_ids": [
+            "CIT-REQ-ESG-DATA-GAPS-001-01"
+          ],
+          "evidence_status": "insufficient_evidence"
+        }
+      ],
+      "exclusions_and_exemptions": [],
+      "compliance_events": [
+        {
+          "event_type": "application",
+          "date": "2026-01-11",
+          "condition": "Institutions other than SNCIs",
+          "source_citation_ids": [
+            "CIT-REQ-ESG-DATA-GAPS-001-01"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "source_citations": [
+        {
+          "citation_id": "CIT-REQ-ESG-DATA-GAPS-001-01",
+          "source_id": "SRC-ESG-EBA-GL-2025-01",
+          "locator_type": "paragraph",
+          "locator": "Guidelines, Section 4.2.2 'Data processes', paragraphs 27 and 29",
+          "evidence_type": "quote",
+          "evidence_text": "\"Where the quality or availability of data is initially not sufficient to meet risk management needs, institutions should assess these gaps... and take and document remediating actions, including the use of estimates or proxies...\" and, for other counterparties, institutions should \"determine the data points needed\" and \"where needed to address data gaps, use expert judgment, qualitative data, portfolio-level assessments and proxies.\"",
+          "supports_fields": [
+            "requirement_text"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "required_bank_facts": [
+        {
+          "fact_ref": "03_exposure/lending_portfolio.csv#/counterparty_segments",
+          "purpose": "Confirm SME/non-large-corporate exposure segments.",
+          "evidence_status": "insufficient_evidence"
+        },
+        {
+          "fact_ref": "05_operations/data_assets.json#/esg_data",
+          "purpose": "Confirm which ESG data points are currently collected and the extent of known gaps.",
+          "evidence_status": "insufficient_evidence"
+        }
+      ],
+      "capability_domains": [
+        "credit_risk",
+        "data_management",
+        "esg_risk"
+      ],
+      "policy_ids": [],
+      "control_ids": [],
+      "procedure_ids": [],
+      "current_coverage": {
+        "rating": "none",
+        "assessment_basis": "person1_governance_only",
+        "rationale": "No control or procedure in this dataset addresses ESG data-gap identification or remediation methodology for counterparties. This is a designed, confirmed absence (incomplete ESG data is an intentional scenario fact), not merely an unassessed gap.",
+        "control_ids": [],
+        "uncovered_dimensions": [],
+        "verification_status": "verified"
+      },
+      "interpretation_notes": [
+        "legal_force recorded as supervisory_expectation; source uses 'should'."
+      ],
+      "record_status": "verified",
+      "synthetic": false,
+      "provenance": {
+        "origin": "authoritative_external_source",
+        "source_ids": [
+          "SRC-ESG-EBA-GL-2025-01"
+        ],
+        "created_at": "2026-09-05T02:25:45Z",
+        "created_by": "coding_agent",
+        "last_verified_at": "2026-09-05T01:45:00Z",
+        "notes": []
+      },
+      "annotation": {
+        "label_status": "silver",
+        "annotated_by": "coding_agent",
+        "reviewed_by": null,
+        "reviewed_at": null,
+        "notes": []
+      },
+      "missing_evidence": [
+        {
+          "field": "required_bank_facts",
+          "reason": "ESG data-asset inventory and known gaps are not yet recorded by Person 3.",
+          "required_input": "05_operations/data_assets.json",
+          "responsible_scope": "person_3",
+          "blocking": false
+        }
+      ]
+    },
+    {
+      "requirement_id": "REQ-ESG-RISK-APPETITE-001",
+      "change_id": "REG-ESG-EBA-GL-2025-01",
+      "title": "ESG risks defined and addressed in the institution's risk appetite",
+      "requirement_text": "Institutions should ensure that their risk appetite clearly defines and addresses ESG risks identified through the materiality assessment, specifying the level and types of ESG risk the institution is willing to assume (including portfolio concentration/diversification objectives), implemented with ESG-related key risk indicators such as limits, thresholds or exclusions.",
+      "legal_force": "supervisory_expectation",
+      "addressee_types": [
+        "credit_institution"
+      ],
+      "jurisdictions": [
+        "EU",
+        "IE"
+      ],
+      "applicability_conditions": [
+        {
+          "condition_id": "COND-REQ-ESG-RISK-APPETITE-001-01",
+          "description": "The institution has a formal risk appetite framework into which ESG risk limits/KRIs would be integrated.",
+          "condition_type": "bank_fact",
+          "fact_path": "01_entity/bank_profile.json#/risk_appetite_framework",
+          "operator": "exists",
+          "expected_value": [],
+          "source_citation_ids": [
+            "CIT-REQ-ESG-RISK-APPETITE-001-01"
+          ],
+          "evidence_status": "insufficient_evidence"
+        }
+      ],
+      "exclusions_and_exemptions": [],
+      "compliance_events": [
+        {
+          "event_type": "application",
+          "date": "2026-01-11",
+          "condition": "Institutions other than SNCIs",
+          "source_citation_ids": [
+            "CIT-REQ-ESG-RISK-APPETITE-001-01"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "source_citations": [
+        {
+          "citation_id": "CIT-REQ-ESG-RISK-APPETITE-001-01",
+          "source_id": "SRC-ESG-EBA-GL-2025-01",
+          "locator_type": "paragraph",
+          "locator": "Guidelines, Section 5.3 'Risk appetite', paragraphs 50-51",
+          "evidence_type": "quote",
+          "evidence_text": "\"institutions should ensure that their risk appetite clearly defines and addresses ESG risks... The risk appetite should be implemented with the support of ESG-related KRIs, including e.g. potential limits, thresholds or exclusions.\"",
+          "supports_fields": [
+            "requirement_text"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "required_bank_facts": [
+        {
+          "fact_ref": "01_entity/bank_profile.json#/risk_appetite_framework",
+          "purpose": "Confirm whether a formal risk appetite framework exists and whether ESG factors/KRIs are integrated.",
+          "evidence_status": "insufficient_evidence"
+        }
+      ],
+      "capability_domains": [
+        "esg_risk",
+        "risk_management"
+      ],
+      "policy_ids": [],
+      "control_ids": [],
+      "procedure_ids": [],
+      "current_coverage": {
+        "rating": "none",
+        "assessment_basis": "person1_governance_only",
+        "rationale": "No ESG-specific risk-appetite statement, limit or KRI is modelled in this dataset; this is a confirmed absence consistent with 'no formal portfolio-wide ESG-risk control'.",
+        "control_ids": [],
+        "uncovered_dimensions": [],
+        "verification_status": "verified"
+      },
+      "interpretation_notes": [
+        "legal_force recorded as supervisory_expectation; source uses 'should'."
+      ],
+      "record_status": "verified",
+      "synthetic": false,
+      "provenance": {
+        "origin": "authoritative_external_source",
+        "source_ids": [
+          "SRC-ESG-EBA-GL-2025-01"
+        ],
+        "created_at": "2026-09-05T02:25:45Z",
+        "created_by": "coding_agent",
+        "last_verified_at": "2026-09-05T01:45:00Z",
+        "notes": []
+      },
+      "annotation": {
+        "label_status": "silver",
+        "annotated_by": "coding_agent",
+        "reviewed_by": null,
+        "reviewed_at": null,
+        "notes": []
+      },
+      "missing_evidence": [
+        {
+          "field": "required_bank_facts",
+          "reason": "Risk appetite framework facts are not yet recorded by Person 2.",
+          "required_input": "01_entity/bank_profile.json",
+          "responsible_scope": "person_2",
+          "blocking": false
+        }
+      ]
+    },
+    {
+      "requirement_id": "REQ-ESG-RISK-INTEGRATION-001",
+      "change_id": "REG-ESG-EBA-GL-2025-01",
+      "title": "Integration of ESG risks as drivers of traditional financial risk categories",
+      "requirement_text": "For the purposes of integrating ESG risks into the institution-wide risk management framework, institutions should consider the role of ESG risks as potential drivers of all traditional categories of financial risk (credit, market, operational, reputational, liquidity, business model and concentration risk), embed ESG risks within regular risk management systems and processes, and develop a sound approach to managing and mitigating ESG risks over the short, medium and long term (at least a 10-year horizon), including through counterparty engagement, adjustment of financial terms, sectoral/exposure limits, and portfolio diversification.",
+      "legal_force": "supervisory_expectation",
+      "addressee_types": [
+        "credit_institution",
+        "investment_firm"
+      ],
+      "jurisdictions": [
+        "EU",
+        "IE"
+      ],
+      "applicability_conditions": [
+        {
+          "condition_id": "COND-REQ-ESG-RISK-INTEGRATION-001-01",
+          "description": "The institution is an institution within Article 4(1) point 3 of Regulation (EU) No 575/2013, addressed by these guidelines under Article 4(1) of Regulation (EU) No 1093/2010.",
+          "condition_type": "bank_fact",
+          "fact_path": "01_entity/bank_profile.json#/entity_classification",
+          "operator": "equals",
+          "expected_value": [
+            "credit_institution"
+          ],
+          "source_citation_ids": [
+            "CIT-REQ-ESG-RISK-INTEGRATION-001-01"
+          ],
+          "evidence_status": "insufficient_evidence"
+        }
+      ],
+      "exclusions_and_exemptions": [
+        "Paragraph 10: small and non-complex institutions (SNCIs) have a later application date (11 January 2027) than other institutions (11 January 2026)."
+      ],
+      "compliance_events": [
+        {
+          "event_type": "application",
+          "date": "2026-01-11",
+          "condition": "Institutions other than SNCIs",
+          "source_citation_ids": [
+            "CIT-REQ-ESG-RISK-INTEGRATION-001-01"
+          ],
+          "verification_status": "verified"
+        },
+        {
+          "event_type": "application",
+          "date": "2027-01-11",
+          "condition": "SNCIs (latest)",
+          "source_citation_ids": [
+            "CIT-REQ-ESG-RISK-INTEGRATION-001-01"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "source_citations": [
+        {
+          "citation_id": "CIT-REQ-ESG-RISK-INTEGRATION-001-01",
+          "source_id": "SRC-ESG-EBA-GL-2025-01",
+          "locator_type": "paragraph",
+          "locator": "Guidelines, Section 5.1 'ESG risk management principles', paragraphs 43-46",
+          "evidence_type": "quote",
+          "evidence_text": "\"institutions should consider the role of ESG risks as potential drivers of all traditional categories of financial risks, including credit, market, operational..., reputational, liquidity, business model, and concentration risks\" and \"should develop a robust and sound approach to managing and mitigating ESG risks over the short and medium term and over a long-term horizon of at least 10 years.\"",
+          "supports_fields": [
+            "requirement_text"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "required_bank_facts": [
+        {
+          "fact_ref": "01_entity/bank_profile.json#/entity_classification",
+          "purpose": "Confirm CRD/CRR institution classification and SNCI status (application-date trigger).",
+          "evidence_status": "insufficient_evidence"
+        },
+        {
+          "fact_ref": "03_exposure/lending_portfolio.csv",
+          "purpose": "Confirm materiality of the SME/corporate credit portfolio, relevant to the materiality assessment underpinning this requirement.",
+          "evidence_status": "insufficient_evidence"
+        }
+      ],
+      "capability_domains": [
+        "credit_risk",
+        "esg_risk",
+        "risk_management"
+      ],
+      "policy_ids": [
+        "POL-CREDIT-RISK-ESG"
+      ],
+      "control_ids": [
+        "CTRL-ESG-ONBOARD-SCREEN"
+      ],
+      "procedure_ids": [
+        "PRCD-ESG-ONBOARD-SCREEN"
+      ],
+      "current_coverage": {
+        "rating": "partial",
+        "assessment_basis": "person1_governance_only",
+        "rationale": "ESG risk is acknowledged in credit policy and applied at new-lending onboarding via sector-level screening, but there is no portfolio-wide ongoing monitoring or risk-appetite integration for ESG risk, consistent with the scenario's designed gap.",
+        "control_ids": [
+          "CTRL-ESG-ONBOARD-SCREEN"
+        ],
+        "uncovered_dimensions": [
+          "ongoing_portfolio_monitoring",
+          "risk_appetite_integration"
+        ],
+        "verification_status": "verified"
+      },
+      "interpretation_notes": [
+        "Source uses 'should', not 'shall'; legal_force is recorded as supervisory_expectation (Article 16 Regulation (EU) No 1093/2010 comply-or-explain guidance), not a statutory obligation."
+      ],
+      "record_status": "verified",
+      "synthetic": false,
+      "provenance": {
+        "origin": "authoritative_external_source",
+        "source_ids": [
+          "SRC-ESG-EBA-GL-2025-01"
+        ],
+        "created_at": "2026-09-05T02:25:45Z",
+        "created_by": "coding_agent",
+        "last_verified_at": "2026-09-05T01:45:00Z",
+        "notes": []
+      },
+      "annotation": {
+        "label_status": "silver",
+        "annotated_by": "coding_agent",
+        "reviewed_by": null,
+        "reviewed_at": null,
+        "notes": []
+      },
+      "missing_evidence": [
+        {
+          "field": "required_bank_facts",
+          "reason": "SME/corporate portfolio materiality is not yet recorded by Person 2.",
+          "required_input": "03_exposure/lending_portfolio.csv",
+          "responsible_scope": "person_2",
+          "blocking": false
+        }
+      ]
+    },
+    {
+      "requirement_id": "REQ-FRTB-APPLICATION-DATE-001",
+      "change_id": "REG-FRTB-CRR3-MKT-RISK",
+      "title": "Transitional application date for FRTB-based market-risk own funds requirements",
+      "requirement_text": "Until the currently governing application date for the FRTB alternative approaches (presently 1 January 2027 under Commission Delegated Regulation (EU) 2025/1496, itself subject to a further pending targeted-adjustment delegated act not yet confirmed in force), an institution not benefiting from the small-trading-book-business derogation shall continue to apply the market-risk own-funds framework as it stood on 8 July 2024, rather than the FRTB-based approaches introduced by CRR3.",
+      "legal_force": "obligation",
+      "addressee_types": [
+        "credit_institution",
+        "investment_firm"
+      ],
+      "jurisdictions": [
+        "EU",
+        "IE"
+      ],
+      "applicability_conditions": [
+        {
+          "condition_id": "COND-REQ-FRTB-APPLICATION-DATE-001-01",
+          "description": "The institution does not qualify for the small trading-book-business derogation and therefore remains subject to own-funds requirements for market risk under whichever framework version currently applies.",
+          "condition_type": "legal",
+          "fact_path": null,
+          "operator": "legal_interpretation_required",
+          "expected_value": [
+            "resolved by REQ-FRTB-SMALL-BOOK-001"
+          ],
+          "source_citation_ids": [
+            "CIT-REQ-FRTB-APPLICATION-DATE-001-01"
+          ],
+          "evidence_status": "needs_review"
+        }
+      ],
+      "exclusions_and_exemptions": [
+        "Institutions meeting the Article 94 CRR small-trading-book-business condition apply credit-risk treatment instead and are not affected by this transitional timeline."
+      ],
+      "compliance_events": [
+        {
+          "event_type": "transition",
+          "date": "2027-01-01",
+          "condition": "Currently governing date for FRTB alternative approaches (subject to the pending 2026 delegated act's unresolved status)",
+          "source_citation_ids": [
+            "CIT-REQ-FRTB-APPLICATION-DATE-001-01"
+          ],
+          "verification_status": "needs_review"
+        }
+      ],
+      "source_citations": [
+        {
+          "citation_id": "CIT-REQ-FRTB-APPLICATION-DATE-001-01",
+          "source_id": "SRC-FRTB-EURLEX-DA-2025-1496",
+          "locator_type": "article",
+          "locator": "Commission Delegated Regulation (EU) 2025/1496 (recitals and operative provision deferring the FRTB application date)",
+          "evidence_type": "paraphrase",
+          "evidence_text": "Institutions continue to apply the version of the CRR market-risk framework in force on 8 July 2024 (the day before CRR3's entry into force) until 1 January 2027, per two independent official corroborating sources (SRC-FRTB-EURLEX-DA-2025-1496, SRC-FRTB-EBA-STATEMENT-2025); not confirmed by direct quotation of the delegated regulation's own operative article text.",
+          "supports_fields": [
+            "requirement_text",
+            "compliance_events"
+          ],
+          "verification_status": "needs_review"
+        }
+      ],
+      "required_bank_facts": [
+        {
+          "fact_ref": "03_exposure/trading_book.csv",
+          "purpose": "Whether this requirement is material depends on REQ-FRTB-SMALL-BOOK-001's applicability outcome, which depends on Person 2/3 trading-book facts.",
+          "evidence_status": "insufficient_evidence"
+        }
+      ],
+      "capability_domains": [
+        "market_risk",
+        "trading_book"
+      ],
+      "policy_ids": [],
+      "control_ids": [],
+      "procedure_ids": [],
+      "current_coverage": {
+        "rating": "not_assessed",
+        "assessment_basis": "person1_governance_only",
+        "rationale": "Deliberately not assessed pending resolution of REQ-FRTB-SMALL-BOOK-001; creating remediation for a transitional timing rule before applicability is established would manufacture an unsupported gap.",
+        "control_ids": [],
+        "uncovered_dimensions": [],
+        "verification_status": "needs_review"
+      },
+      "interpretation_notes": [
+        "Held at needs_review pending confirmation of whether the 4 June 2026 targeted-adjustment delegated act has entered into force as of the research cut-off; see REG-FRTB-CRR3-MKT-RISK missing_evidence."
+      ],
+      "record_status": "needs_review",
+      "synthetic": false,
+      "provenance": {
+        "origin": "authoritative_external_source",
+        "source_ids": [
+          "SRC-FRTB-EBA-STATEMENT-2025",
+          "SRC-FRTB-EURLEX-DA-2025-1496"
+        ],
+        "created_at": "2026-09-05T02:25:45Z",
+        "created_by": "coding_agent",
+        "last_verified_at": null,
+        "notes": [
+          "Current application date is corroborated by two independent official sources but not quote-verified against primary OJ text; the further pending 2026 act's status is unresolved."
+        ]
+      },
+      "annotation": {
+        "label_status": "silver",
+        "annotated_by": "coding_agent",
+        "reviewed_by": null,
+        "reviewed_at": null,
+        "notes": []
+      },
+      "missing_evidence": [
+        {
+          "field": "compliance_events[0].date",
+          "reason": "Whether the pending 2026 targeted-adjustment delegated act changes this date or its conditions as of 2026-09-05 is unresolved.",
+          "required_input": "Current EUR-Lex/Official Journal status of the C(2026) 3647 final delegated regulation",
+          "responsible_scope": "legal_reviewer",
+          "blocking": true
+        }
+      ]
+    },
+    {
+      "requirement_id": "REQ-FRTB-SMALL-BOOK-001",
+      "change_id": "REG-FRTB-CRR3-MKT-RISK",
+      "title": "Small trading-book-business exemption from market-risk own funds requirements",
+      "requirement_text": "An institution whose aggregated on- and off-balance-sheet trading-book business (measured as the sum of the absolute value of aggregated long positions and the absolute value of aggregated short positions) does not exceed the applicable condition (commonly described as 5% of total assets, or EUR 50 million), assessed on at least a monthly basis, may treat its trading-book positions under the own-funds treatment for non-trading-book (credit risk) business rather than under the own-funds requirements for market risk. Exact current paragraph numbering and thresholds require direct confirmation against the consolidated CRR text.",
+      "legal_force": "permission",
+      "addressee_types": [
+        "credit_institution",
+        "investment_firm"
+      ],
+      "jurisdictions": [
+        "EU",
+        "IE"
+      ],
+      "applicability_conditions": [
+        {
+          "condition_id": "COND-REQ-FRTB-SMALL-BOOK-001-01",
+          "description": "The institution's aggregated absolute long-plus-short trading-book business volume, relative to its total assets, determines eligibility for the derogation.",
+          "condition_type": "bank_fact",
+          "fact_path": "03_exposure/trading_book.csv#/aggregate_long_short_position",
+          "operator": "less_than",
+          "expected_value": [
+            "5_percent_of_total_assets_or_eur_50_million"
+          ],
+          "source_citation_ids": [
+            "CIT-REQ-FRTB-SMALL-BOOK-001-01"
+          ],
+          "evidence_status": "insufficient_evidence"
+        }
+      ],
+      "exclusions_and_exemptions": [],
+      "compliance_events": [
+        {
+          "event_type": "monitoring",
+          "date": null,
+          "condition": "Threshold to be assessed on at least a monthly basis for continued eligibility",
+          "source_citation_ids": [
+            "CIT-REQ-FRTB-SMALL-BOOK-001-01"
+          ],
+          "verification_status": "needs_review"
+        }
+      ],
+      "source_citations": [
+        {
+          "citation_id": "CIT-REQ-FRTB-SMALL-BOOK-001-01",
+          "source_id": "SRC-FRTB-EURLEX-CRR-575",
+          "locator_type": "article",
+          "locator": "Article 94 CRR, 'Derogation for small trading book business' (paragraph numbering not directly confirmed in this session)",
+          "evidence_type": "paraphrase",
+          "evidence_text": "Two independent secondary summaries describe a threshold of 5% of total assets or EUR 50 million of aggregated absolute long-plus-short trading-book positions, assessed monthly, below which credit-risk rather than market-risk treatment may apply; not confirmed by direct quotation of the primary text.",
+          "supports_fields": [
+            "requirement_text",
+            "applicability_conditions"
+          ],
+          "verification_status": "needs_review"
+        }
+      ],
+      "required_bank_facts": [
+        {
+          "fact_ref": "03_exposure/trading_book.csv#/aggregate_long_short_position",
+          "purpose": "Determine the bank's aggregated trading-book business volume relative to total assets to assess derogation eligibility.",
+          "evidence_status": "insufficient_evidence"
+        },
+        {
+          "fact_ref": "01_entity/bank_profile.json#/total_assets",
+          "purpose": "Required denominator for the percentage-of-total-assets threshold test.",
+          "evidence_status": "insufficient_evidence"
+        }
+      ],
+      "capability_domains": [
+        "market_risk",
+        "trading_book"
+      ],
+      "policy_ids": [
+        "POL-MARKET-RISK-TRADING-BOOK"
+      ],
+      "control_ids": [
+        "CTRL-FRTB-THRESHOLD-MONITOR"
+      ],
+      "procedure_ids": [
+        "PRCD-FRTB-THRESHOLD-MONITOR"
+      ],
+      "current_coverage": {
+        "rating": "unknown",
+        "assessment_basis": "person1_governance_only",
+        "rationale": "A proportionate monitoring control and procedure are designed to track the threshold, but whether the bank is within or outside it, and thus whether monitoring versus full FRTB implementation is the correct posture, cannot be determined without Person 2/3 trading-book and total-assets data.",
+        "control_ids": [
+          "CTRL-FRTB-THRESHOLD-MONITOR"
+        ],
+        "uncovered_dimensions": [],
+        "verification_status": "needs_review"
+      },
+      "interpretation_notes": [
+        "This citation and its requirement are held at needs_review because Article 94 CRR's exact current text/numbering was not confirmed against a Tier 1/2 primary source in this session (see SRC-FRTB-EURLEX-CRR-575 notes). Do not upgrade to verified/gold without that confirmation."
+      ],
+      "record_status": "needs_review",
+      "synthetic": false,
+      "provenance": {
+        "origin": "authoritative_external_source",
+        "source_ids": [
+          "SRC-FRTB-EURLEX-CRR-575"
+        ],
+        "created_at": "2026-09-05T02:25:45Z",
+        "created_by": "coding_agent",
+        "last_verified_at": null,
+        "notes": [
+          "Primary-text confirmation of Article 94's exact wording and numbering is outstanding; see missing_evidence."
+        ]
+      },
+      "annotation": {
+        "label_status": "silver",
+        "annotated_by": "coding_agent",
+        "reviewed_by": null,
+        "reviewed_at": null,
+        "notes": []
+      },
+      "missing_evidence": [
+        {
+          "field": "source_citations[0]",
+          "reason": "Article 94 CRR's exact current text was not confirmed by direct quotation against a Tier 1/2 primary source in this session.",
+          "required_input": "Direct EUR-Lex confirmation of the consolidated Article 94 CRR text",
+          "responsible_scope": "legal_reviewer",
+          "blocking": true
+        },
+        {
+          "field": "required_bank_facts",
+          "reason": "Trading-book volume and total-assets facts are not yet recorded by Person 2.",
+          "required_input": "03_exposure/trading_book.csv and 01_entity/bank_profile.json",
+          "responsible_scope": "person_2",
+          "blocking": true
+        }
+      ]
+    },
+    {
+      "requirement_id": "REQ-IPS-CHARGES-PARITY-001",
+      "change_id": "REG-IPS-2024-886",
+      "title": "Prohibition on charging more for instant transfers than standard transfers",
+      "requirement_text": "Any charges levied by a PSP on payers and payees for sending and receiving instant credit transfers in euro shall not be higher than the charges levied by that PSP for sending and receiving other (standard) credit transfers of corresponding type.",
+      "legal_force": "prohibition",
+      "addressee_types": [
+        "credit_institution",
+        "electronic_money_institution",
+        "payment_institution",
+        "payment_service_provider"
+      ],
+      "jurisdictions": [
+        "EU",
+        "IE"
+      ],
+      "applicability_conditions": [
+        {
+          "condition_id": "COND-REQ-IPS-CHARGES-PARITY-001-01",
+          "description": "The PSP levies any charge on payers or payees for sending or receiving credit transfers in euro.",
+          "condition_type": "bank_fact",
+          "fact_path": "02_business/products.json#/PRD-SEPA-INSTANT/pricing",
+          "operator": "exists",
+          "expected_value": [],
+          "source_citation_ids": [
+            "CIT-REQ-IPS-CHARGES-PARITY-001-01"
+          ],
+          "evidence_status": "insufficient_evidence"
+        }
+      ],
+      "exclusions_and_exemptions": [],
+      "compliance_events": [
+        {
+          "event_type": "institution_deadline",
+          "date": "2025-01-09",
+          "condition": "Euro-area PSPs",
+          "source_citation_ids": [
+            "CIT-REQ-IPS-CHARGES-PARITY-001-01"
+          ],
+          "verification_status": "verified"
+        },
+        {
+          "event_type": "institution_deadline",
+          "date": "2027-01-09",
+          "condition": "Non-euro-area PSPs",
+          "source_citation_ids": [
+            "CIT-REQ-IPS-CHARGES-PARITY-001-01"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "source_citations": [
+        {
+          "citation_id": "CIT-REQ-IPS-CHARGES-PARITY-001-01",
+          "source_id": "SRC-IPS-EURLEX-2024-886",
+          "locator_type": "article",
+          "locator": "Article 5b(1) and 5b(3) (as inserted into Regulation (EU) No 260/2012)",
+          "evidence_type": "quote",
+          "evidence_text": "\"Any charges levied by a PSP on payers and payees in respect of sending and receiving instant credit transfers shall not be higher than the charges levied by that PSP in respect of sending and receiving other credit transfers of corresponding type.\"",
+          "supports_fields": [
+            "requirement_text",
+            "compliance_events"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "required_bank_facts": [
+        {
+          "fact_ref": "02_business/products.json#/PRD-SEPA-INSTANT/pricing",
+          "purpose": "Confirm current pricing for instant vs. standard credit transfers.",
+          "evidence_status": "insufficient_evidence"
+        }
+      ],
+      "capability_domains": [
+        "payments"
+      ],
+      "policy_ids": [],
+      "control_ids": [],
+      "procedure_ids": [],
+      "current_coverage": {
+        "rating": "not_assessed",
+        "assessment_basis": "person1_governance_only",
+        "rationale": "Deliberately out of first-demo governance scope; a pricing-parity control is not part of the agreed demo gap and would require Person 2 pricing facts to assess.",
+        "control_ids": [],
+        "uncovered_dimensions": [],
+        "verification_status": "verified"
+      },
+      "interpretation_notes": [],
+      "record_status": "verified",
+      "synthetic": false,
+      "provenance": {
+        "origin": "authoritative_external_source",
+        "source_ids": [
+          "SRC-IPS-EURLEX-2024-886"
+        ],
+        "created_at": "2026-09-05T02:25:45Z",
+        "created_by": "coding_agent",
+        "last_verified_at": "2026-09-05T01:45:00Z",
+        "notes": []
+      },
+      "annotation": {
+        "label_status": "silver",
+        "annotated_by": "coding_agent",
+        "reviewed_by": null,
+        "reviewed_at": null,
+        "notes": []
+      },
+      "missing_evidence": [
+        {
+          "field": "required_bank_facts",
+          "reason": "Pricing data for instant vs. standard transfers is not yet recorded in a Person 2 file.",
+          "required_input": "02_business/products.json",
+          "responsible_scope": "person_2",
+          "blocking": false
+        }
+      ]
+    },
+    {
+      "requirement_id": "REQ-IPS-SANCTIONS-SCREEN-001",
+      "change_id": "REG-IPS-2024-886",
+      "title": "Daily sanctions-list screening of payment service users, without additional per-transaction screening",
+      "requirement_text": "PSPs offering instant credit transfers shall verify whether their PSUs are persons or entities subject to targeted financial restrictive measures, performing such verification immediately after entry into force of any new or amended targeted financial restrictive measure and at least once every calendar day. During execution of an instant credit transfer, the payer's PSP and the payee's PSP shall not additionally verify the payer or payee against such measures beyond that daily/immediate screening.",
+      "legal_force": "obligation",
+      "addressee_types": [
+        "credit_institution",
+        "electronic_money_institution",
+        "payment_institution",
+        "payment_service_provider"
+      ],
+      "jurisdictions": [
+        "EU",
+        "IE"
+      ],
+      "applicability_conditions": [
+        {
+          "condition_id": "COND-REQ-IPS-SANCTIONS-SCREEN-001-01",
+          "description": "The institution is a PSP offering instant credit transfers to payment service users.",
+          "condition_type": "bank_fact",
+          "fact_path": "01_entity/bank_profile.json#/entity_classification",
+          "operator": "in",
+          "expected_value": [
+            "credit_institution",
+            "payment_institution",
+            "electronic_money_institution"
+          ],
+          "source_citation_ids": [
+            "CIT-REQ-IPS-SANCTIONS-SCREEN-001-01"
+          ],
+          "evidence_status": "insufficient_evidence"
+        }
+      ],
+      "exclusions_and_exemptions": [
+        "Article 5d(2): additional per-transaction screening during execution of an instant credit transfer is prohibited beyond the daily/immediate screening baseline."
+      ],
+      "compliance_events": [
+        {
+          "event_type": "institution_deadline",
+          "date": "2025-01-09",
+          "condition": "Euro-area PSPs",
+          "source_citation_ids": [
+            "CIT-REQ-IPS-SANCTIONS-SCREEN-001-01"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "source_citations": [
+        {
+          "citation_id": "CIT-REQ-IPS-SANCTIONS-SCREEN-001-01",
+          "source_id": "SRC-IPS-EURLEX-2024-886",
+          "locator_type": "article",
+          "locator": "Article 5d(1), (2) and (3) (as inserted into Regulation (EU) No 260/2012); definition at Article 2(1e)",
+          "evidence_type": "quote",
+          "evidence_text": "\"PSPs shall carry out such verifications immediately after the entry into force of any new targeted financial restrictive measures... and at least once every calendar day... the payer's PSP and the payee's PSP... shall not verify whether the payer or the payee... are persons or entities subject to targeted financial restrictive measures in addition to carrying out verifications under paragraph 1.\"",
+          "supports_fields": [
+            "requirement_text",
+            "exclusions_and_exemptions"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "required_bank_facts": [
+        {
+          "fact_ref": "05_operations/systems.json#/sanctions_screening",
+          "purpose": "Identify the sanctions-screening system/service and its current screening frequency.",
+          "evidence_status": "insufficient_evidence"
+        }
+      ],
+      "capability_domains": [
+        "financial_crime",
+        "payments"
+      ],
+      "policy_ids": [],
+      "control_ids": [],
+      "procedure_ids": [],
+      "current_coverage": {
+        "rating": "not_assessed",
+        "assessment_basis": "person1_governance_only",
+        "rationale": "Outside the agreed first-demo governance-design scope (channel/VoP gap only); assessing this needs Person 3 sanctions-screening system facts.",
+        "control_ids": [],
+        "uncovered_dimensions": [],
+        "verification_status": "verified"
+      },
+      "interpretation_notes": [],
+      "record_status": "verified",
+      "synthetic": false,
+      "provenance": {
+        "origin": "authoritative_external_source",
+        "source_ids": [
+          "SRC-IPS-EURLEX-2024-886"
+        ],
+        "created_at": "2026-09-05T02:25:45Z",
+        "created_by": "coding_agent",
+        "last_verified_at": "2026-09-05T01:45:00Z",
+        "notes": []
+      },
+      "annotation": {
+        "label_status": "silver",
+        "annotated_by": "coding_agent",
+        "reviewed_by": null,
+        "reviewed_at": null,
+        "notes": []
+      },
+      "missing_evidence": [
+        {
+          "field": "required_bank_facts",
+          "reason": "Sanctions-screening system facts are not yet recorded by Person 3.",
+          "required_input": "05_operations/systems.json",
+          "responsible_scope": "person_3",
+          "blocking": false
+        }
+      ]
+    },
+    {
+      "requirement_id": "REQ-IPS-SEND-RECEIVE-001",
+      "change_id": "REG-IPS-2024-886",
+      "title": "Obligation to offer and reach instant credit transfers 24/7",
+      "requirement_text": "A PSP that offers its PSUs a payment service of sending and receiving credit transfers in euro shall offer to all of those PSUs a payment service of sending and receiving instant credit transfers in euro, and shall ensure that all payment accounts reachable for credit transfers are also reachable for instant credit transfers, 24 hours a day on any calendar day, subject to PSP-type- and euro-area-status-dependent application dates and a limited liquidity-based derogation for non-euro-area PSPs.",
+      "legal_force": "obligation",
+      "addressee_types": [
+        "credit_institution",
+        "electronic_money_institution",
+        "payment_institution",
+        "payment_service_provider"
+      ],
+      "jurisdictions": [
+        "EU",
+        "IE"
+      ],
+      "applicability_conditions": [
+        {
+          "condition_id": "COND-REQ-IPS-SEND-RECEIVE-001-01",
+          "description": "The institution is a PSP that already offers its PSUs a service of sending and/or receiving credit transfers in euro.",
+          "condition_type": "bank_fact",
+          "fact_path": "01_entity/bank_profile.json#/entity_classification",
+          "operator": "in",
+          "expected_value": [
+            "credit_institution",
+            "payment_institution",
+            "electronic_money_institution"
+          ],
+          "source_citation_ids": [
+            "CIT-REQ-IPS-SEND-RECEIVE-001-01"
+          ],
+          "evidence_status": "insufficient_evidence"
+        }
+      ],
+      "exclusions_and_exemptions": [
+        "Article 5a(2): limited derogation for non-euro-area PSPs lacking euro liquidity outside business hours, subject to competent-authority approval and a EUR 25,000 minimum per-transaction limit."
+      ],
+      "compliance_events": [
+        {
+          "event_type": "institution_deadline",
+          "date": "2025-01-09",
+          "condition": "Euro-area PSPs: receive instant credit transfers",
+          "source_citation_ids": [
+            "CIT-REQ-IPS-SEND-RECEIVE-001-01"
+          ],
+          "verification_status": "verified"
+        },
+        {
+          "event_type": "institution_deadline",
+          "date": "2025-10-09",
+          "condition": "Euro-area PSPs: send instant credit transfers",
+          "source_citation_ids": [
+            "CIT-REQ-IPS-SEND-RECEIVE-001-01"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "source_citations": [
+        {
+          "citation_id": "CIT-REQ-IPS-SEND-RECEIVE-001-01",
+          "source_id": "SRC-IPS-EURLEX-2024-886",
+          "locator_type": "article",
+          "locator": "Article 5a(1) and 5a(8) (as inserted into Regulation (EU) No 260/2012 by Regulation (EU) 2024/886, Article 1(2))",
+          "evidence_type": "quote",
+          "evidence_text": "\"PSPs that offer to their PSUs a payment service of sending and receiving credit transfers shall offer to all of their PSUs a payment service of sending and receiving instant credit transfers... reachable for instant credit transfers 24 hours a day and on any calendar day.\"",
+          "supports_fields": [
+            "requirement_text",
+            "compliance_events"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "required_bank_facts": [
+        {
+          "fact_ref": "01_entity/bank_profile.json#/entity_classification",
+          "purpose": "Confirm the fictional bank's PSP classification (credit institution, payment institution, or e-money institution) and euro-area status.",
+          "evidence_status": "insufficient_evidence"
+        },
+        {
+          "fact_ref": "02_business/products.json#/PRD-SEPA-INSTANT",
+          "purpose": "Confirm whether an instant-credit-transfer product is already offered and which accounts/channels are reachable.",
+          "evidence_status": "insufficient_evidence"
+        }
+      ],
+      "capability_domains": [
+        "payments"
+      ],
+      "policy_ids": [],
+      "control_ids": [],
+      "procedure_ids": [],
+      "current_coverage": {
+        "rating": "not_assessed",
+        "assessment_basis": "person1_governance_only",
+        "rationale": "Deliberately not assessed in the first-demo scope; the demo's designed governance gap concerns Verification of Payee (REQ-IPS-VOP-001), not the underlying send/receive obligation. Assessing this requirement needs Person 2/3 payments-process and system facts.",
+        "control_ids": [],
+        "uncovered_dimensions": [],
+        "verification_status": "verified"
+      },
+      "interpretation_notes": [],
+      "record_status": "verified",
+      "synthetic": false,
+      "provenance": {
+        "origin": "authoritative_external_source",
+        "source_ids": [
+          "SRC-IPS-EURLEX-2024-886"
+        ],
+        "created_at": "2026-09-05T02:25:45Z",
+        "created_by": "coding_agent",
+        "last_verified_at": "2026-09-05T01:45:00Z",
+        "notes": []
+      },
+      "annotation": {
+        "label_status": "silver",
+        "annotated_by": "coding_agent",
+        "reviewed_by": null,
+        "reviewed_at": null,
+        "notes": []
+      },
+      "missing_evidence": [
+        {
+          "field": "required_bank_facts",
+          "reason": "Bank's PSP classification and product/channel reach are not yet recorded in a Person 2 file.",
+          "required_input": "01_entity/bank_profile.json and 02_business/products.json",
+          "responsible_scope": "person_2",
+          "blocking": false
+        }
+      ]
+    },
+    {
+      "requirement_id": "REQ-IPS-VOP-001",
+      "change_id": "REG-IPS-2024-886",
+      "title": "Verification of Payee service before credit-transfer authorisation",
+      "requirement_text": "A payer's PSP shall offer the payer a service verifying the payee to whom the payer intends to send a credit transfer, performed immediately after the payer provides the payee's relevant information and before the payer is offered the possibility of authorising that credit transfer. The service shall be provided to all payment service users free of charge. The regulation's text is channel-neutral; it does not itself distinguish web, mobile, or branch initiation channels.",
+      "legal_force": "obligation",
+      "addressee_types": [
+        "credit_institution",
+        "electronic_money_institution",
+        "payment_institution",
+        "payment_service_provider"
+      ],
+      "jurisdictions": [
+        "EU",
+        "IE"
+      ],
+      "applicability_conditions": [
+        {
+          "condition_id": "COND-REQ-IPS-VOP-001-01",
+          "description": "The institution is a payer's PSP offering credit transfers to payment service users through one or more payment-initiation channels.",
+          "condition_type": "bank_fact",
+          "fact_path": "01_entity/bank_profile.json#/entity_classification",
+          "operator": "in",
+          "expected_value": [
+            "credit_institution",
+            "payment_institution",
+            "electronic_money_institution"
+          ],
+          "source_citation_ids": [
+            "CIT-REQ-IPS-VOP-001-01"
+          ],
+          "evidence_status": "insufficient_evidence"
+        },
+        {
+          "condition_id": "COND-REQ-IPS-VOP-001-02",
+          "description": "Per-channel availability of the Verification of Payee service is a bank implementation fact, not a distinction drawn by the regulation itself.",
+          "condition_type": "bank_fact",
+          "fact_path": "05_operations/processes.json#/PROC-PAYMENT-INITIATION/channels",
+          "operator": "exists",
+          "expected_value": [],
+          "source_citation_ids": [
+            "CIT-REQ-IPS-VOP-001-01"
+          ],
+          "evidence_status": "insufficient_evidence"
+        }
+      ],
+      "exclusions_and_exemptions": [],
+      "compliance_events": [
+        {
+          "event_type": "institution_deadline",
+          "date": "2025-10-09",
+          "condition": "Euro-area PSPs",
+          "source_citation_ids": [
+            "CIT-REQ-IPS-VOP-001-01"
+          ],
+          "verification_status": "verified"
+        },
+        {
+          "event_type": "institution_deadline",
+          "date": "2027-07-09",
+          "condition": "Non-euro-area PSPs",
+          "source_citation_ids": [
+            "CIT-REQ-IPS-VOP-001-01"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "source_citations": [
+        {
+          "citation_id": "CIT-REQ-IPS-VOP-001-01",
+          "source_id": "SRC-IPS-EURLEX-2024-886",
+          "locator_type": "article",
+          "locator": "Article 5c(1) and 5c(9) (as inserted into Regulation (EU) No 260/2012); free-of-charge requirement at Article 5b(2)",
+          "evidence_type": "quote",
+          "evidence_text": "\"The payer's PSP shall offer the payer a service ensuring verification of the payee to whom the payer intends to send a credit transfer... The payer's PSP shall perform the service ensuring verification immediately after the payer provides relevant information about the payee and before the payer is offered the possibility of authorising that credit transfer.\"",
+          "supports_fields": [
+            "requirement_text",
+            "applicability_conditions",
+            "compliance_events"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "required_bank_facts": [
+        {
+          "fact_ref": "05_operations/processes.json#/PROC-PAYMENT-INITIATION/channels",
+          "purpose": "Determine which payment-initiation channels (web, mobile, branch) exist and which currently have a Verification of Payee capability.",
+          "evidence_status": "insufficient_evidence"
+        },
+        {
+          "fact_ref": "05_operations/systems.json#/SYS-PAYMENTS-HUB",
+          "purpose": "Identify the system(s) implementing Verification of Payee and their channel coverage.",
+          "evidence_status": "insufficient_evidence"
+        }
+      ],
+      "capability_domains": [
+        "payments"
+      ],
+      "policy_ids": [
+        "POL-PAYMENTS-SECURITY"
+      ],
+      "control_ids": [
+        "CTRL-VOP-WEB"
+      ],
+      "procedure_ids": [
+        "PRCD-VOP-WEB"
+      ],
+      "current_coverage": {
+        "rating": "partial",
+        "assessment_basis": "person1_governance_only",
+        "rationale": "A web-channel Verification of Payee control is designed and referenced in the payments security policy. No mobile-channel control exists; this is the intentional first-demo gap, not an unassessed unknown.",
+        "control_ids": [
+          "CTRL-VOP-WEB"
+        ],
+        "uncovered_dimensions": [
+          "mobile_channel"
+        ],
+        "verification_status": "verified"
+      },
+      "interpretation_notes": [
+        "The regulation does not use the word 'mobile'; channel coverage is a synthetic-bank implementation fact, not a distinction drawn by Article 5c itself."
+      ],
+      "record_status": "verified",
+      "synthetic": false,
+      "provenance": {
+        "origin": "authoritative_external_source",
+        "source_ids": [
+          "SRC-IPS-EURLEX-2024-886"
+        ],
+        "created_at": "2026-09-05T02:25:45Z",
+        "created_by": "coding_agent",
+        "last_verified_at": "2026-09-05T01:45:00Z",
+        "notes": [
+          "Core legal-extraction assertion is independently supported by a verified Tier 1 citation; required_bank_facts gaps affect applicability/coverage assessment only and are non-blocking."
+        ]
+      },
+      "annotation": {
+        "label_status": "silver",
+        "annotated_by": "coding_agent",
+        "reviewed_by": null,
+        "reviewed_at": null,
+        "notes": []
+      },
+      "missing_evidence": [
+        {
+          "field": "required_bank_facts",
+          "reason": "Channel-level payment-initiation process and system facts are not yet available from Person 2/3.",
+          "required_input": "05_operations/processes.json and 05_operations/systems.json",
+          "responsible_scope": "person_3",
+          "blocking": false
+        }
+      ]
+    }
+  ]
+}

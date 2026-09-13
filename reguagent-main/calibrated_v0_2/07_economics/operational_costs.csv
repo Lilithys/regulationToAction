@@ -1,0 +1,8 @@
+cost_centre_id,cost_centre_name,cost_type,unit,unit_cost_eur,effective_from,synthetic,calculation_basis
+CC-100,Lending,delivery_day,person_day,416,2026-09-08,true,8 hours x scenario hourly rate; Finance/Payments/Mortgage use explicit peer-function assumptions
+CC-200,Risk,delivery_day,person_day,544,2026-09-08,true,8 hours x scenario hourly rate; Finance/Payments/Mortgage use explicit peer-function assumptions
+CC-300,Data-IT,delivery_day,person_day,850,2026-09-08,true,technology change day rate from bank context
+CC-400,Finance,delivery_day,person_day,544,2026-09-08,true,8 hours x scenario hourly rate; Finance/Payments/Mortgage use explicit peer-function assumptions
+CC-500,Compliance,delivery_day,person_day,544,2026-09-08,true,8 hours x scenario hourly rate; Finance/Payments/Mortgage use explicit peer-function assumptions
+CC-600,Payments,delivery_day,person_day,416,2026-09-08,true,8 hours x scenario hourly rate; Finance/Payments/Mortgage use explicit peer-function assumptions
+CC-700,Mortgage,delivery_day,person_day,416,2026-09-08,true,8 hours x scenario hourly rate; Finance/Payments/Mortgage use explicit peer-function assumptions

@@ -1,0 +1,9 @@
+role_id,period,available_days,committed_days,remaining_days,capacity_status,data_classification,source,capacity_scope
+ROLE-HEAD-CREDIT-RISK,2026-Q4,24,16,8,constrained,synthetic_scenario,Rebased scenario allocation; not actual availability and not evidence of delivery-team capacity.,named_role_allocation_not_full_delivery_team
+ROLE-CIO,2026-Q4,30,22,8,constrained,synthetic_scenario,Rebased scenario allocation; not actual availability and not evidence of delivery-team capacity.,named_role_allocation_not_full_delivery_team
+ROLE-HEAD-PAYMENTS,2026-Q4,22,14,8,available,synthetic_scenario,Rebased scenario allocation; not actual availability and not evidence of delivery-team capacity.,named_role_allocation_not_full_delivery_team
+ROLE-HEAD-DIGITAL,2026-Q4,25,18,7,constrained,synthetic_scenario,Rebased scenario allocation; not actual availability and not evidence of delivery-team capacity.,named_role_allocation_not_full_delivery_team
+ROLE-CISO,2026-Q4,20,15,5,constrained,synthetic_scenario,Rebased scenario allocation; not actual availability and not evidence of delivery-team capacity.,named_role_allocation_not_full_delivery_team
+ROLE-TPRM-LEAD,2026-Q4,30,10,20,available,synthetic_scenario,Rebased scenario allocation; not actual availability and not evidence of delivery-team capacity.,named_role_allocation_not_full_delivery_team
+ROLE-HEAD-COMPLIANCE,2026-Q4,20,13,7,constrained,synthetic_scenario,Rebased scenario allocation; not actual availability and not evidence of delivery-team capacity.,named_role_allocation_not_full_delivery_team
+ROLE-HEAD-TREASURY,2026-Q4,18,11,7,available,synthetic_scenario,Rebased scenario allocation; not actual availability and not evidence of delivery-team capacity.,named_role_allocation_not_full_delivery_team

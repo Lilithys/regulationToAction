@@ -1,0 +1,17 @@
+{
+  "purpose": "Preserved historical user-workspace annotations; superseded by M1 semantic review, not current coverage proof.",
+  "superseded_mapping_notes": {
+    "CTRL-ESG-ONBOARD-SCREEN": [
+      "2026-09-11: added REQ-ESG-CREDIT-MONITORING-001 and REQ-ESG-LONG-HORIZON-001 to requirement_ids. Both split from REQ-ESG-CREDIT-POLICY-001 and REQ-ESG-RISK-INTEGRATION-001 respectively during the ESG atomic-requirement split, but were never back-filled here -- a bidirectional-mapping gap against this project's own data-contract rule, not a newly designed capability. coverage[] is unchanged: existing_portfolio stays not_covered, so both requirements correctly move from missing to partial, not evidenced."
+    ],
+    "REQ-ESG-CREDIT-MONITORING-001": [
+      "2026-09-11: control_ids/current_coverage backfilled with CTRL-ESG-ONBOARD-SCREEN. This requirement split from REQ-ESG-CREDIT-POLICY-001, which the control was already linked to; the control's own requirement_ids was never updated to also include this split-off requirement -- a bidirectional-mapping gap, not a newly designed capability."
+    ],
+    "REQ-ESG-LONG-HORIZON-001": [
+      "2026-09-11: control_ids/current_coverage backfilled with CTRL-ESG-ONBOARD-SCREEN. This requirement split from REQ-ESG-RISK-INTEGRATION-001, which the control was already linked to; the control's own requirement_ids was never updated to also include this split-off requirement -- a bidirectional-mapping gap, not a newly designed capability."
+    ]
+  },
+  "source_retrieval_timestamps": {
+    "SRC-IPS-CBI-EXPLAINER": "2026-09-08T15:06:25Z"
+  }
+}

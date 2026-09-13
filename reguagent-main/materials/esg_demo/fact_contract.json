@@ -1,0 +1,11 @@
+{
+  "fact_id": "FACT-ESG-ENERGY-COVERAGE",
+  "field": "sme_energy_cost_data_coverage_pct",
+  "unit": "percent_of_existing_sme_borrowers",
+  "population": "Existing SME borrowers in PRD-SME-WORKING-CAPITAL; cohort borrower_count summed over the frozen snapshot",
+  "required_input_fields": ["value", "unit", "denominator", "numerator", "population_product_id", "as_of_date", "answered_by", "answered_by_role_id", "source", "synthetic"],
+  "usable_data_definition": "Owner-declared usable energy-cost data for this snapshot. No independent borrower-level verification is supplied.",
+  "allowed_effect": "Energy-data completeness and attributable collection population only",
+  "forbidden_inferences": ["Measured climate risk", "Per-borrower allocation", "Higher automation rate", "Automatic TCO reduction", "Control-operation effectiveness", "Legal approval"],
+  "synthetic": true
+}

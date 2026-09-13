@@ -1,0 +1,148 @@
+{
+  "REQ-ESG-CREDIT-MONITORING-001::exposure": {
+    "requirement_id": "REQ-ESG-CREDIT-MONITORING-001",
+    "dimension_set": "exposure",
+    "dimension_names": [
+      "materiality",
+      "transition_risk",
+      "physical_risk",
+      "sector_concentration",
+      "review_urgency"
+    ],
+    "pairs": [
+      {
+        "dimension_a": "materiality",
+        "dimension_b": "transition_risk",
+        "ratio": 3,
+        "reasoning": "REQ-ESG-CREDIT-MONITORING-001 is triggered by the size and significance of exposure, so materiality drives whether enhanced ESG credit monitoring is applied at all. Transition risk matters for assessing forward-looking credit deterioration, but the requirement's exposure-weighting anchors first on how material the SME exposure is."
+      },
+      {
+        "dimension_a": "materiality",
+        "dimension_b": "physical_risk",
+        "ratio": 3,
+        "reasoning": "Because the requirement is used to weight exposure, materiality determines whether physical risk factors are even relevant to monitor for a given SME credit. Physical risk can impair collateral and operations, but for this specific requirement it is secondary to whether the exposure is large enough to warrant monitoring."
+      },
+      {
+        "dimension_a": "materiality",
+        "dimension_b": "sector_concentration",
+        "ratio": 2,
+        "reasoning": "Exposure size is the primary trigger for REQ-ESG-CREDIT-MONITORING-001, while sector concentration sharpens the interpretation of ESG risk across the SME portfolio. Concentration is important but slightly less determinative than the materiality threshold that activates the requirement."
+      },
+      {
+        "dimension_a": "materiality",
+        "dimension_b": "review_urgency",
+        "ratio": 2,
+        "reasoning": "The requirement centers on monitoring credit exposure, so exposure materiality sets the baseline for how much review attention is justified. Review urgency determines timing and escalation, but it follows from materiality rather than replacing it as the core weighting basis."
+      },
+      {
+        "dimension_a": "transition_risk",
+        "dimension_b": "physical_risk",
+        "ratio": 2,
+        "reasoning": "For SME credit monitoring under this ESG requirement, transition risk is often more directly tied to borrower cash flows, compliance costs, and sector decarbonization pressure that can alter creditworthiness. Physical risk remains important, especially for collateral and local operations, but is somewhat less central to near-term credit monitoring decisions."
+      },
+      {
+        "dimension_a": "transition_risk",
+        "dimension_b": "sector_concentration",
+        "ratio": 1,
+        "reasoning": "Transition risk and sector concentration are tightly linked in this requirement because concentrated SME exposures in carbon-intensive or regulated sectors amplify transition-driven credit risk. They are comparably important dimensions for determining where ESG credit monitoring should focus."
+      },
+      {
+        "dimension_a": "transition_risk",
+        "dimension_b": "review_urgency",
+        "ratio": 2,
+        "reasoning": "Transition risk informs whether an SME exposure may deteriorate due to policy, technology, or market shifts, which directly affects credit monitoring priorities. Review urgency is still important, but it is largely a timing variable driven by the underlying transition risk assessment."
+      },
+      {
+        "dimension_a": "physical_risk",
+        "dimension_b": "sector_concentration",
+        "ratio": 1,
+        "reasoning": "Physical risk and sector concentration are roughly comparable for this requirement because both help identify clusters of SME credit exposure vulnerable to ESG-related losses. Concentration reveals portfolio clustering, while physical risk reveals location- and asset-specific vulnerability."
+      },
+      {
+        "dimension_a": "physical_risk",
+        "dimension_b": "review_urgency",
+        "ratio": 2,
+        "reasoning": "Physical risk can directly affect collateral values, business continuity, and repayment capacity in SME lending, making it more substantive to the monitoring requirement than the timing question of review urgency. Urgency should increase when physical risk is severe, but it is derivative of that risk assessment."
+      },
+      {
+        "dimension_a": "sector_concentration",
+        "dimension_b": "review_urgency",
+        "ratio": 2,
+        "reasoning": "Sector concentration is a core analytical input for ESG credit monitoring because concentrated exposure to vulnerable SME sectors can create correlated credit deterioration. Review urgency is important for scheduling actions, but it is less central than understanding where concentration-driven risk sits."
+      }
+    ],
+    "status": "confirmed",
+    "drafted_by": "llm",
+    "drafted_at": "2026-09-11",
+    "confirmed_by": "Head of Credit Ris",
+    "confirmed_at": "2026-09-11",
+    "weights": {
+      "materiality": 0.37777075989530035,
+      "transition_risk": 0.19278917626349454,
+      "physical_risk": 0.14608064663285017,
+      "sector_concentration": 0.17677781152849462,
+      "review_urgency": 0.10658160567986046
+    },
+    "consistency_ratio": 0.042687726541726166
+  },
+  "REQ-ESG-CREDIT-MONITORING-001::confidence": {
+    "requirement_id": "REQ-ESG-CREDIT-MONITORING-001",
+    "dimension_set": "confidence",
+    "dimension_names": [
+      "sector_classification",
+      "esg_data_availability",
+      "geography_coverage",
+      "assessment_freshness"
+    ],
+    "pairs": [
+      {
+        "dimension_a": "sector_classification",
+        "dimension_b": "esg_data_availability",
+        "ratio": 3,
+        "reasoning": "For REQ-ESG-CREDIT-MONITORING-001, confidence in sector classification is somewhat more important than raw ESG data availability because the monitoring rule monitors SME credit by sector-specific ESG risk exposure; a misclassified SME can be monitored against the wrong credit-risk lens even if ESG data are present."
+      },
+      {
+        "dimension_a": "sector_classification",
+        "dimension_b": "geography_coverage",
+        "ratio": 5,
+        "reasoning": "Sector classification is strongly more important than geography coverage for this requirement because the credit-monitoring thresholds and ESG risk indicators are primarily tied to sector lending categories, while geography mainly conditions applicable regulatory or local ESG overlays and is secondary to the SME credit portfolio monitoring logic."
+      },
+      {
+        "dimension_a": "sector_classification",
+        "dimension_b": "assessment_freshness",
+        "ratio": 4,
+        "reasoning": "Sector classification is more important than assessment freshness because an SME assigned to the wrong sector undermines the monitoring trigger itself, whereas an outdated assessment can often be refreshed or treated with a lower-confidence flag without invalidating the credit-monitoring scope."
+      },
+      {
+        "dimension_a": "esg_data_availability",
+        "dimension_b": "geography_coverage",
+        "ratio": 3,
+        "reasoning": "ESG data availability is moderately more important than geography coverage because REQ-ESG-CREDIT-MONITORING-001 needs actual ESG indicators for covered SMEs to compute and monitor credit-relevant ESG signals; geography affects applicability and benchmark selection but cannot substitute for missing underlying ESG data."
+      },
+      {
+        "dimension_a": "esg_data_availability",
+        "dimension_b": "assessment_freshness",
+        "ratio": 2,
+        "reasoning": "ESG data availability is slightly more important than assessment freshness because without any ESG data for an SME the monitoring requirement cannot be evidenced at all, while stale assessments still provide a baseline that can be monitored as a confidence caveat."
+      },
+      {
+        "dimension_a": "geography_coverage",
+        "dimension_b": "assessment_freshness",
+        "ratio": 1,
+        "reasoning": "Geography coverage and assessment freshness are of comparable importance for this SME credit-monitoring requirement: geography determines whether local ESG risk context and regulatory monitoring obligations are captured, while freshness determines whether those captured assessments remain credible for ongoing credit monitoring, with neither clearly dominating the other."
+      }
+    ],
+    "status": "confirmed",
+    "drafted_by": "llm",
+    "drafted_at": "2026-09-11",
+    "confirmed_by": "Head of Credit Ris",
+    "confirmed_at": "2026-09-11",
+    "weights": {
+      "sector_classification": 0.5485757362853623,
+      "esg_data_availability": 0.23499995495545595,
+      "geography_coverage": 0.09998131570412516,
+      "assessment_freshness": 0.11644299305505658
+    },
+    "consistency_ratio": 0.016845782768633844
+  }
+}

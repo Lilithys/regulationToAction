@@ -1,0 +1,100 @@
+[
+  {
+    "cost_centre_id": "CC-100",
+    "name": "Lending",
+    "annual_run_cost_eur": 42000000,
+    "synthetic": true,
+    "provenance": {
+      "origin": "synthetic_bank_design",
+      "source_file": "Bank_Context_Fictional_Digital_Bank.md",
+      "calibration_version": "0.2.1",
+      "notes": [
+        "Preserved synthetic scenario fact; not a fact about bunq."
+      ]
+    }
+  },
+  {
+    "cost_centre_id": "CC-200",
+    "name": "Risk",
+    "annual_run_cost_eur": 18000000,
+    "synthetic": true,
+    "provenance": {
+      "origin": "synthetic_bank_design",
+      "source_file": "Bank_Context_Fictional_Digital_Bank.md",
+      "calibration_version": "0.2.1",
+      "notes": [
+        "Preserved synthetic scenario fact; not a fact about bunq."
+      ]
+    }
+  },
+  {
+    "cost_centre_id": "CC-300",
+    "name": "Data-IT",
+    "annual_run_cost_eur": 76000000,
+    "synthetic": true,
+    "provenance": {
+      "origin": "synthetic_bank_design",
+      "source_file": "Bank_Context_Fictional_Digital_Bank.md",
+      "calibration_version": "0.2.1",
+      "notes": [
+        "Preserved synthetic scenario fact; not a fact about bunq."
+      ]
+    }
+  },
+  {
+    "cost_centre_id": "CC-400",
+    "name": "Finance",
+    "annual_run_cost_eur": 14000000,
+    "synthetic": true,
+    "provenance": {
+      "origin": "synthetic_bank_design",
+      "source_file": "Bank_Context_Fictional_Digital_Bank.md",
+      "calibration_version": "0.2.1",
+      "notes": [
+        "Preserved synthetic scenario fact; not a fact about bunq."
+      ]
+    }
+  },
+  {
+    "cost_centre_id": "CC-500",
+    "name": "Compliance",
+    "annual_run_cost_eur": 16000000,
+    "synthetic": true,
+    "provenance": {
+      "origin": "synthetic_bank_design",
+      "source_file": "Bank_Context_Fictional_Digital_Bank.md",
+      "calibration_version": "0.2.1",
+      "notes": [
+        "Preserved synthetic scenario fact; not a fact about bunq."
+      ]
+    }
+  },
+  {
+    "cost_centre_id": "CC-600",
+    "name": "Payments",
+    "annual_run_cost_eur": 13000000,
+    "synthetic": true,
+    "provenance": {
+      "origin": "synthetic_bank_design",
+      "source_file": "Bank_Context_Fictional_Digital_Bank.md",
+      "calibration_version": "0.2.1",
+      "notes": [
+        "Preserved synthetic scenario fact; not a fact about bunq."
+      ]
+    }
+  },
+  {
+    "cost_centre_id": "CC-700",
+    "name": "Mortgage",
+    "annual_run_cost_eur": 9000000,
+    "synthetic": true,
+    "provenance": {
+      "origin": "synthetic_bank_design",
+      "source_file": "Bank_Context_Fictional_Digital_Bank.md",
+      "calibration_version": "0.2.1",
+      "notes": [
+        "Preserved synthetic scenario fact; not a fact about bunq."
+      ]
+    }
+  }
+]

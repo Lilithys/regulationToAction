@@ -1,0 +1,293 @@
+[
+  {
+    "role_id": "ROLE-BCO",
+    "title": "Business Continuity Officer",
+    "function": "Operational Resilience",
+    "line_of_defence": 2,
+    "seniority": "Management",
+    "cost_centre_id": "CC-200",
+    "email_alias": "bco@syntheticbank.example",
+    "backup_role_id": "ROLE-TPRM-LEAD",
+    "source_basis": "Synthetic role allocation. No actual bunq role, owner or budget is asserted.",
+    "missing_evidence": [],
+    "synthetic": true,
+    "provenance": {
+      "origin": "synthetic_bank_design",
+      "source_file": "person4/06_organisation/roles.json",
+      "calibration_version": "0.2.1",
+      "notes": [
+        "Preserved synthetic scenario fact; not a fact about bunq."
+      ]
+    }
+  },
+  {
+    "role_id": "ROLE-CHIEF-RISK",
+    "title": "Chief Risk Officer",
+    "function": "Risk",
+    "line_of_defence": 2,
+    "seniority": "Executive",
+    "cost_centre_id": "CC-200",
+    "email_alias": "cro@syntheticbank.example",
+    "backup_role_id": "ROLE-HEAD-CREDIT-RISK",
+    "source_basis": "Synthetic role allocation. No actual bunq role, owner or budget is asserted.",
+    "missing_evidence": [],
+    "synthetic": true,
+    "provenance": {
+      "origin": "synthetic_bank_design",
+      "source_file": "person4/06_organisation/roles.json",
+      "calibration_version": "0.2.1",
+      "notes": [
+        "Preserved synthetic scenario fact; not a fact about bunq."
+      ]
+    }
+  },
+  {
+    "role_id": "ROLE-CIO",
+    "title": "Chief Information Officer",
+    "function": "Technology",
+    "line_of_defence": 1,
+    "seniority": "Executive",
+    "cost_centre_id": "CC-300",
+    "email_alias": "cio@syntheticbank.example",
+    "backup_role_id": "ROLE-COO",
+    "source_basis": "Synthetic role allocation. No actual bunq role, owner or budget is asserted.",
+    "missing_evidence": [],
+    "synthetic": true,
+    "provenance": {
+      "origin": "synthetic_bank_design",
+      "source_file": "person4/06_organisation/roles.json",
+      "calibration_version": "0.2.1",
+      "notes": [
+        "Preserved synthetic scenario fact; not a fact about bunq."
+      ]
+    }
+  },
+  {
+    "role_id": "ROLE-CISO",
+    "title": "Chief Information Security Officer",
+    "function": "Technology Risk",
+    "line_of_defence": 2,
+    "seniority": "Executive",
+    "cost_centre_id": "CC-200",
+    "email_alias": "ciso@syntheticbank.example",
+    "backup_role_id": "ROLE-CIO",
+    "source_basis": "Synthetic role allocation. No actual bunq role, owner or budget is asserted.",
+    "missing_evidence": [],
+    "synthetic": true,
+    "provenance": {
+      "origin": "synthetic_bank_design",
+      "source_file": "person4/06_organisation/roles.json",
+      "calibration_version": "0.2.1",
+      "notes": [
+        "Preserved synthetic scenario fact; not a fact about bunq."
+      ]
+    }
+  },
+  {
+    "role_id": "ROLE-COO",
+    "title": "Chief Operating Officer",
+    "function": "Operations",
+    "line_of_defence": 1,
+    "seniority": "Executive",
+    "cost_centre_id": "CC-100",
+    "email_alias": "coo@syntheticbank.example",
+    "backup_role_id": null,
+    "source_basis": "Synthetic role allocation. No actual bunq role, owner or budget is asserted.",
+    "missing_evidence": [
+      {
+        "field": "backup_role_id",
+        "reason": "No valid independent backup supplied."
+      }
+    ],
+    "synthetic": true,
+    "provenance": {
+      "origin": "synthetic_bank_design",
+      "source_file": "person4/06_organisation/roles.json",
+      "calibration_version": "0.2.1",
+      "notes": [
+        "Preserved synthetic scenario fact; not a fact about bunq."
+      ]
+    }
+  },
+  {
+    "role_id": "ROLE-HEAD-COMPLIANCE",
+    "title": "Head of Compliance",
+    "function": "Compliance",
+    "line_of_defence": 2,
+    "seniority": "Senior management",
+    "cost_centre_id": "CC-500",
+    "email_alias": "compliance@syntheticbank.example",
+    "backup_role_id": "ROLE-CHIEF-RISK",
+    "source_basis": "Synthetic role allocation. No actual bunq role, owner or budget is asserted.",
+    "missing_evidence": [],
+    "synthetic": true,
+    "provenance": {
+      "origin": "synthetic_bank_design",
+      "source_file": "person4/06_organisation/roles.json",
+      "calibration_version": "0.2.1",
+      "notes": [
+        "Preserved synthetic scenario fact; not a fact about bunq."
+      ]
+    }
+  },
+  {
+    "role_id": "ROLE-HEAD-CREDIT-RISK",
+    "title": "Head of Credit Risk",
+    "function": "Risk",
+    "line_of_defence": 2,
+    "seniority": "Senior management",
+    "cost_centre_id": "CC-200",
+    "email_alias": "creditrisk@syntheticbank.example",
+    "backup_role_id": "ROLE-CHIEF-RISK",
+    "source_basis": "Synthetic role allocation. No actual bunq role, owner or budget is asserted.",
+    "missing_evidence": [],
+    "synthetic": true,
+    "provenance": {
+      "origin": "synthetic_bank_design",
+      "source_file": "person4/06_organisation/roles.json",
+      "calibration_version": "0.2.1",
+      "notes": [
+        "Preserved synthetic scenario fact; not a fact about bunq."
+      ]
+    }
+  },
+  {
+    "role_id": "ROLE-HEAD-DIGITAL",
+    "title": "Head of Digital Banking",
+    "function": "Technology",
+    "line_of_defence": 1,
+    "seniority": "Senior management",
+    "cost_centre_id": "CC-300",
+    "email_alias": "digital@syntheticbank.example",
+    "backup_role_id": "ROLE-CIO",
+    "source_basis": "Synthetic role allocation. No actual bunq role, owner or budget is asserted.",
+    "missing_evidence": [],
+    "synthetic": true,
+    "provenance": {
+      "origin": "synthetic_bank_design",
+      "source_file": "person4/06_organisation/roles.json",
+      "calibration_version": "0.2.1",
+      "notes": [
+        "Preserved synthetic scenario fact; not a fact about bunq."
+      ]
+    }
+  },
+  {
+    "role_id": "ROLE-HEAD-INTERNAL-AUDIT",
+    "title": "Head of Internal Audit",
+    "function": "Internal Audit",
+    "line_of_defence": 3,
+    "seniority": "Senior management",
+    "cost_centre_id": null,
+    "email_alias": "internalaudit@syntheticbank.example",
+    "backup_role_id": null,
+    "source_basis": "Synthetic role allocation. No actual bunq role, owner or budget is asserted.",
+    "missing_evidence": [
+      {
+        "field": "backup_role_id",
+        "reason": "No valid independent backup supplied."
+      },
+      {
+        "field": "cost_centre_id",
+        "reason": "Internal Audit budget not supplied; outside demo costing."
+      }
+    ],
+    "synthetic": true,
+    "provenance": {
+      "origin": "synthetic_bank_design",
+      "source_file": "person4/06_organisation/roles.json",
+      "calibration_version": "0.2.1",
+      "notes": [
+        "Preserved synthetic scenario fact; not a fact about bunq."
+      ]
+    }
+  },
+  {
+    "role_id": "ROLE-HEAD-LENDING",
+    "title": "Head of Lending",
+    "function": "Lending",
+    "line_of_defence": 1,
+    "seniority": "Senior management",
+    "cost_centre_id": "CC-100",
+    "email_alias": "lending@northstar.example",
+    "backup_role_id": "ROLE-COO",
+    "missing_evidence": [],
+    "synthetic": true,
+    "provenance": {
+      "origin": "synthetic_bank_design",
+      "source_file": "Bank_Context_Fictional_Digital_Bank.md",
+      "calibration_version": "0.2.1",
+      "notes": [
+        "Preserved synthetic scenario fact; not a fact about bunq."
+      ]
+    }
+  },
+  {
+    "role_id": "ROLE-HEAD-PAYMENTS",
+    "title": "Head of Payments",
+    "function": "Payments",
+    "line_of_defence": 1,
+    "seniority": "Senior management",
+    "cost_centre_id": "CC-600",
+    "email_alias": "payments@syntheticbank.example",
+    "backup_role_id": "ROLE-COO",
+    "source_basis": "Synthetic role allocation. No actual bunq role, owner or budget is asserted.",
+    "missing_evidence": [],
+    "synthetic": true,
+    "provenance": {
+      "origin": "synthetic_bank_design",
+      "source_file": "person4/06_organisation/roles.json",
+      "calibration_version": "0.2.1",
+      "notes": [
+        "Preserved synthetic scenario fact; not a fact about bunq."
+      ]
+    }
+  },
+  {
+    "role_id": "ROLE-HEAD-TREASURY",
+    "title": "Head of Treasury",
+    "function": "Treasury",
+    "line_of_defence": 1,
+    "seniority": "Senior management",
+    "cost_centre_id": "CC-400",
+    "email_alias": "treasury@syntheticbank.example",
+    "backup_role_id": null,
+    "source_basis": "Synthetic role allocation. No actual bunq role, owner or budget is asserted.",
+    "missing_evidence": [
+      {
+        "field": "backup_role_id",
+        "reason": "No valid independent backup supplied."
+      }
+    ],
+    "synthetic": true,
+    "provenance": {
+      "origin": "synthetic_bank_design",
+      "source_file": "person4/06_organisation/roles.json",
+      "calibration_version": "0.2.1",
+      "notes": [
+        "Preserved synthetic scenario fact; not a fact about bunq."
+      ]
+    }
+  },
+  {
+    "role_id": "ROLE-TPRM-LEAD",
+    "title": "Third-Party Risk Management Lead",
+    "function": "Operational Resilience",
+    "line_of_defence": 2,
+    "seniority": "Senior management",
+    "cost_centre_id": "CC-200",
+    "email_alias": "tprm@syntheticbank.example",
+    "backup_role_id": "ROLE-CISO",
+    "source_basis": "Synthetic role allocation. No actual bunq role, owner or budget is asserted.",
+    "missing_evidence": [],
+    "synthetic": true,
+    "provenance": {
+      "origin": "synthetic_bank_design",
+      "source_file": "person4/06_organisation/roles.json",
+      "calibration_version": "0.2.1",
+      "notes": [
+        "Preserved synthetic scenario fact; not a fact about bunq."
+      ]
+    }
+  }
+]

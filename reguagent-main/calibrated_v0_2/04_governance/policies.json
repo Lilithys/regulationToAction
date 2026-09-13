@@ -1,0 +1,427 @@
+{
+  "schema_version": "1.0.0",
+  "dataset_scope": "person_1_regulatory_governance",
+  "as_of_date": "2026-09-08",
+  "generated_at": "2026-09-11T23:37:51Z",
+  "policies": [
+    {
+      "policy_id": "POL-CREDIT-RISK-ESG",
+      "title": "Credit Risk Policy - ESG Integration",
+      "version": "1.0",
+      "lifecycle_status": "active",
+      "approval_date": null,
+      "effective_date": "2025-06-01",
+      "next_review_date": null,
+      "owner_role_id": "ROLE-HEAD-CREDIT-RISK",
+      "purpose": "Sets the fictional bank's current principles for considering ESG risk as a credit-risk driver in lending decisions.",
+      "scope": {
+        "jurisdictions": [
+          "IE"
+        ],
+        "business_line_ids": [
+          "BL-LENDING",
+          "BL-SME"
+        ],
+        "product_ids": [
+          "PRD-SME-WORKING-CAPITAL"
+        ],
+        "process_ids": [
+          "PROC-CREDIT-ORIGINATION",
+          "PROC-CREDIT-RISK-MONITORING",
+          "PROC-DATA-GOVERNANCE"
+        ],
+        "system_ids": [
+          "SYS-DATA-PLATFORM",
+          "SYS-GRC",
+          "SYS-LOAN-ORIG",
+          "SYS-RISK-ENGINE"
+        ],
+        "data_asset_ids": [
+          "DATA-ESG-CLIMATE-RISK",
+          "DATA-LOANS-EXPOSURES",
+          "DATA-SME-SECTOR-CLASSIFICATION"
+        ],
+        "vendor_ids": [],
+        "critical_service_ids": [
+          "CIF-LOAN-ORIGINATION"
+        ]
+      },
+      "statements": [
+        {
+          "statement_id": "PST-ESG-CREDIT-001",
+          "text": "The credit risk policy recognises ESG risk as a potential driver of credit risk for SME and corporate lending and requires sector-level ESG considerations to inform new-lending origination criteria.",
+          "requirement_ids": [
+            "REQ-ESG-RISK-INTEGRATION-001",
+            "REQ-ESG-CREDIT-POLICY-001"
+          ],
+          "implementation_status": "partial",
+          "control_ids": [
+            "CTRL-ESG-ONBOARD-SCREEN"
+          ]
+        },
+        {
+          "statement_id": "PST-ESG-CREDIT-002",
+          "text": "New SME and corporate lending applications undergo a sector-level ESG screening step at credit onboarding.",
+          "requirement_ids": [
+            "REQ-ESG-CREDIT-POLICY-001"
+          ],
+          "implementation_status": "partial",
+          "control_ids": [
+            "CTRL-ESG-ONBOARD-SCREEN"
+          ]
+        }
+      ],
+      "requirement_ids": [
+        "REQ-ESG-CREDIT-POLICY-001",
+        "REQ-ESG-RISK-INTEGRATION-001"
+      ],
+      "control_ids": [
+        "CTRL-ESG-ONBOARD-SCREEN"
+      ],
+      "procedure_ids": [
+        "PRCD-ESG-ONBOARD-SCREEN"
+      ],
+      "current_state_summary": "Policy acknowledges ESG as a credit-risk driver and requires sector-level screening at onboarding for new lending only. It does not establish portfolio-wide ESG risk monitoring, a defined ESG risk appetite, KRIs, or periodic re-screening of the existing book. The joined cohort and ESG data describe the SME portfolio; materiality conclusions still require assessment.",
+      "record_status": "needs_review",
+      "synthetic": true,
+      "provenance": {
+        "origin": "synthetic_bank_design",
+        "source_ids": [],
+        "created_at": "2026-09-05T02:25:45Z",
+        "created_by": "coding_agent",
+        "last_verified_at": null,
+        "notes": [
+          "Synthetic current-state design for the first-demo scenario; not copied from any real institution.",
+          "Joined with canonical Persons 2–4 IDs; owners are synthetic scenario assignments."
+        ]
+      },
+      "annotation": {
+        "label_status": "silver",
+        "annotated_by": "coding_agent",
+        "reviewed_by": null,
+        "reviewed_at": null,
+        "notes": []
+      },
+      "missing_evidence": [
+        {
+          "field": "human_approval",
+          "reason": "Synthetic allocation has not been approved by a human reviewer.",
+          "required_input": "Synthetic allocation has not been approved by a human reviewer.",
+          "responsible_scope": "user",
+          "blocking": false
+        }
+      ]
+    },
+    {
+      "policy_id": "POL-ICT-OPERATIONAL-RESILIENCE",
+      "title": "ICT and Operational Resilience Policy",
+      "version": "1.0",
+      "lifecycle_status": "active",
+      "approval_date": null,
+      "effective_date": "2025-01-01",
+      "next_review_date": null,
+      "owner_role_id": "ROLE-CIO",
+      "purpose": "Sets the fictional bank's current high-level principles for ICT risk management and oversight of ICT third-party dependencies.",
+      "scope": {
+        "jurisdictions": [
+          "IE"
+        ],
+        "business_line_ids": [
+          "BL-LENDING",
+          "BL-MORTGAGE",
+          "BL-PAYMENTS",
+          "BL-RETAIL",
+          "BL-SME",
+          "BL-TREASURY"
+        ],
+        "product_ids": [],
+        "process_ids": [
+          "PROC-ICT-RESILIENCE",
+          "PROC-THIRD-PARTY-MGMT"
+        ],
+        "system_ids": [
+          "SYS-GRC",
+          "SYS-ICT-REGISTER"
+        ],
+        "data_asset_ids": [
+          "DATA-ICT-ASSETS-THIRD-PARTIES"
+        ],
+        "vendor_ids": [
+          "VND-CLOUD-INFRA",
+          "VND-CORE-BANKING",
+          "VND-IDENTITY-VERIFICATION",
+          "VND-MORTGAGE-SERVICER"
+        ],
+        "critical_service_ids": [
+          "CIF-LOAN-ORIGINATION",
+          "CIF-LOGIN-ACCESS",
+          "CIF-MORTGAGE-SERVICING",
+          "CIF-ONBOARDING",
+          "CIF-PAYMENTS"
+        ]
+      },
+      "statements": [
+        {
+          "statement_id": "PST-DORA-ICT-001",
+          "text": "The bank maintains a mapping of critical or important functions and their supporting ICT assets for a defined, currently partial subset of known functions.",
+          "requirement_ids": [
+            "REQ-DORA-DEPENDENCY-MAP-001"
+          ],
+          "implementation_status": "partial",
+          "control_ids": [
+            "CTRL-DORA-DEPENDENCY-MAP"
+          ]
+        },
+        {
+          "statement_id": "PST-DORA-ICT-002",
+          "text": "The bank maintains a register of information on ICT third-party contractual arrangements, currently populated for a known but incomplete subset of arrangements.",
+          "requirement_ids": [
+            "REQ-DORA-ICT-REGISTER-001"
+          ],
+          "implementation_status": "partial",
+          "control_ids": [
+            "CTRL-DORA-ICT-REGISTER"
+          ]
+        },
+        {
+          "statement_id": "PST-DORA-ICT-003",
+          "text": "The policy sets out high-level principles for identifying, protecting against, detecting, responding to and recovering from ICT risk, without yet specifying a fully operating comprehensive framework.",
+          "requirement_ids": [
+            "REQ-DORA-ICT-FRAMEWORK-001"
+          ],
+          "implementation_status": "partial",
+          "control_ids": []
+        },
+        {
+          "statement_id": "PST-DORA-ICT-004",
+          "text": "The management body intends to maintain oversight of ICT third-party dependencies; a standalone, dedicated board-adopted ICT third-party risk strategy document is not yet separately evidenced.",
+          "requirement_ids": [
+            "REQ-DORA-TPRM-STRATEGY-001"
+          ],
+          "implementation_status": "partial",
+          "control_ids": []
+        }
+      ],
+      "requirement_ids": [
+        "REQ-DORA-DEPENDENCY-MAP-001",
+        "REQ-DORA-ICT-FRAMEWORK-001",
+        "REQ-DORA-ICT-REGISTER-001",
+        "REQ-DORA-TPRM-STRATEGY-001"
+      ],
+      "control_ids": [
+        "CTRL-DORA-DEPENDENCY-MAP",
+        "CTRL-DORA-ICT-REGISTER"
+      ],
+      "procedure_ids": [
+        "PRCD-DORA-DEPENDENCY-MAP",
+        "PRCD-DORA-ICT-REGISTER-UPDATE"
+      ],
+      "current_state_summary": "Policy establishes intent for ICT risk management and third-party dependency oversight. Dependency mapping and the third-party register are both partial and known to be incomplete for critical services, consistent with the scenario's intentional gap. The joined operations records identify five critical functions and known mapping gaps; a complete underlying inventory and operating evidence are still required.",
+      "record_status": "needs_review",
+      "synthetic": true,
+      "provenance": {
+        "origin": "synthetic_bank_design",
+        "source_ids": [],
+        "created_at": "2026-09-05T02:25:45Z",
+        "created_by": "coding_agent",
+        "last_verified_at": null,
+        "notes": [
+          "Synthetic current-state design for the first-demo scenario; not copied from any real institution.",
+          "Joined with canonical Persons 2–4 IDs; owners are synthetic scenario assignments."
+        ]
+      },
+      "annotation": {
+        "label_status": "silver",
+        "annotated_by": "coding_agent",
+        "reviewed_by": null,
+        "reviewed_at": null,
+        "notes": []
+      },
+      "missing_evidence": [
+        {
+          "field": "human_approval",
+          "reason": "Synthetic allocation has not been approved by a human reviewer.",
+          "required_input": "Synthetic allocation has not been approved by a human reviewer.",
+          "responsible_scope": "user",
+          "blocking": false
+        }
+      ]
+    },
+    {
+      "policy_id": "POL-MARKET-RISK-TRADING-BOOK",
+      "title": "Market Risk and Trading Book Policy",
+      "version": "1.0",
+      "lifecycle_status": "active",
+      "approval_date": null,
+      "effective_date": "2025-01-01",
+      "next_review_date": null,
+      "owner_role_id": "ROLE-HEAD-TREASURY",
+      "purpose": "Sets the fictional bank's current, proportionate approach to monitoring trading-book activity against the small-trading-book-business threshold.",
+      "scope": {
+        "jurisdictions": [
+          "IE"
+        ],
+        "business_line_ids": [
+          "BL-TREASURY"
+        ],
+        "product_ids": [
+          "PRD-LIQUIDITY-PORTFOLIO"
+        ],
+        "process_ids": [
+          "PROC-LIQUIDITY-MANAGEMENT"
+        ],
+        "system_ids": [
+          "SYS-TREASURY-LIQUIDITY"
+        ],
+        "data_asset_ids": [
+          "DATA-TREASURY-LIQUIDITY"
+        ],
+        "vendor_ids": [],
+        "critical_service_ids": []
+      },
+      "statements": [
+        {
+          "statement_id": "PST-FRTB-MONITOR-001",
+          "text": "The bank monitors its trading-book business volume against the CRR small-trading-book-business threshold on a monthly basis to determine continued eligibility for the exemption from FRTB-based own-funds requirements for market risk. The policy does not assume the exemption applies and does not create FRTB implementation obligations beyond monitoring.",
+          "requirement_ids": [
+            "REQ-FRTB-SMALL-BOOK-001"
+          ],
+          "implementation_status": "partial",
+          "control_ids": [
+            "CTRL-FRTB-THRESHOLD-MONITOR"
+          ]
+        }
+      ],
+      "requirement_ids": [
+        "REQ-FRTB-SMALL-BOOK-001"
+      ],
+      "control_ids": [
+        "CTRL-FRTB-THRESHOLD-MONITOR"
+      ],
+      "procedure_ids": [
+        "PRCD-FRTB-THRESHOLD-MONITOR"
+      ],
+      "current_state_summary": "A proportionate monitoring capability is designed rather than a full FRTB implementation programme, reflecting the scenario's evidence-based-restraint intent: the bank should not be assumed to have material trading-book business, while the joined June position sample cannot establish current Article 94 eligibility or complete FX/commodity exposure. No remediation control is created merely because the regulation exists.",
+      "record_status": "needs_review",
+      "synthetic": true,
+      "provenance": {
+        "origin": "synthetic_bank_design",
+        "source_ids": [],
+        "created_at": "2026-09-05T02:25:45Z",
+        "created_by": "coding_agent",
+        "last_verified_at": null,
+        "notes": [
+          "Synthetic current-state design for the first-demo scenario; not copied from any real institution.",
+          "Joined with canonical Persons 2–4 IDs; owners are synthetic scenario assignments."
+        ]
+      },
+      "annotation": {
+        "label_status": "silver",
+        "annotated_by": "coding_agent",
+        "reviewed_by": null,
+        "reviewed_at": null,
+        "notes": []
+      },
+      "missing_evidence": [
+        {
+          "field": "human_approval",
+          "reason": "Synthetic allocation has not been approved by a human reviewer.",
+          "required_input": "Synthetic allocation has not been approved by a human reviewer.",
+          "responsible_scope": "user",
+          "blocking": false
+        }
+      ]
+    },
+    {
+      "policy_id": "POL-PAYMENTS-SECURITY",
+      "title": "Payments Security Policy",
+      "version": "1.0",
+      "lifecycle_status": "active",
+      "approval_date": null,
+      "effective_date": "2025-01-01",
+      "next_review_date": null,
+      "owner_role_id": "ROLE-HEAD-PAYMENTS",
+      "purpose": "Sets the fictional bank's current principles for securing payment initiation, including protection against payee-misdirection fraud.",
+      "scope": {
+        "jurisdictions": [
+          "IE"
+        ],
+        "business_line_ids": [
+          "BL-PAYMENTS"
+        ],
+        "product_ids": [
+          "PRD-SEPA-INSTANT"
+        ],
+        "process_ids": [
+          "PROC-PAYMENT-INITIATION"
+        ],
+        "system_ids": [
+          "SYS-PAYMENTS-HUB",
+          "SYS-VOP",
+          "SYS-WEB-BANKING"
+        ],
+        "data_asset_ids": [
+          "DATA-PAYMENT-OPERATIONS"
+        ],
+        "vendor_ids": [
+          "VND-VOP-PROVIDER"
+        ],
+        "critical_service_ids": [
+          "CIF-PAYMENTS"
+        ]
+      },
+      "statements": [
+        {
+          "statement_id": "PST-PAYMENTS-VOP-001",
+          "text": "The bank provides a Verification of Payee capability that checks the payee name and IBAN before a credit transfer is authorised, for outbound credit transfers initiated through the web/online banking channel.",
+          "requirement_ids": [
+            "REQ-IPS-VOP-001"
+          ],
+          "implementation_status": "partial",
+          "control_ids": [
+            "CTRL-VOP-WEB"
+          ]
+        }
+      ],
+      "requirement_ids": [
+        "REQ-IPS-VOP-001"
+      ],
+      "control_ids": [
+        "CTRL-VOP-WEB"
+      ],
+      "procedure_ids": [
+        "PRCD-VOP-WEB"
+      ],
+      "current_state_summary": "Policy intent and a working control exist for the web channel only. No mobile-channel Verification of Payee control or procedure is created, preserving the scenario's intended channel gap. Charges-parity and sanctions-screening obligations under the same regulation are not yet addressed by any Person 1 governance record and remain not_assessed pending the relevant charges and screening evidence; supplied payment volumes alone are insufficient.",
+      "record_status": "needs_review",
+      "synthetic": true,
+      "provenance": {
+        "origin": "synthetic_bank_design",
+        "source_ids": [],
+        "created_at": "2026-09-05T02:25:45Z",
+        "created_by": "coding_agent",
+        "last_verified_at": null,
+        "notes": [
+          "Synthetic current-state design for the first-demo scenario; not copied from any real institution.",
+          "Joined with canonical Persons 2–4 IDs; owners are synthetic scenario assignments."
+        ]
+      },
+      "annotation": {
+        "label_status": "silver",
+        "annotated_by": "coding_agent",
+        "reviewed_by": null,
+        "reviewed_at": null,
+        "notes": []
+      },
+      "missing_evidence": [
+        {
+          "field": "human_approval",
+          "reason": "Synthetic allocation has not been approved by a human reviewer.",
+          "required_input": "Synthetic allocation has not been approved by a human reviewer.",
+          "responsible_scope": "user",
+          "blocking": false
+        }
+      ]
+    }
+  ]
+}

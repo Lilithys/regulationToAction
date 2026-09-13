@@ -1,0 +1,19 @@
+action_id,activity,role_id,raci,notes
+ACT-ESG-PORTFOLIO-CONTROL,Design and approve portfolio-wide ESG-risk control,ROLE-HEAD-CREDIT-RISK,R,Designs control and operates first-line risk process
+ACT-ESG-PORTFOLIO-CONTROL,Design and approve portfolio-wide ESG-risk control,ROLE-CHIEF-RISK,A,Approves risk-control design and residual risk
+ACT-ESG-PORTFOLIO-CONTROL,Design and approve portfolio-wide ESG-risk control,ROLE-HEAD-COMPLIANCE,C,Advises on EBA guideline interpretation
+ACT-ESG-PORTFOLIO-CONTROL,Design and approve portfolio-wide ESG-risk control,ROLE-COO,I,Receives implementation status
+ACT-ESG-DATA-REMEDIATION,Remediate ESG data coverage for material SME portfolio,ROLE-HEAD-CREDIT-RISK,A,Owns data-quality outcome for credit-risk use
+ACT-ESG-DATA-REMEDIATION,Remediate ESG data coverage for material SME portfolio,ROLE-CIO,R,Delivers data integration and quality rules
+ACT-ESG-DATA-REMEDIATION,Remediate ESG data coverage for material SME portfolio,ROLE-HEAD-COMPLIANCE,C,Checks regulatory traceability
+ACT-IPS-MOBILE-VOP,Implement Verification of Payee in mobile banking,ROLE-HEAD-DIGITAL,R,Delivers mobile-channel change and release
+ACT-IPS-MOBILE-VOP,Implement Verification of Payee in mobile banking,ROLE-HEAD-PAYMENTS,A,Owns payment-service compliance outcome
+ACT-IPS-MOBILE-VOP,Implement Verification of Payee in mobile banking,ROLE-CIO,C,Approves technical architecture and production readiness
+ACT-IPS-MOBILE-VOP,Implement Verification of Payee in mobile banking,ROLE-HEAD-COMPLIANCE,C,Confirms requirement coverage
+ACT-DORA-DEPENDENCY-MAP,Complete critical-service and third-party dependency mapping,ROLE-TPRM-LEAD,R,Builds and maintains third-party mapping
+ACT-DORA-DEPENDENCY-MAP,Complete critical-service and third-party dependency mapping,ROLE-CISO,A,Accountable for operational-resilience control outcome
+ACT-DORA-DEPENDENCY-MAP,Complete critical-service and third-party dependency mapping,ROLE-CIO,C,Provides systems and architecture dependencies
+ACT-DORA-DEPENDENCY-MAP,Complete critical-service and third-party dependency mapping,ROLE-COO,I,Receives resilience status
+ACT-FRTB-APPLICABILITY-MONITOR,Document limited FRTB applicability and establish annual trigger review,ROLE-HEAD-TREASURY,R,Maintains trading-activity fact base and trigger review
+ACT-FRTB-APPLICABILITY-MONITOR,Document limited FRTB applicability and establish annual trigger review,ROLE-CHIEF-RISK,A,Approves applicability conclusion
+ACT-FRTB-APPLICABILITY-MONITOR,Document limited FRTB applicability and establish annual trigger review,ROLE-HEAD-COMPLIANCE,C,Challenges regulatory interpretation

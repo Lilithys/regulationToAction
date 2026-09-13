@@ -1,0 +1,21 @@
+{
+  "case": {
+    "case_id": "CASE-cb4fa9d654e14a34b4df0a8ea7109e56",
+    "status": "failed",
+    "revision": 1
+  },
+  "audit_chain_valid": true,
+  "last_audit_seq": 80,
+  "new_audit_events": 0,
+  "new_api_requests": 0,
+  "live_validation_status": "blocked_before_process_creation",
+  "block_reason": "Automatic approval requires explicit new paid-call budget; previous 12 requests/180 seconds exhausted",
+  "proposed_new_budget": {
+    "api_attempts": 12,
+    "seconds": 480
+  },
+  "object_counts": {
+    "SourceVersion": 1,
+    "Task": 1
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "value": 65,
+  "unit": "percent_of_existing_sme_borrowers",
+  "denominator": 10000,
+  "numerator": 6500,
+  "population_product_id": "PRD-SME-WORKING-CAPITAL",
+  "as_of_date": "2026-06-30",
+  "answered_by": "SIMULATED Head of Lending — replay fixture",
+  "answered_by_role_id": "ROLE-HEAD-LENDING",
+  "source": "Explicit synthetic demo owner-response fixture; not an actual person or operating artefact",
+  "synthetic": true
+}

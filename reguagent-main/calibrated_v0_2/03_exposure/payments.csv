@@ -1,0 +1,13 @@
+payment_metric_id,reporting_month,product_id,customer_segment,initiation_channel,payment_type,transaction_count,success_rate_pct,median_processing_seconds,failed_payment_count,beneficiary_verification_status,average_fee_eur,sanctions_screening_status,fraud_hold_rate_pct,record_grain,population_complete,synthetic
+PAY-2026-01-WEB,2026-01,PRD-SEPA-INSTANT,retail,web,sepa_instant,172000,99.72,7,482,available,0.00,method_and_cadence_not_evidenced,0.08,selected_month_segment_channel_aggregate,false,true
+PAY-2026-01-MOB,2026-01,PRD-SEPA-INSTANT,retail,mobile_app,sepa_instant,420000,99.61,8,1638,unavailable,0.00,method_and_cadence_not_evidenced,0.11,selected_month_segment_channel_aggregate,false,true
+PAY-2026-02-WEB,2026-02,PRD-SEPA-INSTANT,retail,web,sepa_instant,168000,99.74,7,437,available,0.00,method_and_cadence_not_evidenced,0.08,selected_month_segment_channel_aggregate,false,true
+PAY-2026-02-MOB,2026-02,PRD-SEPA-INSTANT,retail,mobile_app,sepa_instant,412000,99.59,8,1689,unavailable,0.00,method_and_cadence_not_evidenced,0.12,selected_month_segment_channel_aggregate,false,true
+PAY-2026-03-WEB,2026-03,PRD-SEPA-INSTANT,retail,web,sepa_instant,177000,99.73,7,478,available,0.00,method_and_cadence_not_evidenced,0.09,selected_month_segment_channel_aggregate,false,true
+PAY-2026-03-MOB,2026-03,PRD-SEPA-INSTANT,retail,mobile_app,sepa_instant,438000,99.56,9,1927,unavailable,0.00,method_and_cadence_not_evidenced,0.13,selected_month_segment_channel_aggregate,false,true
+PAY-2026-04-WEB,2026-04,PRD-SEPA-INSTANT,retail,web,sepa_instant,181000,99.75,7,453,available,0.00,method_and_cadence_not_evidenced,0.08,selected_month_segment_channel_aggregate,false,true
+PAY-2026-04-MOB,2026-04,PRD-SEPA-INSTANT,retail,mobile_app,sepa_instant,451000,99.58,8,1894,unavailable,0.00,method_and_cadence_not_evidenced,0.12,selected_month_segment_channel_aggregate,false,true
+PAY-2026-05-WEB,2026-05,PRD-SEPA-INSTANT,sme,web,sepa_instant,92000,99.81,6,175,available,0.00,method_and_cadence_not_evidenced,0.05,selected_month_segment_channel_aggregate,false,true
+PAY-2026-05-MOB,2026-05,PRD-SEPA-INSTANT,retail,mobile_app,sepa_instant,467000,99.55,9,2102,unavailable,0.00,method_and_cadence_not_evidenced,0.14,selected_month_segment_channel_aggregate,false,true
+PAY-2026-06-WEB,2026-06,PRD-SEPA-INSTANT,sme,web,sepa_instant,97000,99.83,6,165,available,0.00,method_and_cadence_not_evidenced,0.05,selected_month_segment_channel_aggregate,false,true
+PAY-2026-06-MOB,2026-06,PRD-SEPA-INSTANT,retail,mobile_app,sepa_instant,488000,99.53,9,2294,unavailable,0.00,method_and_cadence_not_evidenced,0.14,selected_month_segment_channel_aggregate,false,true

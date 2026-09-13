@@ -1,0 +1,4 @@
+position_id,as_of_date,portfolio_id,instrument_type,issuer_sector,market_value_eur_millions,accounting_book,trading_book_flag,held_for_trading_flag,internal_market_risk_model_flag,frtb_applicability_assessment
+LIQ-001,2026-06-30,PORT-LIQUIDITY,central_bank_deposit,central_bank,5200,banking_book,false,false,false,limited_monitor_only
+LIQ-002,2026-06-30,PORT-LIQUIDITY,sovereign_bond,government,1180,banking_book,false,false,false,limited_monitor_only
+LIQ-003,2026-06-30,PORT-LIQUIDITY,covered_bond,financial_institutions,620,banking_book,false,false,false,limited_monitor_only

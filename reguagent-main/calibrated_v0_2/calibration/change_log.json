@@ -1,0 +1,1839 @@
+[
+  {
+    "path": "03_exposure/trading_book.csv",
+    "record_id": "LIQ-001",
+    "field": "market_value_eur_millions",
+    "before": "5200",
+    "after": 1700,
+    "reason": "Reconcile fictional bank assets: loans 9200 + liquidity 3000 + other assets 300 = 12500 million EUR."
+  },
+  {
+    "path": "03_exposure/trading_book.csv",
+    "record_id": "LIQ-002",
+    "field": "market_value_eur_millions",
+    "before": "1180",
+    "after": 800,
+    "reason": "Reconcile fictional bank assets: loans 9200 + liquidity 3000 + other assets 300 = 12500 million EUR."
+  },
+  {
+    "path": "03_exposure/trading_book.csv",
+    "record_id": "LIQ-003",
+    "field": "market_value_eur_millions",
+    "before": "620",
+    "after": 500,
+    "reason": "Reconcile fictional bank assets: loans 9200 + liquidity 3000 + other assets 300 = 12500 million EUR."
+  },
+  {
+    "path": "05_operations/vendors.json",
+    "record_id": "VND-SANCTIONS-DATA",
+    "field": "subcontractors_mapped_in_ict_register",
+    "before": true,
+    "after": null,
+    "reason": "Cannot assert a mapped subcontractor population when that population is not identified; use unknown."
+  },
+  {
+    "path": "05_operations/vendors.json",
+    "record_id": "VND-CRM-PROVIDER",
+    "field": "subcontractors_mapped_in_ict_register",
+    "before": true,
+    "after": null,
+    "reason": "Cannot assert a mapped subcontractor population when that population is not identified; use unknown."
+  },
+  {
+    "path": "05_operations/vendors.json",
+    "record_id": "VND-GRC-PLATFORM",
+    "field": "subcontractors_mapped_in_ict_register",
+    "before": true,
+    "after": null,
+    "reason": "Cannot assert a mapped subcontractor population when that population is not identified; use unknown."
+  },
+  {
+    "path": "06_organisation/roles.json",
+    "record_id": "ROLE-CHIEF-RISK",
+    "field": "cost_centre_id",
+    "before": "CC-100",
+    "after": "CC-200",
+    "reason": "Project bank context has precedence over independently invented Person 4 cost-centre meanings."
+  },
+  {
+    "path": "06_organisation/roles.json",
+    "record_id": "ROLE-HEAD-CREDIT-RISK",
+    "field": "cost_centre_id",
+    "before": "CC-210",
+    "after": "CC-200",
+    "reason": "Project bank context has precedence over independently invented Person 4 cost-centre meanings."
+  },
+  {
+    "path": "06_organisation/roles.json",
+    "record_id": "ROLE-HEAD-DIGITAL",
+    "field": "cost_centre_id",
+    "before": "CC-610",
+    "after": "CC-300",
+    "reason": "Project bank context has precedence over independently invented Person 4 cost-centre meanings."
+  },
+  {
+    "path": "06_organisation/roles.json",
+    "record_id": "ROLE-CISO",
+    "field": "cost_centre_id",
+    "before": "CC-520",
+    "after": "CC-200",
+    "reason": "Project bank context has precedence over independently invented Person 4 cost-centre meanings."
+  },
+  {
+    "path": "06_organisation/roles.json",
+    "record_id": "ROLE-CIO",
+    "field": "cost_centre_id",
+    "before": "CC-500",
+    "after": "CC-300",
+    "reason": "Project bank context has precedence over independently invented Person 4 cost-centre meanings."
+  },
+  {
+    "path": "06_organisation/roles.json",
+    "record_id": "ROLE-TPRM-LEAD",
+    "field": "cost_centre_id",
+    "before": "CC-530",
+    "after": "CC-200",
+    "reason": "Project bank context has precedence over independently invented Person 4 cost-centre meanings."
+  },
+  {
+    "path": "06_organisation/roles.json",
+    "record_id": "ROLE-HEAD-COMPLIANCE",
+    "field": "cost_centre_id",
+    "before": "CC-120",
+    "after": "CC-500",
+    "reason": "Project bank context has precedence over independently invented Person 4 cost-centre meanings."
+  },
+  {
+    "path": "06_organisation/roles.json",
+    "record_id": "ROLE-COO",
+    "field": "cost_centre_id",
+    "before": "CC-400",
+    "after": "CC-100",
+    "reason": "Project bank context has precedence over independently invented Person 4 cost-centre meanings."
+  },
+  {
+    "path": "06_organisation/roles.json",
+    "record_id": "ROLE-HEAD-TREASURY",
+    "field": "cost_centre_id",
+    "before": "CC-700",
+    "after": "CC-400",
+    "reason": "Project bank context has precedence over independently invented Person 4 cost-centre meanings."
+  },
+  {
+    "path": "06_organisation/roles.json",
+    "record_id": "ROLE-HEAD-INTERNAL-AUDIT",
+    "field": "cost_centre_id",
+    "before": "CC-130",
+    "after": null,
+    "reason": "Project bank context has precedence over independently invented Person 4 cost-centre meanings."
+  },
+  {
+    "path": "06_organisation/roles.json",
+    "record_id": "ROLE-BCO",
+    "field": "cost_centre_id",
+    "before": "CC-530",
+    "after": "CC-200",
+    "reason": "Project bank context has precedence over independently invented Person 4 cost-centre meanings."
+  },
+  {
+    "path": "regulatory_sources/requirements.json",
+    "record_id": "REQ-ESG-CREDIT-POLICY-001",
+    "field": "requirement_text",
+    "before": "Institutions should ensure that their credit sectoral policies, reflecting ESG risks, are cascaded down and translated into clear origination criteria available to business-line staff and credit decision-makers, and should ensure ESG risks are embedded into the credit-risk monitoring framework, including quantitative credit-risk metrics covering the most significant client segments, collateral types and risk-mitigation instruments.",
+    "after": "Institutions should translate ESG-sensitive sectoral credit policies into clear origination criteria for business staff and credit decision-makers.",
+    "reason": "Narrow obligation and distinguish source-grounded extraction from unresolved interpretation."
+  },
+  {
+    "path": "regulatory_sources/requirements.json",
+    "record_id": "REQ-ESG-DATA-GAPS-001",
+    "field": "requirement_text",
+    "before": "For exposures towards counterparties other than large corporates (as defined by Article 3(4) of Directive 2013/34/EU), institutions should determine the ESG data points needed for identification, measurement and management of ESG risks, and, where data quality or availability is not sufficient, should assess the gaps and their potential impacts and take and document remediating actions, including use of estimates, proxies, expert judgment, qualitative data or portfolio-level assessments, seeking to reduce reliance on estimates as data availability improves.",
+    "after": "Where ESG data is insufficient for risk management, institutions should assess the gaps and impacts, document remediation, and progressively reduce reliance on estimates or proxies as data improves.",
+    "reason": "Narrow obligation and distinguish source-grounded extraction from unresolved interpretation."
+  },
+  {
+    "path": "regulatory_sources/requirements.json",
+    "record_id": "REQ-ESG-RISK-APPETITE-001",
+    "field": "requirement_text",
+    "before": "Institutions should ensure that their risk appetite clearly defines and addresses ESG risks identified through the materiality assessment, specifying the level and types of ESG risk the institution is willing to assume (including portfolio concentration/diversification objectives), implemented with ESG-related key risk indicators such as limits, thresholds or exclusions.",
+    "after": "Institutions should define their willingness to assume material ESG risks in risk appetite, including portfolio concentration and diversification objectives.",
+    "reason": "Narrow obligation and distinguish source-grounded extraction from unresolved interpretation."
+  },
+  {
+    "path": "regulatory_sources/requirements.json",
+    "record_id": "REQ-ESG-RISK-INTEGRATION-001",
+    "field": "requirement_text",
+    "before": "For the purposes of integrating ESG risks into the institution-wide risk management framework, institutions should consider the role of ESG risks as potential drivers of all traditional categories of financial risk (credit, market, operational, reputational, liquidity, business model and concentration risk), embed ESG risks within regular risk management systems and processes, and develop a sound approach to managing and mitigating ESG risks over the short, medium and long term (at least a 10-year horizon), including through counterparty engagement, adjustment of financial terms, sectoral/exposure limits, and portfolio diversification.",
+    "after": "Institutions should embed ESG risks within regular risk-management systems and processes consistently with their business and risk strategies.",
+    "reason": "Narrow obligation and distinguish source-grounded extraction from unresolved interpretation."
+  },
+  {
+    "path": "regulatory_sources/requirements.json",
+    "record_id": "REQ-DORA-DEPENDENCY-MAP-001",
+    "field": "requirement_text",
+    "before": "A financial entity shall identify, classify and document all critical or important functions, and all information assets and ICT assets supporting those functions, including a mapping of dependencies of ICT assets, systems and processes on each other and on ICT third-party service providers.",
+    "after": "Financial entities shall identify, classify and document ICT-supported business functions and supporting information and ICT assets, their roles and dependencies; critical-function and ICT-provider dependencies require the additional mapping specified in Article 8.",
+    "reason": "Narrow obligation and distinguish source-grounded extraction from unresolved interpretation."
+  },
+  {
+    "path": "regulatory_sources/requirements.json",
+    "record_id": "REQ-DORA-ICT-REGISTER-001",
+    "field": "requirement_text",
+    "before": "A financial entity shall maintain and keep up to date, at entity, sub-consolidated and consolidated level, a register of information in relation to all contractual arrangements on the use of ICT services provided by ICT third-party service providers, recording details of the services, the location where data is processed, and whether the contractual arrangement supports a critical or important function.",
+    "after": "Financial entities shall maintain and update a register of ICT third-party contractual arrangements at the relevant entity and group levels, distinguishing arrangements supporting critical or important functions.",
+    "reason": "Narrow obligation and distinguish source-grounded extraction from unresolved interpretation."
+  },
+  {
+    "path": "regulatory_sources/requirements.json",
+    "record_id": "REQ-DORA-TPRM-STRATEGY-001",
+    "field": "requirement_text",
+    "before": "The management body of a financial entity shall adopt, and periodically review, a dedicated strategy on ICT third-party risk, including a policy on the use of ICT services supporting critical or important functions provided by ICT third-party service providers, rooted in continuous screening of all ICT third-party dependencies.",
+    "after": "Financial entities other than microenterprises and entities covered by Article 16(1) shall adopt and regularly review an ICT third-party risk strategy, including a policy for ICT services supporting critical or important functions.",
+    "reason": "Narrow obligation and distinguish source-grounded extraction from unresolved interpretation."
+  },
+  {
+    "path": "regulatory_sources/requirements.json",
+    "record_id": "REQ-FRTB-SMALL-BOOK-001",
+    "field": "requirement_text",
+    "before": "An institution whose aggregated on- and off-balance-sheet trading-book business (measured as the sum of the absolute value of aggregated long positions and the absolute value of aggregated short positions) does not exceed the applicable condition (commonly described as 5% of total assets, or EUR 50 million), assessed on at least a monthly basis, may treat its trading-book positions under the own-funds treatment for non-trading-book (credit risk) business rather than under the own-funds requirements for market risk. Exact current paragraph numbering and thresholds require direct confirmation against the consolidated CRR text.",
+    "after": "An institution may use the small-trading-book derogation only if all conditions of CRR Article 94 are met, supported by the required position measurements and monitoring. This does not establish exemption from all market-risk requirements.",
+    "reason": "Narrow obligation and distinguish source-grounded extraction from unresolved interpretation."
+  },
+  {
+    "path": "requirements",
+    "record_id": "REQ-DORA-DEPENDENCY-MAP-001",
+    "field": "extensions",
+    "before": {
+      "applicability_logic_status": "candidate_requires_legal_review",
+      "unresolved_bank_fact_register": "03_exposure/missing_facts.json"
+    },
+    "after": {
+      "applicability_logic_status": "candidate_requires_legal_review",
+      "unresolved_bank_fact_register": "03_exposure/missing_facts.json",
+      "assessment_contract_version": "0.2.1",
+      "jurisdiction_basis": "institution",
+      "coverage_criteria": [
+        {
+          "dimension_type": "critical_service",
+          "dimension_ref": "known_subset"
+        },
+        {
+          "dimension_type": "vendor",
+          "dimension_ref": "third_party_dependency_mapping"
+        }
+      ]
+    },
+    "reason": "M1 integrity migration: scoped semantic mappings and shared SNCI dates; provisional, not legal approval."
+  },
+  {
+    "path": "requirements",
+    "record_id": "REQ-DORA-ICT-FRAMEWORK-001",
+    "field": "extensions",
+    "before": {
+      "applicability_logic_status": "candidate_requires_legal_review",
+      "unresolved_bank_fact_register": "03_exposure/missing_facts.json"
+    },
+    "after": {
+      "applicability_logic_status": "candidate_requires_legal_review",
+      "unresolved_bank_fact_register": "03_exposure/missing_facts.json",
+      "assessment_contract_version": "0.2.1",
+      "jurisdiction_basis": "institution"
+    },
+    "reason": "M1 integrity migration: scoped semantic mappings and shared SNCI dates; provisional, not legal approval."
+  },
+  {
+    "path": "requirements",
+    "record_id": "REQ-DORA-ICT-REGISTER-001",
+    "field": "extensions",
+    "before": {
+      "applicability_logic_status": "candidate_requires_legal_review",
+      "unresolved_bank_fact_register": "03_exposure/missing_facts.json"
+    },
+    "after": {
+      "applicability_logic_status": "candidate_requires_legal_review",
+      "unresolved_bank_fact_register": "03_exposure/missing_facts.json",
+      "assessment_contract_version": "0.2.1",
+      "jurisdiction_basis": "institution",
+      "coverage_criteria": [
+        {
+          "dimension_type": "vendor",
+          "dimension_ref": "known_ict_third_parties"
+        }
+      ]
+    },
+    "reason": "M1 integrity migration: scoped semantic mappings and shared SNCI dates; provisional, not legal approval."
+  },
+  {
+    "path": "requirements",
+    "record_id": "REQ-DORA-TPRM-STRATEGY-001",
+    "field": "extensions",
+    "before": {
+      "applicability_logic_status": "candidate_requires_legal_review",
+      "unresolved_bank_fact_register": "03_exposure/missing_facts.json"
+    },
+    "after": {
+      "applicability_logic_status": "candidate_requires_legal_review",
+      "unresolved_bank_fact_register": "03_exposure/missing_facts.json",
+      "assessment_contract_version": "0.2.1",
+      "jurisdiction_basis": "institution"
+    },
+    "reason": "M1 integrity migration: scoped semantic mappings and shared SNCI dates; provisional, not legal approval."
+  },
+  {
+    "path": "requirements",
+    "record_id": "REQ-ESG-CREDIT-MONITORING-001",
+    "field": "applicability_conditions",
+    "before": [
+      {
+        "condition_id": "COND-REQ-ESG-CREDIT-MONITORING-001-ENTITY",
+        "description": "Confirm the legal entity classification against the cited scope.",
+        "condition_type": "bank_fact",
+        "fact_path": "01_entity/bank_profile.json#/entity_classification",
+        "operator": "equals",
+        "expected_value": [
+          "credit_institution"
+        ],
+        "source_citation_ids": [
+          "CIT-REQ-ESG-CREDIT-MONITORING-001-SCOPE"
+        ],
+        "evidence_status": "verified"
+      },
+      {
+        "condition_id": "COND-REQ-ESG-CREDIT-MONITORING-001-SNCI",
+        "description": "Determine which ESG application date is relevant.",
+        "condition_type": "bank_fact",
+        "fact_path": "01_entity/bank_profile.json#/snci_status",
+        "operator": "equals",
+        "expected_value": [
+          false
+        ],
+        "source_citation_ids": [
+          "CIT-REQ-ESG-CREDIT-MONITORING-001-DATE"
+        ],
+        "evidence_status": "verified"
+      }
+    ],
+    "after": [
+      {
+        "condition_id": "COND-REQ-ESG-CREDIT-MONITORING-001-ENTITY",
+        "description": "Confirm the legal entity classification against the cited scope.",
+        "condition_type": "bank_fact",
+        "fact_path": "01_entity/bank_profile.json#/entity_classification",
+        "operator": "equals",
+        "expected_value": [
+          "credit_institution"
+        ],
+        "source_citation_ids": [
+          "CIT-REQ-ESG-CREDIT-MONITORING-001-SCOPE"
+        ],
+        "evidence_status": "verified"
+      }
+    ],
+    "reason": "M1 integrity migration: scoped semantic mappings and shared SNCI dates; provisional, not legal approval."
+  },
+  {
+    "path": "requirements",
+    "record_id": "REQ-ESG-CREDIT-MONITORING-001",
+    "field": "compliance_events",
+    "before": [
+      {
+        "event_type": "application",
+        "date": "2026-01-11",
+        "condition": "Institutions other than SNCIs",
+        "source_citation_ids": [
+          "CIT-REQ-ESG-CREDIT-MONITORING-001-DATE"
+        ],
+        "verification_status": "verified"
+      }
+    ],
+    "after": [
+      {
+        "event_type": "application",
+        "date": "2026-01-11",
+        "condition": "Institutions other than small and non-complex institutions (SNCIs)",
+        "source_citation_ids": [
+          "CIT-REQ-ESG-CREDIT-MONITORING-001-DATE"
+        ],
+        "verification_status": "verified",
+        "extensions": {
+          "snci_selector": false
+        }
+      },
+      {
+        "event_type": "application",
+        "date": "2027-01-11",
+        "condition": "Small and non-complex institutions (SNCIs) - latest application date",
+        "source_citation_ids": [
+          "CIT-REQ-ESG-CREDIT-MONITORING-001-DATE"
+        ],
+        "verification_status": "verified",
+        "extensions": {
+          "snci_selector": true
+        }
+      }
+    ],
+    "reason": "M1 integrity migration: scoped semantic mappings and shared SNCI dates; provisional, not legal approval."
+  },
+  {
+    "path": "requirements",
+    "record_id": "REQ-ESG-CREDIT-MONITORING-001",
+    "field": "current_coverage",
+    "before": {
+      "rating": "unknown",
+      "assessment_basis": "joined_dataset",
+      "rationale": "Mapping describes supplied synthetic design only; operating effectiveness remains unproven.",
+      "control_ids": [],
+      "uncovered_dimensions": [],
+      "verification_status": "needs_review"
+    },
+    "after": {
+      "rating": "unknown",
+      "assessment_basis": "joined_dataset",
+      "rationale": "Prior onboarding link withdrawn after semantic review; investigate requirement-specific design and operating evidence.",
+      "control_ids": [],
+      "uncovered_dimensions": [],
+      "verification_status": "needs_review"
+    },
+    "reason": "M1 integrity migration: scoped semantic mappings and shared SNCI dates; provisional, not legal approval."
+  },
+  {
+    "path": "requirements",
+    "record_id": "REQ-ESG-CREDIT-MONITORING-001",
+    "field": "provenance",
+    "before": {
+      "origin": "authoritative_external_source",
+      "source_ids": [
+        "SRC-ESG-EBA-GL-2025-01"
+      ],
+      "created_at": "2026-09-05T02:25:45Z",
+      "created_by": "coding_agent",
+      "last_verified_at": "2026-09-05T01:45:00Z",
+      "notes": [
+        "Refresh separates legal extraction, current synthetic capability, and human approval."
+      ]
+    },
+    "after": {
+      "origin": "authoritative_external_source",
+      "source_ids": [
+        "SRC-ESG-EBA-GL-2025-01"
+      ],
+      "created_at": "2026-09-05T02:25:45Z",
+      "created_by": "coding_agent",
+      "last_verified_at": "2026-09-05T01:45:00Z",
+      "notes": [
+        "Refresh separates legal extraction, current synthetic capability, and human approval.",
+        "M1 semantic review supersedes the archived 2026-09-11 lineage-based mapping; see extensions."
+      ]
+    },
+    "reason": "M1 integrity migration: scoped semantic mappings and shared SNCI dates; provisional, not legal approval."
+  },
+  {
+    "path": "requirements",
+    "record_id": "REQ-ESG-CREDIT-MONITORING-001",
+    "field": "extensions",
+    "before": {
+      "split_from_requirement_id": "REQ-ESG-CREDIT-POLICY-001",
+      "applicability_logic_status": "candidate_requires_legal_review",
+      "date_locator": "EBA/GL/2025/01 paragraph 10, PDF page 17; separate from substantive citation",
+      "unresolved_bank_fact_register": "03_exposure/missing_facts.json"
+    },
+    "after": {
+      "split_from_requirement_id": "REQ-ESG-CREDIT-POLICY-001",
+      "applicability_logic_status": "candidate_requires_legal_review",
+      "date_locator": "EBA/GL/2025/01 paragraph 10, PDF page 17; separate from substantive citation",
+      "unresolved_bank_fact_register": "03_exposure/missing_facts.json",
+      "assessment_contract_version": "0.2.1",
+      "jurisdiction_basis": "institution",
+      "mapping_review": {
+        "method_version": "semantic-mapping-v1",
+        "review_status": "provisional",
+        "candidate_control_id": "CTRL-ESG-ONBOARD-SCREEN",
+        "relationship": "related_not_supporting",
+        "rationale": "Per-application sector screening does not establish ongoing existing-book monitoring.",
+        "evidence_fields": [
+          "objective",
+          "frequency",
+          "coverage"
+        ],
+        "note": "Requirement split lineage is not evidence of substantive coverage."
+      },
+      "coverage_criteria": [
+        {
+          "dimension_type": "population",
+          "dimension_ref": "existing_portfolio"
+        },
+        {
+          "dimension_type": "frequency",
+          "dimension_ref": "ongoing_monitoring"
+        },
+        {
+          "dimension_type": "design",
+          "dimension_ref": "environmental_risk_metrics"
+        }
+      ],
+      "criteria_basis": {
+        "review_status": "provisional",
+        "source_citation_ids": [
+          "CIT-REQ-ESG-CREDIT-MONITORING-001-01"
+        ],
+        "scope": "Selected credit-risk investigation criteria; not a claim of exhaustive bank-wide compliance."
+      },
+      "superseded_mapping_annotations": [
+        "2026-09-11: control_ids/current_coverage backfilled with CTRL-ESG-ONBOARD-SCREEN. This requirement split from REQ-ESG-CREDIT-POLICY-001, which the control was already linked to; the control's own requirement_ids was never updated to also include this split-off requirement -- a bidirectional-mapping gap, not a newly designed capability."
+      ]
+    },
+    "reason": "M1 integrity migration: scoped semantic mappings and shared SNCI dates; provisional, not legal approval."
+  },
+  {
+    "path": "requirements",
+    "record_id": "REQ-ESG-CREDIT-POLICY-001",
+    "field": "applicability_conditions",
+    "before": [
+      {
+        "condition_id": "COND-REQ-ESG-CREDIT-POLICY-001-ENTITY",
+        "description": "Confirm the legal entity classification against the cited scope.",
+        "condition_type": "bank_fact",
+        "fact_path": "01_entity/bank_profile.json#/entity_classification",
+        "operator": "equals",
+        "expected_value": [
+          "credit_institution"
+        ],
+        "source_citation_ids": [
+          "CIT-REQ-ESG-CREDIT-POLICY-001-SCOPE"
+        ],
+        "evidence_status": "verified"
+      },
+      {
+        "condition_id": "COND-REQ-ESG-CREDIT-POLICY-001-SNCI",
+        "description": "Determine which ESG application date is relevant.",
+        "condition_type": "bank_fact",
+        "fact_path": "01_entity/bank_profile.json#/snci_status",
+        "operator": "equals",
+        "expected_value": [
+          false
+        ],
+        "source_citation_ids": [
+          "CIT-REQ-ESG-CREDIT-POLICY-001-DATE"
+        ],
+        "evidence_status": "verified"
+      }
+    ],
+    "after": [
+      {
+        "condition_id": "COND-REQ-ESG-CREDIT-POLICY-001-ENTITY",
+        "description": "Confirm the legal entity classification against the cited scope.",
+        "condition_type": "bank_fact",
+        "fact_path": "01_entity/bank_profile.json#/entity_classification",
+        "operator": "equals",
+        "expected_value": [
+          "credit_institution"
+        ],
+        "source_citation_ids": [
+          "CIT-REQ-ESG-CREDIT-POLICY-001-SCOPE"
+        ],
+        "evidence_status": "verified"
+      }
+    ],
+    "reason": "M1 integrity migration: scoped semantic mappings and shared SNCI dates; provisional, not legal approval."
+  },
+  {
+    "path": "requirements",
+    "record_id": "REQ-ESG-CREDIT-POLICY-001",
+    "field": "compliance_events",
+    "before": [
+      {
+        "event_type": "application",
+        "date": "2026-01-11",
+        "condition": "Institutions other than SNCIs",
+        "source_citation_ids": [
+          "CIT-REQ-ESG-CREDIT-POLICY-001-DATE"
+        ],
+        "verification_status": "verified"
+      }
+    ],
+    "after": [
+      {
+        "event_type": "application",
+        "date": "2026-01-11",
+        "condition": "Institutions other than small and non-complex institutions (SNCIs)",
+        "source_citation_ids": [
+          "CIT-REQ-ESG-CREDIT-POLICY-001-DATE"
+        ],
+        "verification_status": "verified",
+        "extensions": {
+          "snci_selector": false
+        }
+      },
+      {
+        "event_type": "application",
+        "date": "2027-01-11",
+        "condition": "Small and non-complex institutions (SNCIs) - latest application date",
+        "source_citation_ids": [
+          "CIT-REQ-ESG-CREDIT-POLICY-001-DATE"
+        ],
+        "verification_status": "verified",
+        "extensions": {
+          "snci_selector": true
+        }
+      }
+    ],
+    "reason": "M1 integrity migration: scoped semantic mappings and shared SNCI dates; provisional, not legal approval."
+  },
+  {
+    "path": "requirements",
+    "record_id": "REQ-ESG-CREDIT-POLICY-001",
+    "field": "extensions",
+    "before": {
+      "applicability_logic_status": "candidate_requires_legal_review",
+      "date_locator": "EBA/GL/2025/01 paragraph 10, PDF page 17; separate from substantive citation",
+      "unresolved_bank_fact_register": "03_exposure/missing_facts.json"
+    },
+    "after": {
+      "applicability_logic_status": "candidate_requires_legal_review",
+      "date_locator": "EBA/GL/2025/01 paragraph 10, PDF page 17; separate from substantive citation",
+      "unresolved_bank_fact_register": "03_exposure/missing_facts.json",
+      "assessment_contract_version": "0.2.1",
+      "jurisdiction_basis": "institution",
+      "coverage_criteria": [
+        {
+          "dimension_type": "population",
+          "dimension_ref": "new_lending_applications"
+        },
+        {
+          "dimension_type": "design",
+          "dimension_ref": "esg_origination_criteria"
+        }
+      ],
+      "criteria_basis": {
+        "review_status": "provisional",
+        "source_citation_ids": [
+          "CIT-REQ-ESG-CREDIT-POLICY-001-01"
+        ],
+        "scope": "Selected credit-risk investigation criteria; not a claim of exhaustive bank-wide compliance."
+      }
+    },
+    "reason": "M1 integrity migration: scoped semantic mappings and shared SNCI dates; provisional, not legal approval."
+  },
+  {
+    "path": "requirements",
+    "record_id": "REQ-ESG-DATA-GAPS-001",
+    "field": "applicability_conditions",
+    "before": [
+      {
+        "condition_id": "COND-REQ-ESG-DATA-GAPS-001-ENTITY",
+        "description": "Confirm the legal entity classification against the cited scope.",
+        "condition_type": "bank_fact",
+        "fact_path": "01_entity/bank_profile.json#/entity_classification",
+        "operator": "equals",
+        "expected_value": [
+          "credit_institution"
+        ],
+        "source_citation_ids": [
+          "CIT-REQ-ESG-DATA-GAPS-001-SCOPE"
+        ],
+        "evidence_status": "verified"
+      },
+      {
+        "condition_id": "COND-REQ-ESG-DATA-GAPS-001-SNCI",
+        "description": "Determine which ESG application date is relevant.",
+        "condition_type": "bank_fact",
+        "fact_path": "01_entity/bank_profile.json#/snci_status",
+        "operator": "equals",
+        "expected_value": [
+          false
+        ],
+        "source_citation_ids": [
+          "CIT-REQ-ESG-DATA-GAPS-001-DATE"
+        ],
+        "evidence_status": "verified"
+      }
+    ],
+    "after": [
+      {
+        "condition_id": "COND-REQ-ESG-DATA-GAPS-001-ENTITY",
+        "description": "Confirm the legal entity classification against the cited scope.",
+        "condition_type": "bank_fact",
+        "fact_path": "01_entity/bank_profile.json#/entity_classification",
+        "operator": "equals",
+        "expected_value": [
+          "credit_institution"
+        ],
+        "source_citation_ids": [
+          "CIT-REQ-ESG-DATA-GAPS-001-SCOPE"
+        ],
+        "evidence_status": "verified"
+      }
+    ],
+    "reason": "M1 integrity migration: scoped semantic mappings and shared SNCI dates; provisional, not legal approval."
+  },
+  {
+    "path": "requirements",
+    "record_id": "REQ-ESG-DATA-GAPS-001",
+    "field": "compliance_events",
+    "before": [
+      {
+        "event_type": "application",
+        "date": "2026-01-11",
+        "condition": "Institutions other than SNCIs",
+        "source_citation_ids": [
+          "CIT-REQ-ESG-DATA-GAPS-001-DATE"
+        ],
+        "verification_status": "verified"
+      }
+    ],
+    "after": [
+      {
+        "event_type": "application",
+        "date": "2026-01-11",
+        "condition": "Institutions other than small and non-complex institutions (SNCIs)",
+        "source_citation_ids": [
+          "CIT-REQ-ESG-DATA-GAPS-001-DATE"
+        ],
+        "verification_status": "verified",
+        "extensions": {
+          "snci_selector": false
+        }
+      },
+      {
+        "event_type": "application",
+        "date": "2027-01-11",
+        "condition": "Small and non-complex institutions (SNCIs) - latest application date",
+        "source_citation_ids": [
+          "CIT-REQ-ESG-DATA-GAPS-001-DATE"
+        ],
+        "verification_status": "verified",
+        "extensions": {
+          "snci_selector": true
+        }
+      }
+    ],
+    "reason": "M1 integrity migration: scoped semantic mappings and shared SNCI dates; provisional, not legal approval."
+  },
+  {
+    "path": "requirements",
+    "record_id": "REQ-ESG-DATA-GAPS-001",
+    "field": "extensions",
+    "before": {
+      "applicability_logic_status": "candidate_requires_legal_review",
+      "date_locator": "EBA/GL/2025/01 paragraph 10, PDF page 17; separate from substantive citation",
+      "unresolved_bank_fact_register": "03_exposure/missing_facts.json"
+    },
+    "after": {
+      "applicability_logic_status": "candidate_requires_legal_review",
+      "date_locator": "EBA/GL/2025/01 paragraph 10, PDF page 17; separate from substantive citation",
+      "unresolved_bank_fact_register": "03_exposure/missing_facts.json",
+      "assessment_contract_version": "0.2.1",
+      "jurisdiction_basis": "institution"
+    },
+    "reason": "M1 integrity migration: scoped semantic mappings and shared SNCI dates; provisional, not legal approval."
+  },
+  {
+    "path": "requirements",
+    "record_id": "REQ-ESG-DATA-SELECTION-001",
+    "field": "applicability_conditions",
+    "before": [
+      {
+        "condition_id": "COND-REQ-ESG-DATA-SELECTION-001-ENTITY",
+        "description": "Confirm the legal entity classification against the cited scope.",
+        "condition_type": "bank_fact",
+        "fact_path": "01_entity/bank_profile.json#/entity_classification",
+        "operator": "equals",
+        "expected_value": [
+          "credit_institution"
+        ],
+        "source_citation_ids": [
+          "CIT-REQ-ESG-DATA-SELECTION-001-SCOPE"
+        ],
+        "evidence_status": "verified"
+      },
+      {
+        "condition_id": "COND-REQ-ESG-DATA-SELECTION-001-SNCI",
+        "description": "Determine which ESG application date is relevant.",
+        "condition_type": "bank_fact",
+        "fact_path": "01_entity/bank_profile.json#/snci_status",
+        "operator": "equals",
+        "expected_value": [
+          false
+        ],
+        "source_citation_ids": [
+          "CIT-REQ-ESG-DATA-SELECTION-001-DATE"
+        ],
+        "evidence_status": "verified"
+      }
+    ],
+    "after": [
+      {
+        "condition_id": "COND-REQ-ESG-DATA-SELECTION-001-ENTITY",
+        "description": "Confirm the legal entity classification against the cited scope.",
+        "condition_type": "bank_fact",
+        "fact_path": "01_entity/bank_profile.json#/entity_classification",
+        "operator": "equals",
+        "expected_value": [
+          "credit_institution"
+        ],
+        "source_citation_ids": [
+          "CIT-REQ-ESG-DATA-SELECTION-001-SCOPE"
+        ],
+        "evidence_status": "verified"
+      }
+    ],
+    "reason": "M1 integrity migration: scoped semantic mappings and shared SNCI dates; provisional, not legal approval."
+  },
+  {
+    "path": "requirements",
+    "record_id": "REQ-ESG-DATA-SELECTION-001",
+    "field": "compliance_events",
+    "before": [
+      {
+        "event_type": "application",
+        "date": "2026-01-11",
+        "condition": "Institutions other than SNCIs",
+        "source_citation_ids": [
+          "CIT-REQ-ESG-DATA-SELECTION-001-DATE"
+        ],
+        "verification_status": "verified"
+      }
+    ],
+    "after": [
+      {
+        "event_type": "application",
+        "date": "2026-01-11",
+        "condition": "Institutions other than small and non-complex institutions (SNCIs)",
+        "source_citation_ids": [
+          "CIT-REQ-ESG-DATA-SELECTION-001-DATE"
+        ],
+        "verification_status": "verified",
+        "extensions": {
+          "snci_selector": false
+        }
+      },
+      {
+        "event_type": "application",
+        "date": "2027-01-11",
+        "condition": "Small and non-complex institutions (SNCIs) - latest application date",
+        "source_citation_ids": [
+          "CIT-REQ-ESG-DATA-SELECTION-001-DATE"
+        ],
+        "verification_status": "verified",
+        "extensions": {
+          "snci_selector": true
+        }
+      }
+    ],
+    "reason": "M1 integrity migration: scoped semantic mappings and shared SNCI dates; provisional, not legal approval."
+  },
+  {
+    "path": "requirements",
+    "record_id": "REQ-ESG-DATA-SELECTION-001",
+    "field": "extensions",
+    "before": {
+      "split_from_requirement_id": "REQ-ESG-DATA-GAPS-001",
+      "applicability_logic_status": "candidate_requires_legal_review",
+      "date_locator": "EBA/GL/2025/01 paragraph 10, PDF page 17; separate from substantive citation",
+      "unresolved_bank_fact_register": "03_exposure/missing_facts.json"
+    },
+    "after": {
+      "split_from_requirement_id": "REQ-ESG-DATA-GAPS-001",
+      "applicability_logic_status": "candidate_requires_legal_review",
+      "date_locator": "EBA/GL/2025/01 paragraph 10, PDF page 17; separate from substantive citation",
+      "unresolved_bank_fact_register": "03_exposure/missing_facts.json",
+      "assessment_contract_version": "0.2.1",
+      "jurisdiction_basis": "institution"
+    },
+    "reason": "M1 integrity migration: scoped semantic mappings and shared SNCI dates; provisional, not legal approval."
+  },
+  {
+    "path": "requirements",
+    "record_id": "REQ-ESG-LONG-HORIZON-001",
+    "field": "applicability_conditions",
+    "before": [
+      {
+        "condition_id": "COND-REQ-ESG-LONG-HORIZON-001-ENTITY",
+        "description": "Confirm the legal entity classification against the cited scope.",
+        "condition_type": "bank_fact",
+        "fact_path": "01_entity/bank_profile.json#/entity_classification",
+        "operator": "equals",
+        "expected_value": [
+          "credit_institution"
+        ],
+        "source_citation_ids": [
+          "CIT-REQ-ESG-LONG-HORIZON-001-SCOPE"
+        ],
+        "evidence_status": "verified"
+      },
+      {
+        "condition_id": "COND-REQ-ESG-LONG-HORIZON-001-SNCI",
+        "description": "Determine which ESG application date is relevant.",
+        "condition_type": "bank_fact",
+        "fact_path": "01_entity/bank_profile.json#/snci_status",
+        "operator": "equals",
+        "expected_value": [
+          false
+        ],
+        "source_citation_ids": [
+          "CIT-REQ-ESG-LONG-HORIZON-001-DATE"
+        ],
+        "evidence_status": "verified"
+      }
+    ],
+    "after": [
+      {
+        "condition_id": "COND-REQ-ESG-LONG-HORIZON-001-ENTITY",
+        "description": "Confirm the legal entity classification against the cited scope.",
+        "condition_type": "bank_fact",
+        "fact_path": "01_entity/bank_profile.json#/entity_classification",
+        "operator": "equals",
+        "expected_value": [
+          "credit_institution"
+        ],
+        "source_citation_ids": [
+          "CIT-REQ-ESG-LONG-HORIZON-001-SCOPE"
+        ],
+        "evidence_status": "verified"
+      }
+    ],
+    "reason": "M1 integrity migration: scoped semantic mappings and shared SNCI dates; provisional, not legal approval."
+  },
+  {
+    "path": "requirements",
+    "record_id": "REQ-ESG-LONG-HORIZON-001",
+    "field": "compliance_events",
+    "before": [
+      {
+        "event_type": "application",
+        "date": "2026-01-11",
+        "condition": "Institutions other than SNCIs",
+        "source_citation_ids": [
+          "CIT-REQ-ESG-LONG-HORIZON-001-DATE"
+        ],
+        "verification_status": "verified"
+      },
+      {
+        "event_type": "application",
+        "date": "2027-01-11",
+        "condition": "SNCIs (latest)",
+        "source_citation_ids": [
+          "CIT-REQ-ESG-LONG-HORIZON-001-DATE"
+        ],
+        "verification_status": "verified"
+      }
+    ],
+    "after": [
+      {
+        "event_type": "application",
+        "date": "2026-01-11",
+        "condition": "Institutions other than small and non-complex institutions (SNCIs)",
+        "source_citation_ids": [
+          "CIT-REQ-ESG-LONG-HORIZON-001-DATE"
+        ],
+        "verification_status": "verified",
+        "extensions": {
+          "snci_selector": false
+        }
+      },
+      {
+        "event_type": "application",
+        "date": "2027-01-11",
+        "condition": "Small and non-complex institutions (SNCIs) - latest application date",
+        "source_citation_ids": [
+          "CIT-REQ-ESG-LONG-HORIZON-001-DATE"
+        ],
+        "verification_status": "verified",
+        "extensions": {
+          "snci_selector": true
+        }
+      }
+    ],
+    "reason": "M1 integrity migration: scoped semantic mappings and shared SNCI dates; provisional, not legal approval."
+  },
+  {
+    "path": "requirements",
+    "record_id": "REQ-ESG-LONG-HORIZON-001",
+    "field": "current_coverage",
+    "before": {
+      "rating": "unknown",
+      "assessment_basis": "joined_dataset",
+      "rationale": "Mapping describes supplied synthetic design only; operating effectiveness remains unproven.",
+      "control_ids": [],
+      "uncovered_dimensions": [],
+      "verification_status": "needs_review"
+    },
+    "after": {
+      "rating": "unknown",
+      "assessment_basis": "joined_dataset",
+      "rationale": "Prior onboarding link withdrawn after semantic review; investigate requirement-specific design and operating evidence.",
+      "control_ids": [],
+      "uncovered_dimensions": [],
+      "verification_status": "needs_review"
+    },
+    "reason": "M1 integrity migration: scoped semantic mappings and shared SNCI dates; provisional, not legal approval."
+  },
+  {
+    "path": "requirements",
+    "record_id": "REQ-ESG-LONG-HORIZON-001",
+    "field": "provenance",
+    "before": {
+      "origin": "authoritative_external_source",
+      "source_ids": [
+        "SRC-ESG-EBA-GL-2025-01"
+      ],
+      "created_at": "2026-09-05T02:25:45Z",
+      "created_by": "coding_agent",
+      "last_verified_at": "2026-09-05T01:45:00Z",
+      "notes": [
+        "Refresh separates legal extraction, current synthetic capability, and human approval."
+      ]
+    },
+    "after": {
+      "origin": "authoritative_external_source",
+      "source_ids": [
+        "SRC-ESG-EBA-GL-2025-01"
+      ],
+      "created_at": "2026-09-05T02:25:45Z",
+      "created_by": "coding_agent",
+      "last_verified_at": "2026-09-05T01:45:00Z",
+      "notes": [
+        "Refresh separates legal extraction, current synthetic capability, and human approval.",
+        "M1 semantic review supersedes the archived 2026-09-11 lineage-based mapping; see extensions."
+      ]
+    },
+    "reason": "M1 integrity migration: scoped semantic mappings and shared SNCI dates; provisional, not legal approval."
+  },
+  {
+    "path": "requirements",
+    "record_id": "REQ-ESG-LONG-HORIZON-001",
+    "field": "extensions",
+    "before": {
+      "split_from_requirement_id": "REQ-ESG-RISK-INTEGRATION-001",
+      "applicability_logic_status": "candidate_requires_legal_review",
+      "date_locator": "EBA/GL/2025/01 paragraph 10, PDF page 17; separate from substantive citation",
+      "unresolved_bank_fact_register": "03_exposure/missing_facts.json"
+    },
+    "after": {
+      "split_from_requirement_id": "REQ-ESG-RISK-INTEGRATION-001",
+      "applicability_logic_status": "candidate_requires_legal_review",
+      "date_locator": "EBA/GL/2025/01 paragraph 10, PDF page 17; separate from substantive citation",
+      "unresolved_bank_fact_register": "03_exposure/missing_facts.json",
+      "assessment_contract_version": "0.2.1",
+      "jurisdiction_basis": "institution",
+      "mapping_review": {
+        "method_version": "semantic-mapping-v1",
+        "review_status": "provisional",
+        "candidate_control_id": "CTRL-ESG-ONBOARD-SCREEN",
+        "relationship": "related_not_supporting",
+        "rationale": "No ten-year horizon or long-term analysis appears in the control objective/frequency.",
+        "evidence_fields": [
+          "objective",
+          "frequency",
+          "coverage"
+        ],
+        "note": "Requirement split lineage is not evidence of substantive coverage."
+      },
+      "coverage_criteria": [
+        {
+          "dimension_type": "horizon",
+          "dimension_ref": "at_least_ten_years"
+        },
+        {
+          "dimension_type": "horizon",
+          "dimension_ref": "short_and_medium_term"
+        }
+      ],
+      "criteria_basis": {
+        "review_status": "provisional",
+        "source_citation_ids": [
+          "CIT-REQ-ESG-LONG-HORIZON-001-01"
+        ],
+        "scope": "Selected credit-risk investigation criteria; not a claim of exhaustive bank-wide compliance."
+      },
+      "superseded_mapping_annotations": [
+        "2026-09-11: control_ids/current_coverage backfilled with CTRL-ESG-ONBOARD-SCREEN. This requirement split from REQ-ESG-RISK-INTEGRATION-001, which the control was already linked to; the control's own requirement_ids was never updated to also include this split-off requirement -- a bidirectional-mapping gap, not a newly designed capability."
+      ]
+    },
+    "reason": "M1 integrity migration: scoped semantic mappings and shared SNCI dates; provisional, not legal approval."
+  },
+  {
+    "path": "requirements",
+    "record_id": "REQ-ESG-RISK-APPETITE-001",
+    "field": "applicability_conditions",
+    "before": [
+      {
+        "condition_id": "COND-REQ-ESG-RISK-APPETITE-001-ENTITY",
+        "description": "Confirm the legal entity classification against the cited scope.",
+        "condition_type": "bank_fact",
+        "fact_path": "01_entity/bank_profile.json#/entity_classification",
+        "operator": "equals",
+        "expected_value": [
+          "credit_institution"
+        ],
+        "source_citation_ids": [
+          "CIT-REQ-ESG-RISK-APPETITE-001-SCOPE"
+        ],
+        "evidence_status": "verified"
+      },
+      {
+        "condition_id": "COND-REQ-ESG-RISK-APPETITE-001-SNCI",
+        "description": "Determine which ESG application date is relevant.",
+        "condition_type": "bank_fact",
+        "fact_path": "01_entity/bank_profile.json#/snci_status",
+        "operator": "equals",
+        "expected_value": [
+          false
+        ],
+        "source_citation_ids": [
+          "CIT-REQ-ESG-RISK-APPETITE-001-DATE"
+        ],
+        "evidence_status": "verified"
+      }
+    ],
+    "after": [
+      {
+        "condition_id": "COND-REQ-ESG-RISK-APPETITE-001-ENTITY",
+        "description": "Confirm the legal entity classification against the cited scope.",
+        "condition_type": "bank_fact",
+        "fact_path": "01_entity/bank_profile.json#/entity_classification",
+        "operator": "equals",
+        "expected_value": [
+          "credit_institution"
+        ],
+        "source_citation_ids": [
+          "CIT-REQ-ESG-RISK-APPETITE-001-SCOPE"
+        ],
+        "evidence_status": "verified"
+      }
+    ],
+    "reason": "M1 integrity migration: scoped semantic mappings and shared SNCI dates; provisional, not legal approval."
+  },
+  {
+    "path": "requirements",
+    "record_id": "REQ-ESG-RISK-APPETITE-001",
+    "field": "compliance_events",
+    "before": [
+      {
+        "event_type": "application",
+        "date": "2026-01-11",
+        "condition": "Institutions other than SNCIs",
+        "source_citation_ids": [
+          "CIT-REQ-ESG-RISK-APPETITE-001-DATE"
+        ],
+        "verification_status": "verified"
+      }
+    ],
+    "after": [
+      {
+        "event_type": "application",
+        "date": "2026-01-11",
+        "condition": "Institutions other than small and non-complex institutions (SNCIs)",
+        "source_citation_ids": [
+          "CIT-REQ-ESG-RISK-APPETITE-001-DATE"
+        ],
+        "verification_status": "verified",
+        "extensions": {
+          "snci_selector": false
+        }
+      },
+      {
+        "event_type": "application",
+        "date": "2027-01-11",
+        "condition": "Small and non-complex institutions (SNCIs) - latest application date",
+        "source_citation_ids": [
+          "CIT-REQ-ESG-RISK-APPETITE-001-DATE"
+        ],
+        "verification_status": "verified",
+        "extensions": {
+          "snci_selector": true
+        }
+      }
+    ],
+    "reason": "M1 integrity migration: scoped semantic mappings and shared SNCI dates; provisional, not legal approval."
+  },
+  {
+    "path": "requirements",
+    "record_id": "REQ-ESG-RISK-APPETITE-001",
+    "field": "extensions",
+    "before": {
+      "applicability_logic_status": "candidate_requires_legal_review",
+      "date_locator": "EBA/GL/2025/01 paragraph 10, PDF page 17; separate from substantive citation",
+      "unresolved_bank_fact_register": "03_exposure/missing_facts.json"
+    },
+    "after": {
+      "applicability_logic_status": "candidate_requires_legal_review",
+      "date_locator": "EBA/GL/2025/01 paragraph 10, PDF page 17; separate from substantive citation",
+      "unresolved_bank_fact_register": "03_exposure/missing_facts.json",
+      "assessment_contract_version": "0.2.1",
+      "jurisdiction_basis": "institution"
+    },
+    "reason": "M1 integrity migration: scoped semantic mappings and shared SNCI dates; provisional, not legal approval."
+  },
+  {
+    "path": "requirements",
+    "record_id": "REQ-ESG-RISK-INTEGRATION-001",
+    "field": "applicability_conditions",
+    "before": [
+      {
+        "condition_id": "COND-REQ-ESG-RISK-INTEGRATION-001-ENTITY",
+        "description": "Confirm the legal entity classification against the cited scope.",
+        "condition_type": "bank_fact",
+        "fact_path": "01_entity/bank_profile.json#/entity_classification",
+        "operator": "equals",
+        "expected_value": [
+          "credit_institution"
+        ],
+        "source_citation_ids": [
+          "CIT-REQ-ESG-RISK-INTEGRATION-001-SCOPE"
+        ],
+        "evidence_status": "verified"
+      },
+      {
+        "condition_id": "COND-REQ-ESG-RISK-INTEGRATION-001-SNCI",
+        "description": "Determine which ESG application date is relevant.",
+        "condition_type": "bank_fact",
+        "fact_path": "01_entity/bank_profile.json#/snci_status",
+        "operator": "equals",
+        "expected_value": [
+          false
+        ],
+        "source_citation_ids": [
+          "CIT-REQ-ESG-RISK-INTEGRATION-001-DATE"
+        ],
+        "evidence_status": "verified"
+      }
+    ],
+    "after": [
+      {
+        "condition_id": "COND-REQ-ESG-RISK-INTEGRATION-001-ENTITY",
+        "description": "Confirm the legal entity classification against the cited scope.",
+        "condition_type": "bank_fact",
+        "fact_path": "01_entity/bank_profile.json#/entity_classification",
+        "operator": "equals",
+        "expected_value": [
+          "credit_institution"
+        ],
+        "source_citation_ids": [
+          "CIT-REQ-ESG-RISK-INTEGRATION-001-SCOPE"
+        ],
+        "evidence_status": "verified"
+      }
+    ],
+    "reason": "M1 integrity migration: scoped semantic mappings and shared SNCI dates; provisional, not legal approval."
+  },
+  {
+    "path": "requirements",
+    "record_id": "REQ-ESG-RISK-INTEGRATION-001",
+    "field": "compliance_events",
+    "before": [
+      {
+        "event_type": "application",
+        "date": "2026-01-11",
+        "condition": "Institutions other than SNCIs",
+        "source_citation_ids": [
+          "CIT-REQ-ESG-RISK-INTEGRATION-001-DATE"
+        ],
+        "verification_status": "verified"
+      },
+      {
+        "event_type": "application",
+        "date": "2027-01-11",
+        "condition": "SNCIs (latest)",
+        "source_citation_ids": [
+          "CIT-REQ-ESG-RISK-INTEGRATION-001-DATE"
+        ],
+        "verification_status": "verified"
+      }
+    ],
+    "after": [
+      {
+        "event_type": "application",
+        "date": "2026-01-11",
+        "condition": "Institutions other than small and non-complex institutions (SNCIs)",
+        "source_citation_ids": [
+          "CIT-REQ-ESG-RISK-INTEGRATION-001-DATE"
+        ],
+        "verification_status": "verified",
+        "extensions": {
+          "snci_selector": false
+        }
+      },
+      {
+        "event_type": "application",
+        "date": "2027-01-11",
+        "condition": "Small and non-complex institutions (SNCIs) - latest application date",
+        "source_citation_ids": [
+          "CIT-REQ-ESG-RISK-INTEGRATION-001-DATE"
+        ],
+        "verification_status": "verified",
+        "extensions": {
+          "snci_selector": true
+        }
+      }
+    ],
+    "reason": "M1 integrity migration: scoped semantic mappings and shared SNCI dates; provisional, not legal approval."
+  },
+  {
+    "path": "requirements",
+    "record_id": "REQ-ESG-RISK-INTEGRATION-001",
+    "field": "extensions",
+    "before": {
+      "applicability_logic_status": "candidate_requires_legal_review",
+      "date_locator": "EBA/GL/2025/01 paragraph 10, PDF page 17; separate from substantive citation",
+      "unresolved_bank_fact_register": "03_exposure/missing_facts.json"
+    },
+    "after": {
+      "applicability_logic_status": "candidate_requires_legal_review",
+      "date_locator": "EBA/GL/2025/01 paragraph 10, PDF page 17; separate from substantive citation",
+      "unresolved_bank_fact_register": "03_exposure/missing_facts.json",
+      "assessment_contract_version": "0.2.1",
+      "jurisdiction_basis": "institution",
+      "coverage_criteria": [
+        {
+          "dimension_type": "process",
+          "dimension_ref": "credit_origination"
+        },
+        {
+          "dimension_type": "process",
+          "dimension_ref": "ongoing_risk_management"
+        }
+      ],
+      "criteria_basis": {
+        "review_status": "provisional",
+        "source_citation_ids": [
+          "CIT-REQ-ESG-RISK-INTEGRATION-001-01"
+        ],
+        "scope": "Selected credit-risk investigation criteria; not a claim of exhaustive bank-wide compliance."
+      }
+    },
+    "reason": "M1 integrity migration: scoped semantic mappings and shared SNCI dates; provisional, not legal approval."
+  },
+  {
+    "path": "requirements",
+    "record_id": "REQ-ESG-RISK-KRI-001",
+    "field": "applicability_conditions",
+    "before": [
+      {
+        "condition_id": "COND-REQ-ESG-RISK-KRI-001-ENTITY",
+        "description": "Confirm the legal entity classification against the cited scope.",
+        "condition_type": "bank_fact",
+        "fact_path": "01_entity/bank_profile.json#/entity_classification",
+        "operator": "equals",
+        "expected_value": [
+          "credit_institution"
+        ],
+        "source_citation_ids": [
+          "CIT-REQ-ESG-RISK-KRI-001-SCOPE"
+        ],
+        "evidence_status": "verified"
+      },
+      {
+        "condition_id": "COND-REQ-ESG-RISK-KRI-001-SNCI",
+        "description": "Determine which ESG application date is relevant.",
+        "condition_type": "bank_fact",
+        "fact_path": "01_entity/bank_profile.json#/snci_status",
+        "operator": "equals",
+        "expected_value": [
+          false
+        ],
+        "source_citation_ids": [
+          "CIT-REQ-ESG-RISK-KRI-001-DATE"
+        ],
+        "evidence_status": "verified"
+      }
+    ],
+    "after": [
+      {
+        "condition_id": "COND-REQ-ESG-RISK-KRI-001-ENTITY",
+        "description": "Confirm the legal entity classification against the cited scope.",
+        "condition_type": "bank_fact",
+        "fact_path": "01_entity/bank_profile.json#/entity_classification",
+        "operator": "equals",
+        "expected_value": [
+          "credit_institution"
+        ],
+        "source_citation_ids": [
+          "CIT-REQ-ESG-RISK-KRI-001-SCOPE"
+        ],
+        "evidence_status": "verified"
+      }
+    ],
+    "reason": "M1 integrity migration: scoped semantic mappings and shared SNCI dates; provisional, not legal approval."
+  },
+  {
+    "path": "requirements",
+    "record_id": "REQ-ESG-RISK-KRI-001",
+    "field": "compliance_events",
+    "before": [
+      {
+        "event_type": "application",
+        "date": "2026-01-11",
+        "condition": "Institutions other than SNCIs",
+        "source_citation_ids": [
+          "CIT-REQ-ESG-RISK-KRI-001-DATE"
+        ],
+        "verification_status": "verified"
+      }
+    ],
+    "after": [
+      {
+        "event_type": "application",
+        "date": "2026-01-11",
+        "condition": "Institutions other than small and non-complex institutions (SNCIs)",
+        "source_citation_ids": [
+          "CIT-REQ-ESG-RISK-KRI-001-DATE"
+        ],
+        "verification_status": "verified",
+        "extensions": {
+          "snci_selector": false
+        }
+      },
+      {
+        "event_type": "application",
+        "date": "2027-01-11",
+        "condition": "Small and non-complex institutions (SNCIs) - latest application date",
+        "source_citation_ids": [
+          "CIT-REQ-ESG-RISK-KRI-001-DATE"
+        ],
+        "verification_status": "verified",
+        "extensions": {
+          "snci_selector": true
+        }
+      }
+    ],
+    "reason": "M1 integrity migration: scoped semantic mappings and shared SNCI dates; provisional, not legal approval."
+  },
+  {
+    "path": "requirements",
+    "record_id": "REQ-ESG-RISK-KRI-001",
+    "field": "extensions",
+    "before": {
+      "split_from_requirement_id": "REQ-ESG-RISK-APPETITE-001",
+      "applicability_logic_status": "candidate_requires_legal_review",
+      "date_locator": "EBA/GL/2025/01 paragraph 10, PDF page 17; separate from substantive citation",
+      "unresolved_bank_fact_register": "03_exposure/missing_facts.json"
+    },
+    "after": {
+      "split_from_requirement_id": "REQ-ESG-RISK-APPETITE-001",
+      "applicability_logic_status": "candidate_requires_legal_review",
+      "date_locator": "EBA/GL/2025/01 paragraph 10, PDF page 17; separate from substantive citation",
+      "unresolved_bank_fact_register": "03_exposure/missing_facts.json",
+      "assessment_contract_version": "0.2.1",
+      "jurisdiction_basis": "institution"
+    },
+    "reason": "M1 integrity migration: scoped semantic mappings and shared SNCI dates; provisional, not legal approval."
+  },
+  {
+    "path": "requirements",
+    "record_id": "REQ-FRTB-APPLICATION-DATE-001",
+    "field": "extensions",
+    "before": {
+      "applicability_logic_status": "candidate_requires_legal_review",
+      "unresolved_bank_fact_register": "03_exposure/missing_facts.json"
+    },
+    "after": {
+      "applicability_logic_status": "candidate_requires_legal_review",
+      "unresolved_bank_fact_register": "03_exposure/missing_facts.json",
+      "assessment_contract_version": "0.2.1",
+      "jurisdiction_basis": "institution"
+    },
+    "reason": "M1 integrity migration: scoped semantic mappings and shared SNCI dates; provisional, not legal approval."
+  },
+  {
+    "path": "requirements",
+    "record_id": "REQ-FRTB-SMALL-BOOK-001",
+    "field": "extensions",
+    "before": {
+      "numeric_threshold_rule": null,
+      "rule_disabled_reason": "Original OR formulation is unsafe. No automated derogation until current Article 94 text and all conditions are verified.",
+      "applicability_logic_status": "candidate_requires_legal_review",
+      "unresolved_bank_fact_register": "03_exposure/missing_facts.json"
+    },
+    "after": {
+      "numeric_threshold_rule": null,
+      "rule_disabled_reason": "Original OR formulation is unsafe. No automated derogation until current Article 94 text and all conditions are verified.",
+      "applicability_logic_status": "candidate_requires_legal_review",
+      "unresolved_bank_fact_register": "03_exposure/missing_facts.json",
+      "assessment_contract_version": "0.2.1",
+      "jurisdiction_basis": "institution",
+      "coverage_criteria": [
+        {
+          "dimension_type": "population",
+          "dimension_ref": "trading_book_business_volume"
+        }
+      ]
+    },
+    "reason": "M1 integrity migration: scoped semantic mappings and shared SNCI dates; provisional, not legal approval."
+  },
+  {
+    "path": "requirements",
+    "record_id": "REQ-IPS-CHARGES-PARITY-001",
+    "field": "extensions",
+    "before": {
+      "applicability_logic_status": "candidate_requires_legal_review",
+      "unresolved_bank_fact_register": "03_exposure/missing_facts.json"
+    },
+    "after": {
+      "applicability_logic_status": "candidate_requires_legal_review",
+      "unresolved_bank_fact_register": "03_exposure/missing_facts.json",
+      "assessment_contract_version": "0.2.1",
+      "jurisdiction_basis": "product"
+    },
+    "reason": "M1 integrity migration: scoped semantic mappings and shared SNCI dates; provisional, not legal approval."
+  },
+  {
+    "path": "requirements",
+    "record_id": "REQ-IPS-SANCTIONS-SCREEN-001",
+    "field": "extensions",
+    "before": {
+      "applicability_logic_status": "candidate_requires_legal_review",
+      "unresolved_bank_fact_register": "03_exposure/missing_facts.json"
+    },
+    "after": {
+      "applicability_logic_status": "candidate_requires_legal_review",
+      "unresolved_bank_fact_register": "03_exposure/missing_facts.json",
+      "assessment_contract_version": "0.2.1",
+      "jurisdiction_basis": "product"
+    },
+    "reason": "M1 integrity migration: scoped semantic mappings and shared SNCI dates; provisional, not legal approval."
+  },
+  {
+    "path": "requirements",
+    "record_id": "REQ-IPS-SEND-RECEIVE-001",
+    "field": "extensions",
+    "before": {
+      "applicability_logic_status": "candidate_requires_legal_review",
+      "unresolved_bank_fact_register": "03_exposure/missing_facts.json"
+    },
+    "after": {
+      "applicability_logic_status": "candidate_requires_legal_review",
+      "unresolved_bank_fact_register": "03_exposure/missing_facts.json",
+      "assessment_contract_version": "0.2.1",
+      "jurisdiction_basis": "product"
+    },
+    "reason": "M1 integrity migration: scoped semantic mappings and shared SNCI dates; provisional, not legal approval."
+  },
+  {
+    "path": "requirements",
+    "record_id": "REQ-IPS-VOP-001",
+    "field": "extensions",
+    "before": {
+      "applicability_logic_status": "candidate_requires_legal_review",
+      "unresolved_bank_fact_register": "03_exposure/missing_facts.json"
+    },
+    "after": {
+      "applicability_logic_status": "candidate_requires_legal_review",
+      "unresolved_bank_fact_register": "03_exposure/missing_facts.json",
+      "assessment_contract_version": "0.2.1",
+      "jurisdiction_basis": "product",
+      "coverage_criteria": [
+        {
+          "dimension_type": "channel",
+          "dimension_ref": "web"
+        },
+        {
+          "dimension_type": "channel",
+          "dimension_ref": "mobile"
+        }
+      ]
+    },
+    "reason": "M1 integrity migration: scoped semantic mappings and shared SNCI dates; provisional, not legal approval."
+  },
+  {
+    "path": "controls",
+    "record_id": "CTRL-DORA-DEPENDENCY-MAP",
+    "field": "extensions",
+    "before": null,
+    "after": {
+      "requirement_mappings": [
+        {
+          "requirement_id": "REQ-DORA-DEPENDENCY-MAP-001",
+          "support": "partial",
+          "review_status": "provisional",
+          "rationale": "Supplied control objective and declared coverage; operating effectiveness unverified.",
+          "evidence_fields": [
+            "objective",
+            "frequency",
+            "coverage"
+          ],
+          "coverage": [
+            {
+              "dimension_type": "critical_service",
+              "dimension_ref": "known_subset",
+              "coverage_status": "partially_covered",
+              "rationale": "Mapping exists for a limited, currently-known set of functions; five critical functions are listed in the joined scenario, but inventory completeness and mapping effectiveness are unproven."
+            },
+            {
+              "dimension_type": "vendor",
+              "dimension_ref": "third_party_dependency_mapping",
+              "coverage_status": "not_covered",
+              "rationale": "Complete third-party/ICT dependency mapping is not established, matching the scenario's designed gap."
+            }
+          ]
+        }
+      ]
+    },
+    "reason": "M1 integrity migration: scoped semantic mappings and shared SNCI dates; provisional, not legal approval."
+  },
+  {
+    "path": "controls",
+    "record_id": "CTRL-DORA-ICT-REGISTER",
+    "field": "extensions",
+    "before": null,
+    "after": {
+      "requirement_mappings": [
+        {
+          "requirement_id": "REQ-DORA-ICT-REGISTER-001",
+          "support": "partial",
+          "review_status": "provisional",
+          "rationale": "Supplied control objective and declared coverage; operating effectiveness unverified.",
+          "evidence_fields": [
+            "objective",
+            "frequency",
+            "coverage"
+          ],
+          "coverage": [
+            {
+              "dimension_type": "vendor",
+              "dimension_ref": "known_ict_third_parties",
+              "coverage_status": "partially_covered",
+              "rationale": "The register is populated for a known subset of ICT third-party arrangements; the joined vendor inventory does not establish that all contractual arrangements and subcontractors are captured."
+            }
+          ]
+        }
+      ]
+    },
+    "reason": "M1 integrity migration: scoped semantic mappings and shared SNCI dates; provisional, not legal approval."
+  },
+  {
+    "path": "controls",
+    "record_id": "CTRL-ESG-ONBOARD-SCREEN",
+    "field": "provenance",
+    "before": {
+      "origin": "synthetic_bank_design",
+      "source_ids": [],
+      "created_at": "2026-09-05T02:25:45Z",
+      "created_by": "coding_agent",
+      "last_verified_at": null,
+      "notes": [
+        "Synthetic current-state design for the first-demo scenario; not copied from any real institution.",
+        "Joined with canonical Persons 2–4 IDs; owners are synthetic scenario assignments."
+      ]
+    },
+    "after": {
+      "origin": "synthetic_bank_design",
+      "source_ids": [],
+      "created_at": "2026-09-05T02:25:45Z",
+      "created_by": "coding_agent",
+      "last_verified_at": null,
+      "notes": [
+        "Synthetic current-state design for the first-demo scenario; not copied from any real institution.",
+        "Joined with canonical Persons 2–4 IDs; owners are synthetic scenario assignments.",
+        "M1 semantic review supersedes the archived 2026-09-11 lineage-based mapping; see extensions."
+      ]
+    },
+    "reason": "M1 integrity migration: scoped semantic mappings and shared SNCI dates; provisional, not legal approval."
+  },
+  {
+    "path": "controls",
+    "record_id": "CTRL-ESG-ONBOARD-SCREEN",
+    "field": "extensions",
+    "before": null,
+    "after": {
+      "requirement_mappings": [
+        {
+          "requirement_id": "REQ-ESG-CREDIT-POLICY-001",
+          "support": "partial",
+          "review_status": "provisional",
+          "rationale": "Sector screen supports origination only; it does not establish the complete sectoral credit criteria.",
+          "evidence_fields": [
+            "objective",
+            "frequency",
+            "coverage"
+          ],
+          "coverage": [
+            {
+              "dimension_type": "population",
+              "dimension_ref": "new_lending_applications",
+              "coverage_status": "covered",
+              "rationale": "Explicit control objective and per-application frequency."
+            },
+            {
+              "dimension_type": "design",
+              "dimension_ref": "esg_origination_criteria",
+              "coverage_status": "partially_covered",
+              "rationale": "Sector screening alone does not demonstrate the complete credit policy criteria."
+            }
+          ]
+        },
+        {
+          "requirement_id": "REQ-ESG-RISK-INTEGRATION-001",
+          "support": "partial",
+          "review_status": "provisional",
+          "rationale": "One origination activity contributes to regular risk management; ongoing integration remains unproven.",
+          "evidence_fields": [
+            "objective",
+            "frequency",
+            "coverage"
+          ],
+          "coverage": [
+            {
+              "dimension_type": "process",
+              "dimension_ref": "credit_origination",
+              "coverage_status": "covered",
+              "rationale": "Sector-level ESG screen before credit approval."
+            },
+            {
+              "dimension_type": "process",
+              "dimension_ref": "ongoing_risk_management",
+              "coverage_status": "not_covered",
+              "rationale": "Control is per application; existing-book monitoring is explicitly excluded."
+            }
+          ]
+        }
+      ],
+      "superseded_mapping_annotations": [
+        "2026-09-11: added REQ-ESG-CREDIT-MONITORING-001 and REQ-ESG-LONG-HORIZON-001 to requirement_ids. Both split from REQ-ESG-CREDIT-POLICY-001 and REQ-ESG-RISK-INTEGRATION-001 respectively during the ESG atomic-requirement split, but were never back-filled here -- a bidirectional-mapping gap against this project's own data-contract rule, not a newly designed capability. coverage[] is unchanged: existing_portfolio stays not_covered, so both requirements correctly move from missing to partial, not evidenced."
+      ]
+    },
+    "reason": "M1 integrity migration: scoped semantic mappings and shared SNCI dates; provisional, not legal approval."
+  },
+  {
+    "path": "controls",
+    "record_id": "CTRL-FRTB-THRESHOLD-MONITOR",
+    "field": "extensions",
+    "before": null,
+    "after": {
+      "requirement_mappings": [
+        {
+          "requirement_id": "REQ-FRTB-SMALL-BOOK-001",
+          "support": "partial",
+          "review_status": "provisional",
+          "rationale": "Supplied control objective and declared coverage; operating effectiveness unverified.",
+          "evidence_fields": [
+            "objective",
+            "frequency",
+            "coverage"
+          ],
+          "coverage": [
+            {
+              "dimension_type": "population",
+              "dimension_ref": "trading_book_business_volume",
+              "coverage_status": "unknown",
+              "rationale": "Monitoring design exists, but the joined June banking-book position sample and asset total do not provide a complete current market-risk scope assessment, so actual coverage/effectiveness cannot be verified."
+            }
+          ]
+        }
+      ]
+    },
+    "reason": "M1 integrity migration: scoped semantic mappings and shared SNCI dates; provisional, not legal approval."
+  },
+  {
+    "path": "controls",
+    "record_id": "CTRL-VOP-WEB",
+    "field": "extensions",
+    "before": null,
+    "after": {
+      "requirement_mappings": [
+        {
+          "requirement_id": "REQ-IPS-VOP-001",
+          "support": "partial",
+          "review_status": "provisional",
+          "rationale": "Supplied control objective and declared coverage; operating effectiveness unverified.",
+          "evidence_fields": [
+            "objective",
+            "frequency",
+            "coverage"
+          ],
+          "coverage": [
+            {
+              "dimension_type": "channel",
+              "dimension_ref": "web",
+              "coverage_status": "covered",
+              "rationale": "Synthetic scenario fact: Verification of Payee is implemented for web/online-banking-initiated credit transfers."
+            },
+            {
+              "dimension_type": "channel",
+              "dimension_ref": "mobile",
+              "coverage_status": "not_covered",
+              "rationale": "Intentional first-demo gap; no mobile-channel Verification of Payee control is asserted."
+            }
+          ]
+        }
+      ]
+    },
+    "reason": "M1 integrity migration: scoped semantic mappings and shared SNCI dates; provisional, not legal approval."
+  },
+  {
+    "path": "changes",
+    "record_id": "REG-ESG-EBA-GL-2025-01",
+    "field": "application_events",
+    "before": [
+      {
+        "event_type": "application",
+        "date": "2026-01-11",
+        "applies_to": "Institutions other than small and non-complex institutions (SNCIs)",
+        "locator": "Guidelines, Section 3 'Implementation', paragraph 10, first sentence",
+        "source_ids": [
+          "SRC-ESG-EBA-GL-2025-01"
+        ],
+        "verification_status": "verified"
+      },
+      {
+        "event_type": "application",
+        "date": "2027-01-11",
+        "applies_to": "Small and non-complex institutions (SNCIs) - latest application date",
+        "locator": "Guidelines, Section 3 'Implementation', paragraph 10, second sentence",
+        "source_ids": [
+          "SRC-ESG-EBA-GL-2025-01"
+        ],
+        "verification_status": "verified"
+      },
+      {
+        "event_type": "reporting",
+        "date": "2025-06-03",
+        "applies_to": "Competent authorities: deadline to notify the EBA of compliance or intended compliance, or reasons for non-compliance",
+        "locator": "Guidelines, Section 1 'Compliance and reporting obligations', paragraph 3",
+        "source_ids": [
+          "SRC-ESG-EBA-GL-2025-01"
+        ],
+        "verification_status": "verified"
+      }
+    ],
+    "after": [
+      {
+        "event_type": "application",
+        "date": "2026-01-11",
+        "applies_to": "Institutions other than small and non-complex institutions (SNCIs)",
+        "locator": "Guidelines, Section 3 'Implementation', paragraph 10, first sentence",
+        "source_ids": [
+          "SRC-ESG-EBA-GL-2025-01"
+        ],
+        "verification_status": "verified",
+        "extensions": {
+          "snci_selector": false
+        }
+      },
+      {
+        "event_type": "application",
+        "date": "2027-01-11",
+        "applies_to": "Small and non-complex institutions (SNCIs) - latest application date",
+        "locator": "Guidelines, Section 3 'Implementation', paragraph 10, second sentence",
+        "source_ids": [
+          "SRC-ESG-EBA-GL-2025-01"
+        ],
+        "verification_status": "verified",
+        "extensions": {
+          "snci_selector": true
+        }
+      },
+      {
+        "event_type": "reporting",
+        "date": "2025-06-03",
+        "applies_to": "Competent authorities: deadline to notify the EBA of compliance or intended compliance, or reasons for non-compliance",
+        "locator": "Guidelines, Section 1 'Compliance and reporting obligations', paragraph 3",
+        "source_ids": [
+          "SRC-ESG-EBA-GL-2025-01"
+        ],
+        "verification_status": "verified"
+      }
+    ],
+    "reason": "M1 integrity migration: scoped semantic mappings and shared SNCI dates; provisional, not legal approval."
+  }
+]

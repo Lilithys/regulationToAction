@@ -1,0 +1,16 @@
+action_id,activity,role_id,raci,notes
+ACT-ESG-PORTFOLIO-CONTROL,Establish a portfolio-wide ESG-risk control,ROLE-HEAD-LENDING,R,Synthetic proposed allocation; pending qualified review.
+ACT-ESG-PORTFOLIO-CONTROL,Establish a portfolio-wide ESG-risk control,ROLE-CHIEF-RISK,A,Synthetic proposed allocation; pending qualified review.
+ACT-ESG-PORTFOLIO-CONTROL,Establish a portfolio-wide ESG-risk control,ROLE-HEAD-COMPLIANCE,C,Synthetic proposed allocation; pending qualified review.
+ACT-ESG-DATA-REMEDIATION,Remediate ESG data coverage for material SME exposures,ROLE-CIO,R,Synthetic proposed allocation; pending qualified review.
+ACT-ESG-DATA-REMEDIATION,Remediate ESG data coverage for material SME exposures,ROLE-HEAD-CREDIT-RISK,A,Synthetic proposed allocation; pending qualified review.
+ACT-ESG-DATA-REMEDIATION,Remediate ESG data coverage for material SME exposures,ROLE-HEAD-COMPLIANCE,C,Synthetic proposed allocation; pending qualified review.
+ACT-IPS-MOBILE-VOP,Implement Verification of Payee in mobile banking,ROLE-HEAD-DIGITAL,R,Synthetic proposed allocation; pending qualified review.
+ACT-IPS-MOBILE-VOP,Implement Verification of Payee in mobile banking,ROLE-HEAD-PAYMENTS,A,Synthetic proposed allocation; pending qualified review.
+ACT-IPS-MOBILE-VOP,Implement Verification of Payee in mobile banking,ROLE-HEAD-COMPLIANCE,C,Synthetic proposed allocation; pending qualified review.
+ACT-DORA-DEPENDENCY-MAP,Complete critical-service and third-party dependency mapping,ROLE-CIO,R,Synthetic proposed allocation; pending qualified review.
+ACT-DORA-DEPENDENCY-MAP,Complete critical-service and third-party dependency mapping,ROLE-COO,A,Synthetic proposed allocation; pending qualified review.
+ACT-DORA-DEPENDENCY-MAP,Complete critical-service and third-party dependency mapping,ROLE-HEAD-COMPLIANCE,C,Synthetic proposed allocation; pending qualified review.
+ACT-FRTB-APPLICABILITY-MONITOR,Refresh market-risk scope evidence and document conditional applicability,ROLE-HEAD-TREASURY,R,Synthetic proposed allocation; pending qualified review.
+ACT-FRTB-APPLICABILITY-MONITOR,Refresh market-risk scope evidence and document conditional applicability,ROLE-CHIEF-RISK,A,Synthetic proposed allocation; pending qualified review.
+ACT-FRTB-APPLICABILITY-MONITOR,Refresh market-risk scope evidence and document conditional applicability,ROLE-HEAD-COMPLIANCE,C,Synthetic proposed allocation; pending qualified review.

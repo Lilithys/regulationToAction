@@ -1,0 +1,7 @@
+process_id,role_id,raci,notes
+PROC-CREDIT-ORIGINATION,ROLE-HEAD-LENDING,A,First-line implementation
+PROC-CREDIT-RISK-MONITORING,ROLE-CHIEF-RISK,A,Risk framework and independent challenge
+PROC-DATA-GOVERNANCE,ROLE-CIO,A,Data and technology delivery
+PROC-PAYMENT-INITIATION,ROLE-HEAD-PAYMENTS,A,Payment-service outcome
+PROC-ICT-RESILIENCE,ROLE-COO,A,Operational implementation; Risk and Compliance challenge
+PROC-LIQUIDITY-MANAGEMENT,ROLE-HEAD-TREASURY,A,Monthly position facts

@@ -1,0 +1,240 @@
+{
+  "_meta": {
+    "file": "05_operations/systems.json",
+    "owner": "Person 3 - Operations and technology",
+    "purpose": "Technology systems supporting Northstar Digital Bank's processes. Built directly from the 'Technology And Data Landscape' table in Bank_Context_Fictional_Digital_Bank.md, plus the payments critical chain described in the same document, with hosting/vendor facts grounded in bunq's real 2025 annual and Pillar 3 disclosures (AWS-based EU-region cloud, PCI-DSS scope for card systems, in-house fraud tooling).",
+    "generated_at": "2026-09-03",
+    "as_of_date": "2026-09-03",
+    "entity_id": "ENT-NDB-PLC",
+    "design_references": [
+      "Bank_Context_Fictional_Digital_Bank.md — Technology And Data Landscape table, Payments and Instant Payments section",
+      "bunq-report-annual-2025-en.pdf — IT Risk / infrastructure resilience, cloud (AWS-based), PCI-DSS, in-house fraud tooling",
+      "bunqreportpillar3disclosures2025en.pdf — ICT change management, third-party risk management"
+    ]
+  },
+  "systems": [
+    {
+      "system_id": "SYS-CORE-BANKING",
+      "name": "Core Banking Platform",
+      "purpose": "Accounts, deposits, loan servicing - system of record for customer balances.",
+      "category": "core_processing",
+      "hosting": "cloud_hosted_eea",
+      "vendor_id": "VND-CORE-BANKING",
+      "owner_cost_centre_id": "CC-300",
+      "critical_or_important": true,
+      "notes": "One of the three technology providers the bank itself designates as material.",
+      "important_data": "customer, account, transaction, loan data"
+    },
+    {
+      "system_id": "SYS-MOBILE-APP",
+      "name": "Mobile Banking App",
+      "purpose": "Primary retail and SME channel frontend; originates the large majority of payment instructions.",
+      "category": "channel_frontend",
+      "hosting": "cloud_hosted_eea",
+      "vendor_id": "VND-CORE-BANKING",
+      "owner_cost_centre_id": "CC-600",
+      "critical_or_important": true,
+      "notes": "71% of payment initiation volume runs through this channel, and it is the channel where Verification of Payee is NOT yet available - see PRD-SEPA-INSTANT in products.json.",
+      "share_of_payment_initiation_pct": 71,
+      "verification_of_payee_available": false
+    },
+    {
+      "system_id": "SYS-WEB-BANKING",
+      "name": "Web Banking Platform",
+      "purpose": "Secondary channel frontend for retail, SME and mortgage servicing access.",
+      "category": "channel_frontend",
+      "hosting": "cloud_hosted_eea",
+      "vendor_id": "VND-CORE-BANKING",
+      "owner_cost_centre_id": "CC-600",
+      "critical_or_important": true,
+      "notes": "Verification of Payee is live on this channel.",
+      "share_of_payment_initiation_pct": 29,
+      "verification_of_payee_available": true
+    },
+    {
+      "system_id": "SYS-ONBOARDING",
+      "name": "Digital Onboarding Platform",
+      "purpose": "Identity verification and KYC at account opening.",
+      "category": "financial_crime",
+      "hosting": "cloud_hosted_eea",
+      "vendor_id": "VND-IDENTITY-VERIFICATION",
+      "owner_cost_centre_id": "CC-500",
+      "critical_or_important": true,
+      "notes": "One of the three technology providers the bank itself designates as material.",
+      "important_data": "identity, sanctions, customer-risk data"
+    },
+    {
+      "system_id": "SYS-CRM",
+      "name": "CRM and Customer-Profile Service",
+      "purpose": "Customer circumstances, product holdings, communications and servicing cases.",
+      "category": "customer_data",
+      "hosting": "cloud_hosted_eea",
+      "vendor_id": "VND-CRM-PROVIDER",
+      "owner_cost_centre_id": "CC-600",
+      "critical_or_important": false,
+      "notes": "Structured customer-profile fields exist, but there is no event that forces a re-confirmation of material circumstances before every further product recommendation - see PROC-CREDIT-ORIGINATION.",
+      "important_data": "KYC refresh, suitability, and material-change history"
+    },
+    {
+      "system_id": "SYS-LOAN-ORIG",
+      "name": "Loan Origination System",
+      "purpose": "Applications, affordability checks and approvals for consumer, SME and mortgage lending.",
+      "category": "decisioning",
+      "hosting": "cloud_hosted_eea",
+      "vendor_id": "VND-CORE-BANKING",
+      "owner_cost_centre_id": "CC-100",
+      "critical_or_important": true,
+      "notes": null,
+      "important_data": "income, employment, loan purpose, borrower sector"
+    },
+    {
+      "system_id": "SYS-MORTGAGE-SERVICING",
+      "name": "Mortgage Servicing Platform",
+      "purpose": "Mortgage balances, arrears, alternative repayment arrangement (ARA) cases and repayment history.",
+      "category": "servicing",
+      "hosting": "vendor_operated_not_hosted_by_bank",
+      "vendor_id": "VND-MORTGAGE-SERVICER",
+      "owner_cost_centre_id": "CC-700",
+      "critical_or_important": true,
+      "notes": "This is the one core system NDB does not run itself - the servicer sends a monthly data extract, and some supporting case documents are held outside NDB systems entirely.",
+      "important_data": "servicer case records and affordability evidence",
+      "operating_model": "operated end-to-end by a material third-party mortgage servicer under NDB policy; NDB retains arrears strategy, vulnerable-customer outcomes and approval-criteria ownership"
+    },
+    {
+      "system_id": "SYS-DATA-PLATFORM",
+      "name": "Enterprise Data Platform",
+      "purpose": "Regulatory, risk, finance and analytics datasets.",
+      "category": "analytics",
+      "hosting": "cloud_hosted_eea",
+      "vendor_id": "VND-CORE-BANKING",
+      "owner_cost_centre_id": "CC-300",
+      "critical_or_important": true,
+      "notes": null,
+      "important_data": "data lineage, quality rules, reporting datasets"
+    },
+    {
+      "system_id": "SYS-RISK-ENGINE",
+      "name": "Risk Engine",
+      "purpose": "Credit-risk scores and portfolio monitoring.",
+      "category": "decisioning",
+      "hosting": "cloud_hosted_eea",
+      "vendor_id": "VND-CORE-BANKING",
+      "owner_cost_centre_id": "CC-200",
+      "critical_or_important": true,
+      "notes": "Feeds pd_12_month_pct and lgd_pct in 03_exposure/lending_portfolio.csv. Has no ESG or environmental risk factor as an input today.",
+      "important_data": "PD/LGD inputs, exposures, arrears, sector data"
+    },
+    {
+      "system_id": "SYS-GRC",
+      "name": "GRC Platform",
+      "purpose": "Obligations, policies, controls, issues and evidence.",
+      "category": "governance",
+      "hosting": "cloud_hosted_eea",
+      "vendor_id": "VND-GRC-PLATFORM",
+      "owner_cost_centre_id": "CC-500",
+      "critical_or_important": false,
+      "notes": null,
+      "important_data": "control owners and testing results"
+    },
+    {
+      "system_id": "SYS-PAYMENTS-HUB",
+      "name": "Payments Hub",
+      "purpose": "SEPA Credit Transfer and SEPA Instant processing.",
+      "category": "core_processing",
+      "hosting": "cloud_hosted_eea",
+      "vendor_id": "VND-CORE-BANKING",
+      "owner_cost_centre_id": "CC-600",
+      "critical_or_important": true,
+      "notes": null,
+      "important_data": "payment status, latency, beneficiary, channel and failure data",
+      "processes_sct": true,
+      "processes_sct_inst": true,
+      "instant_since": "2025"
+    },
+    {
+      "system_id": "SYS-VOP",
+      "name": "Verification of Payee Service",
+      "purpose": "Payee-name verification before payment execution.",
+      "category": "specialist_service",
+      "hosting": "cloud_hosted_eea",
+      "vendor_id": "VND-VOP-PROVIDER",
+      "owner_cost_centre_id": "CC-600",
+      "critical_or_important": true,
+      "notes": "External provider. Matches the verification_of_payee field already recorded on PRD-SEPA-INSTANT in products.json - do not re-derive this fact differently here.",
+      "channel_integration": {
+        "web": "live",
+        "mobile_app": "pending",
+        "api": "not_in_scope_for_first_demo"
+      }
+    },
+    {
+      "system_id": "SYS-BENEFICIARY-STORE",
+      "name": "Beneficiary Store",
+      "purpose": "Holds saved payee/beneficiary records referenced during payment initiation and verification.",
+      "category": "core_processing",
+      "hosting": "cloud_hosted_eea",
+      "vendor_id": "VND-CORE-BANKING",
+      "owner_cost_centre_id": "CC-600",
+      "critical_or_important": true,
+      "notes": null
+    },
+    {
+      "system_id": "SYS-SANCTIONS-ENGINE",
+      "name": "Sanctions Screening Engine",
+      "purpose": "Screens customers and transactions against restrictive-measures lists.",
+      "category": "financial_crime",
+      "hosting": "cloud_hosted_eea",
+      "vendor_id": "VND-SANCTIONS-DATA",
+      "owner_cost_centre_id": "CC-500",
+      "critical_or_important": true,
+      "notes": null
+    },
+    {
+      "system_id": "SYS-FRAUD-ENGINE",
+      "name": "Fraud Engine",
+      "purpose": "Real-time transaction filtering and fraud prevention, including delayed-release holds on transactions flagged as suspicious and automatic account freezing on confirmed compromise.",
+      "category": "financial_crime",
+      "hosting": "cloud_hosted_eea",
+      "vendor_id": null,
+      "owner_cost_centre_id": "CC-600",
+      "critical_or_important": true,
+      "notes": "Built and operated in-house, unlike most other systems in this table - modelled on bunq's real, publicly disclosed fraud controls (transaction filtering, delayed payment release, automatic account freeze), which the 2025 annual report describes as materially reducing fraud losses. No external vendor_id because this is not outsourced.",
+      "built_in_house": true
+    },
+    {
+      "system_id": "SYS-NOTIFICATION",
+      "name": "Customer Notification Service",
+      "purpose": "Sends in-app, push and email notifications, including payment and fraud-warning messages.",
+      "category": "customer_data",
+      "hosting": "cloud_hosted_eea",
+      "vendor_id": "VND-CORE-BANKING",
+      "owner_cost_centre_id": "CC-600",
+      "critical_or_important": false,
+      "notes": null
+    },
+    {
+      "system_id": "SYS-ICT-REGISTER",
+      "name": "ICT Service Register",
+      "purpose": "Maps critical business services to applications, infrastructure and vendors.",
+      "category": "governance",
+      "hosting": "cloud_hosted_eea",
+      "vendor_id": "VND-GRC-PLATFORM",
+      "owner_cost_centre_id": "CC-500",
+      "critical_or_important": true,
+      "notes": "The register itself is where the known dependency-mapping gap lives: it does not consistently capture cloud components and vendor subcontractors for each critical service. See 05_operations/dependencies.json for the concrete, checkable form of this gap.",
+      "important_data": "criticality, RTO/RPO, test results, and subcontractor mapping"
+    },
+    {
+      "system_id": "SYS-TREASURY-LIQUIDITY",
+      "name": "Treasury Liquidity Management System",
+      "purpose": "Manages the bank's liquidity portfolio (central bank deposits, sovereign and covered bonds) and tracks position-level FRTB applicability assessment.",
+      "category": "treasury",
+      "hosting": "cloud_hosted_eea",
+      "vendor_id": "VND-CORE-BANKING",
+      "owner_cost_centre_id": "CC-400",
+      "critical_or_important": false,
+      "important_data": "position, instrument type, issuer sector, market value, accounting book, trading-book flag, FRTB applicability assessment",
+      "notes": "Feeds 03_exposure/trading_book.csv. Consistent with bank_profile.json (material_trading_book: false, internal_market_risk_model: false) and BL-TREASURY in business_lines.json (material_trading_activity: false) - this system manages a small, held-to-liquidity portfolio in the banking book, not an active trading book. Position data in trading_book.csv is dated 2026-06-30, which is already more than two months behind this dataset's as_of_date (2026-09-03) - worth checking whether that refresh cadence is fast enough for any threshold-monitoring requirement."
+    }
+  ]
+}

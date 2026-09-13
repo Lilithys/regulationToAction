@@ -1,0 +1,284 @@
+[
+  {
+    "action_id": "ACT-ESG-PORTFOLIO-CONTROL",
+    "title": "Establish a portfolio-wide ESG-risk control",
+    "requirement_ids": [
+      "REQ-ESG-RISK-APPETITE-001",
+      "REQ-ESG-RISK-INTEGRATION-001",
+      "REQ-ESG-CREDIT-MONITORING-001",
+      "REQ-ESG-RISK-KRI-001",
+      "REQ-ESG-LONG-HORIZON-001"
+    ],
+    "priority": "high",
+    "status": "proposed",
+    "owner_role_id": "ROLE-HEAD-LENDING",
+    "accountable_role_id": "ROLE-CHIEF-RISK",
+    "cost_centre_id": "CC-100",
+    "affected_process_ids": [
+      "PROC-CREDIT-RISK-MONITORING",
+      "PROC-CREDIT-ORIGINATION"
+    ],
+    "affected_system_ids": [
+      "SYS-RISK-ENGINE"
+    ],
+    "affected_data_asset_ids": [
+      "DATA-LOANS-EXPOSURES",
+      "DATA-ESG-CLIMATE-RISK"
+    ],
+    "affected_control_ids": [
+      "CTRL-ESG-ONBOARD-SCREEN"
+    ],
+    "estimated_internal_days": 28,
+    "estimated_external_cost_eur": 0,
+    "estimated_internal_cost_eur": 11648,
+    "estimated_total_cost_eur": 11648,
+    "target_date": "2026-12-31",
+    "required_evidence_ids": [
+      "EVD-ESG-CONTROL-DESIGN",
+      "EVD-ESG-CONTROL-TEST"
+    ],
+    "assumptions": [
+      "The material SME portfolio is managed through the stated credit-risk processes."
+    ],
+    "source_basis": "Synthetic reference plan; amounts are scenario estimates, not bunq costs or vendor quotes.",
+    "closure_criteria": "Approved control is operating across the SME portfolio and has passed a documented effectiveness test.",
+    "regulatory_due_date": "2026-01-11",
+    "deadline_status": "past_application_date",
+    "target_date_basis": "Unapproved internal remediation target; does not extend the regulatory due date.",
+    "human_review_status": "pending",
+    "reviewed_by": null,
+    "reviewed_at": null,
+    "planning_status": "needs_capacity_confirmation",
+    "synthetic": true,
+    "provenance": {
+      "origin": "synthetic_bank_design",
+      "source_file": "person4/08_evidence/actions.json",
+      "calibration_version": "0.2.1",
+      "notes": [
+        "Preserved synthetic scenario fact; not a fact about bunq."
+      ]
+    }
+  },
+  {
+    "action_id": "ACT-ESG-DATA-REMEDIATION",
+    "title": "Remediate ESG data coverage for material SME exposures",
+    "requirement_ids": [
+      "REQ-ESG-DATA-GAPS-001"
+    ],
+    "priority": "high",
+    "status": "proposed",
+    "owner_role_id": "ROLE-CIO",
+    "accountable_role_id": "ROLE-HEAD-CREDIT-RISK",
+    "cost_centre_id": "CC-300",
+    "affected_process_ids": [
+      "PROC-CREDIT-RISK-MONITORING"
+    ],
+    "affected_system_ids": [
+      "SYS-RISK-ENGINE",
+      "SYS-DATA-PLATFORM"
+    ],
+    "affected_data_asset_ids": [
+      "DATA-LOANS-EXPOSURES",
+      "DATA-ESG-CLIMATE-RISK"
+    ],
+    "affected_control_ids": [],
+    "estimated_internal_days": 46,
+    "estimated_external_cost_eur": 12000,
+    "estimated_internal_cost_eur": 39100,
+    "estimated_total_cost_eur": 51100,
+    "target_date": "2027-03-31",
+    "required_evidence_ids": [
+      "EVD-ESG-DATA-PROFILE",
+      "EVD-ESG-DATA-QUALITY-REPORT"
+    ],
+    "assumptions": [
+      "Missing ESG fields can be sourced or derived subject to data-governance approval."
+    ],
+    "source_basis": "Synthetic reference plan; amounts are scenario estimates, not bunq costs or vendor quotes.",
+    "closure_criteria": "Data profile evidences agreed coverage threshold and recurring quality monitoring is live.",
+    "regulatory_due_date": "2026-01-11",
+    "deadline_status": "past_application_date",
+    "target_date_basis": "Unapproved internal remediation target; does not extend the regulatory due date.",
+    "human_review_status": "pending",
+    "reviewed_by": null,
+    "reviewed_at": null,
+    "planning_status": "needs_capacity_confirmation",
+    "synthetic": true,
+    "provenance": {
+      "origin": "synthetic_bank_design",
+      "source_file": "person4/08_evidence/actions.json",
+      "calibration_version": "0.2.1",
+      "notes": [
+        "Preserved synthetic scenario fact; not a fact about bunq."
+      ]
+    }
+  },
+  {
+    "action_id": "ACT-IPS-MOBILE-VOP",
+    "title": "Implement Verification of Payee in mobile banking",
+    "requirement_ids": [
+      "REQ-IPS-VOP-001"
+    ],
+    "priority": "high",
+    "status": "proposed",
+    "owner_role_id": "ROLE-HEAD-DIGITAL",
+    "accountable_role_id": "ROLE-HEAD-PAYMENTS",
+    "cost_centre_id": "CC-300",
+    "affected_process_ids": [
+      "PROC-PAYMENT-INITIATION"
+    ],
+    "affected_system_ids": [
+      "SYS-MOBILE-APP",
+      "SYS-PAYMENTS-HUB"
+    ],
+    "affected_data_asset_ids": [
+      "DATA-PAYMENT-OPERATIONS"
+    ],
+    "affected_vendor_ids": [
+      "VND-VOP-PROVIDER"
+    ],
+    "affected_control_ids": [
+      "CTRL-VOP-WEB"
+    ],
+    "estimated_internal_days": 38,
+    "estimated_external_cost_eur": 18000,
+    "estimated_internal_cost_eur": 32300,
+    "estimated_total_cost_eur": 50300,
+    "target_date": "2026-10-31",
+    "required_evidence_ids": [
+      "EVD-IPS-MOBILE-RELEASE",
+      "EVD-IPS-VOP-TEST-RESULTS",
+      "EVD-IPS-VENDOR-SLA"
+    ],
+    "assumptions": [
+      "The existing web Verification of Payee vendor interface can be reused for mobile."
+    ],
+    "source_basis": "Synthetic reference plan; amounts are scenario estimates, not bunq costs or vendor quotes.",
+    "closure_criteria": "Production mobile payments invoke Verification of Payee and release, testing, and vendor-SLA evidence are approved.",
+    "regulatory_due_date": "2025-10-09",
+    "deadline_status": "past_application_date",
+    "target_date_basis": "Unapproved internal remediation target; does not extend the regulatory due date.",
+    "human_review_status": "pending",
+    "reviewed_by": null,
+    "reviewed_at": null,
+    "planning_status": "needs_capacity_confirmation",
+    "synthetic": true,
+    "provenance": {
+      "origin": "synthetic_bank_design",
+      "source_file": "person4/08_evidence/actions.json",
+      "calibration_version": "0.2.1",
+      "notes": [
+        "Preserved synthetic scenario fact; not a fact about bunq."
+      ]
+    }
+  },
+  {
+    "action_id": "ACT-DORA-DEPENDENCY-MAP",
+    "title": "Complete critical-service and third-party dependency mapping",
+    "requirement_ids": [
+      "REQ-DORA-DEPENDENCY-MAP-001"
+    ],
+    "priority": "high",
+    "status": "proposed",
+    "owner_role_id": "ROLE-CIO",
+    "accountable_role_id": "ROLE-COO",
+    "cost_centre_id": "CC-300",
+    "affected_process_ids": [
+      "PROC-ICT-RESILIENCE"
+    ],
+    "affected_system_ids": [
+      "SYS-ICT-REGISTER"
+    ],
+    "affected_data_asset_ids": [
+      "DATA-ICT-ASSETS-THIRD-PARTIES"
+    ],
+    "affected_vendor_ids": [
+      "VND-VOP-PROVIDER"
+    ],
+    "affected_control_ids": [
+      "CTRL-DORA-DEPENDENCY-MAP"
+    ],
+    "estimated_internal_days": 42,
+    "estimated_external_cost_eur": 24000,
+    "estimated_internal_cost_eur": 35700,
+    "estimated_total_cost_eur": 59700,
+    "target_date": "2026-12-31",
+    "required_evidence_ids": [
+      "EVD-DORA-DEPENDENCY-MAP",
+      "EVD-DORA-CRITICAL-SERVICE-ATTESTATION"
+    ],
+    "assumptions": [
+      "The CMDB and vendor-risk portal contain enough source records to reconcile the initial map."
+    ],
+    "source_basis": "Synthetic reference plan; amounts are scenario estimates, not bunq costs or vendor quotes.",
+    "closure_criteria": "Every critical service has an approved dependency map with systems, supporting vendors, owners, and review date.",
+    "regulatory_due_date": "2025-01-17",
+    "deadline_status": "past_application_date",
+    "target_date_basis": "Unapproved internal remediation target; does not extend the regulatory due date.",
+    "human_review_status": "pending",
+    "reviewed_by": null,
+    "reviewed_at": null,
+    "planning_status": "needs_capacity_confirmation",
+    "synthetic": true,
+    "provenance": {
+      "origin": "synthetic_bank_design",
+      "source_file": "person4/08_evidence/actions.json",
+      "calibration_version": "0.2.1",
+      "notes": [
+        "Preserved synthetic scenario fact; not a fact about bunq."
+      ]
+    }
+  },
+  {
+    "action_id": "ACT-FRTB-APPLICABILITY-MONITOR",
+    "title": "Refresh market-risk scope evidence and document conditional applicability",
+    "requirement_ids": [
+      "REQ-FRTB-SMALL-BOOK-001"
+    ],
+    "priority": "low",
+    "status": "proposed",
+    "owner_role_id": "ROLE-HEAD-TREASURY",
+    "accountable_role_id": "ROLE-CHIEF-RISK",
+    "cost_centre_id": "CC-400",
+    "affected_process_ids": [
+      "PROC-LIQUIDITY-MANAGEMENT"
+    ],
+    "affected_system_ids": [],
+    "affected_data_asset_ids": [
+      "DATA-TREASURY-LIQUIDITY"
+    ],
+    "affected_control_ids": [
+      "CTRL-FRTB-THRESHOLD-MONITOR"
+    ],
+    "estimated_internal_days": 8,
+    "estimated_external_cost_eur": 0,
+    "estimated_internal_cost_eur": 4352,
+    "estimated_total_cost_eur": 4352,
+    "target_date": "2026-09-30",
+    "required_evidence_ids": [
+      "EVD-FRTB-APPLICABILITY-MEMO",
+      "EVD-FRTB-ANNUAL-REVIEW"
+    ],
+    "assumptions": [
+      "Current full position inventory, FX/commodity exposure and legal review remain outstanding."
+    ],
+    "source_basis": "Synthetic reference plan; amounts are scenario estimates, not bunq costs or vendor quotes.",
+    "closure_criteria": "Current monthly facts and qualified interpretation are documented; do not assert exemption based solely on absence of trading desk.",
+    "regulatory_due_date": null,
+    "deadline_status": "scope_review_pending",
+    "target_date_basis": "Unapproved internal remediation target; does not extend the regulatory due date.",
+    "human_review_status": "pending",
+    "reviewed_by": null,
+    "reviewed_at": null,
+    "planning_status": "needs_capacity_confirmation",
+    "synthetic": true,
+    "provenance": {
+      "origin": "synthetic_bank_design",
+      "source_file": "person4/08_evidence/actions.json",
+      "calibration_version": "0.2.1",
+      "notes": [
+        "Preserved synthetic scenario fact; not a fact about bunq."
+      ]
+    }
+  }
+]

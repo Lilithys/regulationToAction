@@ -1,0 +1,17 @@
+cost_centre_id,cost_centre_name,cost_type,unit,unit_cost_eur,effective_from,calculation_basis,data_classification,source_reference
+CC-ALL,All functions,personnel_expense,annual,62548000,2025-01-01,Published group personnel expense,reference_derived,bunq Annual Report 2025 p.59 and p.78
+CC-ALL,All functions,average_fte,fte,658,2025-01-01,Published average FTE,reference_derived,bunq Annual Report 2025 p.79
+CC-ALL,All functions,blended_personnel_cost,fte_year,95058,2025-01-01,62548000 / 658 rounded,derived_from_reference,bunq Annual Report 2025 p.78-79
+CC-ALL,All functions,blended_personnel_cost,day,432,2025-01-01,95058 / 220 productive days rounded,modelled_from_reference,bunq Annual Report 2025 p.78-79
+CC-500,Technology,technical_expense,annual,14728000,2025-01-01,Published technical expense,reference_derived,bunq Annual Report 2025 p.79
+CC-210,Credit Risk,internal_day,day,650,2025-01-01,1.5x reference-derived blended day rate,modelled_from_reference,bunq Annual Report 2025 p.78-79
+CC-500,Technology,internal_day,day,780,2025-01-01,1.8x reference-derived blended day rate,modelled_from_reference,bunq Annual Report 2025 p.78-79
+CC-520,Technology Risk,internal_day,day,820,2025-01-01,1.9x reference-derived blended day rate,modelled_from_reference,bunq Annual Report 2025 p.78-79
+CC-530,Operational Resilience,internal_day,day,690,2025-01-01,1.6x reference-derived blended day rate,modelled_from_reference,bunq Annual Report 2025 p.78-79
+CC-600,Payments,internal_day,day,735,2025-01-01,1.7x reference-derived blended day rate,modelled_from_reference,bunq Annual Report 2025 p.78-79
+CC-610,Digital Banking,internal_day,day,760,2025-01-01,1.76x reference-derived blended day rate,modelled_from_reference,bunq Annual Report 2025 p.78-79
+CC-120,Compliance,internal_day,day,670,2025-01-01,1.55x reference-derived blended day rate,modelled_from_reference,bunq Annual Report 2025 p.78-79
+CC-700,Treasury,internal_day,day,700,2025-01-01,1.62x reference-derived blended day rate,modelled_from_reference,bunq Annual Report 2025 p.78-79
+CC-600,Payments,vendor_setup,fixed,18000,2025-01-01,Scenario integration assumption,synthetic_assumption,Not disclosed in reference reports
+CC-600,Payments,vendor_transaction,transaction,0.04,2025-01-01,Scenario transaction-cost assumption,synthetic_assumption,Not disclosed in reference reports
+CC-500,Technology,software_subscription,annual,24000,2025-01-01,Scenario repository licence assumption,synthetic_assumption,Not disclosed in reference reports

@@ -1,0 +1,134 @@
+[
+  {
+    "path": "person1/04_governance/controls.json",
+    "sha256": "ee892f7f62c64086d3e5d796e60dbc7bb2b7d31e551a7619a91a52779101ce3a"
+  },
+  {
+    "path": "person1/04_governance/policies.json",
+    "sha256": "03e31a6d361e1e1f9cab4243a903ba72a4a6df381326241673c9836dd450fdd1"
+  },
+  {
+    "path": "person1/04_governance/procedures.json",
+    "sha256": "085d979714eef30d3d696ea565771ac9155f1653219324e1cb43f15c9d68908f"
+  },
+  {
+    "path": "person1/regulatory_sources/change_register.json",
+    "sha256": "b86fbdacb048f7ae15e1e602b87c10e16c756af3c5db68effd19d7c471bd04d0"
+  },
+  {
+    "path": "person1/regulatory_sources/requirements.json",
+    "sha256": "71d22038ed0d8bedc5884956100dccda98d2e859724570ae17dcda822ed0f9b6"
+  },
+  {
+    "path": "person2/01_entity/bank_profile.json",
+    "sha256": "16d520248099676ffb8fc3b96425e5c916001e1202fdeb32a69f87cbc69e3513"
+  },
+  {
+    "path": "person2/02_business/business_lines.json",
+    "sha256": "91a3b70be248631b84a713e438ca9bca143b73fcd2542a62674d72b599c4800d"
+  },
+  {
+    "path": "person2/02_business/products.json",
+    "sha256": "5f1b570bdba972ab995580ce6e5cd876adbadf5f08312ed63367be8cba05300e"
+  },
+  {
+    "path": "person3/critical_services.json",
+    "sha256": "6cab796561c3833b066f088d3febd2cd46476399924f7917041b5398eed4b3af"
+  },
+  {
+    "path": "person3/data_assets.json",
+    "sha256": "6d364a293abe1158dc5e4443b90f7265b0770b2a00b5d5b440218b98da6e50a8"
+  },
+  {
+    "path": "person3/dependencies.json",
+    "sha256": "3bedb19de58641d8e0c74ca763682bab8acd0119556c689f8b72fb0128cac8b7"
+  },
+  {
+    "path": "person3/processes.json",
+    "sha256": "5409caf4252315cebd603381a651e6ececd56307aa71289ea3c5d706e573f71e"
+  },
+  {
+    "path": "person3/systems.json",
+    "sha256": "86509520492ef4f85bb6abd621a2a30f2477a7008cb9708c91fb01437b26c7dc"
+  },
+  {
+    "path": "person3/vendors.json",
+    "sha256": "00126f1617ef98d6604e03fa4339fc2e9a18c75c9ec42a89c1911b357095e25b"
+  },
+  {
+    "path": "person4/06_organisation/roles.json",
+    "sha256": "383843d4458d3fa6f3b8f45e85bc65fc2ce8f0f26d59d572a8a79162c562760c"
+  },
+  {
+    "path": "person4/08_evidence/actions.json",
+    "sha256": "af752294d635f43bd95731a8e3793d63cf7007d6acf579f86cb1d4c2e9823dee"
+  },
+  {
+    "path": "person4/08_evidence/evidence_register.json",
+    "sha256": "9d5c96ace397091a71a33a1388234035a448a98e44d9c50c1043a18d8e838256"
+  },
+  {
+    "path": "person4/evaluation_ground_truth/expected_assessments.json",
+    "sha256": "6fb304e9180953af5814dec0c552e752c6f922144e9fae9b1041e75efc0a707d"
+  },
+  {
+    "path": "person2/03_exposure/esg_assessment_snapshot.csv",
+    "sha256": "219ecbc09beae2496102f3d9cdc0b490a13ac03afbe095f21b390dd902736aa0"
+  },
+  {
+    "path": "person2/03_exposure/lending_portfolio.csv",
+    "sha256": "f8f578be152c6cb3018ca1a1ece23c47b5d3fa95b42d2b606cd036928fd60986"
+  },
+  {
+    "path": "person2/03_exposure/mortgage_book.csv",
+    "sha256": "9f477b99eb58920d15eede7422d14902ed04a755223f57b8ec8d2050478aba2a"
+  },
+  {
+    "path": "person2/03_exposure/payments.csv",
+    "sha256": "475b817d78b1d28218d242f51bf97e8b63da0ba93e15d63384869ef03c186cb5"
+  },
+  {
+    "path": "person2/03_exposure/trading_book.csv",
+    "sha256": "3c211ef22c4dfbb592eacfe4679fb4979de6c5f03dee5e32a8c7d63ed1af3bdc"
+  },
+  {
+    "path": "person4/06_organisation/raci.csv",
+    "sha256": "8dd89b5089be28d25fe5b5bbc2d5413f4e7028697c74c339a9cd1803dfe0951b"
+  },
+  {
+    "path": "person4/07_economics/change_capacity.csv",
+    "sha256": "343c0b7a711c6804d9ad4aae8223a7b06f642b0b5781cb8048da2e1e949fe7ae"
+  },
+  {
+    "path": "person4/07_economics/operational_costs.csv",
+    "sha256": "0f6977e9faf49d5c5856fceca96cb88c44669291696b49d59f45cda8779bf671"
+  },
+  {
+    "path": "Bank_Context_Fictional_Digital_Bank.md",
+    "sha256": "2b387aefcc910d25c5b63b6016b26f2187b7c5bfe9519a4fd65e0aa4391349e6"
+  },
+  {
+    "path": "Synthetic_Bank_Dataset_Work_Allocation.md",
+    "sha256": "532f418edd8aa85978ce6e9a20fdcbd8e27a532eab5e320d1df4f0f2c97ef8e0"
+  },
+  {
+    "path": "regulatory-governance-dataset/README.md",
+    "sha256": "2728a8343e63ebed9247b3713d51e8c5d67f0f85a2544fabd2e58cc7b2a6462f"
+  },
+  {
+    "path": "regulatory-governance-dataset/SKILL.md",
+    "sha256": "97188bc6fff81d757724f25f5dc7dfc610195404f6a2be0851599b0ce64fa7f0"
+  },
+  {
+    "path": "regulatory-governance-dataset/references/data-contract.md",
+    "sha256": "3936488f1c9f59063ceec450b97c1ee167710df49fde2ed58f91b536cf82f6ba"
+  },
+  {
+    "path": "regulatory-governance-dataset/references/first-demo.md",
+    "sha256": "d3a0cca7d2c3cf57492c7334999dbde6f201ad52ea41a88bb73302cac43a08a8"
+  },
+  {
+    "path": "regulatory-governance-dataset/references/research-protocol.md",
+    "sha256": "d7dfebc5729fd83433765fa585ce72632e8d7b3a844957fcc11e9e7fe36d2272"
+  }
+]

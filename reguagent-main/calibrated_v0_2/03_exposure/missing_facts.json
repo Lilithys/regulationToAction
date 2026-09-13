@@ -1,0 +1,29 @@
+[
+  {
+    "fact_id": "FACT-ESG-ENERGY-COVERAGE",
+    "field": "sme_energy_cost_data_coverage_pct",
+    "value": null,
+    "question": "For the existing SME borrower population, what percentage has usable energy-cost data?",
+    "owner_role_id": "ROLE-HEAD-LENDING",
+    "reason": "Changes ESG data completeness and confidence.",
+    "synthetic": true
+  },
+  {
+    "fact_id": "FACT-FRTB-CURRENT-EXPOSURE",
+    "field": "current_complete_market_risk_position_inventory",
+    "value": null,
+    "question": "Provide the latest month-end trading and off-balance-sheet inventory, including banking-book FX and commodity positions.",
+    "owner_role_id": "ROLE-HEAD-TREASURY",
+    "reason": "June snapshot cannot establish current Article 94 eligibility or all market-risk scope.",
+    "synthetic": true
+  },
+  {
+    "fact_id": "FACT-IPS-OTHER-CHANNELS",
+    "field": "standard_sct_and_api_vop_evidence",
+    "value": null,
+    "question": "Provide VoP capability and execution evidence for standard SCT and API initiation.",
+    "owner_role_id": "ROLE-HEAD-PAYMENTS",
+    "reason": "Demo scope exclusion is not a legal exemption.",
+    "synthetic": true
+  }
+]

@@ -1,0 +1,108 @@
+{
+  "missing_markets": {
+    "applicability": "not_applicable",
+    "rationale": "PRD-SME-WORKING-CAPITAL has no recorded markets; cannot confirm region."
+  },
+  "us_only_markets": {
+    "applicability": "direct",
+    "rationale": "PRD-SME-WORKING-CAPITAL markets ['US'] fall within ['EU', 'IE']. product_type=sme_term_loan -> direct (Rule 7 lookup). Applied as of 2026-01-11 (in_force)."
+  },
+  "null_entity_type": {
+    "applicability": "not_applicable",
+    "rationale": "Institution type does not match: Confirm the legal entity classification against the cited scope. -> not_met"
+  },
+  "future_date_bypasses_entity_check": {
+    "applicability": "indirect",
+    "rationale": "Not yet effective; application date 2026-01-11."
+  },
+  "unknown_product_omitted": {
+    "new_product_evaluated": false,
+    "overall": "direct"
+  },
+  "empty_ahp_pairs_accepted": {
+    "weights": {
+      "materiality": 1.0,
+      "transition_risk": 0.0,
+      "physical_risk": 0.0,
+      "sector_concentration": 0.0,
+      "review_urgency": 0.0
+    },
+    "cr": -0.8928571428571428
+  },
+  "negative_review_input": {
+    "input": "n",
+    "resulting_status": "confirmed"
+  },
+  "unresolved_evidence_id_accepted_by_gap": {
+    "requirement_id": "REQ-PROBE",
+    "status": "evidenced",
+    "control_ids": [
+      "CTRL-PROBE"
+    ],
+    "gap_flags": [],
+    "rationale": "Linked control(s) cover the checked scope and carry recorded operating evidence."
+  },
+  "proxy_with_full_confidence": {
+    "record_id": "PORT-SME-006",
+    "product_id": "PRD-SME-WORKING-CAPITAL",
+    "exposure_score": 38.1,
+    "exposure_range": [
+      38.1,
+      38.1
+    ],
+    "exposure_band": "low",
+    "exposure_indeterminate": false,
+    "unresolved_dimensions": [],
+    "proxy_dimensions": [
+      "transition_risk",
+      "physical_risk"
+    ],
+    "confidence_score": 100.0,
+    "confidence_band": "high",
+    "data_debt_score": 0.0,
+    "human_review_status": "not_reviewed"
+  },
+  "same_cohort_split_into_two_rows": {
+    "before": {
+      "record_id": "PORT-SME-002",
+      "exposure_score": 84.4,
+      "exposure_band": "high"
+    },
+    "after": [
+      {
+        "record_id": "PORT-SME-002",
+        "exposure_score": 65.5,
+        "exposure_band": "medium"
+      },
+      {
+        "record_id": "PORT-PROBE-SPLIT",
+        "exposure_score": 65.5,
+        "exposure_band": "medium"
+      }
+    ],
+    "portfolio_balance_and_borrower_count_unchanged": true
+  },
+  "cached_demo_llm_calls": 0,
+  "future_assessment_date_freshness": 100,
+  "response_ignores_removed_requirements_and_controls": true,
+  "option_scope_vs_action_scope": {
+    "option_requirement_ids": [
+      "REQ-ESG-DATA-GAPS-001",
+      "REQ-ESG-CREDIT-MONITORING-001"
+    ],
+    "action_requirement_ids": [
+      "REQ-ESG-CREDIT-MONITORING-001",
+      "REQ-ESG-CREDIT-POLICY-001",
+      "REQ-ESG-DATA-GAPS-001",
+      "REQ-ESG-DATA-SELECTION-001",
+      "REQ-ESG-LONG-HORIZON-001",
+      "REQ-ESG-RISK-APPETITE-001",
+      "REQ-ESG-RISK-INTEGRATION-001",
+      "REQ-ESG-RISK-KRI-001"
+    ],
+    "owner_role_id": null,
+    "target_date": null,
+    "action_cost_eur": 451436.0,
+    "setup_cost_eur": 154436.0
+  }
+}

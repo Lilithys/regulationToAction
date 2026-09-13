@@ -1,0 +1,528 @@
+{
+  "_meta": {
+    "file": "05_operations/processes.json",
+    "owner": "Person 3 - Operations and technology",
+    "purpose": "Fictional Northstar current-state records; peer reports inform design only.",
+    "generated_at": "2026-09-03",
+    "as_of_date": "2026-09-08",
+    "entity_id": "ENT-NDB-PLC",
+    "design_references": [
+      "Bank_Context_Fictional_Digital_Bank.md — Key Processes And Capabilities table; Digital Operational Resilience section"
+    ],
+    "calibration_version": "0.2.1"
+  },
+  "processes": [
+    {
+      "process_id": "PROC-LOGIN-ACCESS",
+      "name": "Customer Login and Account Access",
+      "owner_department": "Technology Delivery",
+      "owner_cost_centre_id": "CC-300",
+      "current_state_as_documented": "Mobile app and web login, session and account-access management for all customers.",
+      "business_line_ids": [
+        "BL-RETAIL",
+        "BL-MORTGAGE",
+        "BL-SME"
+      ],
+      "supporting_systems": [
+        "SYS-MOBILE-APP",
+        "SYS-WEB-BANKING",
+        "SYS-CORE-BANKING"
+      ],
+      "channels": [
+        "mobile_app",
+        "web"
+      ],
+      "is_named_critical_business_service": true,
+      "notes": "One of the five business functions the bank formally designates as a critical business service.",
+      "synthetic": true,
+      "provenance": {
+        "origin": "synthetic_bank_design",
+        "source_file": "person3/processes.json",
+        "calibration_version": "0.2.1",
+        "notes": [
+          "Preserved synthetic scenario fact; not a fact about bunq."
+        ]
+      }
+    },
+    {
+      "process_id": "PROC-ONBOARDING",
+      "name": "Digital Customer Onboarding and KYC",
+      "owner_department": "Financial Crime Operations",
+      "owner_cost_centre_id": "CC-500",
+      "current_state_as_documented": "Automated with manual exception handling.",
+      "business_line_ids": [
+        "BL-RETAIL",
+        "BL-SME"
+      ],
+      "supporting_systems": [
+        "SYS-ONBOARDING",
+        "SYS-CRM",
+        "SYS-SANCTIONS-ENGINE"
+      ],
+      "channels": [
+        "mobile_app",
+        "web"
+      ],
+      "is_named_critical_business_service": true,
+      "notes": "One of the five named critical business services.",
+      "synthetic": true,
+      "provenance": {
+        "origin": "synthetic_bank_design",
+        "source_file": "person3/processes.json",
+        "calibration_version": "0.2.1",
+        "notes": [
+          "Preserved synthetic scenario fact; not a fact about bunq."
+        ]
+      }
+    },
+    {
+      "process_id": "PROC-CREDIT-ORIGINATION",
+      "name": "Credit Origination",
+      "owner_department": "Retail and SME Lending",
+      "owner_cost_centre_id": "CC-100",
+      "current_state_as_documented": "Automated scorecards with policy rules.",
+      "business_line_ids": [
+        "BL-LENDING",
+        "BL-RETAIL",
+        "BL-SME"
+      ],
+      "supporting_systems": [
+        "SYS-LOAN-ORIG",
+        "SYS-RISK-ENGINE",
+        "SYS-CRM"
+      ],
+      "channels": [
+        "mobile_app",
+        "web"
+      ],
+      "is_named_critical_business_service": true,
+      "notes": "Covers consumer loans, green home-improvement loans and SME working-capital loans. One of the five named critical business services (as 'loan origination'). Uses customer-profile and affordability data collected at onboarding to offer further products, but the current workflow does not force a re-confirmation of material customer-circumstance changes before every recommendation - see 08_evidence for the associated gap once Person 4 publishes it.",
+      "synthetic": true,
+      "provenance": {
+        "origin": "synthetic_bank_design",
+        "source_file": "person3/processes.json",
+        "calibration_version": "0.2.1",
+        "notes": [
+          "Preserved synthetic scenario fact; not a fact about bunq."
+        ]
+      }
+    },
+    {
+      "process_id": "PROC-MORTGAGE-ORIGINATION",
+      "name": "Mortgage Origination",
+      "owner_department": "Retail and SME Lending",
+      "owner_cost_centre_id": "CC-100",
+      "current_state_as_documented": "Digital application and underwriting for owner-occupied residential mortgages, Ireland only.",
+      "business_line_ids": [
+        "BL-MORTGAGE",
+        "BL-LENDING"
+      ],
+      "supporting_systems": [
+        "SYS-LOAN-ORIG",
+        "SYS-RISK-ENGINE"
+      ],
+      "channels": [
+        "mobile_app",
+        "web",
+        "remote_mortgage_adviser"
+      ],
+      "is_named_critical_business_service": false,
+      "notes": null,
+      "synthetic": true,
+      "provenance": {
+        "origin": "synthetic_bank_design",
+        "source_file": "person3/processes.json",
+        "calibration_version": "0.2.1",
+        "notes": [
+          "Preserved synthetic scenario fact; not a fact about bunq."
+        ]
+      }
+    },
+    {
+      "process_id": "PROC-MORTGAGE-SERVICING",
+      "name": "Mortgage Servicing",
+      "owner_department": "Mortgage Operations",
+      "owner_cost_centre_id": "CC-700",
+      "current_state_as_documented": "Third-party servicing with NDB case approval and monthly oversight.",
+      "business_line_ids": [
+        "BL-MORTGAGE"
+      ],
+      "supporting_systems": [
+        "SYS-MORTGAGE-SERVICING",
+        "SYS-CRM"
+      ],
+      "channels": [
+        "mobile_app",
+        "web"
+      ],
+      "is_named_critical_business_service": true,
+      "notes": "One of the five named critical business services. Operated end-to-end by VND-MORTGAGE-SERVICER under NDB policy; NDB retains oversight of arrears strategy, vulnerable-customer outcomes and approval criteria.",
+      "synthetic": true,
+      "provenance": {
+        "origin": "synthetic_bank_design",
+        "source_file": "person3/processes.json",
+        "calibration_version": "0.2.1",
+        "notes": [
+          "Preserved synthetic scenario fact; not a fact about bunq."
+        ]
+      }
+    },
+    {
+      "process_id": "PROC-MORTGAGE-ARREARS",
+      "name": "Mortgage Arrears Management",
+      "owner_department": "Mortgage Operations",
+      "owner_cost_centre_id": "CC-700",
+      "current_state_as_documented": "Third-party servicing with NDB case approval and monthly oversight.",
+      "business_line_ids": [
+        "BL-MORTGAGE"
+      ],
+      "supporting_systems": [
+        "SYS-MORTGAGE-SERVICING",
+        "SYS-CRM"
+      ],
+      "channels": [
+        "mobile_app",
+        "web"
+      ],
+      "is_named_critical_business_service": false,
+      "notes": "3,800 mortgage accounts in arrears as of the reporting period (see Bank_Context_Fictional_Digital_Bank.md).",
+      "synthetic": true,
+      "provenance": {
+        "origin": "synthetic_bank_design",
+        "source_file": "person3/processes.json",
+        "calibration_version": "0.2.1",
+        "notes": [
+          "Preserved synthetic scenario fact; not a fact about bunq."
+        ]
+      }
+    },
+    {
+      "process_id": "PROC-ARA",
+      "name": "Alternative Repayment Arrangements (ARA)",
+      "owner_department": "Mortgage Operations and Credit Risk",
+      "owner_cost_centre_id": "CC-700",
+      "current_state_as_documented": "Standard affordability assessment and documented approval hierarchy.",
+      "business_line_ids": [
+        "BL-MORTGAGE"
+      ],
+      "supporting_systems": [
+        "SYS-MORTGAGE-SERVICING",
+        "SYS-RISK-ENGINE"
+      ],
+      "channels": [
+        "mobile_app",
+        "web"
+      ],
+      "is_named_critical_business_service": false,
+      "notes": "650 of the 3,800 arrears accounts have an active ARA (term extension, temporary interest-only period, or split repayment).",
+      "synthetic": true,
+      "provenance": {
+        "origin": "synthetic_bank_design",
+        "source_file": "person3/processes.json",
+        "calibration_version": "0.2.1",
+        "notes": [
+          "Preserved synthetic scenario fact; not a fact about bunq."
+        ]
+      }
+    },
+    {
+      "process_id": "PROC-CREDIT-RISK-MONITORING",
+      "name": "Credit Risk Monitoring",
+      "owner_department": "Risk Management",
+      "owner_cost_centre_id": "CC-200",
+      "current_state_as_documented": "Monthly portfolio monitoring; limited ESG-risk indicators.",
+      "business_line_ids": [
+        "BL-LENDING"
+      ],
+      "supporting_systems": [
+        "SYS-RISK-ENGINE",
+        "SYS-DATA-PLATFORM"
+      ],
+      "channels": [
+        "not_applicable"
+      ],
+      "is_named_critical_business_service": false,
+      "notes": "SME working-capital lending is the most useful starting point for a first ESG-risk assessment use case, since borrower sector, turnover, location and loan purpose are already recorded but environmental-risk data is incomplete (see 02_business and 03_exposure for the underlying data).",
+      "synthetic": true,
+      "provenance": {
+        "origin": "synthetic_bank_design",
+        "source_file": "person3/processes.json",
+        "calibration_version": "0.2.1",
+        "notes": [
+          "Preserved synthetic scenario fact; not a fact about bunq."
+        ]
+      }
+    },
+    {
+      "process_id": "PROC-PAYMENT-INITIATION",
+      "name": "Payment Initiation",
+      "owner_department": "Payments Operations",
+      "owner_cost_centre_id": "CC-600",
+      "current_state_as_documented": "Receive and send SEPA Instant since 2025; Verification of Payee available on web, not mobile.",
+      "business_line_ids": [
+        "BL-PAYMENTS"
+      ],
+      "supporting_systems": [
+        "SYS-MOBILE-APP",
+        "SYS-WEB-BANKING",
+        "SYS-PAYMENTS-HUB",
+        "SYS-VOP",
+        "SYS-BENEFICIARY-STORE",
+        "SYS-SANCTIONS-ENGINE",
+        "SYS-FRAUD-ENGINE",
+        "SYS-NOTIFICATION"
+      ],
+      "channels": [
+        "mobile_app",
+        "web",
+        "api"
+      ],
+      "is_named_critical_business_service": true,
+      "notes": "One of the five named critical business services. The critical payment chain spans the payments hub, mobile app, beneficiary store, sanctions engine, fraud engine, customer-notification service and the external Verification of Payee provider - matches the chain described in the bank context document exactly.",
+      "synthetic": true,
+      "provenance": {
+        "origin": "synthetic_bank_design",
+        "source_file": "person3/processes.json",
+        "calibration_version": "0.2.1",
+        "notes": [
+          "Preserved synthetic scenario fact; not a fact about bunq."
+        ]
+      }
+    },
+    {
+      "process_id": "PROC-OPEN-BANKING-PIS",
+      "name": "Open Banking Payment Initiation",
+      "owner_department": "Payments Operations",
+      "owner_cost_centre_id": "CC-600",
+      "current_state_as_documented": "API-based payment initiation on behalf of third-party providers.",
+      "business_line_ids": [
+        "BL-PAYMENTS"
+      ],
+      "supporting_systems": [
+        "SYS-PAYMENTS-HUB",
+        "SYS-VOP",
+        "SYS-SANCTIONS-ENGINE"
+      ],
+      "channels": [
+        "api"
+      ],
+      "is_named_critical_business_service": false,
+      "notes": "API is outside the selected demo remediation, but its legal coverage remains unresolved.",
+      "synthetic": true,
+      "provenance": {
+        "origin": "synthetic_bank_design",
+        "source_file": "person3/processes.json",
+        "calibration_version": "0.2.1",
+        "notes": [
+          "Preserved synthetic scenario fact; not a fact about bunq."
+        ]
+      }
+    },
+    {
+      "process_id": "PROC-REGULATORY-REPORTING",
+      "name": "Regulatory Reporting",
+      "owner_department": "Finance Regulatory Reporting",
+      "owner_cost_centre_id": "CC-400",
+      "current_state_as_documented": "Central reporting team, manual reconciliation for some reports.",
+      "business_line_ids": [
+        "BL-TREASURY"
+      ],
+      "supporting_systems": [
+        "SYS-DATA-PLATFORM",
+        "SYS-CORE-BANKING"
+      ],
+      "channels": [
+        "not_applicable"
+      ],
+      "is_named_critical_business_service": false,
+      "notes": null,
+      "synthetic": true,
+      "provenance": {
+        "origin": "synthetic_bank_design",
+        "source_file": "person3/processes.json",
+        "calibration_version": "0.2.1",
+        "notes": [
+          "Preserved synthetic scenario fact; not a fact about bunq."
+        ]
+      }
+    },
+    {
+      "process_id": "PROC-DATA-GOVERNANCE",
+      "name": "Data Governance",
+      "owner_department": "Chief Data Office",
+      "owner_cost_centre_id": "CC-300",
+      "current_state_as_documented": "Enterprise data catalogue and data-quality controls.",
+      "business_line_ids": [
+        "BL-LENDING",
+        "BL-SME"
+      ],
+      "supporting_systems": [
+        "SYS-DATA-PLATFORM"
+      ],
+      "channels": [
+        "not_applicable"
+      ],
+      "is_named_critical_business_service": false,
+      "notes": "Owns the data-quality checks referenced in 03_exposure - e.g. SME NACE sector code completeness.",
+      "synthetic": true,
+      "provenance": {
+        "origin": "synthetic_bank_design",
+        "source_file": "person3/processes.json",
+        "calibration_version": "0.2.1",
+        "notes": [
+          "Preserved synthetic scenario fact; not a fact about bunq."
+        ]
+      }
+    },
+    {
+      "process_id": "PROC-MODEL-RISK",
+      "name": "Model Risk Management",
+      "owner_department": "Model Risk",
+      "owner_cost_centre_id": "CC-200",
+      "current_state_as_documented": "Formal validation for material credit-risk models.",
+      "business_line_ids": [
+        "BL-LENDING"
+      ],
+      "supporting_systems": [
+        "SYS-RISK-ENGINE"
+      ],
+      "channels": [
+        "not_applicable"
+      ],
+      "is_named_critical_business_service": false,
+      "notes": null,
+      "synthetic": true,
+      "provenance": {
+        "origin": "synthetic_bank_design",
+        "source_file": "person3/processes.json",
+        "calibration_version": "0.2.1",
+        "notes": [
+          "Preserved synthetic scenario fact; not a fact about bunq."
+        ]
+      }
+    },
+    {
+      "process_id": "PROC-THIRD-PARTY-MGMT",
+      "name": "Third-Party Management",
+      "owner_department": "Procurement and Operational Risk",
+      "owner_cost_centre_id": "CC-300",
+      "current_state_as_documented": "Vendor due diligence and annual reassessment.",
+      "business_line_ids": [
+        "BL-RETAIL",
+        "BL-MORTGAGE",
+        "BL-SME",
+        "BL-LENDING",
+        "BL-PAYMENTS",
+        "BL-TREASURY"
+      ],
+      "supporting_systems": [
+        "SYS-ICT-REGISTER"
+      ],
+      "channels": [
+        "not_applicable"
+      ],
+      "is_named_critical_business_service": false,
+      "notes": "Runs the due-diligence and reassessment cycle recorded per vendor in 05_operations/vendors.json.",
+      "synthetic": true,
+      "provenance": {
+        "origin": "synthetic_bank_design",
+        "source_file": "person3/processes.json",
+        "calibration_version": "0.2.1",
+        "notes": [
+          "Preserved synthetic scenario fact; not a fact about bunq."
+        ]
+      }
+    },
+    {
+      "process_id": "PROC-CHANGE-DELIVERY",
+      "name": "Change Delivery",
+      "owner_department": "Technology Delivery",
+      "owner_cost_centre_id": "CC-300",
+      "current_state_as_documented": "Agile product and technology teams.",
+      "business_line_ids": [
+        "BL-RETAIL",
+        "BL-SME",
+        "BL-MORTGAGE",
+        "BL-PAYMENTS",
+        "BL-TREASURY"
+      ],
+      "supporting_systems": [
+        "SYS-CORE-BANKING",
+        "SYS-DATA-PLATFORM"
+      ],
+      "channels": [
+        "not_applicable"
+      ],
+      "is_named_critical_business_service": false,
+      "notes": null,
+      "synthetic": true,
+      "provenance": {
+        "origin": "synthetic_bank_design",
+        "source_file": "person3/processes.json",
+        "calibration_version": "0.2.1",
+        "notes": [
+          "Preserved synthetic scenario fact; not a fact about bunq."
+        ]
+      }
+    },
+    {
+      "process_id": "PROC-ICT-RESILIENCE",
+      "name": "ICT Resilience",
+      "owner_department": "Technology Risk",
+      "owner_cost_centre_id": "CC-300",
+      "current_state_as_documented": "Critical-service register and annual disaster-recovery tests; vendor dependency mapping is incomplete.",
+      "business_line_ids": [
+        "BL-RETAIL",
+        "BL-SME",
+        "BL-MORTGAGE",
+        "BL-PAYMENTS",
+        "BL-TREASURY"
+      ],
+      "supporting_systems": [
+        "SYS-ICT-REGISTER"
+      ],
+      "channels": [
+        "not_applicable"
+      ],
+      "is_named_critical_business_service": false,
+      "notes": "Owns 05_operations/dependencies.json. The incomplete subcontractor mapping described there is this process's open item, not a separate finding.",
+      "synthetic": true,
+      "provenance": {
+        "origin": "synthetic_bank_design",
+        "source_file": "person3/processes.json",
+        "calibration_version": "0.2.1",
+        "notes": [
+          "Preserved synthetic scenario fact; not a fact about bunq."
+        ]
+      }
+    },
+    {
+      "process_id": "PROC-LIQUIDITY-MANAGEMENT",
+      "name": "Treasury Liquidity Management",
+      "owner_department": "Treasury",
+      "owner_cost_centre_id": "CC-400",
+      "current_state_as_documented": "Small liquidity portfolio held for balance-sheet purposes; no material trading desk or internal market-risk model.",
+      "business_line_ids": [
+        "BL-TREASURY"
+      ],
+      "supporting_systems": [
+        "SYS-TREASURY-LIQUIDITY",
+        "SYS-DATA-PLATFORM"
+      ],
+      "channels": [
+        "not_applicable"
+      ],
+      "is_named_critical_business_service": false,
+      "notes": "Owns 03_exposure/trading_book.csv. This was the one business line missing a dedicated process/system pairing in the first pass of this file - added on review.",
+      "synthetic": true,
+      "provenance": {
+        "origin": "synthetic_bank_design",
+        "source_file": "person3/processes.json",
+        "calibration_version": "0.2.1",
+        "notes": [
+          "Preserved synthetic scenario fact; not a fact about bunq."
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+.................................................................................................................................................................../opt/homebrew/Cellar/python@3.14/3.14.6/Frameworks/Python.framework/Versions/3.14/lib/python3.14/tempfile.py:484: ResourceWarning: Implicitly cleaning up <HTTPError 400: 'Bad Request'>
+  _warnings.warn(self.warn_message, ResourceWarning)
+.............................................................
+----------------------------------------------------------------------
+Ran 224 tests in 15.328s
+
+OK
+
+=== 待审核: REQ-TEST · exposure ===
+  transition_risk vs physical_risk: 比例=2 理由: test fixture
+  transition_risk vs review_urgency: 比例=4 理由: test fixture
+  physical_risk vs review_urgency: 比例=2 理由: test fixture
+已保存本版本的明确确认，CR=0.0000。
+
+=== 待审核: REQ-TEST · exposure ===
+  transition_risk vs physical_risk: 比例=2 理由: test fixture
+  transition_risk vs review_urgency: 比例=4 理由: test fixture
+  physical_risk vs review_urgency: 比例=2 理由: test fixture
+
+=== 待审核: REQ-TEST · exposure ===
+  transition_risk vs physical_risk: 比例=2 理由: test fixture
+  transition_risk vs review_urgency: 比例=4 理由: test fixture
+  physical_risk vs review_urgency: 比例=2 理由: test fixture
+
+=== 待审核: REQ-TEST · exposure ===
+  transition_risk vs physical_risk: 比例=2 理由: test fixture
+  transition_risk vs review_urgency: 比例=4 理由: test fixture
+  physical_risk vs review_urgency: 比例=2 理由: test fixture
+
+=== 待审核: REQ-TEST · exposure ===
+  transition_risk vs physical_risk: 比例=2 理由: test fixture
+  transition_risk vs review_urgency: 比例=4 理由: test fixture
+  physical_risk vs review_urgency: 比例=2 理由: test fixture
+
+=== 待审核: REQ-TEST · exposure ===
+  transition_risk vs physical_risk: 比例=2 理由: test fixture
+  transition_risk vs review_urgency: 比例=4 理由: test fixture
+  physical_risk vs review_urgency: 比例=2 理由: test fixture
+
+=== 待审核: REQ-TEST · exposure ===
+  transition_risk vs physical_risk: 比例=2 理由: test fixture
+  transition_risk vs review_urgency: 比例=4 理由: test fixture
+  physical_risk vs review_urgency: 比例=2 理由: test fixture
+
+=== 待审核: REQ-TEST · exposure ===
+  transition_risk vs physical_risk: 比例=2 理由: test fixture
+  transition_risk vs review_urgency: 比例=4 理由: test fixture
+  physical_risk vs review_urgency: 比例=2 理由: test fixture
+已保存本版本的明确确认，CR=0.0158。
+
+=== 待审核: REQ-TEST · exposure ===
+  transition_risk vs physical_risk: 比例=2 理由: test fixture
+  transition_risk vs review_urgency: 比例=4 理由: test fixture
+  physical_risk vs review_urgency: 比例=2 理由: test fixture
+已保存本版本的明确确认，CR=0.0000。

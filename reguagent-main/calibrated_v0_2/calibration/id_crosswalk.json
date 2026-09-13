@@ -1,0 +1,146 @@
+[
+  {
+    "legacy_id": "CTRL-ICT-THIRD-PARTY-RISK",
+    "canonical_id": "CTRL-DORA-DEPENDENCY-MAP",
+    "scope": "Person 4 references only",
+    "mapping_kind": "explicit_integration_mapping_not_proof_of_semantic_identity"
+  },
+  {
+    "legacy_id": "DATA-CRITICAL-SERVICE-REGISTER",
+    "canonical_id": "DATA-ICT-ASSETS-THIRD-PARTIES",
+    "scope": "Person 4 references only",
+    "mapping_kind": "explicit_integration_mapping_not_proof_of_semantic_identity"
+  },
+  {
+    "legacy_id": "DATA-ESG-CUSTOMER-ATTRIBUTES",
+    "canonical_id": "DATA-ESG-CLIMATE-RISK",
+    "scope": "Person 4 references only",
+    "mapping_kind": "explicit_integration_mapping_not_proof_of_semantic_identity"
+  },
+  {
+    "legacy_id": "DATA-PAYMENT-TRANSACTIONS",
+    "canonical_id": "DATA-PAYMENT-OPERATIONS",
+    "scope": "Person 4 references only",
+    "mapping_kind": "explicit_integration_mapping_not_proof_of_semantic_identity"
+  },
+  {
+    "legacy_id": "DATA-SME-CREDIT-EXPOSURE",
+    "canonical_id": "DATA-LOANS-EXPOSURES",
+    "scope": "Person 4 references only",
+    "mapping_kind": "explicit_integration_mapping_not_proof_of_semantic_identity"
+  },
+  {
+    "legacy_id": "DATA-TRADING-BOOK",
+    "canonical_id": "DATA-TREASURY-LIQUIDITY",
+    "scope": "Person 4 references only",
+    "mapping_kind": "explicit_integration_mapping_not_proof_of_semantic_identity"
+  },
+  {
+    "legacy_id": "PROC-CREDIT-RISK-ASSESSMENT",
+    "canonical_id": "PROC-CREDIT-RISK-MONITORING",
+    "scope": "Person 4 references only",
+    "mapping_kind": "explicit_integration_mapping_not_proof_of_semantic_identity"
+  },
+  {
+    "legacy_id": "PROC-ICT-THIRD-PARTY-RISK-MANAGEMENT",
+    "canonical_id": "PROC-ICT-RESILIENCE",
+    "scope": "Person 4 references only",
+    "mapping_kind": "explicit_integration_mapping_not_proof_of_semantic_identity"
+  },
+  {
+    "legacy_id": "PROC-MARKET-RISK-MONITORING",
+    "canonical_id": "PROC-LIQUIDITY-MANAGEMENT",
+    "scope": "Person 4 references only",
+    "mapping_kind": "explicit_integration_mapping_not_proof_of_semantic_identity"
+  },
+  {
+    "legacy_id": "PROC-SME-UNDERWRITING",
+    "canonical_id": "PROC-CREDIT-ORIGINATION",
+    "scope": "Person 4 references only",
+    "mapping_kind": "explicit_integration_mapping_not_proof_of_semantic_identity"
+  },
+  {
+    "legacy_id": "REG-DORA-2024",
+    "canonical_id": "REG-DORA-2022-2554",
+    "scope": "Person 4 references only",
+    "mapping_kind": "explicit_integration_mapping_not_proof_of_semantic_identity"
+  },
+  {
+    "legacy_id": "REG-EBA-ESG-2024",
+    "canonical_id": "REG-ESG-EBA-GL-2025-01",
+    "scope": "Person 4 references only",
+    "mapping_kind": "explicit_integration_mapping_not_proof_of_semantic_identity"
+  },
+  {
+    "legacy_id": "REG-FRTB-2024",
+    "canonical_id": "REG-FRTB-CRR3-MKT-RISK",
+    "scope": "Person 4 references only",
+    "mapping_kind": "explicit_integration_mapping_not_proof_of_semantic_identity"
+  },
+  {
+    "legacy_id": "REQ-DORA-ICT-DEPENDENCY-MAPPING",
+    "canonical_id": "REQ-DORA-DEPENDENCY-MAP-001",
+    "scope": "Person 4 references only",
+    "mapping_kind": "explicit_integration_mapping_not_proof_of_semantic_identity"
+  },
+  {
+    "legacy_id": "REQ-ESG-RISK-DATA",
+    "canonical_id": "REQ-ESG-DATA-GAPS-001",
+    "scope": "Person 4 references only",
+    "mapping_kind": "explicit_integration_mapping_not_proof_of_semantic_identity"
+  },
+  {
+    "legacy_id": "REQ-ESG-RISK-GOVERNANCE",
+    "canonical_id": "REQ-ESG-RISK-APPETITE-001",
+    "scope": "Person 4 references only",
+    "mapping_kind": "explicit_integration_mapping_not_proof_of_semantic_identity"
+  },
+  {
+    "legacy_id": "REQ-ESG-RISK-INTEGRATION",
+    "canonical_id": "REQ-ESG-RISK-INTEGRATION-001",
+    "scope": "Person 4 references only",
+    "mapping_kind": "explicit_integration_mapping_not_proof_of_semantic_identity"
+  },
+  {
+    "legacy_id": "REQ-FRTB-TRADING-BOOK-APPLICABILITY",
+    "canonical_id": "REQ-FRTB-SMALL-BOOK-001",
+    "scope": "Person 4 references only",
+    "mapping_kind": "explicit_integration_mapping_not_proof_of_semantic_identity"
+  },
+  {
+    "legacy_id": "REQ-IPS-VOP-MOBILE",
+    "canonical_id": "REQ-IPS-VOP-001",
+    "scope": "Person 4 references only",
+    "mapping_kind": "explicit_integration_mapping_not_proof_of_semantic_identity"
+  },
+  {
+    "legacy_id": "SYS-CMDB",
+    "canonical_id": "SYS-ICT-REGISTER",
+    "scope": "Person 4 references only",
+    "mapping_kind": "explicit_integration_mapping_not_proof_of_semantic_identity"
+  },
+  {
+    "legacy_id": "SYS-CREDIT-RISK-ENGINE",
+    "canonical_id": "SYS-RISK-ENGINE",
+    "scope": "Person 4 references only",
+    "mapping_kind": "explicit_integration_mapping_not_proof_of_semantic_identity"
+  },
+  {
+    "legacy_id": "SYS-DATA-LAKE",
+    "canonical_id": "SYS-DATA-PLATFORM",
+    "scope": "Person 4 references only",
+    "mapping_kind": "explicit_integration_mapping_not_proof_of_semantic_identity"
+  },
+  {
+    "legacy_id": "SYS-MOBILE-BANKING",
+    "canonical_id": "SYS-MOBILE-APP",
+    "scope": "Person 4 references only",
+    "mapping_kind": "explicit_integration_mapping_not_proof_of_semantic_identity"
+  },
+  {
+    "legacy_id": "SYS-VENDOR-RISK-PORTAL",
+    "canonical_id": "SYS-ICT-REGISTER",
+    "scope": "Person 4 references only",
+    "mapping_kind": "explicit_integration_mapping_not_proof_of_semantic_identity"
+  }
+]

@@ -1,0 +1,1119 @@
+[
+  {
+    "arguments": {},
+    "elapsed_seconds": 0.001,
+    "is_error": false,
+    "output": {
+      "case": {
+        "as_of_date": "2026-09-08",
+        "case_id": "CASE-cb4fa9d654e14a34b4df0a8ea7109e56",
+        "dataset_version": "0.2.1",
+        "goal": "Investigate the SME ESG credit-monitoring change, source limitations, governance gaps and missing energy-data facts. Compare conditional economics when useful; resume affected findings after an owner answer. No final legal approval or action closure.",
+        "mode": "live",
+        "revision": 1,
+        "snapshot_dates": [
+          "2026-06-30"
+        ],
+        "status": "running"
+      },
+      "note": "Task checkpoints retain tool observations; current-revision interrupted delegations resume automatically. Findings remain provisional.",
+      "objects": [
+        {
+          "key": "registered-event",
+          "kind": "SourceVersion",
+          "payload": {
+            "change": {
+              "legal_status": "final_guideline",
+              "requirement_ids": [
+                "REQ-ESG-CREDIT-MONITORING-001",
+                "REQ-ESG-CREDIT-POLICY-001",
+                "REQ-ESG-DATA-GAPS-001",
+                "REQ-ESG-DATA-SELECTION-001",
+                "REQ-ESG-LONG-HORIZON-001",
+                "REQ-ESG-RISK-APPETITE-001",
+                "REQ-ESG-RISK-INTEGRATION-001",
+                "REQ-ESG-RISK-KRI-001"
+              ],
+              "title": "EBA Guidelines on the management of ESG risks"
+            },
+            "intake_mode": "registered_source_replay",
+            "note": "Replays the registered candidate. No current network monitoring or complete amendment audit was performed.",
+            "source_id": "SRC-ESG-EBA-GL-2025-01"
+          },
+          "status": "recorded",
+          "version": 1
+        }
+      ],
+      "tasks": [
+        {
+          "case_revision": 1,
+          "checkpoint_available": false,
+          "role": "coordinator",
+          "status": "failed",
+          "task_id": "0d7bbbd8ece5000ea0721a5cc8f51b8b1698007196bd3d13bcfa317b85f83ce1",
+          "task_key": "coordinate"
+        },
+        {
+          "case_revision": 1,
+          "checkpoint_available": true,
+          "role": "coordinator",
+          "status": "running",
+          "task_id": "644bb37877a42eba33c2b702952bca900edad3d6d9c95c1975e055cd1a8438e1",
+          "task_key": "coordinate"
+        }
+      ]
+    },
+    "role": "coordinator",
+    "task_id": "644bb37877a42eba33c2b702952bca900edad3d6d9c95c1975e055cd1a8438e1",
+    "tool": "case_context",
+    "tool_call_id": "call_aSgEo0nAYSCH6P2PgoFcjaus",
+    "seq": 88
+  },
+  {
+    "arguments": {},
+    "elapsed_seconds": 0.009,
+    "is_error": false,
+    "output": {
+      "comparison_kind": "consultation_to_final_not_change_between_two_binding_acts",
+      "depends_on": [
+        "source:SRC-ESG-EBA-GL-2025-01"
+      ],
+      "missing_identifier": "EBA/CP/2024/02",
+      "reference_id": "SOURCE-COMPARE-beeab69f2c291272",
+      "status": "insufficient_source_snapshots"
+    },
+    "role": "regulatory_analyst",
+    "task_id": "b842f224b5106776630c3ebd636a4412ad985970ef4f6aad68ef84fef566e126",
+    "tool": "source_versions",
+    "tool_call_id": "call_0k5DrhinS7RtKQE8pxPWFrfn",
+    "seq": 106
+  },
+  {
+    "arguments": {
+      "collection": "regulation",
+      "detail": "summary",
+      "limit": 6,
+      "query": "SRC-ESG-EBA-GL-2025-01 ESG risks guidelines monitoring credit SME requirement REQ-ESG"
+    },
+    "elapsed_seconds": 0.004,
+    "is_error": false,
+    "output": {
+      "results": [
+        {
+          "content_sha256": "529f5d486366e60ff40414439a736c96ee050e6b4570d83843ef90d51bc54144",
+          "depends_on": [
+            "file:regulatory_sources/change_register.json"
+          ],
+          "envelope": "changes",
+          "excerpt": "{\"amends_or_supersedes\":[],\"annotation\":{\"annotated_by\":\"coding_agent\",\"label_status\":\"silver\",\"notes\":[],\"reviewed_at\":null,\"reviewed_by\":null},\"application_events\":[{\"applies_to\":\"Institutions other than small and non-complex institutions (SNCIs)\",\"date\":\"2026-01-11\",\"event_type\":\"application\",\"extensions\":{\"snci_selector\":false},\"locator\":\"Guidelines, Section 3 'Implementation', paragraph 10, first sentence\",\"source_ids\":[\"SRC-ESG-EBA-GL-2025-01\"],\"verification_status\":\"verified\"},{\"applies_to\":\"Small and non-complex institutions (SNCIs) - latest application date\",\"date\":\"2027-01-11\",\"event_type\":\"application\",\"extensions\":{\"snci_selector\"",
+          "id_field": "change_id",
+          "note": "Discovery excerpt only. Use get_record(record_id) for full text before assessing coverage.",
+          "path": "regulatory_sources/change_register.json",
+          "record": {
+            "short_name": "EBA ESG Risk Management Guidelines",
+            "title": "EBA Guidelines on the management of ESG risks"
+          },
+          "record_id": "REG-ESG-EBA-GL-2025-01",
+          "record_status": "needs_review",
+          "reference_id": "REF-e76e3e737892914e66b6c05c",
+          "review_status": "provisional",
+          "text_kind": "curated_source_record",
+          "view": "search_preview"
+        },
+        {
+          "content_sha256": "6fe28ad46ef75eb2cf695c88105a618a05078eeed4b88f9a88f33197479ebf89",
+          "depends_on": [
+            "file:regulatory_sources/requirements.json"
+          ],
+          "envelope": "requirements",
+          "excerpt": "{\"addressee_types\":[\"credit_institution\"],\"applicability_conditions\":[{\"condition_id\":\"COND-REQ-ESG-CREDIT-MONITORING-001-ENTITY\",\"condition_type\":\"bank_fact\",\"description\":\"Confirm the legal entity classification against the cited scope.\",\"evidence_status\":\"verified\",\"expected_value\":[\"credit_institution\"],\"fact_path\":\"01_entity/bank_profile.json#/entity_classification\",\"operator\":\"equals\",\"source_citation_ids\":[\"CIT-REQ-ESG-CREDIT-MONITORING-001-SCOPE\"]}],\"capability_domains\":[\"credit_risk\",\"esg_risk\"],\"change_id\":\"REG-ESG-EBA-GL-2025-01\",\"compliance_events\":[{\"condition\":\"Institutions other than small and non-complex institutions (SNCIs)\",",
+          "id_field": "requirement_id",
+          "note": "Discovery excerpt only. Use get_record(record_id) for full text before assessing coverage.",
+          "path": "regulatory_sources/requirements.json",
+          "record": {
+            "requirement_text": "Institutions should embed ESG risks in credit monitoring, with environmental-risk metrics reflecting materiality, risk appetite and significant segments.",
+            "title": "ESG integration in credit monitoring"
+          },
+          "record_id": "REQ-ESG-CREDIT-MONITORING-001",
+          "record_status": "needs_review",
+          "reference_id": "REF-13b33813bc34a869b50d6765",
+          "review_status": "provisional",
+          "text_kind": "curated_source_record",
+          "view": "search_preview"
+        },
+        {
+          "content_sha256": "30f1f57e6637cc4a4407ead8c7bddbec019ce8bbdbf9426d6593a4378086dc53",
+          "depends_on": [
+            "file:regulatory_sources/requirements.json"
+          ],
+          "envelope": "requirements",
+          "excerpt": "{\"addressee_types\":[\"credit_institution\",\"investment_firm\"],\"applicability_conditions\":[{\"condition_id\":\"COND-REQ-ESG-LONG-HORIZON-001-ENTITY\",\"condition_type\":\"bank_fact\",\"description\":\"Confirm the legal entity classification against the cited scope.\",\"evidence_status\":\"verified\",\"expected_value\":[\"credit_institution\"],\"fact_path\":\"01_entity/bank_profile.json#/entity_classification\",\"operator\":\"equals\",\"source_citation_ids\":[\"CIT-REQ-ESG-LONG-HORIZON-001-SCOPE\"]}],\"capability_domains\":[\"credit_risk\",\"esg_risk\",\"risk_management\"],\"change_id\":\"REG-ESG-EBA-GL-2025-01\",\"compliance_events\":[{\"condition\":\"Institutions other than small and non-comp",
+          "id_field": "requirement_id",
+          "note": "Discovery excerpt only. Use get_record(record_id) for full text before assessing coverage.",
+          "path": "regulatory_sources/requirements.json",
+          "record": {
+            "requirement_text": "Institutions should manage ESG risks over short, medium and at least ten-year long-term horizons.",
+            "title": "Long-term ESG risk management"
+          },
+          "record_id": "REQ-ESG-LONG-HORIZON-001",
+          "record_status": "needs_review",
+          "reference_id": "REF-0157eeb69856c72bca58d34d",
+          "review_status": "provisional",
+          "text_kind": "curated_source_record",
+          "view": "search_preview"
+        },
+        {
+          "content_sha256": "703d03f7ed6e57199e03326e5572c09992a6af5855fa33a9664ed01519bc1152",
+          "depends_on": [
+            "file:regulatory_sources/requirements.json"
+          ],
+          "envelope": "requirements",
+          "excerpt": "{\"addressee_types\":[\"credit_institution\"],\"applicability_conditions\":[{\"condition_id\":\"COND-REQ-ESG-CREDIT-POLICY-001-ENTITY\",\"condition_type\":\"bank_fact\",\"description\":\"Confirm the legal entity classification against the cited scope.\",\"evidence_status\":\"verified\",\"expected_value\":[\"credit_institution\"],\"fact_path\":\"01_entity/bank_profile.json#/entity_classification\",\"operator\":\"equals\",\"source_citation_ids\":[\"CIT-REQ-ESG-CREDIT-POLICY-001-SCOPE\"]}],\"capability_domains\":[\"credit_risk\",\"esg_risk\"],\"change_id\":\"REG-ESG-EBA-GL-2025-01\",\"compliance_events\":[{\"condition\":\"Institutions other than small and non-complex institutions (SNCIs)\",\"date\":\"",
+          "id_field": "requirement_id",
+          "note": "Discovery excerpt only. Use get_record(record_id) for full text before assessing coverage.",
+          "path": "regulatory_sources/requirements.json",
+          "record": {
+            "requirement_text": "Institutions should translate ESG-sensitive sectoral credit policies into clear origination criteria for business staff and credit decision-makers.",
+            "title": "ESG-inclusive credit sectoral policies cascaded into origination criteria and credit-risk monitoring"
+          },
+          "record_id": "REQ-ESG-CREDIT-POLICY-001",
+          "record_status": "needs_review",
+          "reference_id": "REF-0d44f01ab2176e24fd7097fa",
+          "review_status": "provisional",
+          "text_kind": "curated_source_record",
+          "view": "search_preview"
+        },
+        {
+          "content_sha256": "24f53a73460ab321680bcd3b877e64d3db3d59ca76eb2a07359166492545550a",
+          "depends_on": [
+            "file:regulatory_sources/requirements.json"
+          ],
+          "envelope": "requirements",
+          "excerpt": "{\"addressee_types\":[\"credit_institution\"],\"applicability_conditions\":[{\"condition_id\":\"COND-REQ-ESG-RISK-APPETITE-001-ENTITY\",\"condition_type\":\"bank_fact\",\"description\":\"Confirm the legal entity classification against the cited scope.\",\"evidence_status\":\"verified\",\"expected_value\":[\"credit_institution\"],\"fact_path\":\"01_entity/bank_profile.json#/entity_classification\",\"operator\":\"equals\",\"source_citation_ids\":[\"CIT-REQ-ESG-RISK-APPETITE-001-SCOPE\"]}],\"capability_domains\":[\"esg_risk\",\"risk_management\"],\"change_id\":\"REG-ESG-EBA-GL-2025-01\",\"compliance_events\":[{\"condition\":\"Institutions other than small and non-complex institutions (SNCIs)\",\"dat",
+          "id_field": "requirement_id",
+          "note": "Discovery excerpt only. Use get_record(record_id) for full text before assessing coverage.",
+          "path": "regulatory_sources/requirements.json",
+          "record": {
+            "requirement_text": "Institutions should define their willingness to assume material ESG risks in risk appetite, including portfolio concentration and diversification objectives.",
+            "title": "ESG risks defined and addressed in the institution's risk appetite"
+          },
+          "record_id": "REQ-ESG-RISK-APPETITE-001",
+          "record_status": "needs_review",
+          "reference_id": "REF-762696d9a3a473adacc10917",
+          "review_status": "provisional",
+          "text_kind": "curated_source_record",
+          "view": "search_preview"
+        },
+        {
+          "content_sha256": "40a33eb043c9e680a651547500684059dc18c6af189fe1d7f6c05ccef1c3df83",
+          "depends_on": [
+            "file:regulatory_sources/requirements.json"
+          ],
+          "envelope": "requirements",
+          "excerpt": "{\"addressee_types\":[\"credit_institution\",\"investment_firm\"],\"applicability_conditions\":[{\"condition_id\":\"COND-REQ-ESG-RISK-INTEGRATION-001-ENTITY\",\"condition_type\":\"bank_fact\",\"description\":\"Confirm the legal entity classification against the cited scope.\",\"evidence_status\":\"verified\",\"expected_value\":[\"credit_institution\"],\"fact_path\":\"01_entity/bank_profile.json#/entity_classification\",\"operator\":\"equals\",\"source_citation_ids\":[\"CIT-REQ-ESG-RISK-INTEGRATION-001-SCOPE\"]}],\"capability_domains\":[\"credit_risk\",\"esg_risk\",\"risk_management\"],\"change_id\":\"REG-ESG-EBA-GL-2025-01\",\"compliance_events\":[{\"condition\":\"Institutions other than small and ",
+          "id_field": "requirement_id",
+          "note": "Discovery excerpt only. Use get_record(record_id) for full text before assessing coverage.",
+          "path": "regulatory_sources/requirements.json",
+          "record": {
+            "requirement_text": "Institutions should embed ESG risks within regular risk-management systems and processes consistently with their business and risk strategies.",
+            "title": "Integration of ESG risks as drivers of traditional financial risk categories"
+          },
+          "record_id": "REQ-ESG-RISK-INTEGRATION-001",
+          "record_status": "needs_review",
+          "reference_id": "REF-84bc0e9ddba25d2e8441fa53",
+          "review_status": "provisional",
+          "text_kind": "curated_source_record",
+          "view": "search_preview"
+        }
+      ],
+      "scope": "Frozen case input, allowlisted collections only; not proof that all bank documents exist here.",
+      "search_method": "keyword_overlap",
+      "status": "ok",
+      "total_matches": 34,
+      "truncated": true
+    },
+    "role": "regulatory_analyst",
+    "task_id": "b842f224b5106776630c3ebd636a4412ad985970ef4f6aad68ef84fef566e126",
+    "tool": "search_records",
+    "tool_call_id": "call_gWFP1e78DmIRNONre2SMjr1x",
+    "seq": 129
+  },
+  {
+    "arguments": {
+      "collection": "regulation",
+      "detail": "summary",
+      "limit": 6,
+      "query": "REQ-ESG-DATA-GAPS-001 or DATA SELECTION ESG KRI monitoring EBA Guidelines SRC-ESG-EBA-GL-2025-01"
+    },
+    "elapsed_seconds": 0.006,
+    "is_error": false,
+    "output": {
+      "results": [
+        {
+          "content_sha256": "529f5d486366e60ff40414439a736c96ee050e6b4570d83843ef90d51bc54144",
+          "depends_on": [
+            "file:regulatory_sources/change_register.json"
+          ],
+          "envelope": "changes",
+          "excerpt": "{\"amends_or_supersedes\":[],\"annotation\":{\"annotated_by\":\"coding_agent\",\"label_status\":\"silver\",\"notes\":[],\"reviewed_at\":null,\"reviewed_by\":null},\"application_events\":[{\"applies_to\":\"Institutions other than small and non-complex institutions (SNCIs)\",\"date\":\"2026-01-11\",\"event_type\":\"application\",\"extensions\":{\"snci_selector\":false},\"locator\":\"Guidelines, Section 3 'Implementation', paragraph 10, first sentence\",\"source_ids\":[\"SRC-ESG-EBA-GL-2025-01\"],\"verification_status\":\"verified\"},{\"applies_to\":\"Small and non-complex institutions (SNCIs) - latest application date\",\"date\":\"2027-01-11\",\"event_type\":\"application\",\"extensions\":{\"snci_selector\"",
+          "id_field": "change_id",
+          "note": "Discovery excerpt only. Use get_record(record_id) for full text before assessing coverage.",
+          "path": "regulatory_sources/change_register.json",
+          "record": {
+            "short_name": "EBA ESG Risk Management Guidelines",
+            "title": "EBA Guidelines on the management of ESG risks"
+          },
+          "record_id": "REG-ESG-EBA-GL-2025-01",
+          "record_status": "needs_review",
+          "reference_id": "REF-e76e3e737892914e66b6c05c",
+          "review_status": "provisional",
+          "text_kind": "curated_source_record",
+          "view": "search_preview"
+        },
+        {
+          "content_sha256": "9b755b6f1878b6bfd7c7492aefe661e3c2337008ea31e50edd56a00295f328b1",
+          "depends_on": [
+            "file:regulatory_sources/requirements.json"
+          ],
+          "envelope": "requirements",
+          "excerpt": "{\"addressee_types\":[\"credit_institution\"],\"applicability_conditions\":[{\"condition_id\":\"COND-REQ-ESG-DATA-SELECTION-001-ENTITY\",\"condition_type\":\"bank_fact\",\"description\":\"Confirm the legal entity classification against the cited scope.\",\"evidence_status\":\"verified\",\"expected_value\":[\"credit_institution\"],\"fact_path\":\"01_entity/bank_profile.json#/entity_classification\",\"operator\":\"equals\",\"source_citation_ids\":[\"CIT-REQ-ESG-DATA-SELECTION-001-SCOPE\"]}],\"capability_domains\":[\"credit_risk\",\"data_management\",\"esg_risk\"],\"change_id\":\"REG-ESG-EBA-GL-2025-01\",\"compliance_events\":[{\"condition\":\"Institutions other than small and non-complex institutio",
+          "id_field": "requirement_id",
+          "note": "Discovery excerpt only. Use get_record(record_id) for full text before assessing coverage.",
+          "path": "regulatory_sources/requirements.json",
+          "record": {
+            "requirement_text": "For non-large-corporate counterparties, institutions should determine necessary ESG data points, considering paragraph 28 and permitted gap-filling approaches.",
+            "title": "Proportionate data selection for non-large counterparties"
+          },
+          "record_id": "REQ-ESG-DATA-SELECTION-001",
+          "record_status": "needs_review",
+          "reference_id": "REF-24ee74c312a690c9ebd16517",
+          "review_status": "provisional",
+          "text_kind": "curated_source_record",
+          "view": "search_preview"
+        },
+        {
+          "content_sha256": "272a98784b042c97d85159c17ffc707f0a39a6efe027a140a18dd6c0344e46c4",
+          "depends_on": [
+            "file:regulatory_sources/requirements.json"
+          ],
+          "envelope": "requirements",
+          "excerpt": "{\"addressee_types\":[\"credit_institution\"],\"applicability_conditions\":[{\"condition_id\":\"COND-REQ-ESG-DATA-GAPS-001-ENTITY\",\"condition_type\":\"bank_fact\",\"description\":\"Confirm the legal entity classification against the cited scope.\",\"evidence_status\":\"verified\",\"expected_value\":[\"credit_institution\"],\"fact_path\":\"01_entity/bank_profile.json#/entity_classification\",\"operator\":\"equals\",\"source_citation_ids\":[\"CIT-REQ-ESG-DATA-GAPS-001-SCOPE\"]}],\"capability_domains\":[\"credit_risk\",\"data_management\",\"esg_risk\"],\"change_id\":\"REG-ESG-EBA-GL-2025-01\",\"compliance_events\":[{\"condition\":\"Institutions other than small and non-complex institutions (SNCIs)",
+          "id_field": "requirement_id",
+          "note": "Discovery excerpt only. Use get_record(record_id) for full text before assessing coverage.",
+          "path": "regulatory_sources/requirements.json",
+          "record": {
+            "requirement_text": "Where ESG data is insufficient for risk management, institutions should assess the gaps and impacts, document remediation, and progressively reduce reliance on estimates or proxies as data improves.",
+            "title": "Determining needed ESG data points and remediating data gaps for non-large-corporate counterparties (including SMEs)"
+          },
+          "record_id": "REQ-ESG-DATA-GAPS-001",
+          "record_status": "needs_review",
+          "reference_id": "REF-b49f245a7104f9fe6408e984",
+          "review_status": "provisional",
+          "text_kind": "curated_source_record",
+          "view": "search_preview"
+        },
+        {
+          "content_sha256": "703d03f7ed6e57199e03326e5572c09992a6af5855fa33a9664ed01519bc1152",
+          "depends_on": [
+            "file:regulatory_sources/requirements.json"
+          ],
+          "envelope": "requirements",
+          "excerpt": "{\"addressee_types\":[\"credit_institution\"],\"applicability_conditions\":[{\"condition_id\":\"COND-REQ-ESG-CREDIT-POLICY-001-ENTITY\",\"condition_type\":\"bank_fact\",\"description\":\"Confirm the legal entity classification against the cited scope.\",\"evidence_status\":\"verified\",\"expected_value\":[\"credit_institution\"],\"fact_path\":\"01_entity/bank_profile.json#/entity_classification\",\"operator\":\"equals\",\"source_citation_ids\":[\"CIT-REQ-ESG-CREDIT-POLICY-001-SCOPE\"]}],\"capability_domains\":[\"credit_risk\",\"esg_risk\"],\"change_id\":\"REG-ESG-EBA-GL-2025-01\",\"compliance_events\":[{\"condition\":\"Institutions other than small and non-complex institutions (SNCIs)\",\"date\":\"",
+          "id_field": "requirement_id",
+          "note": "Discovery excerpt only. Use get_record(record_id) for full text before assessing coverage.",
+          "path": "regulatory_sources/requirements.json",
+          "record": {
+            "requirement_text": "Institutions should translate ESG-sensitive sectoral credit policies into clear origination criteria for business staff and credit decision-makers.",
+            "title": "ESG-inclusive credit sectoral policies cascaded into origination criteria and credit-risk monitoring"
+          },
+          "record_id": "REQ-ESG-CREDIT-POLICY-001",
+          "record_status": "needs_review",
+          "reference_id": "REF-0d44f01ab2176e24fd7097fa",
+          "review_status": "provisional",
+          "text_kind": "curated_source_record",
+          "view": "search_preview"
+        },
+        {
+          "content_sha256": "6fe28ad46ef75eb2cf695c88105a618a05078eeed4b88f9a88f33197479ebf89",
+          "depends_on": [
+            "file:regulatory_sources/requirements.json"
+          ],
+          "envelope": "requirements",
+          "excerpt": "{\"addressee_types\":[\"credit_institution\"],\"applicability_conditions\":[{\"condition_id\":\"COND-REQ-ESG-CREDIT-MONITORING-001-ENTITY\",\"condition_type\":\"bank_fact\",\"description\":\"Confirm the legal entity classification against the cited scope.\",\"evidence_status\":\"verified\",\"expected_value\":[\"credit_institution\"],\"fact_path\":\"01_entity/bank_profile.json#/entity_classification\",\"operator\":\"equals\",\"source_citation_ids\":[\"CIT-REQ-ESG-CREDIT-MONITORING-001-SCOPE\"]}],\"capability_domains\":[\"credit_risk\",\"esg_risk\"],\"change_id\":\"REG-ESG-EBA-GL-2025-01\",\"compliance_events\":[{\"condition\":\"Institutions other than small and non-complex institutions (SNCIs)\",",
+          "id_field": "requirement_id",
+          "note": "Discovery excerpt only. Use get_record(record_id) for full text before assessing coverage.",
+          "path": "regulatory_sources/requirements.json",
+          "record": {
+            "requirement_text": "Institutions should embed ESG risks in credit monitoring, with environmental-risk metrics reflecting materiality, risk appetite and significant segments.",
+            "title": "ESG integration in credit monitoring"
+          },
+          "record_id": "REQ-ESG-CREDIT-MONITORING-001",
+          "record_status": "needs_review",
+          "reference_id": "REF-13b33813bc34a869b50d6765",
+          "review_status": "provisional",
+          "text_kind": "curated_source_record",
+          "view": "search_preview"
+        },
+        {
+          "content_sha256": "c6b60f000e5b0dd10cb22d81bd6b7661487355e5a65a8f941023cbc81faed371",
+          "depends_on": [
+            "file:regulatory_sources/requirements.json"
+          ],
+          "envelope": "requirements",
+          "excerpt": "{\"addressee_types\":[\"credit_institution\"],\"applicability_conditions\":[{\"condition_id\":\"COND-REQ-ESG-RISK-KRI-001-ENTITY\",\"condition_type\":\"bank_fact\",\"description\":\"Confirm the legal entity classification against the cited scope.\",\"evidence_status\":\"verified\",\"expected_value\":[\"credit_institution\"],\"fact_path\":\"01_entity/bank_profile.json#/entity_classification\",\"operator\":\"equals\",\"source_citation_ids\":[\"CIT-REQ-ESG-RISK-KRI-001-SCOPE\"]}],\"capability_domains\":[\"esg_risk\",\"risk_management\"],\"change_id\":\"REG-ESG-EBA-GL-2025-01\",\"compliance_events\":[{\"condition\":\"Institutions other than small and non-complex institutions (SNCIs)\",\"date\":\"2026-0",
+          "id_field": "requirement_id",
+          "note": "Discovery excerpt only. Use get_record(record_id) for full text before assessing coverage.",
+          "path": "regulatory_sources/requirements.json",
+          "record": {
+            "requirement_text": "Institutions should implement ESG risk appetite using relevant key risk indicators informed by materiality and their business model.",
+            "title": "ESG indicators supporting risk appetite"
+          },
+          "record_id": "REQ-ESG-RISK-KRI-001",
+          "record_status": "needs_review",
+          "reference_id": "REF-5e6a42d5deb0c84a3bf854f8",
+          "review_status": "provisional",
+          "text_kind": "curated_source_record",
+          "view": "search_preview"
+        }
+      ],
+      "scope": "Frozen case input, allowlisted collections only; not proof that all bank documents exist here.",
+      "search_method": "keyword_overlap",
+      "status": "ok",
+      "total_matches": 34,
+      "truncated": true
+    },
+    "role": "regulatory_analyst",
+    "task_id": "b842f224b5106776630c3ebd636a4412ad985970ef4f6aad68ef84fef566e126",
+    "tool": "search_records",
+    "tool_call_id": "call_f07Nw3Jt9ZPVNRNonkNFLoRE",
+    "seq": 140
+  },
+  {
+    "arguments": {
+      "record_id": "REG-ESG-EBA-GL-2025-01"
+    },
+    "elapsed_seconds": 0.002,
+    "is_error": false,
+    "output": {
+      "results": [
+        {
+          "content_sha256": "529f5d486366e60ff40414439a736c96ee050e6b4570d83843ef90d51bc54144",
+          "depends_on": [
+            "file:regulatory_sources/change_register.json"
+          ],
+          "envelope": "changes",
+          "id_field": "change_id",
+          "path": "regulatory_sources/change_register.json",
+          "record": {
+            "amends_or_supersedes": [],
+            "annotation": {
+              "annotated_by": "coding_agent",
+              "label_status": "silver",
+              "notes": [],
+              "reviewed_at": null,
+              "reviewed_by": null
+            },
+            "application_events": [
+              {
+                "applies_to": "Institutions other than small and non-complex institutions (SNCIs)",
+                "date": "2026-01-11",
+                "event_type": "application",
+                "extensions": {
+                  "snci_selector": false
+                },
+                "locator": "Guidelines, Section 3 'Implementation', paragraph 10, first sentence",
+                "source_ids": [
+                  "SRC-ESG-EBA-GL-2025-01"
+                ],
+                "verification_status": "verified"
+              },
+              {
+                "applies_to": "Small and non-complex institutions (SNCIs) - latest application date",
+                "date": "2027-01-11",
+                "event_type": "application",
+                "extensions": {
+                  "snci_selector": true
+                },
+                "locator": "Guidelines, Section 3 'Implementation', paragraph 10, second sentence",
+                "source_ids": [
+                  "SRC-ESG-EBA-GL-2025-01"
+                ],
+                "verification_status": "verified"
+              },
+              {
+                "applies_to": "Competent authorities: deadline to notify the EBA of compliance or intended compliance, or reasons for non-compliance",
+                "date": "2025-06-03",
+                "event_type": "reporting",
+                "locator": "Guidelines, Section 1 'Compliance and reporting obligations', paragraph 3",
+                "source_ids": [
+                  "SRC-ESG-EBA-GL-2025-01"
+                ],
+                "verification_status": "verified"
+              }
+            ],
+            "binding_nature": "comply_or_explain",
+            "celex": null,
+            "change_id": "REG-ESG-EBA-GL-2025-01",
+            "change_summary": "Issued under Article 16 of Regulation (EU) No 1093/2010 pursuant to the mandate in Articles 87a(1), 87a(5) and 74 of Directive 2013/36/EU (CRD), these comply-or-explain guidelines set minimum standards and reference methodologies for institutions' identification, measurement, management and monitoring of environmental, social and governance (ESG) risks, including materiality assessment, data processes, integration into risk management (risk appetite, credit/market/liquidity/operational/reputational/concentration risk policies), and the content of Article 76(2) CRD transition plans. They apply to institutions other than SNCIs from 11 January 2026 and to SNCIs at the latest from 11 January 2027.",
+            "entry_into_force_date": null,
+            "instrument_type": "eba_guideline",
+            "issuing_body": "European Banking Authority",
+            "jurisdictions": [
+              "EU",
+              "IE"
+            ],
+            "legal_instrument_id": "EBA/GL/2025/01",
+            "legal_status": "final_guideline",
+            "missing_evidence": [
+              {
+                "blocking": true,
+                "field": "current_status",
+                "reason": "Human review and a complete amendment/consolidation audit are pending; see source_audit.md.",
+                "required_input": "Human review and a complete amendment/consolidation audit are pending; see source_audit.md.",
+                "responsible_scope": "legal_reviewer"
+              }
+            ],
+            "primary_source_id": "SRC-ESG-EBA-GL-2025-01",
+            "provenance": {
+              "created_at": "2026-09-05T02:25:45Z",
+              "created_by": "coding_agent",
+              "last_verified_at": "2026-09-05T01:45:00Z",
+              "notes": [
+                "Paragraphs 5, 8, 10 quoted directly from the official final-report PDF via pdftotext extraction."
+              ],
+              "origin": "authoritative_external_source",
+              "source_ids": [
+                "SRC-ESG-EBA-GL-2025-01"
+              ]
+            },
+            "publication_date": "2025-01-08",
+            "record_status": "needs_review",
+            "related_change_ids": [],
+            "requirement_ids": [
+              "REQ-ESG-CREDIT-MONITORING-001",
+              "REQ-ESG-CREDIT-POLICY-001",
+              "REQ-ESG-DATA-GAPS-001",
+              "REQ-ESG-DATA-SELECTION-001",
+              "REQ-ESG-LONG-HORIZON-001",
+              "REQ-ESG-RISK-APPETITE-001",
+              "REQ-ESG-RISK-INTEGRATION-001",
+              "REQ-ESG-RISK-KRI-001"
+            ],
+            "short_name": "EBA ESG Risk Management Guidelines",
+            "source_ids": [
+              "SRC-ESG-EBA-GL-2025-01"
+            ],
+            "synthetic": false,
+            "title": "EBA Guidelines on the management of ESG risks",
+            "topic_key": "esg_risk_management"
+          },
+          "record_id": "REG-ESG-EBA-GL-2025-01",
+          "record_status": "needs_review",
+          "reference_id": "REF-e76e3e737892914e66b6c05c",
+          "review_status": "provisional",
+          "text_kind": "curated_source_record"
+        }
+      ],
+      "status": "ok"
+    },
+    "role": "regulatory_analyst",
+    "task_id": "b842f224b5106776630c3ebd636a4412ad985970ef4f6aad68ef84fef566e126",
+    "tool": "get_record",
+    "tool_call_id": "call_QWOGYkI4uqtmMQ7a06F6T0aF",
+    "seq": 152
+  },
+  {
+    "arguments": {
+      "record_id": "REQ-ESG-CREDIT-MONITORING-001"
+    },
+    "elapsed_seconds": 0.002,
+    "is_error": false,
+    "output": {
+      "results": [
+        {
+          "content_sha256": "6fe28ad46ef75eb2cf695c88105a618a05078eeed4b88f9a88f33197479ebf89",
+          "depends_on": [
+            "file:regulatory_sources/requirements.json"
+          ],
+          "envelope": "requirements",
+          "id_field": "requirement_id",
+          "path": "regulatory_sources/requirements.json",
+          "record": {
+            "addressee_types": [
+              "credit_institution"
+            ],
+            "applicability_conditions": [
+              {
+                "condition_id": "COND-REQ-ESG-CREDIT-MONITORING-001-ENTITY",
+                "condition_type": "bank_fact",
+                "description": "Confirm the legal entity classification against the cited scope.",
+                "evidence_status": "verified",
+                "expected_value": [
+                  "credit_institution"
+                ],
+                "fact_path": "01_entity/bank_profile.json#/entity_classification",
+                "operator": "equals",
+                "source_citation_ids": [
+                  "CIT-REQ-ESG-CREDIT-MONITORING-001-SCOPE"
+                ]
+              }
+            ],
+            "capability_domains": [
+              "credit_risk",
+              "esg_risk"
+            ],
+            "change_id": "REG-ESG-EBA-GL-2025-01",
+            "compliance_events": [
+              {
+                "condition": "Institutions other than small and non-complex institutions (SNCIs)",
+                "date": "2026-01-11",
+                "event_type": "application",
+                "source_citation_ids": [
+                  "CIT-REQ-ESG-CREDIT-MONITORING-001-DATE"
+                ],
+                "verification_status": "verified"
+              },
+              {
+                "condition": "Small and non-complex institutions (SNCIs) - latest application date",
+                "date": "2027-01-11",
+                "event_type": "application",
+                "source_citation_ids": [
+                  "CIT-REQ-ESG-CREDIT-MONITORING-001-DATE"
+                ],
+                "verification_status": "verified"
+              }
+            ],
+            "exclusions_and_exemptions": [],
+            "jurisdictions": [
+              "EU",
+              "IE"
+            ],
+            "legal_force": "supervisory_expectation",
+            "record_status": "needs_review",
+            "required_bank_facts": [
+              {
+                "evidence_status": "verified",
+                "fact_ref": "01_entity/bank_profile.json#/entity_classification",
+                "purpose": "Scenario input; file presence does not establish legal compliance or evidence completeness."
+              },
+              {
+                "evidence_status": "verified",
+                "fact_ref": "01_entity/bank_profile.json#/snci_status",
+                "purpose": "Scenario input; file presence does not establish legal compliance or evidence completeness."
+              },
+              {
+                "evidence_status": "verified",
+                "fact_ref": "03_exposure/lending_portfolio.csv",
+                "purpose": "Scenario input; file presence does not establish legal compliance or evidence completeness."
+              },
+              {
+                "evidence_status": "verified",
+                "fact_ref": "03_exposure/esg_assessment_snapshot.csv",
+                "purpose": "Scenario input; file presence does not establish legal compliance or evidence completeness."
+              }
+            ],
+            "requirement_id": "REQ-ESG-CREDIT-MONITORING-001",
+            "requirement_text": "Institutions should embed ESG risks in credit monitoring, with environmental-risk metrics reflecting materiality, risk appetite and significant segments.",
+            "source_citations": [
+              {
+                "citation_id": "CIT-REQ-ESG-CREDIT-MONITORING-001-01",
+                "evidence_text": "Institutions should embed ESG risks in credit monitoring, with environmental-risk metrics reflecting materiality, risk appetite and significant segments.",
+                "evidence_type": "paraphrase",
+                "locator": "Section 5.6.1, paragraphs 68–69; PDF page 32",
+                "locator_type": "paragraph",
+                "source_id": "SRC-ESG-EBA-GL-2025-01",
+                "supports_fields": [
+                  "requirement_text"
+                ],
+                "verification_status": "verified"
+              },
+              {
+                "citation_id": "CIT-REQ-ESG-CREDIT-MONITORING-001-SCOPE",
+                "evidence_text": "Addressees include the institutions specified through the CRR definition.",
+                "evidence_type": "paraphrase",
+                "locator": "Paragraph 8; PDF page 17",
+                "locator_type": "paragraph",
+                "source_id": "SRC-ESG-EBA-GL-2025-01",
+                "supports_fields": [
+                  "applicability_conditions"
+                ],
+                "verification_status": "verified"
+              },
+              {
+                "citation_id": "CIT-REQ-ESG-CREDIT-MONITORING-001-DATE",
+                "evidence_text": "Application is 11 January 2026 for other institutions and at latest 11 January 2027 for SNCIs.",
+                "evidence_type": "paraphrase",
+                "locator": "Paragraph 10; PDF page 17",
+                "locator_type": "paragraph",
+                "source_id": "SRC-ESG-EBA-GL-2025-01",
+                "supports_fields": [
+                  "compliance_events"
+                ],
+                "verification_status": "verified"
+              }
+            ],
+            "synthetic": false,
+            "title": "ESG integration in credit monitoring"
+          },
+          "record_id": "REQ-ESG-CREDIT-MONITORING-001",
+          "record_status": "needs_review",
+          "reference_id": "REF-13b33813bc34a869b50d6765",
+          "review_status": "provisional",
+          "text_kind": "curated_source_record"
+        }
+      ],
+      "status": "ok"
+    },
+    "role": "regulatory_analyst",
+    "task_id": "b842f224b5106776630c3ebd636a4412ad985970ef4f6aad68ef84fef566e126",
+    "tool": "get_record",
+    "tool_call_id": "call_JV4wzLcDAtTNa1RQQykJmJOw",
+    "seq": 164
+  },
+  {
+    "arguments": {
+      "record_id": "REQ-ESG-CREDIT-POLICY-001"
+    },
+    "elapsed_seconds": 0.002,
+    "is_error": false,
+    "output": {
+      "results": [
+        {
+          "content_sha256": "703d03f7ed6e57199e03326e5572c09992a6af5855fa33a9664ed01519bc1152",
+          "depends_on": [
+            "file:regulatory_sources/requirements.json"
+          ],
+          "envelope": "requirements",
+          "id_field": "requirement_id",
+          "path": "regulatory_sources/requirements.json",
+          "record": {
+            "addressee_types": [
+              "credit_institution"
+            ],
+            "applicability_conditions": [
+              {
+                "condition_id": "COND-REQ-ESG-CREDIT-POLICY-001-ENTITY",
+                "condition_type": "bank_fact",
+                "description": "Confirm the legal entity classification against the cited scope.",
+                "evidence_status": "verified",
+                "expected_value": [
+                  "credit_institution"
+                ],
+                "fact_path": "01_entity/bank_profile.json#/entity_classification",
+                "operator": "equals",
+                "source_citation_ids": [
+                  "CIT-REQ-ESG-CREDIT-POLICY-001-SCOPE"
+                ]
+              }
+            ],
+            "capability_domains": [
+              "credit_risk",
+              "esg_risk"
+            ],
+            "change_id": "REG-ESG-EBA-GL-2025-01",
+            "compliance_events": [
+              {
+                "condition": "Institutions other than small and non-complex institutions (SNCIs)",
+                "date": "2026-01-11",
+                "event_type": "application",
+                "source_citation_ids": [
+                  "CIT-REQ-ESG-CREDIT-POLICY-001-DATE"
+                ],
+                "verification_status": "verified"
+              },
+              {
+                "condition": "Small and non-complex institutions (SNCIs) - latest application date",
+                "date": "2027-01-11",
+                "event_type": "application",
+                "source_citation_ids": [
+                  "CIT-REQ-ESG-CREDIT-POLICY-001-DATE"
+                ],
+                "verification_status": "verified"
+              }
+            ],
+            "exclusions_and_exemptions": [],
+            "jurisdictions": [
+              "EU",
+              "IE"
+            ],
+            "legal_force": "supervisory_expectation",
+            "record_status": "needs_review",
+            "required_bank_facts": [
+              {
+                "evidence_status": "verified",
+                "fact_ref": "01_entity/bank_profile.json#/entity_classification",
+                "purpose": "Scenario input; file presence does not establish legal compliance or evidence completeness."
+              },
+              {
+                "evidence_status": "verified",
+                "fact_ref": "01_entity/bank_profile.json#/snci_status",
+                "purpose": "Scenario input; file presence does not establish legal compliance or evidence completeness."
+              },
+              {
+                "evidence_status": "verified",
+                "fact_ref": "03_exposure/lending_portfolio.csv",
+                "purpose": "Scenario input; file presence does not establish legal compliance or evidence completeness."
+              },
+              {
+                "evidence_status": "verified",
+                "fact_ref": "03_exposure/esg_assessment_snapshot.csv",
+                "purpose": "Scenario input; file presence does not establish legal compliance or evidence completeness."
+              }
+            ],
+            "requirement_id": "REQ-ESG-CREDIT-POLICY-001",
+            "requirement_text": "Institutions should translate ESG-sensitive sectoral credit policies into clear origination criteria for business staff and credit decision-makers.",
+            "source_citations": [
+              {
+                "citation_id": "CIT-REQ-ESG-CREDIT-POLICY-001-01",
+                "evidence_text": "Institutions should translate ESG-sensitive sectoral credit policies into clear origination criteria for business staff and credit decision-makers.",
+                "evidence_type": "paraphrase",
+                "locator": "Section 5.6.1, paragraph 68; PDF page 32",
+                "locator_type": "paragraph",
+                "source_id": "SRC-ESG-EBA-GL-2025-01",
+                "supports_fields": [
+                  "requirement_text"
+                ],
+                "verification_status": "verified"
+              },
+              {
+                "citation_id": "CIT-REQ-ESG-CREDIT-POLICY-001-SCOPE",
+                "evidence_text": "Addressees include the institutions specified through the CRR definition.",
+                "evidence_type": "paraphrase",
+                "locator": "Paragraph 8; PDF page 17",
+                "locator_type": "paragraph",
+                "source_id": "SRC-ESG-EBA-GL-2025-01",
+                "supports_fields": [
+                  "applicability_conditions"
+                ],
+                "verification_status": "verified"
+              },
+              {
+                "citation_id": "CIT-REQ-ESG-CREDIT-POLICY-001-DATE",
+                "evidence_text": "Application is 11 January 2026 for other institutions and at latest 11 January 2027 for SNCIs.",
+                "evidence_type": "paraphrase",
+                "locator": "Paragraph 10; PDF page 17",
+                "locator_type": "paragraph",
+                "source_id": "SRC-ESG-EBA-GL-2025-01",
+                "supports_fields": [
+                  "compliance_events"
+                ],
+                "verification_status": "verified"
+              }
+            ],
+            "synthetic": false,
+            "title": "ESG-inclusive credit sectoral policies cascaded into origination criteria and credit-risk monitoring"
+          },
+          "record_id": "REQ-ESG-CREDIT-POLICY-001",
+          "record_status": "needs_review",
+          "reference_id": "REF-0d44f01ab2176e24fd7097fa",
+          "review_status": "provisional",
+          "text_kind": "curated_source_record"
+        }
+      ],
+      "status": "ok"
+    },
+    "role": "regulatory_analyst",
+    "task_id": "b842f224b5106776630c3ebd636a4412ad985970ef4f6aad68ef84fef566e126",
+    "tool": "get_record",
+    "tool_call_id": "call_x7h8FZFz18Bu1TXyfA02DRAK",
+    "seq": 176
+  },
+  {
+    "arguments": {
+      "record_id": "REQ-ESG-DATA-GAPS-001"
+    },
+    "elapsed_seconds": 0.002,
+    "is_error": false,
+    "output": {
+      "results": [
+        {
+          "content_sha256": "272a98784b042c97d85159c17ffc707f0a39a6efe027a140a18dd6c0344e46c4",
+          "depends_on": [
+            "file:regulatory_sources/requirements.json"
+          ],
+          "envelope": "requirements",
+          "id_field": "requirement_id",
+          "path": "regulatory_sources/requirements.json",
+          "record": {
+            "addressee_types": [
+              "credit_institution"
+            ],
+            "applicability_conditions": [
+              {
+                "condition_id": "COND-REQ-ESG-DATA-GAPS-001-ENTITY",
+                "condition_type": "bank_fact",
+                "description": "Confirm the legal entity classification against the cited scope.",
+                "evidence_status": "verified",
+                "expected_value": [
+                  "credit_institution"
+                ],
+                "fact_path": "01_entity/bank_profile.json#/entity_classification",
+                "operator": "equals",
+                "source_citation_ids": [
+                  "CIT-REQ-ESG-DATA-GAPS-001-SCOPE"
+                ]
+              }
+            ],
+            "capability_domains": [
+              "credit_risk",
+              "data_management",
+              "esg_risk"
+            ],
+            "change_id": "REG-ESG-EBA-GL-2025-01",
+            "compliance_events": [
+              {
+                "condition": "Institutions other than small and non-complex institutions (SNCIs)",
+                "date": "2026-01-11",
+                "event_type": "application",
+                "source_citation_ids": [
+                  "CIT-REQ-ESG-DATA-GAPS-001-DATE"
+                ],
+                "verification_status": "verified"
+              },
+              {
+                "condition": "Small and non-complex institutions (SNCIs) - latest application date",
+                "date": "2027-01-11",
+                "event_type": "application",
+                "source_citation_ids": [
+                  "CIT-REQ-ESG-DATA-GAPS-001-DATE"
+                ],
+                "verification_status": "verified"
+              }
+            ],
+            "exclusions_and_exemptions": [],
+            "jurisdictions": [
+              "EU",
+              "IE"
+            ],
+            "legal_force": "supervisory_expectation",
+            "record_status": "needs_review",
+            "required_bank_facts": [
+              {
+                "evidence_status": "verified",
+                "fact_ref": "01_entity/bank_profile.json#/entity_classification",
+                "purpose": "Scenario input; file presence does not establish legal compliance or evidence completeness."
+              },
+              {
+                "evidence_status": "verified",
+                "fact_ref": "01_entity/bank_profile.json#/snci_status",
+                "purpose": "Scenario input; file presence does not establish legal compliance or evidence completeness."
+              },
+              {
+                "evidence_status": "verified",
+                "fact_ref": "03_exposure/lending_portfolio.csv",
+                "purpose": "Scenario input; file presence does not establish legal compliance or evidence completeness."
+              },
+              {
+                "evidence_status": "verified",
+                "fact_ref": "03_exposure/esg_assessment_snapshot.csv",
+                "purpose": "Scenario input; file presence does not establish legal compliance or evidence completeness."
+              }
+            ],
+            "requirement_id": "REQ-ESG-DATA-GAPS-001",
+            "requirement_text": "Where ESG data is insufficient for risk management, institutions should assess the gaps and impacts, document remediation, and progressively reduce reliance on estimates or proxies as data improves.",
+            "source_citations": [
+              {
+                "citation_id": "CIT-REQ-ESG-DATA-GAPS-001-01",
+                "evidence_text": "Where ESG data is insufficient for risk management, institutions should assess the gaps and impacts, document remediation, and progressively reduce reliance on estimates or proxies as data improves.",
+                "evidence_type": "paraphrase",
+                "locator": "Section 4.2.2, paragraph 27; PDF page 22",
+                "locator_type": "paragraph",
+                "source_id": "SRC-ESG-EBA-GL-2025-01",
+                "supports_fields": [
+                  "requirement_text"
+                ],
+                "verification_status": "verified"
+              },
+              {
+                "citation_id": "CIT-REQ-ESG-DATA-GAPS-001-SCOPE",
+                "evidence_text": "Addressees include the institutions specified through the CRR definition.",
+                "evidence_type": "paraphrase",
+                "locator": "Paragraph 8; PDF page 17",
+                "locator_type": "paragraph",
+                "source_id": "SRC-ESG-EBA-GL-2025-01",
+                "supports_fields": [
+                  "applicability_conditions"
+                ],
+                "verification_status": "verified"
+              },
+              {
+                "citation_id": "CIT-REQ-ESG-DATA-GAPS-001-DATE",
+                "evidence_text": "Application is 11 January 2026 for other institutions and at latest 11 January 2027 for SNCIs.",
+                "evidence_type": "paraphrase",
+                "locator": "Paragraph 10; PDF page 17",
+                "locator_type": "paragraph",
+                "source_id": "SRC-ESG-EBA-GL-2025-01",
+                "supports_fields": [
+                  "compliance_events"
+                ],
+                "verification_status": "verified"
+              }
+            ],
+            "synthetic": false,
+            "title": "Determining needed ESG data points and remediating data gaps for non-large-corporate counterparties (including SMEs)"
+          },
+          "record_id": "REQ-ESG-DATA-GAPS-001",
+          "record_status": "needs_review",
+          "reference_id": "REF-b49f245a7104f9fe6408e984",
+          "review_status": "provisional",
+          "text_kind": "curated_source_record"
+        }
+      ],
+      "status": "ok"
+    },
+    "role": "regulatory_analyst",
+    "task_id": "b842f224b5106776630c3ebd636a4412ad985970ef4f6aad68ef84fef566e126",
+    "tool": "get_record",
+    "tool_call_id": "call_ekvMMN3pnrVQLe5P4LlYYH47",
+    "seq": 188
+  },
+  {
+    "arguments": {
+      "record_id": "REQ-ESG-DATA-SELECTION-001"
+    },
+    "elapsed_seconds": 0.002,
+    "is_error": false,
+    "output": {
+      "results": [
+        {
+          "content_sha256": "9b755b6f1878b6bfd7c7492aefe661e3c2337008ea31e50edd56a00295f328b1",
+          "depends_on": [
+            "file:regulatory_sources/requirements.json"
+          ],
+          "envelope": "requirements",
+          "id_field": "requirement_id",
+          "path": "regulatory_sources/requirements.json",
+          "record": {
+            "addressee_types": [
+              "credit_institution"
+            ],
+            "applicability_conditions": [
+              {
+                "condition_id": "COND-REQ-ESG-DATA-SELECTION-001-ENTITY",
+                "condition_type": "bank_fact",
+                "description": "Confirm the legal entity classification against the cited scope.",
+                "evidence_status": "verified",
+                "expected_value": [
+                  "credit_institution"
+                ],
+                "fact_path": "01_entity/bank_profile.json#/entity_classification",
+                "operator": "equals",
+                "source_citation_ids": [
+                  "CIT-REQ-ESG-DATA-SELECTION-001-SCOPE"
+                ]
+              }
+            ],
+            "capability_domains": [
+              "credit_risk",
+              "data_management",
+              "esg_risk"
+            ],
+            "change_id": "REG-ESG-EBA-GL-2025-01",
+            "compliance_events": [
+              {
+                "condition": "Institutions other than small and non-complex institutions (SNCIs)",
+                "date": "2026-01-11",
+                "event_type": "application",
+                "source_citation_ids": [
+                  "CIT-REQ-ESG-DATA-SELECTION-001-DATE"
+                ],
+                "verification_status": "verified"
+              },
+              {
+                "condition": "Small and non-complex institutions (SNCIs) - latest application date",
+                "date": "2027-01-11",
+                "event_type": "application",
+                "source_citation_ids": [
+                  "CIT-REQ-ESG-DATA-SELECTION-001-DATE"
+                ],
+                "verification_status": "verified"
+              }
+            ],
+            "exclusions_and_exemptions": [],
+            "jurisdictions": [
+              "EU",
+              "IE"
+            ],
+            "legal_force": "supervisory_expectation",
+            "record_status": "needs_review",
+            "required_bank_facts": [
+              {
+                "evidence_status": "verified",
+                "fact_ref": "01_entity/bank_profile.json#/entity_classification",
+                "purpose": "Scenario input; file presence does not establish legal compliance or evidence completeness."
+              },
+              {
+                "evidence_status": "verified",
+                "fact_ref": "01_entity/bank_profile.json#/snci_status",
+                "purpose": "Scenario input; file presence does not establish legal compliance or evidence completeness."
+              },
+              {
+                "evidence_status": "verified",
+                "fact_ref": "03_exposure/lending_portfolio.csv",
+                "purpose": "Scenario input; file presence does not establish legal compliance or evidence completeness."
+              },
+              {
+                "evidence_status": "verified",
+                "fact_ref": "03_exposure/esg_assessment_snapshot.csv",
+                "purpose": "Scenario input; file presence does not establish legal compliance or evidence completeness."
+              }
+            ],
+            "requirement_id": "REQ-ESG-DATA-SELECTION-001",
+            "requirement_text": "For non-large-corporate counterparties, institutions should determine necessary ESG data points, considering paragraph 28 and permitted gap-filling approaches.",
+            "source_citations": [
+              {
+                "citation_id": "CIT-REQ-ESG-DATA-SELECTION-001-01",
+                "evidence_text": "For non-large-corporate counterparties, institutions should determine necessary ESG data points, considering paragraph 28 and permitted gap-filling approaches.",
+                "evidence_type": "paraphrase",
+                "locator": "Section 4.2.2, paragraph 29; PDF page 23",
+                "locator_type": "paragraph",
+                "source_id": "SRC-ESG-EBA-GL-2025-01",
+                "supports_fields": [
+                  "requirement_text"
+                ],
+                "verification_status": "verified"
+              },
+              {
+                "citation_id": "CIT-REQ-ESG-DATA-SELECTION-001-SCOPE",
+                "evidence_text": "Addressees include the institutions specified through the CRR definition.",
+                "evidence_type": "paraphrase",
+                "locator": "Paragraph 8; PDF page 17",
+                "locator_type": "paragraph",
+                "source_id": "SRC-ESG-EBA-GL-2025-01",
+                "supports_fields": [
+                  "applicability_conditions"
+                ],
+                "verification_status": "verified"
+              },
+              {
+                "citation_id": "CIT-REQ-ESG-DATA-SELECTION-001-DATE",
+                "evidence_text": "Application is 11 January 2026 for other institutions and at latest 11 January 2027 for SNCIs.",
+                "evidence_type": "paraphrase",
+                "locator": "Paragraph 10; PDF page 17",
+                "locator_type": "paragraph",
+                "source_id": "SRC-ESG-EBA-GL-2025-01",
+                "supports_fields": [
+                  "compliance_events"
+                ],
+                "verification_status": "verified"
+              }
+            ],
+            "synthetic": false,
+            "title": "Proportionate data selection for non-large counterparties"
+          },
+          "record_id": "REQ-ESG-DATA-SELECTION-001",
+          "record_status": "needs_review",
+          "reference_id": "REF-24ee74c312a690c9ebd16517",
+          "review_status": "provisional",
+          "text_kind": "curated_source_record"
+        }
+      ],
+      "status": "ok"
+    },
+    "role": "regulatory_analyst",
+    "task_id": "b842f224b5106776630c3ebd636a4412ad985970ef4f6aad68ef84fef566e126",
+    "tool": "get_record",
+    "tool_call_id": "call_xKMxWj8YlxMvkdspYSRtgNmQ",
+    "seq": 213
+  }
+]

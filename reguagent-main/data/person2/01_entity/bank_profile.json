@@ -1,0 +1,52 @@
+{
+  "entity_id": "ENT-NDB-PLC",
+  "legal_name": "Northstar Digital Bank plc",
+  "short_name": "NDB",
+  "dataset_status": "synthetic",
+  "as_of_date": "2026-09-03",
+  "entity_type": "EU credit institution",
+  "headquarters": {
+    "city": "Dublin",
+    "country": "Ireland",
+    "country_code": "IE"
+  },
+  "primary_regulator": "Central Bank of Ireland",
+  "licence_scope": "Irish credit institution with EEA passported digital banking services",
+  "operating_model": {
+    "channel_model": "mobile_app_and_web_only",
+    "physical_branches": 0,
+    "customer_support": "in_app_chat_web_chat_and_telephone_for_urgent_support",
+    "customer_markets": ["IE", "DE", "NL", "BE", "ES", "FR"],
+    "markets_outside_eea": false
+  },
+  "scale": {
+    "employees_fte": 1150,
+    "active_retail_customers": 1400000,
+    "active_sme_customers": 85000,
+    "total_assets_eur_millions": 12500,
+    "customer_deposits_eur_millions": 9800,
+    "loan_book_eur_millions": 9200,
+    "reporting_currency": "EUR",
+    "financial_year_end": "12-31"
+  },
+  "business_model_boundaries": {
+    "included": ["retail_banking", "mortgages", "sme_banking", "consumer_and_sme_lending", "payments", "liquidity_treasury"],
+    "excluded": ["investment_banking", "wealth_management", "client_trading", "insurance_underwriting", "crypto_asset_services"],
+    "material_trading_book": false,
+    "internal_market_risk_model": false
+  },
+  "esg_context": {
+    "reporting_reference_year": 2025,
+    "portfolio_esg_risk_management_maturity": "developing",
+    "scope_for_first_assessment": "SME working-capital lending and green home-improvement lending",
+    "known_gap": "No complete borrower emissions, transition-plan, or portfolio-wide physical-risk dataset"
+  },
+  "source_basis": {
+    "design_references": [
+      "Regulation_reference/bunq-report-annual-2025-en.pdf",
+      "Regulation_reference/bunq-report-pillar-3-disclosures-2025-en.pdf",
+      "Regulation_reference/bunq-report-esg-2025-en.pdf"
+    ],
+    "northstar_context": "Bank_Context_Fictional_Digital_Bank.md"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "case_id": "CASE-cb4fa9d654e14a34b4df0a8ea7109e56",
+  "outcome": {
+    "status": "failed",
+    "error_type": "RequestTooLarge",
+    "message": "Request exceeds configured input budget; narrow tool results or split the specialist task. No API call sent."
+  },
+  "budget": {
+    "model_turn_attempts": 3,
+    "tool_calls": 10,
+    "delegations": 0,
+    "tokens": 10638,
+    "elapsed_seconds": 39.777
+  },
+  "api_requests_attempted": 3,
+  "mode": "live"
+}

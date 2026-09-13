@@ -1,0 +1,30 @@
+SYNTHETIC TEST-ONLY EVIDENCE ARTEFACT -- fictional Northstar bank, not a real control document.
+
+Control Design: Automated ESG Existing-Book Credit Monitoring
+Control ID (design intent): CTRL-ESG-ONBOARD-SCREEN (extended scope)
+Requirement addressed: REQ-ESG-CREDIT-MONITORING-001
+
+1. Purpose
+   Extend the existing per-application ESG onboarding screen so it also runs on a
+   recurring schedule against the live SME lending book, not only at new-application
+   time, closing the ongoing-monitoring gap identified during investigation.
+
+2. Scope
+   All existing SME borrowers under PRD-SME-WORKING-CAPITAL with an active facility.
+
+3. Mechanism
+   - Monthly automated re-scoring job reads the latest ESG data-availability and
+     sector-concentration inputs already used by the onboarding screen.
+   - Borrowers whose re-score crosses the review threshold are queued for
+     Head of Lending / Chief Risk Officer review.
+   - Every run and its queued exceptions are logged with a timestamp and input
+     snapshot reference for audit.
+
+4. Owner
+   Accountable: ROLE-CHIEF-RISK (per PROC-CREDIT-RISK-MONITORING RACI).
+
+5. Known limitations
+   - Energy-consumption coverage for the existing book is attributed from an owner
+     estimate (unverified operating evidence), not a verified per-borrower reading.
+   - This design document alone does not demonstrate the control is operating;
+     see the accompanying effectiveness test evidence for that.

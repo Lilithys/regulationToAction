@@ -1,0 +1,203 @@
+[
+  {
+    "case_id": "CASE-ESG-BASE",
+    "topic": "esg",
+    "task": "assess",
+    "question": "Assess the SME ESG-risk change and identify what evidence is missing.",
+    "expected": {
+      "applicability": "direct_under_synthetic_entity_classification",
+      "exposure": "report_portfolio_facts",
+      "risk_assessment_status": "unverified",
+      "required_question_fact_ids": [
+        "FACT-ESG-ENERGY-COVERAGE"
+      ],
+      "must_not": [
+        "claim_human_approval",
+        "treat_proxy_as_measured_emissions"
+      ]
+    },
+    "label_status": "silver",
+    "split": "development",
+    "reviewed_by": null,
+    "reviewed_at": null
+  },
+  {
+    "case_id": "CASE-IPS-BASE",
+    "topic": "instant_payments",
+    "task": "assess",
+    "question": "Assess VoP coverage across the bank’s credit-transfer services.",
+    "expected": {
+      "known_gap": "mobile_instant_payment_vop",
+      "unresolved_scope": [
+        "standard_sct",
+        "api"
+      ],
+      "deadline_status": "past_due",
+      "must_not": [
+        "declare_api_legally_exempt",
+        "treat_standard_sct_as_out_of_scope"
+      ]
+    },
+    "label_status": "silver",
+    "split": "development",
+    "reviewed_by": null,
+    "reviewed_at": null
+  },
+  {
+    "case_id": "CASE-DORA-BASE",
+    "topic": "dora",
+    "task": "assess",
+    "question": "Assess the evidence for ICT and third-party dependency mapping.",
+    "expected": {
+      "confirmed_synthetic_gap_vendors": [
+        "VND-CLOUD-INFRA",
+        "VND-MORTGAGE-SERVICER"
+      ],
+      "unknown_subcontractor_population_must_remain_unknown": true,
+      "must_not": [
+        "assert_all_dora_compliance"
+      ]
+    },
+    "label_status": "silver",
+    "split": "development",
+    "reviewed_by": null,
+    "reviewed_at": null
+  },
+  {
+    "case_id": "CASE-FRTB-BASE",
+    "topic": "frtb",
+    "task": "assess",
+    "question": "Does the June banking-book snapshot prove that all FRTB requirements are inapplicable now?",
+    "expected": {
+      "business_relevance": "limited",
+      "applicability": "uncertain",
+      "allowed_action": "refresh_scope_evidence_and_monitor",
+      "must_not": [
+        "blanket_market_risk_exemption",
+        "invent_frtb_remediation_programme",
+        "evaluate_unverified_numeric_rule"
+      ]
+    },
+    "label_status": "silver",
+    "split": "development",
+    "reviewed_by": null,
+    "reviewed_at": null
+  },
+  {
+    "case_id": "CASE-NACE-WEIGHT",
+    "topic": "esg",
+    "task": "arithmetic",
+    "question": "Measure missing/broad NACE coverage using customers and exposure separately.",
+    "expected": {
+      "borrower_weighted_pct": 20.0,
+      "exposure_weighted_pct": 39.56521739130435,
+      "tolerance": 1e-08
+    },
+    "label_status": "silver",
+    "split": "development",
+    "reviewed_by": null,
+    "reviewed_at": null
+  },
+  {
+    "case_id": "CASE-PAYMENT-SAMPLE",
+    "topic": "instant_payments",
+    "task": "arithmetic",
+    "question": "Can the selected payment rows establish the annual mobile percentage?",
+    "expected": {
+      "observed_sample_pct": 75.1052483861914,
+      "full_direct_channel_scenario_pct": 71,
+      "can_extrapolate_sample": false
+    },
+    "label_status": "silver",
+    "split": "development",
+    "reviewed_by": null,
+    "reviewed_at": null
+  },
+  {
+    "case_id": "CASE-EVIDENCE-REQUIRED",
+    "topic": "evidence",
+    "task": "closure",
+    "question": "Can an action close when all evidence items have status required?",
+    "expected": {
+      "can_close": false
+    },
+    "label_status": "silver",
+    "split": "development",
+    "reviewed_by": null,
+    "reviewed_at": null
+  },
+  {
+    "case_id": "CASE-EVIDENCE-HASH",
+    "topic": "evidence",
+    "task": "closure",
+    "question": "Can an approved-looking record close an action when its artefact hash fails?",
+    "expected": {
+      "can_close": false
+    },
+    "label_status": "silver",
+    "split": "development",
+    "reviewed_by": null,
+    "reviewed_at": null
+  },
+  {
+    "case_id": "CASE-CAPACITY-UNKNOWN",
+    "topic": "economics",
+    "task": "cost",
+    "question": "Choose the cheapest response and assess feasibility with unknown team capacity.",
+    "expected": {
+      "lowest_base_tco_option_id": "OPT-ESG-AUTOMATED",
+      "recommended_option_id": null,
+      "capacity_sufficient": null
+    },
+    "label_status": "silver",
+    "split": "development",
+    "reviewed_by": null,
+    "reviewed_at": null
+  },
+  {
+    "case_id": "CASE-RISK-COST-UNKNOWN",
+    "topic": "economics",
+    "task": "cost",
+    "question": "Calculate non-compliance expected loss when probability and severity are absent.",
+    "expected": {
+      "expected_risk_cost_eur": null,
+      "must_not": [
+        "treat_unknown_as_zero"
+      ]
+    },
+    "label_status": "silver",
+    "split": "development",
+    "reviewed_by": null,
+    "reviewed_at": null
+  },
+  {
+    "case_id": "CASE-PEER-SEPARATION",
+    "topic": "provenance",
+    "task": "assess",
+    "question": "Can bunq personnel expenses or cloud disclosures prove Northstar costs and suppliers?",
+    "expected": {
+      "peer_is_enterprise_evidence": false
+    },
+    "label_status": "silver",
+    "split": "development",
+    "reviewed_by": null,
+    "reviewed_at": null
+  },
+  {
+    "case_id": "CASE-VERSION-PAIR",
+    "topic": "regulation",
+    "task": "change_detection",
+    "question": "Run a reproducible ESG draft-to-final text difference.",
+    "expected": {
+      "expected_status": "insufficient_source_snapshots",
+      "must_not": [
+        "invent_old_text",
+        "claim_consultation_was_binding"
+      ]
+    },
+    "label_status": "silver",
+    "split": "development",
+    "reviewed_by": null,
+    "reviewed_at": null
+  }
+]

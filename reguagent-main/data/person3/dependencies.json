@@ -1,0 +1,121 @@
+{
+  "_meta": {
+    "file": "05_operations/dependencies.json",
+    "owner": "Person 3 - Operations and technology",
+    "purpose": "Function-to-process-to-system-to-data-asset-to-vendor dependency map for DORA-style analysis. This file lists what IS mapped for each critical service. It does NOT contain a pre-computed 'is this complete' verdict - that judgment should be derived by checking each listed vendor's subcontractors_mapped_in_ict_register field in vendors.json. Several vendors below have that field set to false; that is the checkable, concrete form of the 'incomplete subcontractor mapping' gap Bank_Context_Fictional_Digital_Bank.md describes qualitatively.",
+    "generated_at": "2026-09-03",
+    "as_of_date": "2026-09-03",
+    "entity_id": "ENT-NDB-PLC"
+  },
+  "dependency_mappings": [
+    {
+      "function_id": "CIF-LOGIN-ACCESS",
+      "processes": [
+        "PROC-LOGIN-ACCESS"
+      ],
+      "systems": [
+        "SYS-MOBILE-APP",
+        "SYS-WEB-BANKING",
+        "SYS-CORE-BANKING"
+      ],
+      "data_assets": [
+        "DATA-CUSTOMER-LEGAL-ENTITY"
+      ],
+      "vendors": [
+        "VND-CORE-BANKING",
+        "VND-CLOUD-INFRA"
+      ],
+      "notes": null
+    },
+    {
+      "function_id": "CIF-PAYMENTS",
+      "processes": [
+        "PROC-PAYMENT-INITIATION",
+        "PROC-OPEN-BANKING-PIS"
+      ],
+      "systems": [
+        "SYS-MOBILE-APP",
+        "SYS-WEB-BANKING",
+        "SYS-PAYMENTS-HUB",
+        "SYS-VOP",
+        "SYS-BENEFICIARY-STORE",
+        "SYS-SANCTIONS-ENGINE",
+        "SYS-FRAUD-ENGINE",
+        "SYS-NOTIFICATION"
+      ],
+      "data_assets": [
+        "DATA-PAYMENT-OPERATIONS"
+      ],
+      "vendors": [
+        "VND-CORE-BANKING",
+        "VND-VOP-PROVIDER",
+        "VND-SANCTIONS-DATA",
+        "VND-CLOUD-INFRA"
+      ],
+      "notes": "Matches the critical payment chain named in Bank_Context_Fictional_Digital_Bank.md exactly: payments hub, mobile app, beneficiary store, sanctions engine, fraud engine, customer-notification service, external Verification of Payee provider. SYS-FRAUD-ENGINE has no vendor_id (built in-house), so it does not appear in the vendor list here - check systems.json directly for that system."
+    },
+    {
+      "function_id": "CIF-ONBOARDING",
+      "processes": [
+        "PROC-ONBOARDING"
+      ],
+      "systems": [
+        "SYS-ONBOARDING",
+        "SYS-CRM",
+        "SYS-SANCTIONS-ENGINE"
+      ],
+      "data_assets": [
+        "DATA-CUSTOMER-LEGAL-ENTITY"
+      ],
+      "vendors": [
+        "VND-IDENTITY-VERIFICATION",
+        "VND-CRM-PROVIDER",
+        "VND-SANCTIONS-DATA",
+        "VND-CLOUD-INFRA"
+      ],
+      "notes": null
+    },
+    {
+      "function_id": "CIF-LOAN-ORIGINATION",
+      "processes": [
+        "PROC-CREDIT-ORIGINATION",
+        "PROC-MORTGAGE-ORIGINATION"
+      ],
+      "systems": [
+        "SYS-LOAN-ORIG",
+        "SYS-RISK-ENGINE",
+        "SYS-CRM"
+      ],
+      "data_assets": [
+        "DATA-LOANS-EXPOSURES",
+        "DATA-SME-SECTOR-CLASSIFICATION"
+      ],
+      "vendors": [
+        "VND-CORE-BANKING",
+        "VND-CRM-PROVIDER",
+        "VND-CLOUD-INFRA"
+      ],
+      "notes": null
+    },
+    {
+      "function_id": "CIF-MORTGAGE-SERVICING",
+      "processes": [
+        "PROC-MORTGAGE-SERVICING",
+        "PROC-MORTGAGE-ARREARS",
+        "PROC-ARA"
+      ],
+      "systems": [
+        "SYS-MORTGAGE-SERVICING",
+        "SYS-CRM"
+      ],
+      "data_assets": [
+        "DATA-MORTGAGE-ARREARS-ARA"
+      ],
+      "vendors": [
+        "VND-MORTGAGE-SERVICER",
+        "VND-CRM-PROVIDER"
+      ],
+      "notes": "VND-MORTGAGE-SERVICER has subcontractors_identified_by_vendor=false and subcontractors_mapped_in_ict_register=false in vendors.json - the weakest-mapped critical service in the whole estate, and the one running on a system NDB does not operate itself."
+    }
+  ]
+}

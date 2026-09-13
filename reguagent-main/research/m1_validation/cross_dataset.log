@@ -1,0 +1,25 @@
+{
+  "structural_pass": true,
+  "passed_checks": 1256,
+  "errors": [],
+  "warnings": [
+    "All legal interpretations remain silver and require qualified human review.",
+    "EUR-Lex operative-text currency audit and FRTB 2026 OJ status remain unresolved.",
+    "Official full-text version pair is not locally preserved; change-diff evaluation is not ready.",
+    "Existing bank snapshots retain June 2026 dates; do not claim live or point-in-time backtesting readiness.",
+    "Delivery-team capacity, risk-loss model and revenue response are unknown; no approved recommendation.",
+    "No control-operation artefact or human sign-off is present."
+  ],
+  "legal_signoff_ready": false,
+  "full_change_detection_ready": false,
+  "metrics": {
+    "sme_borrower_count": 10000,
+    "sme_exposure_eur_millions": 2300.0,
+    "missing_or_broad_nace_borrower_pct": 20.0,
+    "missing_or_broad_nace_exposure_pct": 39.56521739130435,
+    "observed_payment_transaction_count": 3563000,
+    "observed_mobile_share_pct": 75.1052483861914,
+    "payments_population_complete": false,
+    "note": "Observed sample share must not replace the full direct-channel 71% scenario baseline."
+  }
+}

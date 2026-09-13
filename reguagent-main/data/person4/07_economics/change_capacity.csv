@@ -1,0 +1,9 @@
+role_id,period,available_days,committed_days,remaining_days,capacity_status,data_classification,source
+ROLE-HEAD-CREDIT-RISK,2025-Q3,24,16,8,constrained,synthetic_scenario,Role capacity is not publicly disclosed
+ROLE-CIO,2025-Q3,30,22,8,constrained,synthetic_scenario,Role capacity is not publicly disclosed
+ROLE-HEAD-PAYMENTS,2025-Q3,22,14,8,available,synthetic_scenario,Role capacity is not publicly disclosed
+ROLE-HEAD-DIGITAL,2025-Q3,25,18,7,constrained,synthetic_scenario,Role capacity is not publicly disclosed
+ROLE-CISO,2025-Q3,20,15,5,constrained,synthetic_scenario,Role capacity is not publicly disclosed
+ROLE-TPRM-LEAD,2025-Q3,30,10,20,available,synthetic_scenario,Role capacity is not publicly disclosed
+ROLE-HEAD-COMPLIANCE,2025-Q3,20,13,7,constrained,synthetic_scenario,Role capacity is not publicly disclosed
+ROLE-HEAD-TREASURY,2025-Q3,18,11,7,available,synthetic_scenario,Role capacity is not publicly disclosed

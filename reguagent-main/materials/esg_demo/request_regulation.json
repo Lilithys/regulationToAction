@@ -1,0 +1,24 @@
+{
+  "schema_version": "1.0.0",
+  "request_id": "REG-REQUEST-ESG-2025-001",
+  "review_status": "human_reviewed",
+  "reviewed_by": "Northstar demo legal reviewer",
+  "change_id": "REG-ESG-EBA-GL-2025-01",
+  "requirement_id": "REQ-ESG-CREDIT-MONITORING-001",
+  "title": "Recurring ESG monitoring for existing SME lending",
+  "requirement_text": "Institutions should embed ESG risks in credit monitoring, with environmental-risk metrics reflecting materiality, risk appetite and significant segments.",
+  "legal_force": "supervisory_expectation",
+  "effective_date": "2026-01-11",
+  "scope": {
+    "addressee_types": ["credit_institution"],
+    "jurisdictions": ["EU", "IE"],
+    "portfolio": "existing SME lending"
+  },
+  "source_citations": [
+    {
+      "url": "https://www.eba.europa.eu/regulation-and-policy/internal-governance/guidelines-management-esg-risks",
+      "locator": "Section 5.6.1, paragraphs 68-69; PDF page 32",
+      "excerpt": "Institutions should embed ESG risks in credit monitoring, with environmental-risk metrics reflecting materiality, risk appetite and significant segments."
+    }
+  ]
+}

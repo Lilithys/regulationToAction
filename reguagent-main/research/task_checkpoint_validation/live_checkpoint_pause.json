@@ -1,0 +1,17 @@
+{
+  "case_id": "CASE-cb4fa9d654e14a34b4df0a8ea7109e56",
+  "outcome": {
+    "status": "failed",
+    "error_type": "BudgetExceeded",
+    "message": "Model call budget exhausted"
+  },
+  "budget": {
+    "model_turn_attempts": 3,
+    "tool_calls": 3,
+    "delegations": 1,
+    "tokens": 5689,
+    "elapsed_seconds": 75.831
+  },
+  "api_requests_attempted": 3,
+  "mode": "live"
+}

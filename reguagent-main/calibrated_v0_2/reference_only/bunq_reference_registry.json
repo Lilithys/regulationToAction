@@ -1,0 +1,47 @@
+[
+  {
+    "reference_id": "REF-BUNQ-POLICY-TAX-EN",
+    "entity": "bunq",
+    "path": "../../data/bunq_reference bank/bunq-policy-tax-en.pdf",
+    "sha256": "3ae4dccd5ff19b9e961281f7995ebd712df2f860a8d578572bb57e87bbd16e90",
+    "synthetic": false,
+    "allowed_use": "Public peer-design reference only; not Northstar activity, budget, vendor, control or compliance evidence.",
+    "authenticity_status": "User-provided report; relevant pages inspected locally; publisher download identity not independently checked."
+  },
+  {
+    "reference_id": "REF-BUNQ-REPORT-ANNUAL-2025-EN",
+    "entity": "bunq",
+    "path": "../../data/bunq_reference bank/bunq-report-annual-2025-en.pdf",
+    "sha256": "c07a37fb64058b90cfb8431b38069008ad19dcd89678640daacd17e283d21d5d",
+    "synthetic": false,
+    "allowed_use": "Public peer-design reference only; not Northstar activity, budget, vendor, control or compliance evidence.",
+    "authenticity_status": "User-provided report; relevant pages inspected locally; publisher download identity not independently checked."
+  },
+  {
+    "reference_id": "REF-BUNQ-REPORT-ESG-2025-EN",
+    "entity": "bunq",
+    "path": "../../data/bunq_reference bank/bunq-report-esg-2025-en.pdf",
+    "sha256": "e77cd7ada426b1f40c5f1203aca4304b486b775331d673f9b2f690bca9fc00ed",
+    "synthetic": false,
+    "allowed_use": "Public peer-design reference only; not Northstar activity, budget, vendor, control or compliance evidence.",
+    "authenticity_status": "User-provided report; relevant pages inspected locally; publisher download identity not independently checked."
+  },
+  {
+    "reference_id": "REF-BUNQ-REPORT-PILLAR-3-DISCLOSURES-2025-EN",
+    "entity": "bunq",
+    "path": "../../data/bunq_reference bank/bunq-report-pillar-3-disclosures-2025-en.pdf",
+    "sha256": "0ad8bd7ecf3be611c2b7fce5714055649c5a65172d2a325e8673234860975b66",
+    "synthetic": false,
+    "allowed_use": "Public peer-design reference only; not Northstar activity, budget, vendor, control or compliance evidence.",
+    "authenticity_status": "User-provided report; relevant pages inspected locally; publisher download identity not independently checked."
+  },
+  {
+    "reference_id": "REF-BUNQ-REPORT-TAX-2025-EN",
+    "entity": "bunq",
+    "path": "../../data/bunq_reference bank/bunq-report-tax-2025-en.pdf",
+    "sha256": "2a5f581a0d6fcefb0a2caaca238bc60b7bb23572c54a65e0a72d66b761b0c4e1",
+    "synthetic": false,
+    "allowed_use": "Public peer-design reference only; not Northstar activity, budget, vendor, control or compliance evidence.",
+    "authenticity_status": "User-provided report; relevant pages inspected locally; publisher download identity not independently checked."
+  }
+]

@@ -1,0 +1,64 @@
+[
+  {
+    "business_line_id": "BL-RETAIL",
+    "name": "Retail Banking",
+    "customer_segment": "individuals",
+    "materiality": "high",
+    "markets": ["IE", "DE", "NL", "BE", "ES", "FR"],
+    "distribution_channels": ["mobile_app", "web"],
+    "product_ids": ["PRD-CURRENT", "PRD-SAVINGS", "PRD-DEBIT-CARD", "PRD-CONSUMER-LOAN"],
+    "customer_count": 1400000
+  },
+  {
+    "business_line_id": "BL-MORTGAGE",
+    "name": "Mortgage Banking",
+    "customer_segment": "individuals",
+    "materiality": "medium",
+    "markets": ["IE"],
+    "distribution_channels": ["mobile_app", "web", "remote_mortgage_adviser"],
+    "product_ids": ["PRD-RESIDENTIAL-MORTGAGE"],
+    "portfolio_balance_eur_millions": 1100
+  },
+  {
+    "business_line_id": "BL-SME",
+    "name": "SME Banking",
+    "customer_segment": "small_and_medium_enterprises",
+    "materiality": "medium",
+    "markets": ["IE", "NL", "BE"],
+    "distribution_channels": ["mobile_app", "web", "remote_relationship_support"],
+    "product_ids": ["PRD-SME-ACCOUNT", "PRD-SME-CARD", "PRD-SME-WORKING-CAPITAL"],
+    "customer_count": 85000
+  },
+  {
+    "business_line_id": "BL-LENDING",
+    "name": "Lending",
+    "customer_segment": "individuals_and_smes",
+    "materiality": "high",
+    "markets": ["IE", "DE", "NL", "BE", "ES", "FR"],
+    "distribution_channels": ["mobile_app", "web"],
+    "product_ids": ["PRD-CONSUMER-LOAN", "PRD-RESIDENTIAL-MORTGAGE", "PRD-GREEN-HOME-LOAN", "PRD-SME-WORKING-CAPITAL"],
+    "portfolio_balance_eur_millions": 9200,
+    "esg_risk_assessment_priority": "high",
+    "esg_assessment_scope": ["sector", "geography", "loan_purpose", "transition_risk", "physical_risk", "data_quality"]
+  },
+  {
+    "business_line_id": "BL-PAYMENTS",
+    "name": "Payments",
+    "customer_segment": "retail_and_sme",
+    "materiality": "high",
+    "markets": ["IE", "DE", "NL", "BE", "ES", "FR"],
+    "distribution_channels": ["mobile_app", "web", "api"],
+    "product_ids": ["PRD-SEPA-CREDIT-TRANSFER", "PRD-SEPA-INSTANT", "PRD-OPEN-BANKING-PIS"],
+    "annual_instant_payment_volume": 8600000
+  },
+  {
+    "business_line_id": "BL-TREASURY",
+    "name": "Treasury",
+    "customer_segment": "internal_balance_sheet",
+    "materiality": "medium",
+    "markets": ["IE"],
+    "distribution_channels": ["internal"],
+    "product_ids": ["PRD-LIQUIDITY-PORTFOLIO"],
+    "material_trading_activity": false
+  }
+]

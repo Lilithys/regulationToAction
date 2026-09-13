@@ -1,0 +1,15 @@
+portfolio_record_id,assessment_as_of_date,sector_data_quality,ghg_emissions_data_status,transition_plan_evidence,physical_risk_data_source,synthetic
+PORT-SME-001,2026-06-30,validated_nace,estimated_sector_proxy,not_provided,external_hazard_model,true
+PORT-SME-002,2026-06-30,validated_nace,estimated_sector_proxy,not_provided,external_hazard_model,true
+PORT-SME-003,2026-06-30,broad_nace,missing,not_provided,external_hazard_model,true
+PORT-SME-004,2026-06-30,broad_nace,estimated_sector_proxy,not_provided,external_hazard_model,true
+PORT-SME-005,2026-06-30,validated_nace,estimated_sector_proxy,not_provided,external_hazard_model,true
+PORT-SME-006,2026-06-30,validated_nace,estimated_sector_proxy,not_provided,external_hazard_model,true
+PORT-SME-007,2026-06-30,broad_nace,missing,not_provided,external_hazard_model,true
+PORT-SME-008,2026-06-30,missing_nace,missing,not_provided,not_available,true
+PORT-SME-009,2026-06-30,validated_nace,estimated_sector_proxy,not_provided,external_hazard_model,true
+PORT-GH-001,2026-06-30,not_applicable,not_applicable,not_applicable,property_location_proxy,true
+PORT-GH-002,2026-06-30,not_applicable,not_applicable,not_applicable,property_location_proxy,true
+PORT-GH-003,2026-06-30,not_applicable,not_applicable,not_applicable,property_location_proxy,true
+PORT-GH-004,2026-06-30,not_applicable,not_applicable,not_applicable,property_location_proxy,true
+PORT-GH-005,2026-06-30,not_applicable,not_applicable,not_applicable,property_location_proxy,true

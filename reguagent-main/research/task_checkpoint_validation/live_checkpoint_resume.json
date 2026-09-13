@@ -1,0 +1,17 @@
+{
+  "case_id": "CASE-cb4fa9d654e14a34b4df0a8ea7109e56",
+  "outcome": {
+    "status": "failed",
+    "error_type": "BudgetExceeded",
+    "message": "Required wait exceeds remaining run time; case can be resumed later"
+  },
+  "budget": {
+    "model_turn_attempts": 6,
+    "tool_calls": 7,
+    "delegations": 1,
+    "tokens": 23327,
+    "elapsed_seconds": 340.699
+  },
+  "api_requests_attempted": 6,
+  "mode": "live"
+}

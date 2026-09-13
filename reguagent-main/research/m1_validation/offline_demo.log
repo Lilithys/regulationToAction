@@ -1,0 +1,49 @@
+离线基线演示；场景日期=2026-09-08；不是实时监管监测或自主 Agent 运行。
+
+======================================================================
+1. 变更提醒: EBA Guidelines on the management of ESG risks
+======================================================================
+来源: SRC-ESG-EBA-GL-2025-01  法律状态: final_guideline
+
+======================================================================
+2. 适用性判断
+======================================================================
+法律范围: in_scope；时间: application_date_reached；审核: provisional
+依据: Entity/activity assessment: 4 candidate in-scope, 1 unresolved; review=provisional. Product counts are descriptive, not the legal basis.
+
+======================================================================
+3. 组合事实与数据缺口
+======================================================================
+SME客户数=10000；余额=2300.0百万欧元
+行业分类不精确：客户占比=20.0%；余额占比=39.57%
+  accommodation: 余额=180.0百万；份额=7.83%；待核实=['complete_esg_data', 'physical_risk_assessment_evidence', 'physical_risk_location_evidence', 'precise_sector_classification', 'transition_risk_assessment_evidence']
+  agriculture: 余额=80.0百万；份额=3.48%；待核实=['complete_esg_data', 'physical_risk_assessment_evidence', 'physical_risk_location_evidence', 'transition_risk_assessment_evidence']
+  construction: 余额=260.0百万；份额=11.30%；待核实=['complete_esg_data', 'physical_risk_assessment_evidence', 'physical_risk_location_evidence', 'transition_risk_assessment_evidence']
+  food_service_activities: 余额=320.0百万；份额=13.91%；待核实=['complete_esg_data', 'physical_risk_assessment_evidence', 'physical_risk_location_evidence', 'precise_sector_classification', 'transition_risk_assessment_evidence']
+  light_manufacturing: 余额=450.0百万；份额=19.57%；待核实=['complete_esg_data', 'physical_risk_assessment_evidence', 'physical_risk_location_evidence', 'transition_risk_assessment_evidence']
+  professional_services: 余额=220.0百万；份额=9.57%；待核实=['physical_risk_assessment_evidence', 'physical_risk_location_evidence', 'transition_risk_assessment_evidence']
+  retail_trade: 余额=300.0百万；份额=13.04%；待核实=['complete_esg_data', 'physical_risk_assessment_evidence', 'physical_risk_location_evidence', 'precise_sector_classification', 'transition_risk_assessment_evidence']
+  road_freight_transport: 余额=380.0百万；份额=16.52%；待核实=['complete_esg_data', 'physical_risk_assessment_evidence', 'physical_risk_location_evidence', 'transition_risk_assessment_evidence']
+  sector_unclassified: 余额=110.0百万；份额=4.78%；待核实=['complete_esg_data', 'physical_risk_assessment_evidence', 'physical_risk_location_evidence', 'precise_sector_classification', 'transition_risk_assessment_evidence']
+风险评估未验证；行业代理和字段完整度不能证明风险判断正确。
+
+======================================================================
+4. 能力缺口判断
+======================================================================
+  REQ-ESG-CREDIT-MONITORING-001: insufficient_evidence — No supported control mapping yet; search governance text and document absence before declaring a missing capability.
+  REQ-ESG-CREDIT-POLICY-001: partial — Requirement-specific design=partial; unresolved design criteria=['esg_origination_criteria']; operating evidence=unverified. Assessment covers only the declared criteria, not overall legal compliance.
+  REQ-ESG-DATA-GAPS-001: insufficient_evidence — No supported control mapping yet; search governance text and document absence before declaring a missing capability.
+  REQ-ESG-DATA-SELECTION-001: insufficient_evidence — No supported control mapping yet; search governance text and document absence before declaring a missing capability.
+  REQ-ESG-LONG-HORIZON-001: insufficient_evidence — No supported control mapping yet; search governance text and document absence before declaring a missing capability.
+  REQ-ESG-RISK-APPETITE-001: insufficient_evidence — No supported control mapping yet; search governance text and document absence before declaring a missing capability.
+  REQ-ESG-RISK-INTEGRATION-001: partial — Requirement-specific design=partial; unresolved design criteria=['ongoing_risk_management']; operating evidence=unverified. Assessment covers only the declared criteria, not overall legal compliance.
+  REQ-ESG-RISK-KRI-001: insufficient_evidence — No supported control mapping yet; search governance text and document absence before declaring a missing capability.
+
+======================================================================
+5. 响应方案对比
+======================================================================
+  OPT-ESG-MANUAL: 三年TCO=806818.0€  截止日可行=False  产能是否足够=None
+  OPT-ESG-AUTOMATED: 三年TCO=451436.0€  截止日可行=False  产能是否足够=None
+  OPT-ESG-HYBRID: 三年TCO=481002.0€  截止日可行=False  产能是否足够=None
+最低基准TCO方案: OPT-ESG-AUTOMATED（needs_legal_review_and_delivery_team_capacity）
+仅完成基线检查；未选择、指派或批准行动。

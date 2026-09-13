@@ -1,0 +1,584 @@
+{
+  "schema_version": "1.0.0",
+  "dataset_scope": "person_1_regulatory_governance",
+  "as_of_date": "2026-09-05",
+  "generated_at": "2026-09-05T02:25:45Z",
+  "sources": [
+    {
+      "source_id": "SRC-DORA-EURLEX-2022-2554",
+      "title": "Regulation (EU) 2022/2554 of the European Parliament and of the Council of 14 December 2022 on digital operational resilience for the financial sector and amending Regulations (EC) No 1060/2009, (EU) No 648/2012, (EU) No 600/2014, (EU) No 909/2014 and (EU) 2016/1011",
+      "publisher": "Official Journal of the European Union",
+      "document_identifier": "CELEX:32022R2554",
+      "source_type": "official_journal_legal_text",
+      "authority_tier": 1,
+      "official": true,
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32022R2554",
+      "language": "en",
+      "publication_date": "2022-12-27",
+      "retrieved_at": "2026-09-05T01:45:00Z",
+      "content_sha256": null,
+      "verification_status": "verified",
+      "notes": [
+        "Article 6, Article 8, Article 28(1) and Article 28(9) text quoted directly from this fetch. Article 64 (entry into force / application) text itself was not retrieved verbatim in this session; the 2023-01-16 entry-into-force and 2025-01-17 application dates are corroborated by independent secondary sources and by the standard 20-day EIF rule applied to the 2022-12-27 publication date, but are not quote-verified against the primary text."
+      ]
+    },
+    {
+      "source_id": "SRC-ESG-EBA-GL-2025-01",
+      "title": "Final Report: Guidelines on the management of environmental, social and governance (ESG) risks (EBA/GL/2025/01)",
+      "publisher": "European Banking Authority",
+      "document_identifier": "EBA/GL/2025/01",
+      "source_type": "final_guideline",
+      "authority_tier": 2,
+      "official": true,
+      "url": "https://www.eba.europa.eu/sites/default/files/2025-01/fb22982a-d69d-42cc-9d62-1023497ad58a/Final%20Guidelines%20on%20the%20management%20of%20ESG%20risks.pdf",
+      "language": "en",
+      "publication_date": "2025-01-08",
+      "retrieved_at": "2026-09-05T01:45:00Z",
+      "content_sha256": "a48665645cf013da0ad337f1a4d7d0356af818400fe7e9757405ab53f944cf09",
+      "verification_status": "verified",
+      "notes": [
+        "Cover page of the retrieved PDF is dated 08/01/2025; some secondary commentary cites 9 January 2025 as the publication/press-release date. Paragraphs 5, 8, 10, 27, 29, 43-46, 50-51 and 68 were extracted and quoted directly from this document via pdftotext."
+      ]
+    },
+    {
+      "source_id": "SRC-FRTB-EBA-3RDFRTBDA-2026",
+      "title": "EBA consideration on the application of the FRTB from 1 January 2027 (3rd FRTB DA - Technical issues and Supervisory Benchmarking)",
+      "publisher": "European Banking Authority",
+      "document_identifier": "EBA document, PDF metadata creation date 2026-08-03",
+      "source_type": "official_guidance",
+      "authority_tier": 3,
+      "official": true,
+      "url": "https://eba.europa.eu/sites/default/files/2026-08/363c9362-68f8-43ad-bf66-8a86c63e6b8e/3rd%20FRTB%20DA%20-%20Technical%20issues%20and%20Supervisory%20Benchmarking.pdf",
+      "language": "en",
+      "publication_date": "2026-08-03",
+      "retrieved_at": "2026-09-05T01:45:00Z",
+      "content_sha256": "36780ab439080ae21e172baba129b77d07f480377705ffcc6917ac7e0f99c812",
+      "verification_status": "verified",
+      "notes": [
+        "Most time-sensitive source used in this dataset. States: 'The Delegated Act on temporary targeted operational relief measures and multipliers for market risk was adopted by the European Commission on 4 June 2026 and is currently subject to the scrutiny period by the European Parliament and the Council.' As of this document's 2026-08-03 date - about one month before the 2026-09-05 research cut-off - the act had not yet completed scrutiny or entered into force. Whether it did so between 2026-08-03 and the cut-off was not separately confirmed."
+      ]
+    },
+    {
+      "source_id": "SRC-FRTB-EBA-STATEMENT-2025",
+      "title": "EBA statement confirming its response to the European Commission's Delegated Act postponing the application of the market risk framework in the EU",
+      "publisher": "European Banking Authority",
+      "document_identifier": "EBA Statement of FRTB (2025)",
+      "source_type": "official_guidance",
+      "authority_tier": 3,
+      "official": true,
+      "url": "https://eba.europa.eu/sites/default/files/2025-08/c2031e45-60fd-47f3-b0b9-9a2011aec396/EBA%20Statement%20of%20FRTB.pdf",
+      "language": "en",
+      "publication_date": null,
+      "retrieved_at": "2026-09-05T01:45:00Z",
+      "content_sha256": "c1d6679e508e08ca6dd988df76f60514090fe0fa2f1955cf9af073b99bbe157d",
+      "verification_status": "verified",
+      "notes": [
+        "Confirms Commission Delegated Regulation adopted 12 June 2025 under Article 461a CRR deferring FRTB own funds requirements for market risk to 1 January 2027, and continuation of the EBA's 12 August 2024 no-action letter. Exact issuance date of this statement itself is not confirmed beyond the 2025-08 hosting path; retrieved via pdftotext extraction of the saved PDF."
+      ]
+    },
+    {
+      "source_id": "SRC-FRTB-EC-NEWS-2026",
+      "title": "EU temporarily amends prudential rules for banks' market risk",
+      "publisher": "European Commission - DG FISMA (Finance)",
+      "document_identifier": "finance.ec.europa.eu news item 2026-06-08",
+      "source_type": "official_explanatory_page",
+      "authority_tier": 3,
+      "official": true,
+      "url": "https://finance.ec.europa.eu/news/eu-temporarily-amends-prudential-rules-banks-market-risk-2026-06-08_en",
+      "language": "en",
+      "publication_date": "2026-06-08",
+      "retrieved_at": "2026-09-05T01:45:00Z",
+      "content_sha256": null,
+      "verification_status": "verified",
+      "notes": [
+        "Describes a Commission Delegated Regulation adopted 4 June 2026 (C(2026) 3647 final, referred to as the 'EU Market Risk Delegated Act') introducing temporary targeted operational relief measures and targeted multipliers applicable from 1 January 2027, submitted to a 3-month European Parliament/Council non-objection period (extendable by a further 3 months). As of the 2026-09-05 research cut-off this page does not confirm whether the scrutiny period has concluded, whether it was extended, or whether the act has been published in the Official Journal or entered into force."
+      ]
+    },
+    {
+      "source_id": "SRC-FRTB-EURLEX-CRR-575",
+      "title": "Regulation (EU) No 575/2013 of the European Parliament and of the Council of 26 June 2013 on prudential requirements for credit institutions (Capital Requirements Regulation), consolidated text as amended",
+      "publisher": "Official Journal of the European Union / EUR-Lex consolidated text",
+      "document_identifier": "CELEX:32013R0575",
+      "source_type": "consolidated_legal_text",
+      "authority_tier": 1,
+      "official": true,
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32013R0575",
+      "language": "en",
+      "publication_date": null,
+      "retrieved_at": "2026-09-05T01:45:00Z",
+      "content_sha256": null,
+      "verification_status": "needs_review",
+      "notes": [
+        "Fetch reached only Articles 1-4 (preamble/definitions) before truncation; Article 94 ('Derogation for small trading book business') text and its exact current paragraph numbering after CRR2/CRR3 amendments were not directly quoted in this session. Two independent secondary summaries (non-official) describe a threshold of 5% of total assets or EUR 50 million (aggregated absolute long plus short trading-book positions, assessed monthly), consistent with the historically stable Article 94 CRR derogation, but this requires direct-text confirmation by a legal reviewer before treatment as gold."
+      ]
+    },
+    {
+      "source_id": "SRC-FRTB-EURLEX-CRR3-1623",
+      "title": "Regulation (EU) 2024/1623 of the European Parliament and of the Council of 31 May 2024 amending Regulation (EU) No 575/2013 as regards requirements for credit risk, credit valuation adjustment risk, operational risk, market risk and the output floor (CRR3)",
+      "publisher": "Official Journal of the European Union",
+      "document_identifier": "CELEX:32024R1623",
+      "source_type": "official_journal_legal_text",
+      "authority_tier": 1,
+      "official": true,
+      "url": "https://eur-lex.europa.eu/eli/reg/2024/1623/oj/eng",
+      "language": "en",
+      "publication_date": "2024-06-19",
+      "retrieved_at": "2026-09-05T01:45:00Z",
+      "content_sha256": null,
+      "verification_status": "needs_review",
+      "notes": [
+        "Identity, publication date (19 June 2024), entry-into-force date (9 July 2024) and general 1 January 2025 application date corroborated via search results and cross-referenced against the Article 461a mechanism description; not confirmed by a direct quoted fetch of this instrument's own final-provisions article in this session."
+      ]
+    },
+    {
+      "source_id": "SRC-FRTB-EURLEX-DA-2024-2795",
+      "title": "Commission Delegated Regulation (EU) 2024/2795 of 24 July 2024 amending the regulatory technical standards laid down in Regulation (EU) No 575/2013 as regards the date of application of the own funds requirements for market risk",
+      "publisher": "Official Journal of the European Union",
+      "document_identifier": "CELEX:32024R2795",
+      "source_type": "official_journal_legal_text",
+      "authority_tier": 1,
+      "official": true,
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32024R2795",
+      "language": "en",
+      "publication_date": "2024-10-31",
+      "retrieved_at": "2026-09-05T01:45:00Z",
+      "content_sha256": null,
+      "verification_status": "needs_review",
+      "notes": [
+        "Adopted 24 July 2024 under Article 461a(2) CRR, deferring the FRTB alternative approaches' application to 1 January 2026 (subsequently superseded by Delegated Regulation (EU) 2025/1496). Identified via search corroboration; not quote-verified against the primary text in this session."
+      ]
+    },
+    {
+      "source_id": "SRC-FRTB-EURLEX-DA-2025-1496",
+      "title": "Commission Delegated Regulation (EU) 2025/1496 of 12 June 2025 amending Regulation (EU) No 575/2013 as regards the date of application of the own funds requirements for market risk",
+      "publisher": "Official Journal of the European Union",
+      "document_identifier": "CELEX:32025R1496",
+      "source_type": "official_journal_legal_text",
+      "authority_tier": 1,
+      "official": true,
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ:L_202501496",
+      "language": "en",
+      "publication_date": "2025-09-19",
+      "retrieved_at": "2026-09-05T01:45:00Z",
+      "content_sha256": null,
+      "verification_status": "needs_review",
+      "notes": [
+        "Adopted 12 June 2025 under Article 461a CRR, further deferring the FRTB own funds requirements for market risk to 1 January 2027; corroborated by SRC-FRTB-EBA-STATEMENT-2025 (independent official source). Not quote-verified against the primary OJ text itself in this session (PDF fetch was not machine-readable)."
+      ]
+    },
+    {
+      "source_id": "SRC-IPS-EURLEX-2024-886",
+      "title": "Regulation (EU) 2024/886 of the European Parliament and of the Council of 13 March 2024 amending Regulations (EU) No 260/2012 and (EU) 2021/1230 and Directives 98/26/EC and (EU) 2015/2366 as regards instant credit transfers in euro",
+      "publisher": "Official Journal of the European Union",
+      "document_identifier": "CELEX:32024R0886",
+      "source_type": "official_journal_legal_text",
+      "authority_tier": 1,
+      "official": true,
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=OJ:L_202400886",
+      "language": "en",
+      "publication_date": "2024-03-19",
+      "retrieved_at": "2026-09-05T01:45:00Z",
+      "content_sha256": null,
+      "verification_status": "verified",
+      "notes": [
+        "Fetched directly; article text for Articles 5a-5d (send/receive, charges parity, verification of payee, sanctions screening) quoted from this page."
+      ]
+    }
+  ],
+  "changes": [
+    {
+      "change_id": "REG-DORA-2022-2554",
+      "topic_key": "dora",
+      "title": "Digital Operational Resilience Act: ICT risk management framework, dependency identification and ICT third-party register of information",
+      "short_name": "DORA",
+      "legal_instrument_id": "Regulation (EU) 2022/2554",
+      "celex": "32022R2554",
+      "issuing_body": "European Parliament and Council of the European Union",
+      "instrument_type": "eu_regulation",
+      "jurisdictions": [
+        "EU",
+        "IE"
+      ],
+      "legal_status": "in_force",
+      "binding_nature": "binding",
+      "publication_date": "2022-12-27",
+      "entry_into_force_date": "2023-01-16",
+      "application_events": [
+        {
+          "event_type": "application",
+          "date": "2025-01-17",
+          "applies_to": "All in-scope financial entities: general date of application of DORA obligations, including the ICT risk management framework and ICT third-party register of information",
+          "locator": "Article 64",
+          "source_ids": [
+            "SRC-DORA-EURLEX-2022-2554"
+          ],
+          "verification_status": "needs_review"
+        }
+      ],
+      "change_summary": "Article 6 requires financial entities to put in place, maintain and regularly review a comprehensive ICT risk management framework covering identification, protection/prevention, detection, response/recovery and learning/evolving capabilities, proportionate to their nature, scale and complexity. Article 8 requires identification, classification and documentation of all critical or important functions, the information and ICT assets supporting them, and mapping of dependencies between ICT assets, systems and processes. Article 28(1) requires the management body to adopt a dedicated strategy on ICT third-party risk addressing identification and management of all ICT third-party dependencies. Article 28(9) requires financial entities to maintain and keep up to date, at entity, sub-consolidated and consolidated level, a register of information on all contractual arrangements with ICT third-party service providers.",
+      "amends_or_supersedes": [],
+      "related_change_ids": [],
+      "primary_source_id": "SRC-DORA-EURLEX-2022-2554",
+      "source_ids": [
+        "SRC-DORA-EURLEX-2022-2554"
+      ],
+      "record_status": "verified",
+      "synthetic": false,
+      "provenance": {
+        "origin": "authoritative_external_source",
+        "source_ids": [
+          "SRC-DORA-EURLEX-2022-2554"
+        ],
+        "created_at": "2026-09-05T02:25:45Z",
+        "created_by": "coding_agent",
+        "last_verified_at": "2026-09-05T01:45:00Z",
+        "notes": [
+          "Articles 6, 8, 28(1) and 28(9) text confirmed via direct EUR-Lex fetch; entry-into-force/application dates corroborated but not quote-verified against Article 64 itself (see source notes)."
+        ]
+      },
+      "annotation": {
+        "label_status": "silver",
+        "annotated_by": "coding_agent",
+        "reviewed_by": null,
+        "reviewed_at": null,
+        "notes": []
+      },
+      "missing_evidence": [
+        {
+          "field": "entry_into_force_date",
+          "reason": "The 2023-01-16 entry-into-force date is corroborated by secondary sources and the standard 20-day rule applied to the 2022-12-27 publication date, but Article 64's own text was not quoted directly in this research session.",
+          "required_input": "Direct confirmation of Article 64 text against the EUR-Lex primary source",
+          "responsible_scope": "legal_reviewer",
+          "blocking": false
+        }
+      ],
+      "requirement_ids": [
+        "REQ-DORA-DEPENDENCY-MAP-001",
+        "REQ-DORA-ICT-FRAMEWORK-001",
+        "REQ-DORA-ICT-REGISTER-001",
+        "REQ-DORA-TPRM-STRATEGY-001"
+      ]
+    },
+    {
+      "change_id": "REG-ESG-EBA-GL-2025-01",
+      "topic_key": "esg_risk_management",
+      "title": "EBA Guidelines on the management of ESG risks",
+      "short_name": "EBA ESG Risk Management Guidelines",
+      "legal_instrument_id": "EBA/GL/2025/01",
+      "celex": null,
+      "issuing_body": "European Banking Authority",
+      "instrument_type": "eba_guideline",
+      "jurisdictions": [
+        "EU",
+        "IE"
+      ],
+      "legal_status": "final_guideline",
+      "binding_nature": "comply_or_explain",
+      "publication_date": "2025-01-08",
+      "entry_into_force_date": null,
+      "application_events": [
+        {
+          "event_type": "application",
+          "date": "2026-01-11",
+          "applies_to": "Institutions other than small and non-complex institutions (SNCIs)",
+          "locator": "Guidelines, Section 3 'Implementation', paragraph 10, first sentence",
+          "source_ids": [
+            "SRC-ESG-EBA-GL-2025-01"
+          ],
+          "verification_status": "verified"
+        },
+        {
+          "event_type": "application",
+          "date": "2027-01-11",
+          "applies_to": "Small and non-complex institutions (SNCIs) - latest application date",
+          "locator": "Guidelines, Section 3 'Implementation', paragraph 10, second sentence",
+          "source_ids": [
+            "SRC-ESG-EBA-GL-2025-01"
+          ],
+          "verification_status": "verified"
+        },
+        {
+          "event_type": "reporting",
+          "date": "2025-06-03",
+          "applies_to": "Competent authorities: deadline to notify the EBA of compliance or intended compliance, or reasons for non-compliance",
+          "locator": "Guidelines, Section 1 'Compliance and reporting obligations', paragraph 3",
+          "source_ids": [
+            "SRC-ESG-EBA-GL-2025-01"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "change_summary": "Issued under Article 16 of Regulation (EU) No 1093/2010 pursuant to the mandate in Articles 87a(1), 87a(5) and 74 of Directive 2013/36/EU (CRD), these comply-or-explain guidelines set minimum standards and reference methodologies for institutions' identification, measurement, management and monitoring of environmental, social and governance (ESG) risks, including materiality assessment, data processes, integration into risk management (risk appetite, credit/market/liquidity/operational/reputational/concentration risk policies), and the content of Article 76(2) CRD transition plans. They apply to institutions other than SNCIs from 11 January 2026 and to SNCIs at the latest from 11 January 2027.",
+      "amends_or_supersedes": [],
+      "related_change_ids": [],
+      "primary_source_id": "SRC-ESG-EBA-GL-2025-01",
+      "source_ids": [
+        "SRC-ESG-EBA-GL-2025-01"
+      ],
+      "record_status": "verified",
+      "synthetic": false,
+      "provenance": {
+        "origin": "authoritative_external_source",
+        "source_ids": [
+          "SRC-ESG-EBA-GL-2025-01"
+        ],
+        "created_at": "2026-09-05T02:25:45Z",
+        "created_by": "coding_agent",
+        "last_verified_at": "2026-09-05T01:45:00Z",
+        "notes": [
+          "Paragraphs 5, 8, 10 quoted directly from the official final-report PDF via pdftotext extraction."
+        ]
+      },
+      "annotation": {
+        "label_status": "silver",
+        "annotated_by": "coding_agent",
+        "reviewed_by": null,
+        "reviewed_at": null,
+        "notes": []
+      },
+      "missing_evidence": [],
+      "requirement_ids": [
+        "REQ-ESG-CREDIT-POLICY-001",
+        "REQ-ESG-DATA-GAPS-001",
+        "REQ-ESG-RISK-APPETITE-001",
+        "REQ-ESG-RISK-INTEGRATION-001"
+      ]
+    },
+    {
+      "change_id": "REG-FRTB-CRR3-MKT-RISK",
+      "topic_key": "frtb",
+      "title": "FRTB market-risk own-funds framework under CRR3: small trading-book-business exemption and repeatedly deferred application timeline",
+      "short_name": "FRTB / CRR3 market risk",
+      "legal_instrument_id": "Regulation (EU) 2024/1623 amending Regulation (EU) No 575/2013 (CRR3), market risk own-funds requirements (Part Three, Title IV)",
+      "celex": "32024R1623",
+      "issuing_body": "European Parliament and Council of the European Union; European Commission (delegated acts under Article 461a CRR)",
+      "instrument_type": "eu_regulation",
+      "jurisdictions": [
+        "EU",
+        "IE"
+      ],
+      "legal_status": "in_force",
+      "binding_nature": "binding",
+      "publication_date": "2024-06-19",
+      "entry_into_force_date": "2024-07-09",
+      "application_events": [
+        {
+          "event_type": "application",
+          "date": "2025-01-01",
+          "applies_to": "CRR3 general date of application (most provisions other than market risk, which follows the Article 461a deferral chain below)",
+          "locator": "Regulation (EU) 2024/1623, Article 3 (entry into force and application)",
+          "source_ids": [
+            "SRC-FRTB-EURLEX-CRR3-1623"
+          ],
+          "verification_status": "needs_review"
+        },
+        {
+          "event_type": "application",
+          "date": "2026-01-01",
+          "applies_to": "FRTB alternative approaches for market-risk own funds requirements - date set by the first Article 461a delegated act (now superseded by the 2027-01-01 date below)",
+          "locator": "Commission Delegated Regulation (EU) 2024/2795",
+          "source_ids": [
+            "SRC-FRTB-EURLEX-DA-2024-2795"
+          ],
+          "verification_status": "needs_review"
+        },
+        {
+          "event_type": "application",
+          "date": "2027-01-01",
+          "applies_to": "FRTB alternative approaches for market-risk own funds requirements - currently governing date under the second Article 461a delegated act; until this date institutions continue to apply the market-risk framework as it stood on 2024-07-08",
+          "locator": "Commission Delegated Regulation (EU) 2025/1496",
+          "source_ids": [
+            "SRC-FRTB-EBA-STATEMENT-2025",
+            "SRC-FRTB-EURLEX-DA-2025-1496"
+          ],
+          "verification_status": "needs_review"
+        },
+        {
+          "event_type": "other",
+          "date": null,
+          "applies_to": "Temporary targeted operational-relief measures and targeted multiplier for market-risk own funds requirements, proposed to apply from 2027-01-01 until 2030-01-01 - confirmed still under EP/Council scrutiny (not in force) as of 2026-08-03, roughly one month before the 2026-09-05 research cut-off; status for the remaining window to the cut-off is unresolved",
+          "locator": "Draft/adopted Commission Delegated Regulation C(2026) 3647 final ('EU Market Risk Delegated Act'), not yet assigned an OJ CELEX number in the sources reviewed",
+          "source_ids": [
+            "SRC-FRTB-EBA-3RDFRTBDA-2026",
+            "SRC-FRTB-EC-NEWS-2026"
+          ],
+          "verification_status": "needs_review"
+        }
+      ],
+      "change_summary": "CRR3 restructured own-funds requirements for market risk around the Basel III Fundamental Review of the Trading Book (FRTB). Two mechanisms are in scope for this dataset: (1) Article 94 CRR's long-standing 'derogation for small trading book business', which lets institutions below defined thresholds apply credit-risk rather than market-risk treatment to trading-book positions; and (2) the Article 461a CRR empowerment, under which the Commission has twice deferred the application date of the FRTB alternative approaches (first to 2026-01-01 via Delegated Regulation (EU) 2024/2795, then to 2027-01-01 via Delegated Regulation (EU) 2025/1496), and has adopted (4 June 2026, pending an EP/Council non-objection period) a further delegated act introducing temporary targeted adjustments rather than another outright postponement, since the two-year maximum deferral under Article 461a had already been used. The current legal status of that most recent delegated act was not resolved as of the research cut-off.",
+      "amends_or_supersedes": [
+        "Regulation (EU) No 575/2013"
+      ],
+      "related_change_ids": [],
+      "primary_source_id": "SRC-FRTB-EURLEX-CRR3-1623",
+      "source_ids": [
+        "SRC-FRTB-EBA-3RDFRTBDA-2026",
+        "SRC-FRTB-EBA-STATEMENT-2025",
+        "SRC-FRTB-EC-NEWS-2026",
+        "SRC-FRTB-EURLEX-CRR-575",
+        "SRC-FRTB-EURLEX-CRR3-1623",
+        "SRC-FRTB-EURLEX-DA-2024-2795",
+        "SRC-FRTB-EURLEX-DA-2025-1496"
+      ],
+      "record_status": "needs_review",
+      "synthetic": false,
+      "provenance": {
+        "origin": "authoritative_external_source",
+        "source_ids": [
+          "SRC-FRTB-EBA-3RDFRTBDA-2026",
+          "SRC-FRTB-EBA-STATEMENT-2025",
+          "SRC-FRTB-EC-NEWS-2026",
+          "SRC-FRTB-EURLEX-CRR-575",
+          "SRC-FRTB-EURLEX-CRR3-1623",
+          "SRC-FRTB-EURLEX-DA-2024-2795",
+          "SRC-FRTB-EURLEX-DA-2025-1496"
+        ],
+        "created_at": "2026-09-05T02:25:45Z",
+        "created_by": "coding_agent",
+        "last_verified_at": "2026-09-05T01:45:00Z",
+        "notes": [
+          "Held at needs_review because the currently governing application date and the status of the pending 2026 delegated act could not be confirmed against a directly quoted primary text as of the research cut-off; this reflects genuine, currently-unsettled EU regulatory status rather than incomplete research effort."
+        ]
+      },
+      "annotation": {
+        "label_status": "silver",
+        "annotated_by": "coding_agent",
+        "reviewed_by": null,
+        "reviewed_at": null,
+        "notes": [
+          "Two-source corroboration applied for the 2027-01-01 date: EC news page and EBA statement PDF independently confirm the 2025-06-12 delegated act. A third, dated EBA source (SRC-FRTB-EBA-3RDFRTBDA-2026, 2026-08-03) narrows the pending 2026 act's unresolved window to 2026-08-03 through the 2026-09-05 cut-off."
+        ]
+      },
+      "missing_evidence": [
+        {
+          "field": "application_events[3].date",
+          "reason": "SRC-FRTB-EBA-3RDFRTBDA-2026 (dated 2026-08-03) confirms the Commission Delegated Regulation adopted 2026-06-04 (C(2026) 3647 final) was still under EP/Council scrutiny and not in force as of that date, about one month before the research cut-off. Whether it completed scrutiny, was published in the Official Journal, or entered into force between 2026-08-03 and 2026-09-05 could not be confirmed from the sources reviewed.",
+          "required_input": "A current EUR-Lex or Official Journal record for this delegated regulation, or an EBA/EC statement confirming its status after the non-objection period",
+          "responsible_scope": "legal_reviewer",
+          "blocking": true
+        },
+        {
+          "field": "celex",
+          "reason": "Article 94 CRR's exact current paragraph numbering and whether it has been renumbered or materially altered by CRR2/CRR3 (as distinct from the related Article 325a 'main risk driver' threshold mechanism) was not confirmed against primary text.",
+          "required_input": "Direct EUR-Lex confirmation of the current consolidated text of Article 94 CRR",
+          "responsible_scope": "legal_reviewer",
+          "blocking": true
+        }
+      ],
+      "requirement_ids": [
+        "REQ-FRTB-APPLICATION-DATE-001",
+        "REQ-FRTB-SMALL-BOOK-001"
+      ]
+    },
+    {
+      "change_id": "REG-IPS-2024-886",
+      "topic_key": "instant_payments",
+      "title": "Instant credit transfers in euro: send/receive obligation, charges parity, verification of payee and sanctions screening",
+      "short_name": "Instant Payments Regulation",
+      "legal_instrument_id": "Regulation (EU) 2024/886",
+      "celex": "32024R0886",
+      "issuing_body": "European Parliament and Council of the European Union",
+      "instrument_type": "eu_regulation",
+      "jurisdictions": [
+        "EU",
+        "IE"
+      ],
+      "legal_status": "in_force",
+      "binding_nature": "binding",
+      "publication_date": "2024-03-19",
+      "entry_into_force_date": "2024-04-08",
+      "application_events": [
+        {
+          "event_type": "application",
+          "date": "2025-01-09",
+          "applies_to": "Euro-area PSPs: receive instant credit transfers; charges-parity obligation; sanctions-screening obligation",
+          "locator": "Article 5a(8), Article 5b(3), Article 5d(3) (as inserted into Regulation (EU) No 260/2012)",
+          "source_ids": [
+            "SRC-IPS-EURLEX-2024-886"
+          ],
+          "verification_status": "verified"
+        },
+        {
+          "event_type": "application",
+          "date": "2025-10-09",
+          "applies_to": "Euro-area PSPs: send instant credit transfers; Verification of Payee service",
+          "locator": "Article 5a(8), Article 5c(9)",
+          "source_ids": [
+            "SRC-IPS-EURLEX-2024-886"
+          ],
+          "verification_status": "verified"
+        },
+        {
+          "event_type": "application",
+          "date": "2027-01-09",
+          "applies_to": "Non-euro-area PSPs: receive instant credit transfers; charges-parity obligation",
+          "locator": "Article 5a(8), Article 5b(3)",
+          "source_ids": [
+            "SRC-IPS-EURLEX-2024-886"
+          ],
+          "verification_status": "verified"
+        },
+        {
+          "event_type": "application",
+          "date": "2027-04-09",
+          "applies_to": "Euro-area payment institutions and electronic money institutions: send and receive instant credit transfers",
+          "locator": "Article 5a(8)",
+          "source_ids": [
+            "SRC-IPS-EURLEX-2024-886"
+          ],
+          "verification_status": "verified"
+        },
+        {
+          "event_type": "application",
+          "date": "2027-07-09",
+          "applies_to": "Non-euro-area PSPs: send instant credit transfers and Verification of Payee service; non-euro-area payment/e-money institutions: send obligation",
+          "locator": "Article 5a(8), Article 5c(9)",
+          "source_ids": [
+            "SRC-IPS-EURLEX-2024-886"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "change_summary": "Inserts Articles 5a-5d into Regulation (EU) No 260/2012, requiring PSPs that offer credit transfers in euro to also offer instant credit transfers reachable 24/7 (Article 5a); requiring charges for instant transfers to be no higher than for standard transfers (Article 5b); requiring a free, immediate Verification of Payee service before transfer authorisation (Article 5c); and requiring daily screening of payment service users against targeted financial restrictive-measures lists while prohibiting additional per-transaction screening during execution (Article 5d). Application dates are staggered by PSP type and euro-area status.",
+      "amends_or_supersedes": [
+        "Directive (EU) 2015/2366",
+        "Directive 98/26/EC",
+        "Regulation (EU) 2021/1230",
+        "Regulation (EU) No 260/2012"
+      ],
+      "related_change_ids": [],
+      "primary_source_id": "SRC-IPS-EURLEX-2024-886",
+      "source_ids": [
+        "SRC-IPS-EURLEX-2024-886"
+      ],
+      "record_status": "verified",
+      "synthetic": false,
+      "provenance": {
+        "origin": "authoritative_external_source",
+        "source_ids": [
+          "SRC-IPS-EURLEX-2024-886"
+        ],
+        "created_at": "2026-09-05T02:25:45Z",
+        "created_by": "coding_agent",
+        "last_verified_at": "2026-09-05T01:45:00Z",
+        "notes": [
+          "Article-level text for 5a-5d confirmed via direct EUR-Lex fetch."
+        ]
+      },
+      "annotation": {
+        "label_status": "silver",
+        "annotated_by": "coding_agent",
+        "reviewed_by": null,
+        "reviewed_at": null,
+        "notes": []
+      },
+      "missing_evidence": [],
+      "requirement_ids": [
+        "REQ-IPS-CHARGES-PARITY-001",
+        "REQ-IPS-SANCTIONS-SCREEN-001",
+        "REQ-IPS-SEND-RECEIVE-001",
+        "REQ-IPS-VOP-001"
+      ]
+    }
+  ]
+}

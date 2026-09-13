@@ -1,0 +1,53 @@
+
+=== 待审核: REQ-TEST · exposure ===
+  transition_risk vs physical_risk: 比例=2 理由: test fixture
+  transition_risk vs review_urgency: 比例=4 理由: test fixture
+  physical_risk vs review_urgency: 比例=2 理由: test fixture
+已保存本版本的明确确认，CR=0.0000。
+
+=== 待审核: REQ-TEST · exposure ===
+  transition_risk vs physical_risk: 比例=2 理由: test fixture
+  transition_risk vs review_urgency: 比例=4 理由: test fixture
+  physical_risk vs review_urgency: 比例=2 理由: test fixture
+
+=== 待审核: REQ-TEST · exposure ===
+  transition_risk vs physical_risk: 比例=2 理由: test fixture
+  transition_risk vs review_urgency: 比例=4 理由: test fixture
+  physical_risk vs review_urgency: 比例=2 理由: test fixture
+
+=== 待审核: REQ-TEST · exposure ===
+  transition_risk vs physical_risk: 比例=2 理由: test fixture
+  transition_risk vs review_urgency: 比例=4 理由: test fixture
+  physical_risk vs review_urgency: 比例=2 理由: test fixture
+
+=== 待审核: REQ-TEST · exposure ===
+  transition_risk vs physical_risk: 比例=2 理由: test fixture
+  transition_risk vs review_urgency: 比例=4 理由: test fixture
+  physical_risk vs review_urgency: 比例=2 理由: test fixture
+
+=== 待审核: REQ-TEST · exposure ===
+  transition_risk vs physical_risk: 比例=2 理由: test fixture
+  transition_risk vs review_urgency: 比例=4 理由: test fixture
+  physical_risk vs review_urgency: 比例=2 理由: test fixture
+
+=== 待审核: REQ-TEST · exposure ===
+  transition_risk vs physical_risk: 比例=2 理由: test fixture
+  transition_risk vs review_urgency: 比例=4 理由: test fixture
+  physical_risk vs review_urgency: 比例=2 理由: test fixture
+
+=== 待审核: REQ-TEST · exposure ===
+  transition_risk vs physical_risk: 比例=2 理由: test fixture
+  transition_risk vs review_urgency: 比例=4 理由: test fixture
+  physical_risk vs review_urgency: 比例=2 理由: test fixture
+已保存本版本的明确确认，CR=0.0158。
+
+=== 待审核: REQ-TEST · exposure ===
+  transition_risk vs physical_risk: 比例=2 理由: test fixture
+  transition_risk vs review_urgency: 比例=4 理由: test fixture
+  physical_risk vs review_urgency: 比例=2 理由: test fixture
+已保存本版本的明确确认，CR=0.0000。
+.........................................................................
+----------------------------------------------------------------------
+Ran 73 tests in 0.152s
+
+OK

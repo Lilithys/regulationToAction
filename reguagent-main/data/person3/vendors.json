@@ -1,0 +1,188 @@
+{
+  "_meta": {
+    "file": "05_operations/vendors.json",
+    "owner": "Person 3 - Operations and technology",
+    "purpose": "Third party and ICT provider register. Northstar names exactly three 'material external technology providers' (core banking platform, cloud infrastructure, identity verification) plus a fourth material non-technology provider (the mortgage servicer) in Bank_Context_Fictional_Digital_Bank.md. Everything else here is a smaller, non-material supporting vendor. The dependency-mapping gap described in the same document (subcontractors not consistently mapped) is represented here as a concrete, checkable field per vendor rather than a pre-judged conclusion.",
+    "generated_at": "2026-09-03",
+    "as_of_date": "2026-09-03",
+    "entity_id": "ENT-NDB-PLC",
+    "materiality_basis": "Materiality flag follows Bank_Context_Fictional_Digital_Bank.md directly: 3 material technology providers + 1 material mortgage servicer = 4 material vendors."
+  },
+  "vendors": [
+    {
+      "vendor_id": "VND-CLOUD-INFRA",
+      "name": "Public cloud infrastructure provider (AWS-based, EU region)",
+      "service_provided": "Underlying cloud compute, storage and networking infrastructure for all cloud-hosted systems.",
+      "supports_systems": [
+        "SYS-CORE-BANKING",
+        "SYS-MOBILE-APP",
+        "SYS-WEB-BANKING",
+        "SYS-ONBOARDING",
+        "SYS-CRM",
+        "SYS-LOAN-ORIG",
+        "SYS-DATA-PLATFORM",
+        "SYS-RISK-ENGINE",
+        "SYS-GRC",
+        "SYS-PAYMENTS-HUB",
+        "SYS-VOP",
+        "SYS-BENEFICIARY-STORE",
+        "SYS-SANCTIONS-ENGINE",
+        "SYS-FRAUD-ENGINE",
+        "SYS-NOTIFICATION",
+        "SYS-ICT-REGISTER"
+      ],
+      "materiality": "material",
+      "owner_cost_centre_id": "CC-300",
+      "contract_start_date": "2019-04-01",
+      "subcontractors_identified_by_vendor": true,
+      "subcontractors_mapped_in_ict_register": false,
+      "legal_entity_identifier_present": true,
+      "data_processing_location": "EU (single region)",
+      "concentration_group": "cloud-region-eu",
+      "exit_plan_exists": true,
+      "exit_plan_tested": false,
+      "notes": "Modelled on bunq's real, publicly disclosed choice of AWS-hosted, renewable-powered EU infrastructure (2025 annual report / ESG report). Named generically here rather than as the real company, since Northstar itself is fictional. This is the single largest concentration point in the whole estate - every other cloud-hosted system in systems.json ultimately sits on this one vendor. The vendor has identified its own subcontractors (data centre operators, network providers) in its own disclosures, but the bank's ICT service register has not yet captured that subcontractor layer against each critical service - this is the concrete form of the 'incomplete subcontractor mapping' gap the bank context document flags."
+    },
+    {
+      "vendor_id": "VND-CORE-BANKING",
+      "name": "Core banking platform provider",
+      "service_provided": "Core ledger, account servicing, mobile and web channel software, payments hub, loan origination system, CRM, data platform, notification service software.",
+      "supports_systems": [
+        "SYS-CORE-BANKING",
+        "SYS-MOBILE-APP",
+        "SYS-WEB-BANKING",
+        "SYS-LOAN-ORIG",
+        "SYS-DATA-PLATFORM",
+        "SYS-PAYMENTS-HUB",
+        "SYS-BENEFICIARY-STORE",
+        "SYS-NOTIFICATION"
+      ],
+      "materiality": "material",
+      "owner_cost_centre_id": "CC-300",
+      "contract_start_date": "2018-11-15",
+      "subcontractors_identified_by_vendor": true,
+      "subcontractors_mapped_in_ict_register": true,
+      "legal_entity_identifier_present": true,
+      "data_processing_location": "EU (single region, hosted on VND-CLOUD-INFRA)",
+      "concentration_group": "software-platform",
+      "exit_plan_exists": true,
+      "exit_plan_tested": true,
+      "notes": "One of the three material technology providers named directly in the bank context. Runs on top of VND-CLOUD-INFRA - the two vendors are architecturally coupled even though they are contractually separate, which matters for concentration risk assessment."
+    },
+    {
+      "vendor_id": "VND-IDENTITY-VERIFICATION",
+      "name": "Identity verification provider",
+      "service_provided": "Digital identity verification and document checks at onboarding.",
+      "supports_systems": [
+        "SYS-ONBOARDING"
+      ],
+      "materiality": "material",
+      "owner_cost_centre_id": "CC-500",
+      "contract_start_date": "2020-02-10",
+      "subcontractors_identified_by_vendor": true,
+      "subcontractors_mapped_in_ict_register": true,
+      "legal_entity_identifier_present": true,
+      "data_processing_location": "EU",
+      "concentration_group": "standalone",
+      "exit_plan_exists": true,
+      "exit_plan_tested": false,
+      "notes": "One of the three material technology providers named directly in the bank context."
+    },
+    {
+      "vendor_id": "VND-MORTGAGE-SERVICER",
+      "name": "Mortgage servicing provider",
+      "service_provided": "End-to-end operation of the mortgage servicing platform: balances, arrears case management, ARA administration and repayment history, under NDB's arrears and vulnerable-customer policies.",
+      "supports_systems": [
+        "SYS-MORTGAGE-SERVICING"
+      ],
+      "materiality": "material",
+      "owner_cost_centre_id": "CC-700",
+      "contract_start_date": "2021-06-01",
+      "subcontractors_identified_by_vendor": false,
+      "subcontractors_mapped_in_ict_register": false,
+      "legal_entity_identifier_present": true,
+      "data_processing_location": "IE",
+      "concentration_group": "standalone",
+      "exit_plan_exists": true,
+      "exit_plan_tested": false,
+      "notes": "Named directly as a material third-party provider in the bank context (separately from the three 'technology' providers, because this is an operational/servicing outsourcing, not a software licence). NDB retains oversight responsibility for arrears strategy and vulnerable-customer outcomes; the servicer sends a monthly data extract and some supporting case documents are held outside NDB systems entirely - this is a genuine, currently-unclosed evidence gap, not just a hypothetical one."
+    },
+    {
+      "vendor_id": "VND-VOP-PROVIDER",
+      "name": "Verification of Payee service provider",
+      "service_provided": "Payee-name verification service, integrated on the web channel; mobile integration pending.",
+      "supports_systems": [
+        "SYS-VOP"
+      ],
+      "materiality": "non_material_but_important",
+      "owner_cost_centre_id": "CC-600",
+      "contract_start_date": "2024-09-01",
+      "subcontractors_identified_by_vendor": true,
+      "subcontractors_mapped_in_ict_register": true,
+      "legal_entity_identifier_present": true,
+      "data_processing_location": "EU",
+      "concentration_group": "standalone",
+      "exit_plan_exists": true,
+      "exit_plan_tested": true,
+      "notes": null
+    },
+    {
+      "vendor_id": "VND-SANCTIONS-DATA",
+      "name": "Sanctions and restrictive-measures data provider",
+      "service_provided": "Restrictive-measures list data feed for the sanctions screening engine.",
+      "supports_systems": [
+        "SYS-SANCTIONS-ENGINE"
+      ],
+      "materiality": "non_material_but_important",
+      "owner_cost_centre_id": "CC-500",
+      "contract_start_date": "2019-01-10",
+      "subcontractors_identified_by_vendor": false,
+      "subcontractors_mapped_in_ict_register": true,
+      "legal_entity_identifier_present": true,
+      "data_processing_location": "EU",
+      "concentration_group": "standalone",
+      "exit_plan_exists": true,
+      "exit_plan_tested": false,
+      "notes": null
+    },
+    {
+      "vendor_id": "VND-CRM-PROVIDER",
+      "name": "CRM software provider",
+      "service_provided": "Customer relationship management and customer-profile software.",
+      "supports_systems": [
+        "SYS-CRM"
+      ],
+      "materiality": "non_material",
+      "owner_cost_centre_id": "CC-600",
+      "contract_start_date": "2022-05-01",
+      "subcontractors_identified_by_vendor": false,
+      "subcontractors_mapped_in_ict_register": true,
+      "legal_entity_identifier_present": true,
+      "data_processing_location": "EU",
+      "concentration_group": "standalone",
+      "exit_plan_exists": false,
+      "exit_plan_tested": false,
+      "notes": null
+    },
+    {
+      "vendor_id": "VND-GRC-PLATFORM",
+      "name": "GRC platform provider",
+      "service_provided": "Governance, risk and compliance workflow software: obligations, policies, controls, issues, evidence.",
+      "supports_systems": [
+        "SYS-GRC",
+        "SYS-ICT-REGISTER"
+      ],
+      "materiality": "non_material",
+      "owner_cost_centre_id": "CC-500",
+      "contract_start_date": "2021-01-15",
+      "subcontractors_identified_by_vendor": false,
+      "subcontractors_mapped_in_ict_register": true,
+      "legal_entity_identifier_present": true,
+      "data_processing_location": "EU",
+      "concentration_group": "standalone",
+      "exit_plan_exists": false,
+      "exit_plan_tested": false,
+      "notes": null
+    }
+  ]
+}

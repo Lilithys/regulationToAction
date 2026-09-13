@@ -1,0 +1,13 @@
+mortgage_case_id,borrower_id,product_id,property_country,property_region,outstanding_balance_eur,loan_to_value_pct,arrears_status,days_past_due,affordability_assessment_date,ara_status,ara_type,ara_start_date,next_review_date,customer_circumstances_change_flag,vulnerable_customer_flag,servicer_record_status
+MORT-0001,CUS-MORT-0001,PRD-RESIDENTIAL-MORTGAGE,IE,Dublin,385000,65,current,0,2026-04-18,none,none,,,false,false,complete
+MORT-0002,CUS-MORT-0002,PRD-RESIDENTIAL-MORTGAGE,IE,Cork,310000,72,arrears,34,2026-05-02,active,temporary_interest_only,2026-05-15,2026-10-15,true,false,complete
+MORT-0003,CUS-MORT-0003,PRD-RESIDENTIAL-MORTGAGE,IE,Galway,275000,68,arrears,93,2026-03-21,active,term_extension,2026-04-01,2026-09-01,false,true,complete
+MORT-0004,CUS-MORT-0004,PRD-RESIDENTIAL-MORTGAGE,IE,Dublin,425000,79,current,0,2026-06-12,none,none,,,false,false,complete
+MORT-0005,CUS-MORT-0005,PRD-RESIDENTIAL-MORTGAGE,IE,Limerick,220000,61,arrears,15,2026-07-04,pending,assessment_in_progress,,,true,false,partial_supporting_documents
+MORT-0006,CUS-MORT-0006,PRD-RESIDENTIAL-MORTGAGE,IE,Waterford,195000,64,arrears,121,2026-02-14,active,split_mortgage,2026-03-01,2026-08-01,false,true,complete
+MORT-0007,CUS-MORT-0007,PRD-RESIDENTIAL-MORTGAGE,IE,Dublin,510000,83,current,0,2026-08-09,none,none,,,false,false,complete
+MORT-0008,CUS-MORT-0008,PRD-RESIDENTIAL-MORTGAGE,IE,Kildare,340000,76,arrears,47,2026-06-23,active,reduced_payment,2026-07-01,2026-12-01,true,false,complete
+MORT-0009,CUS-MORT-0009,PRD-RESIDENTIAL-MORTGAGE,IE,Meath,265000,70,current,0,2026-05-27,none,none,,,false,false,complete
+MORT-0010,CUS-MORT-0010,PRD-RESIDENTIAL-MORTGAGE,IE,Cork,290000,74,arrears,8,2026-08-01,pending,assessment_in_progress,,,false,false,partial_supporting_documents
+MORT-0011,CUS-MORT-0011,PRD-RESIDENTIAL-MORTGAGE,IE,Wicklow,460000,81,current,0,2026-07-15,none,none,,,false,false,complete
+MORT-0012,CUS-MORT-0012,PRD-RESIDENTIAL-MORTGAGE,IE,Donegal,175000,57,arrears,64,2026-04-07,active,term_extension,2026-04-20,2026-09-20,false,true,complete

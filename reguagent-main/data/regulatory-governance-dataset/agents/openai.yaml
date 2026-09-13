@@ -1,0 +1,4 @@
+interface:
+  display_name: "Regulatory Governance Dataset"
+  short_description: "Build traceable Person 1 regulatory datasets"
+  default_prompt: "Use $regulatory-governance-dataset to research the four first-demo changes and generate the five validated Person 1 JSON files."

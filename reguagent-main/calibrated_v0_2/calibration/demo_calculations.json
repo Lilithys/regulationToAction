@@ -1,0 +1,163 @@
+{
+  "metrics": {
+    "sme_borrower_count": 10000,
+    "sme_exposure_eur_millions": 2300.0,
+    "missing_or_broad_nace_borrower_pct": 20.0,
+    "missing_or_broad_nace_exposure_pct": 39.56521739130435,
+    "observed_payment_transaction_count": 3563000,
+    "observed_mobile_share_pct": 75.1052483861914,
+    "payments_population_complete": false,
+    "note": "Observed sample share must not replace the full direct-channel 71% scenario baseline."
+  },
+  "response_comparison": {
+    "options": [
+      {
+        "option_id": "OPT-ESG-MANUAL",
+        "currency": "EUR",
+        "people_setup_cost_eur": 21818.0,
+        "setup_total_eur": 26818.0,
+        "scenarios": {
+          "low": {
+            "review_minutes": 20.0,
+            "annual_manual_operating_cost_eur": 173333.33,
+            "annual_run_cost_eur": 173333.33,
+            "three_year_tco_eur": 546818.0
+          },
+          "base": {
+            "review_minutes": 30.0,
+            "annual_manual_operating_cost_eur": 260000.0,
+            "annual_run_cost_eur": 260000.0,
+            "three_year_tco_eur": 806818.0
+          },
+          "high": {
+            "review_minutes": 45.0,
+            "annual_manual_operating_cost_eur": 390000.0,
+            "annual_run_cost_eur": 390000.0,
+            "three_year_tco_eur": 1196818.0
+          }
+        },
+        "tco_horizon": "one setup plus three full steady-state operating years; undiscounted, not a dated cash-flow forecast",
+        "delivery_months": 2,
+        "effort_days": 42.0,
+        "capacity_sufficient": null,
+        "projected_delivery_date": "2026-11-08",
+        "selected_regulatory_due_date": "2026-01-11",
+        "regulatory_deadline_feasible": false,
+        "deadline_basis": "Scenario date, explicit SNCI class, sourced application events and assumed calendar delivery months; excludes unmodelled capacity delays.",
+        "human_review_status": "pending",
+        "expected_risk_cost_eur": null,
+        "revenue_impact_eur": null,
+        "no_double_count_note": "Annual manual work already enters annual run and TCO; do not add operating impact a second time."
+      },
+      {
+        "option_id": "OPT-ESG-AUTOMATED",
+        "currency": "EUR",
+        "people_setup_cost_eur": 96436.0,
+        "setup_total_eur": 154436.0,
+        "scenarios": {
+          "low": {
+            "review_minutes": 20.0,
+            "annual_manual_operating_cost_eur": 26000.0,
+            "annual_run_cost_eur": 86000.0,
+            "three_year_tco_eur": 412436.0
+          },
+          "base": {
+            "review_minutes": 30.0,
+            "annual_manual_operating_cost_eur": 39000.0,
+            "annual_run_cost_eur": 99000.0,
+            "three_year_tco_eur": 451436.0
+          },
+          "high": {
+            "review_minutes": 45.0,
+            "annual_manual_operating_cost_eur": 58500.0,
+            "annual_run_cost_eur": 118500.0,
+            "three_year_tco_eur": 509936.0
+          }
+        },
+        "tco_horizon": "one setup plus three full steady-state operating years; undiscounted, not a dated cash-flow forecast",
+        "delivery_months": 6,
+        "effort_days": 129.0,
+        "capacity_sufficient": null,
+        "projected_delivery_date": "2027-03-08",
+        "selected_regulatory_due_date": "2026-01-11",
+        "regulatory_deadline_feasible": false,
+        "deadline_basis": "Scenario date, explicit SNCI class, sourced application events and assumed calendar delivery months; excludes unmodelled capacity delays.",
+        "human_review_status": "pending",
+        "expected_risk_cost_eur": null,
+        "revenue_impact_eur": null,
+        "no_double_count_note": "Annual manual work already enters annual run and TCO; do not add operating impact a second time."
+      },
+      {
+        "option_id": "OPT-ESG-HYBRID",
+        "currency": "EUR",
+        "people_setup_cost_eur": 48502.0,
+        "setup_total_eur": 79002.0,
+        "scenarios": {
+          "low": {
+            "review_minutes": 20.0,
+            "annual_manual_operating_cost_eur": 69333.33,
+            "annual_run_cost_eur": 99333.33,
+            "three_year_tco_eur": 377002.0
+          },
+          "base": {
+            "review_minutes": 30.0,
+            "annual_manual_operating_cost_eur": 104000.0,
+            "annual_run_cost_eur": 134000.0,
+            "three_year_tco_eur": 481002.0
+          },
+          "high": {
+            "review_minutes": 45.0,
+            "annual_manual_operating_cost_eur": 156000.0,
+            "annual_run_cost_eur": 186000.0,
+            "three_year_tco_eur": 637002.0
+          }
+        },
+        "tco_horizon": "one setup plus three full steady-state operating years; undiscounted, not a dated cash-flow forecast",
+        "delivery_months": 4,
+        "effort_days": 73.0,
+        "capacity_sufficient": null,
+        "projected_delivery_date": "2027-01-08",
+        "selected_regulatory_due_date": "2026-01-11",
+        "regulatory_deadline_feasible": false,
+        "deadline_basis": "Scenario date, explicit SNCI class, sourced application events and assumed calendar delivery months; excludes unmodelled capacity delays.",
+        "human_review_status": "pending",
+        "expected_risk_cost_eur": null,
+        "revenue_impact_eur": null,
+        "no_double_count_note": "Annual manual work already enters annual run and TCO; do not add operating impact a second time."
+      }
+    ],
+    "lowest_base_tco_option_id": "OPT-ESG-AUTOMATED",
+    "recommended_option_id": null,
+    "recommendation_status": "needs_legal_review_and_delivery_team_capacity",
+    "note": "Lowest modelled TCO is not an approved compliance recommendation. Risk/revenue unknowns are not zero."
+  },
+  "interview_questions": [
+    {
+      "fact_id": "FACT-ESG-ENERGY-COVERAGE",
+      "field": "sme_energy_cost_data_coverage_pct",
+      "value": null,
+      "question": "For the existing SME borrower population, what percentage has usable energy-cost data?",
+      "owner_role_id": "ROLE-HEAD-LENDING",
+      "reason": "Changes ESG data completeness and confidence.",
+      "synthetic": true
+    },
+    {
+      "fact_id": "FACT-FRTB-CURRENT-EXPOSURE",
+      "field": "current_complete_market_risk_position_inventory",
+      "value": null,
+      "question": "Provide the latest month-end trading and off-balance-sheet inventory, including banking-book FX and commodity positions.",
+      "owner_role_id": "ROLE-HEAD-TREASURY",
+      "reason": "June snapshot cannot establish current Article 94 eligibility or all market-risk scope.",
+      "synthetic": true
+    },
+    {
+      "fact_id": "FACT-IPS-OTHER-CHANNELS",
+      "field": "standard_sct_and_api_vop_evidence",
+      "value": null,
+      "question": "Provide VoP capability and execution evidence for standard SCT and API initiation.",
+      "owner_role_id": "ROLE-HEAD-PAYMENTS",
+      "reason": "Demo scope exclusion is not a legal exemption.",
+      "synthetic": true
+    }
+  ]
+}

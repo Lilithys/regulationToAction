@@ -1,0 +1,71 @@
+{
+  "executed_at": "2026-09-11T23:38:09.322944+00:00",
+  "llm_calls": 0,
+  "checks": [
+    {
+      "check": "agent_tests",
+      "command": [
+        ".venv/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "agent",
+        "-p",
+        "test_*.py"
+      ],
+      "exit_code": 0
+    },
+    {
+      "check": "runtime_and_build_tests",
+      "command": [
+        ".venv/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "scripts",
+        "-p",
+        "test_*.py"
+      ],
+      "exit_code": 0
+    },
+    {
+      "check": "strict_governance",
+      "command": [
+        ".venv/bin/python",
+        "data/regulatory-governance-dataset/scripts/validate_person1_data.py",
+        "--root",
+        "calibrated_v0_2",
+        "--strict",
+        "--require-first-demo"
+      ],
+      "exit_code": 0
+    },
+    {
+      "check": "cross_dataset",
+      "command": [
+        ".venv/bin/python",
+        "scripts/validate_dataset.py"
+      ],
+      "exit_code": 0
+    },
+    {
+      "check": "development_eval",
+      "command": [
+        ".venv/bin/python",
+        "scripts/run_eval.py"
+      ],
+      "exit_code": 0
+    },
+    {
+      "check": "offline_demo",
+      "command": [
+        ".venv/bin/python",
+        "agent/run_demo.py",
+        "--non-interactive"
+      ],
+      "exit_code": 0
+    }
+  ]
+}

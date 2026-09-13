@@ -1,0 +1,380 @@
+[
+  {
+    "product_id": "PRD-CURRENT",
+    "name": "Northstar Everyday Account",
+    "product_type": "current_account",
+    "customer_segment": "retail",
+    "markets": [
+      "IE",
+      "DE",
+      "NL",
+      "BE",
+      "ES",
+      "FR"
+    ],
+    "channels": [
+      "mobile_app",
+      "web"
+    ],
+    "currency": "EUR",
+    "esg_feature_flag": false,
+    "target_market": "EEA resident adults seeking digital day-to-day banking",
+    "synthetic": true,
+    "provenance": {
+      "origin": "synthetic_bank_design",
+      "source_file": "person2/02_business/products.json",
+      "calibration_version": "0.2.1",
+      "notes": [
+        "Preserved synthetic scenario fact; not a fact about bunq."
+      ]
+    }
+  },
+  {
+    "product_id": "PRD-SAVINGS",
+    "name": "Northstar Flexible Savings",
+    "product_type": "instant_access_savings",
+    "customer_segment": "retail",
+    "markets": [
+      "IE",
+      "DE",
+      "NL",
+      "BE",
+      "ES",
+      "FR"
+    ],
+    "channels": [
+      "mobile_app",
+      "web"
+    ],
+    "currency": "EUR",
+    "esg_feature_flag": false,
+    "target_market": "EEA resident adults seeking instant-access savings",
+    "synthetic": true,
+    "provenance": {
+      "origin": "synthetic_bank_design",
+      "source_file": "person2/02_business/products.json",
+      "calibration_version": "0.2.1",
+      "notes": [
+        "Preserved synthetic scenario fact; not a fact about bunq."
+      ]
+    }
+  },
+  {
+    "product_id": "PRD-DEBIT-CARD",
+    "name": "Northstar Debit Card",
+    "product_type": "debit_card",
+    "customer_segment": "retail",
+    "markets": [
+      "IE",
+      "DE",
+      "NL",
+      "BE",
+      "ES",
+      "FR"
+    ],
+    "channels": [
+      "mobile_app",
+      "web"
+    ],
+    "currency": "EUR",
+    "esg_feature_flag": false,
+    "target_market": "current-account customers",
+    "synthetic": true,
+    "provenance": {
+      "origin": "synthetic_bank_design",
+      "source_file": "person2/02_business/products.json",
+      "calibration_version": "0.2.1",
+      "notes": [
+        "Preserved synthetic scenario fact; not a fact about bunq."
+      ]
+    }
+  },
+  {
+    "product_id": "PRD-CONSUMER-LOAN",
+    "name": "Northstar Personal Loan",
+    "product_type": "unsecured_consumer_credit",
+    "customer_segment": "retail",
+    "markets": [
+      "IE",
+      "DE"
+    ],
+    "channels": [
+      "mobile_app",
+      "web"
+    ],
+    "currency": "EUR",
+    "esg_feature_flag": false,
+    "target_market": "existing customers passing affordability and credit-risk assessment",
+    "synthetic": true,
+    "provenance": {
+      "origin": "synthetic_bank_design",
+      "source_file": "person2/02_business/products.json",
+      "calibration_version": "0.2.1",
+      "notes": [
+        "Preserved synthetic scenario fact; not a fact about bunq."
+      ]
+    }
+  },
+  {
+    "product_id": "PRD-RESIDENTIAL-MORTGAGE",
+    "name": "Northstar Digital Home Mortgage",
+    "product_type": "owner_occupied_residential_mortgage",
+    "customer_segment": "retail",
+    "markets": [
+      "IE"
+    ],
+    "channels": [
+      "mobile_app",
+      "web",
+      "remote_mortgage_adviser"
+    ],
+    "currency": "EUR",
+    "esg_feature_flag": false,
+    "target_market": "Irish resident owner-occupiers meeting lending and affordability criteria",
+    "synthetic": true,
+    "provenance": {
+      "origin": "synthetic_bank_design",
+      "source_file": "person2/02_business/products.json",
+      "calibration_version": "0.2.1",
+      "notes": [
+        "Preserved synthetic scenario fact; not a fact about bunq."
+      ]
+    }
+  },
+  {
+    "product_id": "PRD-GREEN-HOME-LOAN",
+    "name": "Northstar Home Improvement Loan",
+    "product_type": "unsecured_consumer_credit",
+    "customer_segment": "retail",
+    "markets": [
+      "IE",
+      "DE"
+    ],
+    "channels": [
+      "mobile_app",
+      "web"
+    ],
+    "currency": "EUR",
+    "esg_feature_flag": true,
+    "esg_claim_status": "loan purpose may include energy-efficiency improvements; no marketed environmental-performance claim",
+    "product_governance_esg_status": "requires annual review of loan-purpose eligibility and customer communications; no green performance claim is approved",
+    "target_market": "existing customers financing home improvements",
+    "synthetic": true,
+    "provenance": {
+      "origin": "synthetic_bank_design",
+      "source_file": "person2/02_business/products.json",
+      "calibration_version": "0.2.1",
+      "notes": [
+        "Preserved synthetic scenario fact; not a fact about bunq."
+      ]
+    }
+  },
+  {
+    "product_id": "PRD-SME-ACCOUNT",
+    "name": "Northstar Business Account",
+    "product_type": "business_current_account",
+    "customer_segment": "sme",
+    "markets": [
+      "IE",
+      "NL",
+      "BE"
+    ],
+    "channels": [
+      "mobile_app",
+      "web"
+    ],
+    "currency": "EUR",
+    "esg_feature_flag": false,
+    "target_market": "EEA-incorporated micro and small enterprises",
+    "synthetic": true,
+    "provenance": {
+      "origin": "synthetic_bank_design",
+      "source_file": "person2/02_business/products.json",
+      "calibration_version": "0.2.1",
+      "notes": [
+        "Preserved synthetic scenario fact; not a fact about bunq."
+      ]
+    }
+  },
+  {
+    "product_id": "PRD-SME-CARD",
+    "name": "Northstar Business Card",
+    "product_type": "business_debit_card",
+    "customer_segment": "sme",
+    "markets": [
+      "IE",
+      "NL",
+      "BE"
+    ],
+    "channels": [
+      "mobile_app",
+      "web"
+    ],
+    "currency": "EUR",
+    "esg_feature_flag": false,
+    "target_market": "Northstar Business Account customers",
+    "synthetic": true,
+    "provenance": {
+      "origin": "synthetic_bank_design",
+      "source_file": "person2/02_business/products.json",
+      "calibration_version": "0.2.1",
+      "notes": [
+        "Preserved synthetic scenario fact; not a fact about bunq."
+      ]
+    }
+  },
+  {
+    "product_id": "PRD-SME-WORKING-CAPITAL",
+    "name": "Northstar SME Working Capital Loan",
+    "product_type": "sme_term_loan",
+    "customer_segment": "sme",
+    "markets": [
+      "IE",
+      "NL",
+      "BE"
+    ],
+    "channels": [
+      "mobile_app",
+      "web"
+    ],
+    "currency": "EUR",
+    "esg_feature_flag": false,
+    "target_market": "small enterprises with demonstrated repayment capacity",
+    "synthetic": true,
+    "provenance": {
+      "origin": "synthetic_bank_design",
+      "source_file": "person2/02_business/products.json",
+      "calibration_version": "0.2.1",
+      "notes": [
+        "Preserved synthetic scenario fact; not a fact about bunq."
+      ]
+    }
+  },
+  {
+    "product_id": "PRD-SEPA-CREDIT-TRANSFER",
+    "name": "SEPA Credit Transfer",
+    "product_type": "euro_payment_transfer",
+    "customer_segment": "retail_and_sme",
+    "markets": [
+      "IE",
+      "DE",
+      "NL",
+      "BE",
+      "ES",
+      "FR"
+    ],
+    "channels": [
+      "mobile_app",
+      "web",
+      "api"
+    ],
+    "currency": "EUR",
+    "esg_feature_flag": false,
+    "target_market": "eligible EUR account holders",
+    "synthetic": true,
+    "provenance": {
+      "origin": "synthetic_bank_design",
+      "source_file": "person2/02_business/products.json",
+      "calibration_version": "0.2.1",
+      "notes": [
+        "Preserved synthetic scenario fact; not a fact about bunq."
+      ]
+    },
+    "verification_of_payee": {
+      "web": "unknown",
+      "mobile_app": "unknown",
+      "api": "unknown"
+    }
+  },
+  {
+    "product_id": "PRD-SEPA-INSTANT",
+    "name": "SEPA Instant Credit Transfer",
+    "product_type": "euro_instant_payment_transfer",
+    "customer_segment": "retail_and_sme",
+    "markets": [
+      "IE",
+      "DE",
+      "NL",
+      "BE",
+      "ES",
+      "FR"
+    ],
+    "channels": [
+      "mobile_app",
+      "web",
+      "api"
+    ],
+    "currency": "EUR",
+    "esg_feature_flag": false,
+    "verification_of_payee": {
+      "web": "available",
+      "mobile_app": "unavailable",
+      "api": "unknown"
+    },
+    "target_market": "eligible EUR account holders",
+    "synthetic": true,
+    "provenance": {
+      "origin": "synthetic_bank_design",
+      "source_file": "person2/02_business/products.json",
+      "calibration_version": "0.2.1",
+      "notes": [
+        "Preserved synthetic scenario fact; not a fact about bunq."
+      ]
+    }
+  },
+  {
+    "product_id": "PRD-OPEN-BANKING-PIS",
+    "name": "Open Banking Payment Initiation",
+    "product_type": "payment_initiation_service",
+    "customer_segment": "retail_and_sme",
+    "markets": [
+      "IE",
+      "DE",
+      "NL",
+      "BE",
+      "ES",
+      "FR"
+    ],
+    "channels": [
+      "api",
+      "web"
+    ],
+    "currency": "EUR",
+    "esg_feature_flag": false,
+    "target_market": "customers authorising eligible account-to-account payments",
+    "synthetic": true,
+    "provenance": {
+      "origin": "synthetic_bank_design",
+      "source_file": "person2/02_business/products.json",
+      "calibration_version": "0.2.1",
+      "notes": [
+        "Preserved synthetic scenario fact; not a fact about bunq."
+      ]
+    }
+  },
+  {
+    "product_id": "PRD-LIQUIDITY-PORTFOLIO",
+    "name": "Treasury Liquidity Portfolio",
+    "product_type": "internal_liquidity_management",
+    "customer_segment": "internal_balance_sheet",
+    "markets": [
+      "IE"
+    ],
+    "channels": [
+      "internal"
+    ],
+    "currency": "EUR",
+    "esg_feature_flag": false,
+    "trading_book_flag": false,
+    "target_market": "not customer facing",
+    "synthetic": true,
+    "provenance": {
+      "origin": "synthetic_bank_design",
+      "source_file": "person2/02_business/products.json",
+      "calibration_version": "0.2.1",
+      "notes": [
+        "Preserved synthetic scenario fact; not a fact about bunq."
+      ]
+    }
+  }
+]

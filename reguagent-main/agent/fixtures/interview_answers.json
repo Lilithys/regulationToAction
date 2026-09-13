@@ -1,0 +1,10 @@
+[
+  {
+    "fact_id": "FACT-ESG-ENERGY-COVERAGE",
+    "simulated_answer": 65,
+    "unit": "percent",
+    "answered_by_role_id": "ROLE-HEAD-LENDING",
+    "answered_at": "2026-09-08",
+    "note": "Simulated fixture answer for this demo run only, matching calibrated_v0_2/DATA_DICTIONARY.md's own documented example (65%). Not an actual reply from the role; a live run pauses here and waits for one instead of reading this file."
+  }
+]

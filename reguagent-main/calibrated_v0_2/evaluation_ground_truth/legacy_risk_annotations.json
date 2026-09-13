@@ -1,0 +1,112 @@
+[
+  {
+    "portfolio_record_id": "PORT-CL-001",
+    "transition_risk_band": "not_applicable",
+    "physical_risk_band": "not_applicable"
+  },
+  {
+    "portfolio_record_id": "PORT-CL-002",
+    "transition_risk_band": "not_applicable",
+    "physical_risk_band": "not_applicable"
+  },
+  {
+    "portfolio_record_id": "PORT-CL-003",
+    "transition_risk_band": "not_applicable",
+    "physical_risk_band": "not_applicable"
+  },
+  {
+    "portfolio_record_id": "PORT-CL-004",
+    "transition_risk_band": "not_applicable",
+    "physical_risk_band": "not_applicable"
+  },
+  {
+    "portfolio_record_id": "PORT-CL-005",
+    "transition_risk_band": "not_applicable",
+    "physical_risk_band": "not_applicable"
+  },
+  {
+    "portfolio_record_id": "PORT-CL-006",
+    "transition_risk_band": "not_applicable",
+    "physical_risk_band": "not_applicable"
+  },
+  {
+    "portfolio_record_id": "PORT-CL-007",
+    "transition_risk_band": "not_applicable",
+    "physical_risk_band": "not_applicable"
+  },
+  {
+    "portfolio_record_id": "PORT-CL-008",
+    "transition_risk_band": "not_applicable",
+    "physical_risk_band": "not_applicable"
+  },
+  {
+    "portfolio_record_id": "PORT-GH-001",
+    "transition_risk_band": "low",
+    "physical_risk_band": "medium"
+  },
+  {
+    "portfolio_record_id": "PORT-GH-002",
+    "transition_risk_band": "low",
+    "physical_risk_band": "medium"
+  },
+  {
+    "portfolio_record_id": "PORT-GH-003",
+    "transition_risk_band": "low",
+    "physical_risk_band": "low"
+  },
+  {
+    "portfolio_record_id": "PORT-GH-004",
+    "transition_risk_band": "low",
+    "physical_risk_band": "medium"
+  },
+  {
+    "portfolio_record_id": "PORT-GH-005",
+    "transition_risk_band": "low",
+    "physical_risk_band": "medium"
+  },
+  {
+    "portfolio_record_id": "PORT-SME-001",
+    "transition_risk_band": "high",
+    "physical_risk_band": "medium"
+  },
+  {
+    "portfolio_record_id": "PORT-SME-002",
+    "transition_risk_band": "high",
+    "physical_risk_band": "medium"
+  },
+  {
+    "portfolio_record_id": "PORT-SME-003",
+    "transition_risk_band": "medium",
+    "physical_risk_band": "medium"
+  },
+  {
+    "portfolio_record_id": "PORT-SME-004",
+    "transition_risk_band": "medium",
+    "physical_risk_band": "low"
+  },
+  {
+    "portfolio_record_id": "PORT-SME-005",
+    "transition_risk_band": "high",
+    "physical_risk_band": "medium"
+  },
+  {
+    "portfolio_record_id": "PORT-SME-006",
+    "transition_risk_band": "low",
+    "physical_risk_band": "low"
+  },
+  {
+    "portfolio_record_id": "PORT-SME-007",
+    "transition_risk_band": "medium",
+    "physical_risk_band": "high"
+  },
+  {
+    "portfolio_record_id": "PORT-SME-008",
+    "transition_risk_band": "unknown",
+    "physical_risk_band": "unknown"
+  },
+  {
+    "portfolio_record_id": "PORT-SME-009",
+    "transition_risk_band": "medium",
+    "physical_risk_band": "high"
+  }
+]

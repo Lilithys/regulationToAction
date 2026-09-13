@@ -1,0 +1,290 @@
+{
+  "_meta": {
+    "file": "05_operations/vendors.json",
+    "owner": "Person 3 - Operations and technology",
+    "purpose": "Fictional Northstar current-state records; peer reports inform design only.",
+    "generated_at": "2026-09-03",
+    "as_of_date": "2026-09-08",
+    "entity_id": "ENT-NDB-PLC",
+    "materiality_basis": "Materiality flag follows Bank_Context_Fictional_Digital_Bank.md directly: 3 material technology providers + 1 material mortgage servicer = 4 material vendors.",
+    "calibration_version": "0.2.1"
+  },
+  "vendors": [
+    {
+      "vendor_id": "VND-CLOUD-INFRA",
+      "name": "Fictional EEA cloud infrastructure provider",
+      "service_provided": "Underlying cloud compute, storage and networking infrastructure for all cloud-hosted systems.",
+      "supports_systems": [
+        "SYS-BENEFICIARY-STORE",
+        "SYS-CORE-BANKING",
+        "SYS-CRM",
+        "SYS-DATA-PLATFORM",
+        "SYS-FRAUD-ENGINE",
+        "SYS-GRC",
+        "SYS-ICT-REGISTER",
+        "SYS-LOAN-ORIG",
+        "SYS-MOBILE-APP",
+        "SYS-NOTIFICATION",
+        "SYS-ONBOARDING",
+        "SYS-PAYMENTS-HUB",
+        "SYS-RISK-ENGINE",
+        "SYS-SANCTIONS-ENGINE",
+        "SYS-TREASURY-LIQUIDITY",
+        "SYS-VOP",
+        "SYS-WEB-BANKING"
+      ],
+      "materiality": "material",
+      "owner_cost_centre_id": "CC-300",
+      "contract_start_date": "2019-04-01",
+      "subcontractors_identified_by_vendor": true,
+      "subcontractors_mapped_in_ict_register": false,
+      "legal_entity_identifier_present": true,
+      "data_processing_location": "EU (single region)",
+      "concentration_group": "cloud-region-eu",
+      "exit_plan_exists": true,
+      "exit_plan_tested": false,
+      "notes": "EEA cloud concentration is a synthetic design assumption. bunq cloud disclosures do not prove Northstar hosting or subcontractors.",
+      "synthetic": true,
+      "provenance": {
+        "origin": "synthetic_bank_design",
+        "source_file": "person3/vendors.json",
+        "calibration_version": "0.2.1",
+        "notes": [
+          "Preserved synthetic scenario fact; not a fact about bunq."
+        ]
+      },
+      "evidence_notes": [
+        "legal_entity_identifier_present is a supplied synthetic assertion; no artefact is attached."
+      ]
+    },
+    {
+      "vendor_id": "VND-CORE-BANKING",
+      "name": "Core banking platform provider",
+      "service_provided": "Core ledger, account servicing, mobile and web channel software, payments hub, loan origination system, CRM, data platform, notification service software.",
+      "supports_systems": [
+        "SYS-BENEFICIARY-STORE",
+        "SYS-CORE-BANKING",
+        "SYS-DATA-PLATFORM",
+        "SYS-LOAN-ORIG",
+        "SYS-MOBILE-APP",
+        "SYS-NOTIFICATION",
+        "SYS-PAYMENTS-HUB",
+        "SYS-RISK-ENGINE",
+        "SYS-TREASURY-LIQUIDITY",
+        "SYS-WEB-BANKING"
+      ],
+      "materiality": "material",
+      "owner_cost_centre_id": "CC-300",
+      "contract_start_date": "2018-11-15",
+      "subcontractors_identified_by_vendor": true,
+      "subcontractors_mapped_in_ict_register": true,
+      "legal_entity_identifier_present": true,
+      "data_processing_location": "EU (single region, hosted on VND-CLOUD-INFRA)",
+      "concentration_group": "software-platform",
+      "exit_plan_exists": true,
+      "exit_plan_tested": true,
+      "notes": "One of the three material technology providers named directly in the bank context. Runs on top of VND-CLOUD-INFRA - the two vendors are architecturally coupled even though they are contractually separate, which matters for concentration risk assessment.",
+      "synthetic": true,
+      "provenance": {
+        "origin": "synthetic_bank_design",
+        "source_file": "person3/vendors.json",
+        "calibration_version": "0.2.1",
+        "notes": [
+          "Preserved synthetic scenario fact; not a fact about bunq."
+        ]
+      },
+      "evidence_notes": [
+        "exit_plan_tested is a supplied synthetic assertion; no artefact is attached.",
+        "legal_entity_identifier_present is a supplied synthetic assertion; no artefact is attached."
+      ]
+    },
+    {
+      "vendor_id": "VND-IDENTITY-VERIFICATION",
+      "name": "Identity verification provider",
+      "service_provided": "Digital identity verification and document checks at onboarding.",
+      "supports_systems": [
+        "SYS-ONBOARDING"
+      ],
+      "materiality": "material",
+      "owner_cost_centre_id": "CC-500",
+      "contract_start_date": "2020-02-10",
+      "subcontractors_identified_by_vendor": true,
+      "subcontractors_mapped_in_ict_register": true,
+      "legal_entity_identifier_present": true,
+      "data_processing_location": "EU",
+      "concentration_group": "standalone",
+      "exit_plan_exists": true,
+      "exit_plan_tested": false,
+      "notes": "One of the three material technology providers named directly in the bank context.",
+      "synthetic": true,
+      "provenance": {
+        "origin": "synthetic_bank_design",
+        "source_file": "person3/vendors.json",
+        "calibration_version": "0.2.1",
+        "notes": [
+          "Preserved synthetic scenario fact; not a fact about bunq."
+        ]
+      },
+      "evidence_notes": [
+        "legal_entity_identifier_present is a supplied synthetic assertion; no artefact is attached."
+      ]
+    },
+    {
+      "vendor_id": "VND-MORTGAGE-SERVICER",
+      "name": "Mortgage servicing provider",
+      "service_provided": "End-to-end operation of the mortgage servicing platform: balances, arrears case management, ARA administration and repayment history, under NDB's arrears and vulnerable-customer policies.",
+      "supports_systems": [
+        "SYS-MORTGAGE-SERVICING"
+      ],
+      "materiality": "material",
+      "owner_cost_centre_id": "CC-700",
+      "contract_start_date": "2021-06-01",
+      "subcontractors_identified_by_vendor": false,
+      "subcontractors_mapped_in_ict_register": false,
+      "legal_entity_identifier_present": true,
+      "data_processing_location": "IE",
+      "concentration_group": "standalone",
+      "exit_plan_exists": true,
+      "exit_plan_tested": false,
+      "notes": "Named directly as a material third-party provider in the bank context (separately from the three 'technology' providers, because this is an operational/servicing outsourcing, not a software licence). NDB retains oversight responsibility for arrears strategy and vulnerable-customer outcomes; the servicer sends a monthly data extract and some supporting case documents are held outside NDB systems entirely - this is a genuine, currently-unclosed evidence gap, not just a hypothetical one.",
+      "synthetic": true,
+      "provenance": {
+        "origin": "synthetic_bank_design",
+        "source_file": "person3/vendors.json",
+        "calibration_version": "0.2.1",
+        "notes": [
+          "Preserved synthetic scenario fact; not a fact about bunq."
+        ]
+      },
+      "evidence_notes": [
+        "legal_entity_identifier_present is a supplied synthetic assertion; no artefact is attached."
+      ]
+    },
+    {
+      "vendor_id": "VND-VOP-PROVIDER",
+      "name": "Verification of Payee service provider",
+      "service_provided": "Payee-name verification service, integrated on the web channel; mobile integration pending.",
+      "supports_systems": [
+        "SYS-VOP"
+      ],
+      "materiality": "non_material_but_important",
+      "owner_cost_centre_id": "CC-600",
+      "contract_start_date": "2024-09-01",
+      "subcontractors_identified_by_vendor": true,
+      "subcontractors_mapped_in_ict_register": true,
+      "legal_entity_identifier_present": true,
+      "data_processing_location": "EU",
+      "concentration_group": "standalone",
+      "exit_plan_exists": true,
+      "exit_plan_tested": true,
+      "notes": null,
+      "synthetic": true,
+      "provenance": {
+        "origin": "synthetic_bank_design",
+        "source_file": "person3/vendors.json",
+        "calibration_version": "0.2.1",
+        "notes": [
+          "Preserved synthetic scenario fact; not a fact about bunq."
+        ]
+      },
+      "evidence_notes": [
+        "exit_plan_tested is a supplied synthetic assertion; no artefact is attached.",
+        "legal_entity_identifier_present is a supplied synthetic assertion; no artefact is attached."
+      ]
+    },
+    {
+      "vendor_id": "VND-SANCTIONS-DATA",
+      "name": "Sanctions and restrictive-measures data provider",
+      "service_provided": "Restrictive-measures list data feed for the sanctions screening engine.",
+      "supports_systems": [
+        "SYS-SANCTIONS-ENGINE"
+      ],
+      "materiality": "non_material_but_important",
+      "owner_cost_centre_id": "CC-500",
+      "contract_start_date": "2019-01-10",
+      "subcontractors_identified_by_vendor": false,
+      "subcontractors_mapped_in_ict_register": null,
+      "legal_entity_identifier_present": true,
+      "data_processing_location": "EU",
+      "concentration_group": "standalone",
+      "exit_plan_exists": true,
+      "exit_plan_tested": false,
+      "notes": null,
+      "synthetic": true,
+      "provenance": {
+        "origin": "synthetic_bank_design",
+        "source_file": "person3/vendors.json",
+        "calibration_version": "0.2.1",
+        "notes": [
+          "Preserved synthetic scenario fact; not a fact about bunq."
+        ]
+      },
+      "evidence_notes": [
+        "legal_entity_identifier_present is a supplied synthetic assertion; no artefact is attached."
+      ]
+    },
+    {
+      "vendor_id": "VND-CRM-PROVIDER",
+      "name": "CRM software provider",
+      "service_provided": "Customer relationship management and customer-profile software.",
+      "supports_systems": [
+        "SYS-CRM"
+      ],
+      "materiality": "non_material",
+      "owner_cost_centre_id": "CC-600",
+      "contract_start_date": "2022-05-01",
+      "subcontractors_identified_by_vendor": false,
+      "subcontractors_mapped_in_ict_register": null,
+      "legal_entity_identifier_present": true,
+      "data_processing_location": "EU",
+      "concentration_group": "standalone",
+      "exit_plan_exists": false,
+      "exit_plan_tested": false,
+      "notes": null,
+      "synthetic": true,
+      "provenance": {
+        "origin": "synthetic_bank_design",
+        "source_file": "person3/vendors.json",
+        "calibration_version": "0.2.1",
+        "notes": [
+          "Preserved synthetic scenario fact; not a fact about bunq."
+        ]
+      },
+      "evidence_notes": [
+        "legal_entity_identifier_present is a supplied synthetic assertion; no artefact is attached."
+      ]
+    },
+    {
+      "vendor_id": "VND-GRC-PLATFORM",
+      "name": "GRC platform provider",
+      "service_provided": "Governance, risk and compliance workflow software: obligations, policies, controls, issues, evidence.",
+      "supports_systems": [
+        "SYS-GRC",
+        "SYS-ICT-REGISTER"
+      ],
+      "materiality": "non_material",
+      "owner_cost_centre_id": "CC-500",
+      "contract_start_date": "2021-01-15",
+      "subcontractors_identified_by_vendor": false,
+      "subcontractors_mapped_in_ict_register": null,
+      "legal_entity_identifier_present": true,
+      "data_processing_location": "EU",
+      "concentration_group": "standalone",
+      "exit_plan_exists": false,
+      "exit_plan_tested": false,
+      "notes": null,
+      "synthetic": true,
+      "provenance": {
+        "origin": "synthetic_bank_design",
+        "source_file": "person3/vendors.json",
+        "calibration_version": "0.2.1",
+        "notes": [
+          "Preserved synthetic scenario fact; not a fact about bunq."
+        ]
+      },
+      "evidence_notes": [
+        "legal_entity_identifier_present is a supplied synthetic assertion; no artefact is attached."
+      ]
+    }
+  ]
+}

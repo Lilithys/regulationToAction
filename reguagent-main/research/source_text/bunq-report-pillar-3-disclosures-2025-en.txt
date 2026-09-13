@@ -1,0 +1,1453 @@
+Table of contents
+Pillar 3 intro​                                                                                                                                          3
+     Notes to the reader​                                                                                                                               3
+     Tables out of scope for bunq B.V.​                                                                                                                 4
+Disclosure of overview of risk management, key prudential metrics and RWA​                                                                               5
+           EU KM1 - Key metrics template​                                                                                                                5
+           EU OV1 - Overview of total risk exposure amounts​                                                                                             7
+           EU OVC - ICAAP information​                                                                                                                   9
+Disclosure of risk management objectives and policies​                                                                                                  10
+           EU OVA - Institution risk management approach​                                                                                               10
+           EU OVB - Disclosure on governance arrangements​                                                                                              12
+Own funds, leverage & liquidity​                                                                                                                        13
+           EU CC1 - Composition of regulatory own funds​                                                                                                13
+           EU CC2 - reconciliation of regulatory own funds to balance sheet in the audited financial statements​                                        18
+Disclosure of liquidity requirements​                                                                                                                   19
+           EU LIQA - Liquidity risk management​                                                                                                         19
+Disclosure of credit risk quality​                                                                                                                      23
+           EU CRA: General qualitative information about credit risk​                                                                                   23
+           EU CQ3: Credit quality of performing and non-performing exposures by past due days​                                                          25
+           EU CR1: Performing and non-performing exposures and related provisions​                                                                      27
+           EU CQ1: Credit quality of forborne exposures​                                                                                                29
+           EU CQ7: Collateral obtained by taking possession and execution processes​                                                                    30
+Disclosure of market risk​                                                                                                                              31
+           EU MRA: Qualitative disclosure requirements related to market risk​                                                                          31
+Disclosure of operational risk​                                                                                                                         33
+           EU ORA - Qualitative information on operational risk​                                                                                        33
+Disclosure of remuneration​                                                                                                                             35
+           EU REMA - Remuneration policy​                                                                                                               35
+           EU REM1 - Remuneration awarded for the financial year​                                                                                       36
+           EU REM2 - Special payments to staff whose professional activities have a material impact on institutions’ risk profile (identified staff)​   37
+
+
+
+
+                                                                                                                                                             2
+Pillar 3 intro
+Notes to the reader
+
+
+Annual reporting                                                                                 Presentation of information
+
+Each year, we publish our annual reporting suite, which brings together key disclosures on       The Pillar 3 report has been prepared in thousands of euros (EUR) unless stated otherwise.
+our performance and other relevant topics. The Annual Report serves as our primary               The euro is the functional and reporting currency of bunq. Small differences to figures in
+statutory and regulatory disclosure, complemented by our Pillar 3 Report. While these            the Financial Statements may occur due to rounding. Numbers presented throughout this
+reports are published as part of the same suite, each has its own distinct purpose and           document may not precisely add up to the totals due to rounding in some cases.
+should be read separately.
+                                                                                                 The disclosures have been subject to bunq’s internal controls and validation mechanisms,
+The Pillar 3 Report, approved by bunq’s management board, focuses on capital adequacy            to provide assurance over the information disclosed in this report as well as with regards to
+and risk management. It presents bunq’s main financial ratios and provides insight into our      compliance with laws and regulations. The information in the Pillar 3 report has not been
+capital position, the size and composition of our capital base, and the relationship between     audited or reviewed by bunq’s external auditor.
+capital and risk, as reflected in risk-weighted assets. The information included in the Annual
+Report and the information in this report are consistent and partially overlap.
+
+The Pillar 3 report allows us to be transparent and comply with the reporting requirements
+from the European Capital Requirements Regulation (CRR). It provides information on all
+the topics mentioned in the Regulation to the extent that they apply to bunq.
+
+
+
+
+                                                                                                                                                                                                 3
+Tables out of scope for bunq B.V.
+In accordance with Article 432 of the CRR, bunq may omit one or more of the required
+disclosures where the information provided by those disclosures is not regarded as material
+or is not applicable to its operations. Information in disclosures is regarded as material
+where its omission or misstatement could change or influence the assessment or decision
+of a user of that information relying on it for the purpose of making economic decisions.
+
+In accordance with Article 432 of the CRR, bunq will explain the reasons for omitting any
+information required in the templates and tables.
+
+The following templates have been identified as not applicable to bunq and are therefore
+not included in this report:
+
+
+
+Table        Description                                                              Reason for exclusion
+
+
+             Key metrics - MREL and, where applicable, G-SII requirement for own
+EU KM2                                                                                bunq is not a resolution entity.
+             funds and eligible liabilities
+EU CMS1      Comparison of modelled and standardised risk weighted exposure           bunq does not apply the internal Rating-Based approach (IRB).
+             amounts at risk level
+EU CMS2      Comparison of modelled and standardised risk weighted exposure           bunq does not apply the internal Rating-Based approach (IRB).
+             amounts for credit risk at asset class level
+EU CVA4      RWA flow statements of credit valuation adjustment risk under the        bunq does not use the Standardised Approach to calculate Credit valuation adjustment risk.
+             Standardised Approach
+EU REM3      Deferred remuneration                                                    bunq does not have deferred remuneration under the scope of this disclosure.
+EU REM4      Remuneration of 1 million EUR or more per year                           bunq does not have staff that have been remunerated EUR 1 million or more per financial year.
+EU TLAC1     Composition - MREL and, where applicable, G-SII requirement for own      bunq is not a resolution entity.
+             funds and eligible liabilities
+EU TLAC3b    Creditor ranking - resolution entity OR EU TLAC3a - creditor ranking -   bunq is not a resolution entity.
+             resolution entity
+
+
+
+
+                                                                                                                                                                                      4
+Disclosure of overview of risk management, key prudential metrics and
+RWA
+EU KM1 - Key metrics template
+
+                                                                                                                                 a                b               c               d               e
+                                                                                                                             31 Dec 2025      30 Sep 2025     30 Jun 2025     31 Mar 2025     31 Dec 2024
+
+          Available own funds (amounts)
+1         Common Equity Tier 1 (CET1) capital                                                                                    384,519          374,516         363,326         362,170         349,970
+2         Tier 1 capital                                                                                                         384,519          374,516         363,326         362,170         349,970
+3         Total capital                                                                                                          384,519          374,516         363,326         362,170         349,970
+
+          Risk-weighted exposure amounts
+4         Total risk exposure amount                                                                                           1,648,838          1,451,541      1,331,023       1,238,075       1,357,568
+4a        Total risk exposure pre-floor                                                                                        1,648,838          1,451,541      1,331,023       1,238,075
+
+          Capital ratios (as a percentage of risk-weighted exposure amount)
+5         Common Equity Tier 1 ratio (%)                                                                                         23.32%            25.80%          27.30%          29.25%         25.78%
+5a        Not applicable
+5b        Common Equity Tier 1 ratio considering unfloored TREA (%)                                                              23.32%            25.80%          27.30%          29.25%
+6         Tier 1 ratio (%)                                                                                                       23.32%            25.80%          27.30%          29.25%         25.78%
+6a        Not applicable
+6b        Tier 1 ratio considering unfloored TREA (%)                                                                            23.32%            25.80%          27.30%          29.25%
+7         Total capital ratio (%)                                                                                                23.32%            25.80%          27.30%          29.25%         25.78%
+7a        Not applicable
+7b        Total capital ratio considering unfloored TREA (%)                                                                     23.32%            25.80%          27.30%          29.25%
+          Additional own funds requirements to address risks other than the risk of excessive leverage (as a percentage of
+          risk-weighted exposure amount)
+EU 7d     Additional own funds requirements to address risks other than the risk of excessive leverage (%)                           3.90%            4.34%           4.34%           4.34%           4.34%
+EU 7e     of which: to be made up of CET1 capital (percentage points)                                                                2.19%            2.44%           2.44%           2.44%           2.44%
+EU 7f     of which: to be made up of Tier 1 capital (percentage points)                                                              2.92%            3.26%           3.26%           3.26%           3.26%
+EU 7g     Total SREP own funds requirements (%)                                                                                      11.90%        12.34%          12.34%          12.34%          12.34%
+
+          Combined buffer and overall capital requirement (as a percentage of risk-weighted exposure amount)
+8         Capital conservation buffer (%)                                                                                            2.50%            2.50%           2.50%           2.50%           2.50%
+EU 8a     Conservation buffer due to macro-prudential or systemic risk identified at the level of a Member State (%)
+
+
+                                                                                                                                                                                                          5
+                                                                                                                                       a                b                c               d                e
+                                                                                                                                   31 Dec 2025      30 Sep 2025      30 Jun 2025     31 Mar 2025      31 Dec 2024
+9        Institution specific countercyclical capital buffer (%)                                                                           1.68%            1.73%            1.53%           1.70%            1.53%
+EU 9a    Systemic risk buffer (%)
+10       Global Systemically Important Institution buffer (%)
+EU 10a   Other Systemically Important Institution buffer (%)
+11       Combined buffer requirement (%)                                                                                                   4.18%            4.23%            4.03%           4.20%            4.03%
+EU 11a   Overall capital requirements (%)                                                                                               16.08%           16.57%           16.37%          16.54%           16.37%
+12       CET1 available after meeting the total SREP own funds requirements (%)                                                            11.42%        13.46%           14.96%             16.91%        13.44%
+
+
+         Leverage ratio
+13       Total exposure measure                                                                                                       9,154,365       9,052,074        8,998,747       8,717,849        8,573,327
+14       Leverage ratio (%)                                                                                                                4.20%            4.14%            4.04%           4.15%            4.10%
+
+
+         Additional own funds requirements to address the risk of excessive leverage (as a percentage of total exposure measure)
+EU 14a   Additional own funds requirements to address the risk of excessive leverage (%)
+EU 14b   of which: to be made up of CET1 capital (percentage points)
+EU 14c   Total SREP leverage ratio requirements (%)                                                                                        3.00%            3.00%            3.00%           3.00%            3.00%
+
+
+         Leverage ratio buffer and overall leverage ratio requirement (as a percentage of total exposure measure)
+EU 14d   Leverage ratio buffer requirement (%)
+EU 14e   Overall leverage ratio requirement (%)                                                                                            3.00%            3.00%            3.00%           3.00%            3.00%
+
+
+         Liquidity Coverage Ratio
+15       Total high-quality liquid assets (HQLA) (Weighted value -average)                                                           4,376,032        4,934,758          5,188,511     5,396,860         5,438,159
+EU 16a   Cash outflows - Total weighted value                                                                                        1,330,808         1,421,303        1,262,436      2,073,859         1,922,543
+EU 16b   Cash inflows - Total weighted value                                                                                               82,175           75,109        50,776          79,728           70,038
+16       Total net cash outflows (adjusted value)                                                                                     1,248,633        1,346,194        1,211,660       1,994,130        1,852,506
+17       Liquidity coverage ratio (%)                                                                                                 350.47%           366.57%         428.22%         270.64%          293.56%
+
+
+         Net Stable Funding Ratio
+18       Total available stable funding                                                                                              8,003,139         8,003,431        7,973,941      7,577,042         7,314,783
+19       Total required stable funding                                                                                               3,454,032         2,947,318       2,678,758        2,331,170       2,096,062
+20       NSFR ratio (%)                                                                                                                231.70%          271.55%          297.67%        325.03%          348.98%
+
+
+                                                                                                                                                                                                                  6
+EU OV1 - Overview of total risk exposure amounts
+
+
+
+                                                                                  Total risk exposure amounts (TREA)                  Total own funds requirements
+                                                                                  a                               b                                c
+                                                                                       31 Dec 2025                     31 Dec 2024                      31 Dec 2025
+
+1              Credit risk (excluding CCR)                                                 983,662                        972,583                           78,693
+2              Of which the standardised approach                                          983,662                         972,583                           78,693
+3              Of which the Foundation IRB (F-IRB) approach                                       -                               -                                  -
+4              Of which slotting approach                                                         -                               -                                  -
+EU 4a          Of which equities under the simple risk weighted approach                          -                               -                                  -
+5              Of which the Advanced IRB (A-IRB) approach                                         -                               -                                  -
+6              Counterparty credit risk - CCR                                                3,019                           3,505                              241
+7              Of which the standardised approach                                             3,019                          3,505                              241
+8              Of which internal model method (IMM)                                               -                               -                                  -
+EU 8a          Of which exposures to a CCP                                                        -                               -                                  -
+9              Of which other CCR                                                                 -                               -                                  -
+10             Credit valuation adjustments risk - CVA risk                                 11,954                           7,977                             956
+EU 10a         Of which the standardised approach (SA)                                            -                               -                                  -
+EU 10b         Of which the basic approach (F-BA and R-BA)                                   11,954                               -                            956
+EU 10c         Of which the simplified approach                                                   -                               -                                  -
+11             Not applicable
+12             Not applicable
+13             Not applicable
+14             Not applicable
+15             Settlement risk                                                                    -                               -                                  -
+16             Securitisation exposures in the non-trading book (after the cap)            299,173                          75,786                          23,934
+17             Of which SEC-IRBA approach                                                         -                               -                                  -
+18             Of which SEC-ERBA (including IAA)                                           254,879                           15,312                          20,390
+19             Of which SEC-SA approach                                                     44,293                          60,473                            3,543
+EU 19a         Of which 1250% / deduction                                                         -                               -                                  -
+20             Position, foreign exchange and commodities risks (Market risk)                     -                               -                                  -
+
+
+
+
+                                                                                                                                                                         7
+                                                                       Total risk exposure amounts (TREA)                 Total own funds requirements
+                                                                       a                               b                               c
+                                                                            31 Dec 2025                     31 Dec 2024                     31 Dec 2025
+21       Of which the Alternative standardised approach (A-SA)                        -                               -                                  -
+EU 21a   Of which the Simplified standardised approach (S-SA)                         -                               -                                  -
+22       Of which Alternative Internal Model Approach (A-IMA)                         -                               -                                  -
+EU 22a   Large exposures                                                              -                               -                                  -
+23       Reclassifications between the trading and non-trading books                  -                               -                                  -
+24       Operational risk                                                       351,030                         297,718                         28,082
+EU 24a   Exposures to crypto-assets                                                   -                               -                                  -
+         Amounts below the thresholds for deduction (subject
+25       to 250% risk weight)                                                         -                               -                                  -
+26       Output floor applied (%)                                                0.00%                           0.00%
+27       Floor adjustment (before application of transitional cap)               0.00%                           0.00%
+28       Floor adjustment (after application of transitional cap)                0.00%                           0.00%
+29       Total                                                                1,648,838                       1,357,568                         131,907
+
+
+
+
+                                                                                                                                                             8
+EU OVC - ICAAP information
+
+Our approach to assessing internal capital adequacy is grounded in a comprehensive,
+forward-looking financial forecast. We establish a three-year base case that integrates key
+business drivers, including strategic growth targets, operational and hiring needs, and the
+evolution of our investment pipelines. The capital requirement for this baseline scenario is
+determined in accordance with the most recent Supervisory Review and Evaluation Process
+(SREP) decision, ensuring our foundational plan is aligned with regulatory expectations.
+
+Building on this forecast, we conduct a rigorous stress-testing process to ensure our
+resilience against material risks. Three distinct stress scenarios are
+developed—idiosyncratic, market-wide, and combined—which are complemented by a
+macroeconomic scenario provided biannually by the European Banking Authority (EBA). By
+quantifying the potential capital depletion under each of these scenarios, we determine the
+appropriate level of Pillar 2 guidance needed to maintain financial stability. A reverse stress
+test is also performed to identify the magnitude of stresses that would cause a breach of
+our binding capital requirements, and to assess the likelihood of such events materializing.
+This multi-layered methodology ensures our internal capital is not only adequate for our
+strategic ambitions but also robust enough to withstand significant and varied shocks.
+
+On an annual basis, the results of this Internal Capital Adequacy Assessment Process
+(ICAAP) are submitted to De Nederlandsche Bank (DNB), along with supporting
+documentation, as part of the Supervisory Review and Evaluation Process (SREP).
+
+
+
+
+                                                                                                  9
+Disclosure of risk management objectives and policies
+EU OVA - Institution risk management approach
+
+Risk Management framework​                                                                        communicated to both management and the governing body, in alignment with our
+The Group’s managing board has overall responsibility for the establishment and oversight         System Checker Charter. The Audit Plan is defined yearly on a risk-based approach and
+of the Group’s risk management framework. The managing board has established that                 submitted to management and governing body approval. Next to that, regular penetration
+bunq use a Three lines of defense model:                                                          tests and reviews are performed of the Group’s IT and network infrastructure, as well as the
+                                                                                                  systems and the app, by a specialized white hacker agency.
+    ●​   First line – Business Operations, whose main responsibility is to carry out activities
+         aimed at achieving bunq’s business objectives;
+    ●​   Second line – Risk and Compliance, whose main responsibilities are: maintaining a
+         comprehensive understanding of the risk that bunq faces and alerting
+         management in case of changes to the risk profile or the environment in which it
+         operates; challenging the activities, processes, and controls in the First line;
+    ●​   Third line – System Checker, or the internal audit, which provides an independent
+         and objective perspective on the design and effectiveness of internal systems that
+         are aimed at achieving the business objectives.​
+
+The managing board steers bunq’s risk management approach by approving risk
+management policies at the Group level.
+
+The purposes of the Group's risk management policies is to identify and analyze the risks
+faced by the Group, to set appropriate risk limits and controls, and to monitor risks and
+adherence to limits. The Group has specified its risk limits and articulated its appetite for
+risk taking in a Risk Appetite Statement, which is reviewed and updated frequently and
+approved by the Managing and Supervisory Board.
+
+The risk management policies and systems are reviewed regularly to reflect changes in
+market conditions and the Group’s activities. The Group, through its training and
+management standards and procedures, aims to develop a disciplined and constructive
+control environment in which all employees understand their roles and obligations.
+
+The Group's Risk Committee oversees how management monitors compliance with the
+Group’s risk management policies and procedures and reviews the adequacy of the risk
+management framework in relation to the risks faced by the Group. The committee
+regularly monitors subsidiaries based outside of the Netherlands to ensure compliance with
+risk policies and to ensure sufficient safeguards are in place in Group subsidiaries.
+
+The Risk Committee complements the oversight role of the Supervisory Board with
+insights obtained by the System Checker (Internal Audit). bunq's System Checker serves as
+our robust third line of defense. The internal team evaluates the sufficiency and efficiency of
+our governance, risk management, and control systems. The System Checker ensures
+thorough evaluations, fostering continuous improvement. Their findings are transparently
+bunq B.V. Group is exposed to the following risks:
+                                                                                                                                                                                             10
+ Overview of risk categories
+ Risk categories         Sub categories             Defined as:
+ Financial risk          Credit risk                Risk of potential loss due to default by the Group's debtors or trading counterparties
+
+
+                         Financial stability risk   The risk that the Group cannot meet minimum capital requirements or financial liabilities when they become due at a reasonable cost and
+                                                    in a timely manner
+
+
+                         Market risk                The risk of potential loss due to adverse movements in market variables
+
+
+ Non-financial risk      Compliance risk            A threat posed to the Group's standing resulting from a failure to act in line with applicable laws and regulations, internal rules and/or
+                                                    societal expectations
+
+
+                         Legal risk                 The risk of loss resulting from disputes for or against the company, failure to correctly document, enforce or adhere to contractual
+                                                    arrangements, inadequate management of non-contractual rights. We consider separately this operational risk due to its specific nature
+
+
+                         Operational risk           The risk of direct or indirect loss arising from inadequate or failed internal processes, people and systems or from external events
+
+ Overarching risks       Business and strategic     The value or earnings loss due to business and strategic decisions that do not materialize as planned. This risk can be expressed in terms of
+                         risk                       volumes, margins, expenses and fees and commissions
+
+
+                         Conduct risk               The risk of failing to meet appropriate standards of consumer protection
+
+
+ Transversal risks       Climate risk               The risk of losses arising from any negative financial impact on the institution stemming from the current or prospective impacts of
+                                                    environmental, social or governance factors on the institution’s counterparties or invested assets
+
+
+
+
+Full details on bunq’s Risk Management approach is described within our Annual Report.
+This Annual Report is available through our website.
+
+
+
+
+                                                                                                                                                                                                 11
+EU OVB - Disclosure on governance arrangements
+
+
+
+Information on governance arrangements, including the number of directorships held by
+members of the management body, the recruitment policy for the selection of members of
+the management body and information about diversity, is described in the Governance
+chapter of our Annual Report. This Annual Report is available through our website.
+
+
+
+
+                                                                                         12
+Own funds, leverage & liquidity
+EU CC1 - Composition of regulatory own funds
+
+                                                                                                                               (a)                               (b)
+                                                                                                                                             Source based on reference numbers/letters
+                                                                                                                                              of the balance sheet under the regulatory
+                                                                                                                                     Amounts            scope of consolidation
+            Common Equity Tier 1 (CET1) capital: instruments and reserves
+1           Capital instruments and the related share premium accounts                                                                260,043 CC2-20
+            of which: Instrument type 1                                                                                               260,043 CC2-20
+            of which: Instrument type 2                                                                                                      -
+            of which: Instrument type 3                                                                                                      -
+2           Retained earnings                                                                                                          26,482 CC2-21
+3           Accumulated other comprehensive income (and other reserves)                                                                104,510 CC2-24 & CC2-25
+EU-3a       Funds for general banking risk                                                                                                   -
+            Amount of qualifying items referred to in Article 484 (3) CRR and the related share premium accounts
+4
+            subject to phase out from CET1                                                                                                   -
+5           Minority interests (amount allowed in consolidated CET1)                                                                   24,482 CC2-23
+EU-5a       Independently reviewed interim profits net of any foreseeable charge or dividend                                            16,780 CC2-22
+6           Common Equity Tier 1 (CET1) capital before regulatory adjustments                                                         432,296
+            Common Equity Tier 1 (CET1) capital: regulatory adjustments
+7           Additional value adjustments (negative amount)                                                                                (30)
+8           Intangible assets (net of related tax liability) (negative amount)                                                         (46,133) CC2-10
+9           Not applicable                                                                                                                   -
+            Deferred tax assets that rely on future profitability excluding those arising from temporary differences (net of
+10
+            related tax liability where the conditions in Article 38 (3) CRR are met) (negative amount)                                      -
+            Fair value reserves related to gains or losses on cash flow hedges of financial instruments that are not valued
+11
+            at fair value                                                                                                                    -
+12          Negative amounts resulting from the calculation of expected loss amounts                                                         -
+13          Any increase in equity that results from securitised assets (negative amount)                                                    -
+14          Gains or losses on liabilities valued at fair value resulting from changes in own credit standing                                -
+15          Defined-benefit pension fund assets (negative amount)                                                                            -
+16          Direct, indirect and synthetic holdings by an institution of own CET1 instruments (negative amount)                              -
+            Direct, indirect and synthetic holdings of the CET 1 instruments of financial sector entities where those
+17          entities have reciprocal cross holdings with the institution designed to inflate artificially the own funds of
+            the institution (negative amount)                                                                                                -
+
+
+
+
+                                                                                                                                                                                     13
+                                                                                                                            (a)                               (b)
+                                                                                                                                          Source based on reference numbers/letters
+                                                                                                                                           of the balance sheet under the regulatory
+                                                                                                                                  Amounts            scope of consolidation
+         Direct, indirect and synthetic holdings by the institution of the CET1 instruments of financial sector entities
+18       where the institution does not have a significant investment in those entities (amount above 10% threshold
+         and net of eligible short positions) (negative amount)                                                                            -
+         Direct, indirect and synthetic holdings by the institution of the CET1 instruments of financial sector entities
+19       where the institution has a significant investment in those entities (amount above 10% threshold and net of
+         eligible short positions) (negative amount)                                                                                       -
+20       Not applicable                                                                                                                    -
+         Exposure amount of the following items which qualify for a RW of 1250%, where the institution opts for the
+EU-20a
+         deduction alternative                                                                                                             -
+EU-20b   of which: qualifying holdings outside the financial sector (negative amount)                                                      -
+EU-20c   of which: securitisation positions (negative amount)                                                                              -
+EU-20d   of which: free deliveries (negative amount)                                                                                       -
+         Deferred tax assets arising from temporary differences (amount above 10% threshold, net of related tax
+21
+         liability where the conditions in Article 38 (3) CRR are met) (negative amount)                                                   -
+22       Amount exceeding the 17,65% threshold (negative amount)                                                                           -
+         of which: direct, indirect and synthetic holdings by the institution of the CET1 instruments of financial sector
+23
+         entities where the institution has a significant investment in those entities                                                     -
+24       Not applicable                                                                                                                    -
+25       of which: deferred tax assets arising from temporary differences                                                                  -
+EU-25a   Losses for the current financial year (negative amount)                                                                           -
+         Foreseeable tax charges relating to CET1 items except where the institution suitably adjusts the amount of
+EU-25b   CET1 items insofar as such tax charges reduce the amount up to which those items may be used to cover
+         risks or losses (negative amount)                                                                                                 -
+26       Not applicable                                                                                                                    -
+27       Qualifying AT1 deductions that exceed the AT1 items of the institution (negative amount)                                          -
+27a      Other regulatory adjustments                                                                                                (1,614)
+28       Total regulatory adjustments to Common Equity Tier 1 (CET1)                                                               (47,777)
+29       Common Equity Tier 1 (CET1) capital                                                                                       384,519
+         Additional Tier 1 (AT1) capital: instruments
+30       Capital instruments and the related share premium accounts
+31       of which: classified as equity under applicable accounting standards
+32       of which: classified as liabilities under applicable accounting standards
+
+
+
+
+                                                                                                                                                                                  14
+                                                                                                                            (a)                               (b)
+                                                                                                                                          Source based on reference numbers/letters
+                                                                                                                                           of the balance sheet under the regulatory
+                                                                                                                                  Amounts            scope of consolidation
+         Amount of qualifying items referred to in Article 484 (4) CRR and the related share premium accounts
+33
+         subject to phase out from AT1
+EU-33a   Amount of qualifying items referred to in Article 494a(1) CRR subject to phase out from AT1
+EU-33b   Amount of qualifying items referred to in Article 494b(1) CRR subject to phase out from AT1
+         Qualifying Tier 1 capital included in consolidated AT1 capital (including minority interests not included in row
+34
+         5) issued by subsidiaries and held by third parties
+35       of which: instruments issued by subsidiaries subject to phase out
+36       Additional Tier 1 (AT1) capital before regulatory adjustments
+         Additional Tier 1 (AT1) capital: regulatory adjustments
+37       Direct, indirect and synthetic holdings by an institution of own AT1 instruments (negative amount)
+         Direct, indirect and synthetic holdings of the AT1 instruments of financial sector entities where those entities
+38       have reciprocal cross holdings with the institution designed to inflate artificially the own funds of the
+         institution (negative amount)
+         Direct, indirect and synthetic holdings of the AT1 instruments of financial sector entities where the
+39       institution does not have a significant investment in those entities (amount above 10% threshold and net of
+         eligible short positions) (negative amount)
+         Direct, indirect and synthetic holdings by the institution of the AT1 instruments of financial sector entities
+40       where the institution has a significant investment in those entities (net of eligible short positions) (negative
+         amount)
+41       Not applicable
+42       Qualifying T2 deductions that exceed the T2 items of the institution (negative amount)
+42a      Other regulatory adjustments to AT1 capital
+43       Total regulatory adjustments to Additional Tier 1 (AT1) capital
+44       Additional Tier 1 (AT1) capital
+45       Tier 1 capital (T1 = CET1 + AT1)                                                                                          384,519
+         Tier 2 (T2) capital: instruments
+46       Capital instruments and the related share premium accounts
+         Amount of qualifying items referred to in Article 484(5) CRR and the related share premium accounts
+47
+         subject to phase out from T2 as described in Article 486(4) CRR
+EU-47a   Amount of qualifying items referred to in Article 494a(2) CRR subject to phase out from T2
+EU-47b   Amount of qualifying items referred to in Article 494b(2) CRR subject to phase out from T2
+
+
+
+
+                                                                                                                                                                                  15
+                                                                                                                              (a)                               (b)
+                                                                                                                                            Source based on reference numbers/letters
+                                                                                                                                             of the balance sheet under the regulatory
+                                                                                                                                    Amounts            scope of consolidation
+         Qualifying own funds instruments included in consolidated T2 capital (including minority interests and AT1
+48
+         instruments not included in rows 5 or 34) issued by subsidiaries and held by third parties
+49       of which: instruments issued by subsidiaries subject to phase out
+50       Credit risk adjustments
+51       Tier 2 (T2) capital before regulatory adjustments
+         Tier 2 (T2) capital: regulatory adjustments
+         Direct, indirect and synthetic holdings by an institution of own T2 instruments and subordinated loans
+52
+         (negative amount)
+         Direct, indirect and synthetic holdings of the T2 instruments and subordinated loans of financial sector
+53       entities where those entities have reciprocal cross holdings with the institution designed to inflate artificially
+         the own funds of the institution (negative amount)
+         Direct, indirect and synthetic holdings of the T2 instruments and subordinated loans of financial sector
+54       entities where the institution does not have a significant investment in those entities (amount above 10%
+         threshold and net of eligible short positions) (negative amount)
+54a      Not applicable
+         Direct, indirect and synthetic holdings by the institution of the T2 instruments and subordinated loans of
+55       financial sector entities where the institution has a significant investment in those entities (net of eligible
+         short positions) (negative amount)
+56       Not applicable
+         Qualifying eligible liabilities deductions that exceed the eligible liabilities items of the institution (negative
+EU-56a
+         amount)
+EU-56b   Other regulatory adjustments to T2 capital
+57       Total regulatory adjustments to Tier 2 (T2) capital
+58       Tier 2 (T2) capital
+59       Total capital (TC = T1 + T2)                                                                                                384,519
+60       Total Risk exposure amount                                                                                                 1,648,838
+         Capital ratios and requirements including buffers
+61       Common Equity Tier 1 capital                                                                                                 23.32%
+62       Tier 1 capital                                                                                                               23.32%
+63       Total capital                                                                                                                23.32%
+64       Institution CET1 overall capital requirements                                                                                10.87%
+65       of which: capital conservation buffer requirement                                                                             2.50%
+
+
+
+
+                                                                                                                                                                                    16
+                                                                                                                           (a)                               (b)
+                                                                                                                                         Source based on reference numbers/letters
+                                                                                                                                          of the balance sheet under the regulatory
+                                                                                                                                 Amounts            scope of consolidation
+66       of which: countercyclical capital buffer requirement                                                                       1.68%
+67       of which: systemic risk buffer requirement
+         of which: Global Systemically Important Institution (G-SII) or Other Systemically Important Institution (O-SII)
+EU-67a
+         buffer requirement
+EU-67b   of which: additional own funds requirements to address the risks other than the risk of excessive leverage                 2.19%
+         Common Equity Tier 1 capital (as a percentage of risk exposure amount) available after meeting the
+68
+         minimum capital requirements                                                                                               11.42%
+         National minima (if different from Basel III)
+69       Not applicable
+70       Not applicable
+71       Not applicable
+         Amounts below the thresholds for deduction (before risk weighting)
+         Direct and indirect holdings of own funds and eligible liabilities of financial sector entities where the
+72       institution does not have a significant investment in those entities (amount below 10% threshold and net of
+         eligible short positions)
+         Direct and indirect holdings by the institution of the CET1 instruments of financial sector entities where the
+73       institution has a significant investment in those entities (amount below 17.65% thresholds and net of eligible
+         short positions)
+74       Not applicable
+         Deferred tax assets arising from temporary differences (amount below 17,65% threshold, net of related tax
+75
+         liability where the conditions in Article 38 (3) CRR are met)
+         Applicable caps on the inclusion of provisions in Tier 2
+         Credit risk adjustments included in T2 in respect of exposures subject to standardised approach (prior to the
+76
+         application of the cap)
+77       Cap on inclusion of credit risk adjustments in T2 under standardised approach                                              12,334
+         Credit risk adjustments included in T2 in respect of exposures subject to internal ratings-based approach
+78
+         (prior to the application of the cap)
+79       Cap for inclusion of credit risk adjustments in T2 under internal ratings-based approach
+         Capital instruments subject to phase-out arrangements (only applicable between 1 Jan 2014 and 1 Jan
+         2022)
+80       Current cap on CET1 instruments subject to phase out arrangements
+81       Amount excluded from CET1 due to cap (excess over cap after redemptions and maturities)
+82       Current cap on AT1 instruments subject to phase out arrangements
+83       Amount excluded from AT1 due to cap (excess over cap after redemptions and maturities)
+84       Current cap on T2 instruments subject to phase out arrangements
+85       Amount excluded from T2 due to cap (excess over cap after redemptions and maturities)
+
+
+
+
+                                                                                                                                                                                 17
+EU CC2 - reconciliation of regulatory own funds to balance sheet in the audited financial statements
+
+                                                                                                                 a                              b                          c
+                                                                                                      Balance sheet as in published      Under regulatory scope of
+                                                                                                                                                                                    Reference
+                                                                                                               financial statements                  consolidation
+                                                                                                                     As at period end               As at period end
+
+      Assets - Breakdown by asset classes according to the balance sheet in the published financial statements
+
+1     Cash and balances with central banks                                                                                 4,072,552                      4,072,552
+
+2     Loans and advances to banks                                                                                             90,830                         90,830
+3     Investments at amortized cost                                                                                          2,173,194                      2,173,194
+4     Derivative assets held for risk management                                                                               40,612                         40,612
+5     Loans and advances to customers                                                                                       1,064,597                      1,064,597
+6     Mortgages                                                                                                              1,462,491                      1,462,491
+7     Inventory                                                                                                                   461                            461
+8     Other assets                                                                                                            84,328                         84,328
+9     Property, plant and equipment and right of use assets                                                                    10,466                         10,466
+10    Intangible assets                                                                                                        46,175                         46,175      CC1-8
+11    Corporate Income Tax asset                                                                                                 5,931                          5,931
+12    Total assets                                                                                                          9,051,637                      9,051,637
+
+      Liabilities - Breakdown by liability classes according to the balance sheet in the published financial statements
+13    Loans and advances owed to banks                                                                                         27,867                         27,867
+
+14    Customer deposits                                                                                                    8,427,026                      8,427,026
+
+15    Other liabilities                                                                                                         5,788                          5,788
+16    Derivative liabilities held for risk management                                                                          117,157                        117,157
+17    Provisions                                                                                                                12,719                         12,719
+18    Deferred tax liability                                                                                                      353                            353
+19    Total liabilities                                                                                                     8,590,910                      8,590,910
+
+      Shareholders' Equity
+20    Share capital and share premium                                                                                        260,043                        260,043       CC1-1
+21    Retained earnings                                                                                                        26,482                         26,482      CC1-2
+
+22    Profit & Loss Parent                                                                                                     19,967                         19,967    CC1-EU-5a
+
+23    Non-controlling interest                                                                                                 49,726                         49,726      CC1-5
+
+24    Other reserves                                                                                                            4,419                          4,419      CC1-3
+25    Other non-distributable reserves                                                                                        100,091                        100,091      CC1-3
+26    Total shareholders' equity                                                                                             460,728                        460,728
+
+                                                                                                                                                                                                18
+Disclosure of liquidity requirements
+EU LIQA - Liquidity risk management
+
+Liquidity risk management framework                                                           Governance and centralisation
+bunq's liquidity risk management framework supports a moderate-risk profile and protects      The Asset & Liability Committee (ALCO) is an executive committee with delegated authority
+the bank's reputation and ability to meet payment obligations in a timely manner and at a     from the Management Board. ALCO meets monthly and is responsible for reviewing and
+reasonable cost, including under severely adverse conditions. The framework relies on:        approving the ILAAP stress scenarios, overseeing the design and implementation of
+                                                                                              liquidity risk controls, monitoring internal and prudential liquidity metrics and approving
+i) a granular and stable retail deposit funding base
+                                                                                              mitigating actions, owning the Contingency Funding Plan (CFP), assessing the liquidity
+ii) a sizeable High-Quality Liquid Asset (HQLA) buffer mostly held as cash at the ECB,        implications of new products and approving the structure of the liquidity buffer. The CFO
+                                                                                              (with day-to-day authority delegated to the Head of Finance) is ultimately accountable for
+iii) contingent funding capacity through ECB/DNB facilities, bilateral repurchase
+                                                                                              the ILAAP package and is a voting member of ALCO. The CRO and the Head of Financial
+agreements and securitisations
+                                                                                              Risk represent the second line in ALCO.
+iv) a comprehensive set of internal and regulatory limits monitored daily, reinforced by
+                                                                                              Liquidity management is centralised at bunq B.V.: all customer deposits and the entire
+stress testing.
+                                                                                              liquidity buffer are held at this entity. ILAAP liquidity stress tests are run on both solo and
+                                                                                              consolidated balance sheets; the practical difference is small as both rely on the same retail
+Three lines of defence                                                                        customer deposits.
+    ●​   First line of defense: Treasury executes day-to-day liquidity management
+         (investment, funding and collateral activities) within ALCO-approved limits;         Funding strategy and diversification
+         Finance is in charge of regulatory and management reporting.
+                                                                                              bunq's primary and most stable funding source is granular retail and SME customer
+    ●​   Second line of defense: the Risk department (Financial Risk function, reporting to
+                                                                                              deposits, the majority of which are covered by the Dutch Deposit Guarantee Scheme (DGS).
+         the CRO) independently identifies, measures, monitors and challenges liquidity
+                                                                                              Total user deposits stood at EUR 8.43 billion at 31 December 2025, of which approximately
+         risk, develops the stress-test assumptions and reviews the models used.
+                                                                                              91% is DGS-covered and approximately 94% is retail.
+    ●​   Third line of defense: Internal Audit provides independent assurance over the
+         design and operating effectiveness of the liquidity risk governance, processes,      Funding diversification has been deliberately broadened with the launch of term deposits
+         models and controls. The Internal Audit function reports directly to the             in December 2025, the securitization of a further tranche of our mortgage portfolio
+         Management Board and the Supervisory Board.                                          (awaiting ECB-eligibility recognition), and the operationalization of repurchase capability
+                                                                                              with multiple counterparties.
+
+                                                                                              The funding strategy explicitly excludes reliance on wholesale market funding under
+                                                                                              normal conditions; wholesale repo and securitization capacity are held in reserve as a
+                                                                                              contingent funding tool
+
+
+
+
+                                                                                                                                                                                            19
+Risk reporting and measurement                                                                The CFP is reviewed and updated annually as part of the ILAAP. The ability to borrow
+                                                                                              against eligible collateral with the ECB and bilaterally is tested at least annually with
+bunq monitors a comprehensive Risk Appetite Statement (RAS) covering both regulatory          sufficiently sized live transactions.
+and internal liquidity metrics. LCR and HQLA balance are monitored daily through
+automated dashboards. Intraday reporting of customer inflows/outflows, monitoring of the
+                                                                                              Declaration of the Management Body
+largest customers' funding activity, and intraday non-EUR balance reporting were
+introduced in 2025. ALCO formally reviews the metrics at least monthly.                       The Management Board, on the basis of the 2026 ILAAP and following review and
+                                                                                              endorsement by the Supervisory Board on 24 March 2026, declares that bunq's liquidity risk
+Internal limits include early warning levels on cash as a % of total deposits, asset
+                                                                                              management arrangements are adequate with regard to the institution's profile and
+encumbrance limits, and internal LCR and NSFR early-warning levels set well above the
+                                                                                              strategy. The framework, processes and controls in place are appropriate to identify,
+regulatory 100% minimum.
+                                                                                              measure, monitor and manage the liquidity risks to which bunq is or could be exposed,
+                                                                                              including under severe but plausible stress.
+Hedging and mitigation
+Liquidity risk is mitigated rather than hedged in a derivative sense. Mitigants include the
+size and quality of the HQLA buffer, the granularity of the deposit base and DGS coverage,
+and the operational readiness to monetize the buffer. The continuing effectiveness of these
+mitigants is reviewed in the annual ILAAP and tested through stress scenarios; collateral
+monetization capability is tested at least annually.
+
+Stress testing
+bunq runs idiosyncratic, market-driven and combined stress scenarios, embedding climate
+and environmental factors as well as guidance from supervisory expectations on liquidity
+stress testing.
+
+The point of failure is defined as a breach of the ECB minimum reserve requirement (i.e.
+inability to repay a customer withdrawal). The survival period exceeds 12 months under all
+scenarios across the budget horizon.
+
+Contingency Funding Plan (CFP)
+The CFP team comprises the permanent members of ALCO. Escalation is triggered by RAS
+threshold breaches on the LCR, NSFR, asset encumbrance ratio or survival period, or by
+qualitative assessment of an emerging liquidity event. The Treasurer (1st line) and Head of
+Financial Risk (2nd line) continuously monitor the position. Activation of the CFP triggers
+immediate notification by the CRO to the Management Board, the Supervisory Board and
+DNB.
+
+The CFP contains the following menu of mitigating actions, which include halting new
+uncommitted investments, increasing freely withdrawable savings rates and/or term
+deposit rates to retain and attract deposits, monetizing HQLA via Eurosystem refinancing or
+secondary sale and other tradable securities via bilateral repo or sale. If those measures
+were insufficient, bunq could source senior funding from another bank, securitize an
+additional portion of its loan portfolio, or request additional shareholder funding.
+
+
+
+
+                                                                                                                                                                                          20
+Concise liquidity risk statement                                                                  The off-balance-sheet liquidity risk profile is limited: the only material derivative exposures
+                                                                                                  are pay-fixed interest rate swaps used to hedge mortgage IRRBB; committed undrawn lines
+bunq's overall liquidity risk profile is assessed as moderate and well within the Risk Appetite   arise primarily from the mortgage pipeline (subject to a 4-month drawdown convention).
+tolerated by the Management Body. The bank operates with a liquidity buffer that
+materially exceeds regulatory minima, supported by a granular and predominantly
+DGS-covered retail deposit base. Key ratios and figures at 31 December 2025 are
+summarized below.
+
+ Metric ​                                  Value                Limit / RAS reference
+ (31 December 2025, consolidated)
+
+ LCR (consolidated)                        351%                 Regulatory limit 100%
+
+ NSFR (consolidated)                       232%                 Regulatory limit 100%
+
+ Liquidity Buffer                          EUR 4,704m           ECB cash net of MRR EUR
+                                                                3,989m; HQLA securities
+                                                                EUR 387m; Solitaire I
+                                                                (non-HQLA but
+                                                                ECB-eligible) EUR 280m
+
+ HQLA composition                          L1 90.9% / L2        —
+                                           2.6% /
+                                           non-HQLA but
+                                           ECB-eligible
+                                           6.5%
+
+ Total user deposits                       EUR 8,427m           —
+
+ Retail share of deposits                  ~94%                 —
+
+ DGS-covered share of deposits             ~91%                 —
+
+ Top-20 depositor concentration            2.5%                 —
+
+ Non-EUR deposits / total deposits         <1.2%                —
+
+ Internal ECB cash early-warning           actual ~48% of       L1 RAS limit 25% of total
+ floor                                     deposits             deposits
+
+ Asset encumbrance ratio                   <2%                  Internal L1 limit 7%;
+                                                                regulatory 25%
+
+ Survival period under all stress          >12 months           Internal floor 7 months
+ scenarios
+
+
+
+
+                                                                                                                                                                                               21
+Qualitative information
+Concentration of funding and liquidity sources
+bunq's funding base is highly granular: the largest 53 depositors (those with balances above
+EUR 1m) total EUR 222m, or 2.6% of total deposits, and ~91% of total deposits sit below the
+DGS limit. The primary source of funding is freely withdrawable retail savings; transactional
+accounts (~20% of deposits) are non-interest-bearing and provide bunq's most stable and
+cheapest funding source. Wholesale concentration is limited and dominated by
+crypto-related corporate balances, to which a 100% LCR outflow factor and very
+conservative NSFR treatment are applied.
+
+Composition of the liquidity buffer
+As at 31 December 2025, the consolidated liquidity buffer amounted to EUR 4,704 million,
+comprising:
+
+    ●​   ECB cash net of the minimum reserve requirement: EUR 3,989m (84.8%)
+    ●​   HQLA Level 1 securities (SSA bonds): EUR 248.7m
+    ●​   HQLA Level 2 securities (ABS): EUR 138.8m
+    ●​   Non-HQLA but ECB-eligible (Solitaire I): EUR 279.7m
+
+
+
+Derivative exposures and potential collateral calls
+Derivative exposures are limited to plain vanilla pay-fixed interest rate swaps used to hedge
+mortgage IRRBB. LCR and stress-test outflows for derivatives use a worst-of
+mark-to-market move observed over the preceding two years.
+
+Currency mismatch
+EUR represents over 98.8% of bunq's funding. Non-EUR deposits (USD and GBP being
+dominant) are substantially matched by short-dated assets in the same currency via
+short-term assets and bank deposits. Currency-specific LCRs are monitored where
+regulatorily required.
+
+
+
+
+                                                                                                22
+Disclosure of credit risk quality
+EU CRA: General qualitative information about credit risk
+
+
+
+(a) Credit Risk Profile of the Business Model                                                   composition. The Board sets and monitors the Group's credit risk profile against an
+                                                                                                established Risk Appetite Statement (RAS), which is reviewed frequently and approved by
+The Group's business model generates credit risk exposure primarily through the following       both the Managing Board and the Supervisory Board.
+channels:
+                                                                                                Underwriting criteria​
+    ●​   Loans and advances to customers – the largest source of credit risk arising from       Each loan is individually reviewed and granted based on its specific risk profile. For
+         the lending subsidiary Capitalflow, which provides Corporate Real Estate (CRE),        mortgages, lending is restricted to Dutch primary residences with first or
+         Asset Finance (AF) and Invoice Finance/Asset-Based Lending (ABL) products              first-and-sequentially-ranking mortgage rights and a maximum legal term of 30 years. At
+         predominantly in Ireland. These portfolios expose the Group to borrower default        least 95% of mortgages must have an LTV of no more than 80% or carry NHG backing, with
+         risk, collateral value risk and concentration risk at the counterparty and industry    an individual borrower cap of EUR 1.0 million. For the investment portfolio, all new
+         level.                                                                                 fixed-income investments require a minimum credit rating of BBB- from a recognised
+    ●​   Residential mortgages (Netherlands) – bunq invests in NHG-backed and                   rating agency. Exposure limits for BBB-rated bonds, commercial paper and certificates of
+         conventional residential mortgages secured on Dutch primary residences. As at 31       deposit are set at EUR 50 million (maturity ≤6 months) and EUR 25 million (other
+         December 2025, 92.21% of the mortgage portfolio was covered by NHG,                    maturities), while structured credit positions rated A- and above are capped at EUR 30
+         substantially mitigating credit loss exposure.                                         million per issuer.
+    ●​   Investment portfolio – the Treasury function holds bonds, asset-backed securities,
+         collateralized loan obligations (CLOs), fixed-term funds, commercial paper,            Limit-setting and concentration controls​
+         fixed-income investments and capital call lending. Credit risk on these positions is   The credit risk function establishes, monitors and reports concentration limits across
+         driven by issuer and counterparty default risk, managed through minimum credit         products, counterparties and portfolios. Concentration risk arising from central bank
+         rating thresholds.                                                                     balances and placements with a limited number of financial institutions is actively
+    ●​   Interbank and central bank exposures – cash balances held at central banks and         monitored and assessed. The credit risk concentration model was updated during 2025 to
+         loans and advances to banks. As at 31 December 2025, all loans and advances to         enhance this framework. Limits are calibrated to the Group's risk appetite and are subject to
+         banks were rated A or higher (Moody's / S&P).                                          Board oversight.
+    ●​   Off-balance-sheet items – undrawn commitments and direct debits that may be
+         returned or rejected, representing a residual credit risk element.                     Internal credit grading and scoring​
+                                                                                                The Group maintains internal credit grading and scoring frameworks calibrated to each
+The overall credit risk profile reflects a low-to-moderate risk appetite. The predominance of   portfolio. Capitalflow employs internal rating scales for CRE (Strong / Good / Satisfactory /
+NHG-guaranteed mortgages and investment-grade treasury assets limits expected credit            Watchlist / Default), ABL and AF portfolios. Stage allocation under IFRS 9 is based on
+losses relative to total exposure.                                                              quantitative PD changes, qualitative indicators and past-due backstops (30 days for Stage 2;
+                                                                                                90 days for Stage 3). Expected Credit Loss (ECL) models incorporate three
+(b) Strategies, Processes and Criteria for Credit Risk Management and Limit-Setting             probability-weighted macroeconomic scenarios with forward-looking PD estimates derived
+                                                                                                from macroeconomic variables including GDP growth and unemployment.
+The Group's credit risk management policy is designed to achieve sustainable risk-adjusted
+performance while maintaining credit exposures within parameters approved by the Board.         Hedging and mitigation​
+The following criteria and approaches govern the definition of policy and the setting of        Credit risk is mitigated through collateral (mortgage rights, NHG guarantees, asset finance
+credit risk limits:                                                                             collateral), investment-grade rating requirements and exposure limits rather than through
+                                                                                                credit derivatives or financial hedges. The NHG guarantee provides substantial structural
+Policy framework​
+                                                                                                protection on the Dutch mortgage portfolio.
+Board-approved Credit Risk Policies are maintained across all Group entities. These policies
+are reviewed regularly to reflect changes in market conditions and the Group's portfolio
+                                                                                                                                                                                           23
+(c) Structure and Organisation of the Credit Risk Management and Control Function                (d) Relationships between Credit Risk Management, Risk Control, Compliance and
+                                                                                                 Internal Audit
+The credit risk function sits within the second line of defence and has direct responsibility
+for the oversight and control of credit risk across the Group. The credit risk function is       The Group operates a Three Lines of Defence model. Within this model, credit risk
+responsible for:                                                                                 management is positioned in the second line (Risk and Compliance). In the context of
+                                                                                                 credit risk specifically, the credit risk function sets the policies, limits and methodologies
+    ●​   Formulating and maintaining credit risk policies, methodologies and risk appetite       within which first-line lending and treasury activities are conducted. The credit risk function
+         parameters;                                                                             also provides independent guidance to the Management Board on credit decisions and
+    ●​   Establishing and monitoring credit approval and authorisation structures;               portfolio developments, ensuring separation between those who originate credit exposures
+    ●​   Developing, maintaining and overseeing processes for the measurement and                and those who govern and control them.
+         monitoring of expected credit losses;
+    ●​   Reviewing and assessing credit risk;                                                    Board-approved Credit Risk policies apply across the Group, with the Board responsible for
+    ●​   Setting, monitoring and reporting concentration limits across products,                 setting the credit risk appetite and monitoring ongoing performance against it. This creates
+         counterparties and portfolios;                                                          a direct line of accountability from the credit risk function through to Board level.
+    ●​   Maintaining internal credit grading and scoring frameworks; and
+    ●​   Providing independent guidance and risk expertise to the Management Board in
+         relation to credit decisions, portfolio developments and new product initiatives.
+
+Credit risk on funds provided to customers is controlled through the application of the
+Group's underwriting and arrears-management functions, which operate within the
+policies and limits set by the credit risk function. The Board retains ultimate responsibility
+for setting and understanding the Group's credit risk profile, with ongoing performance
+monitored on a regular basis.
+
+
+
+
+                                                                                                                                                                                             24
+EU CQ3: Credit quality of performing and non-performing exposures by past due days
+
+                                         a               b            c           d                 e                f                g                 h                   i                 j              k             l
+
+                                                                                                        Gross carrying amount/nominal amount
+
+                                             Performing exposures                                                                      Non-performing exposures
+                                                                                                Unlikely to
+                                                                                               pay that are
+                                                                                               not past due
+                                                    Not past due Past due >                     or are past       Past due         Past due         Past due            Past due          Past due
+                                                     or past due 30 days ≤ 90                    due ≤ 90        > 90 days        > 180 days       > 1 year ≤ 2       > 2 years ≤ 5     > 5 years ≤ 7   Past due > 7   Of which
+                                                      ≤ 30 days      days                          days          ≤ 180 days         ≤ 1 year          years               years             years          years       defaulted
+
+
+
+      Cash balances at central banks
+005   and other demand deposits         4,121,763       4,121,763             -            -                 -                -                -                  -                 -               -              -                -
+
+010   Loans and advances               2,890,306      2,883,408           6,898   49,264             24,619              4,850            13,961            1,255               4,572               6              -       48,413
+
+020   Central banks                             -                -            -            -                 -                -                -                  -                 -               -              -                -
+
+
+030   General governments                       -                -            -            -                 -                -                -                  -                 -               -              -                -
+
+040   Credit institutions                197,994         197,994              -            -                 -                -                -                  -                 -               -              -                -
+
+
+050   Other financial corporations        198,131         198,131             -            -                 -                -                -                  -                 -               -              -                -
+
+
+060   Non-financial corporations         947,870         940,973          6,898   34,010                23,210           3,754             1,256            1,228               4,556               6              -           33,652
+
+070   Of which SMEs                     864,893          857,996          6,898       18,775            8,209            3,754             1,231             1,211              4,363               6              -           18,417
+
+080   Households                        1,546,311        1,546,311            -       15,255            1,409            1,096            12,705              28                   16               -              -           14,761
+
+090   Debt securities                   1,881,415       1,871,699         9,716            -                 -                -                -                  -                 -               -              -                -
+
+100   Central banks                             -                -            -            -                 -                -                -                  -                 -               -              -                -
+
+
+110   General governments                162,268         162,268              -            -                 -                -                -                  -                 -               -              -                -
+
+
+
+
+                                                                                                                                                                                                                                   25
+                                       a                 b            c            d             e               f                g                 h                   i                 j              k             l
+
+                                                                                                     Gross carrying amount/nominal amount
+
+                                             Performing exposures                                                                  Non-performing exposures
+                                                                                             Unlikely to
+                                                                                            pay that are
+                                                                                            not past due
+                                                    Not past due Past due >                  or are past      Past due         Past due         Past due            Past due          Past due
+                                                     or past due 30 days ≤ 90                 due ≤ 90       > 90 days        > 180 days       > 1 year ≤ 2       > 2 years ≤ 5     > 5 years ≤ 7   Past due > 7   Of which
+                                                      ≤ 30 days      days                       days         ≤ 180 days         ≤ 1 year          years               years             years          years       defaulted
+
+120   Credit institutions               95,346            95,346               -        -                -                -                -                  -                 -               -              -               -
+
+
+130   Other financial corporations    1,623,802         1,614,086          9,716        -                -                -                -                  -                 -               -              -               -
+
+
+140   Non-financial corporations                -               -              -        -                -                -                -                  -                 -               -              -               -
+
+
+150   Off-balance-sheet exposures      186,158                                          -                                                                                                                                      -
+
+160   Central banks                             -                                       -                                                                                                                                      -
+
+
+170   General governments                       -                                       -                                                                                                                                      -
+
+180   Credit institutions                       -                                       -                                                                                                                                      -
+
+
+190   Other financial corporations         13,500                                       -                                                                                                                                      -
+
+
+200   Non-financial corporations           78,518                                       -                                                                                                                                      -
+
+210   Households                        94,140                                          -                                                                                                                                      -
+
+220   Total                          9,079,642         8,876,871          16,614   49,264         24,619             4,850            13,961            1,255               4,572               6              -       48,413
+
+
+
+
+                                                                                                                                                                                                                           26
+EU CR1: Performing and non-performing exposures and related provisions
+
+
+
+
+                                      a            b              c           d               e              f                  g                 h                i         j                k              l              m           n             o
+                                                                                                                          Accumulated impairment, accumulated negative changes in fair value due                                    Collateral and financial
+                                                    Gross carrying amount/nominal amount                                                      to credit risk and provisions                                                          guarantees received
+                                                                                                                                                                 Non-performing exposures –
+                                                                                                                                                                   accumulated impairment,           Accumulat
+                                                                                                                          Performing exposures – accumulated accumulated negative changes in fair ed partial
+                                       Performing exposures                   Non-performing exposures                         impairment and provisions     value due to credit risk and provisions write-off
+                                                                                                                                                                                                                                        On      On non-
+                                                Of which       Of which                    Of which       Of which                             Of which         Of which                   Of which       Of which                  performing performing
+                                                 stage 1        stage 2                     stage 2        stage 3                              stage 1          stage 2                    stage 2        stage 3                  exposures exposures
+        Cash balances at central
+        banks and other
+ 005    demand deposits             4,121,763     4,121,763               -            -              -               -                  (6)             (6)             -             -              -                 -       -               -              -
+
+ 010    Loans and advances         2,890,306     2,861,257        29,049      49,264              851            48,413             (10,379)      (8,279)          (2,100)   (23,848)             (102)      (23,746)           -      2,533,066       24,810
+
+ 020    Central banks                       -              -              -            -              -               -                    -                -            -             -              -                 -       -               -              -
+
+ 030    General governments                 -              -              -            -              -               -                    -                -            -             -              -                 -       -               -              -
+
+ 040    Credit institutions          197,994       197,994                -            -              -               -                  (2)              (2)            -             -              -                 -       -               -              -
+        Other financial
+ 050    corporations                  198,131       198,131               -            -              -               -                (139)           (139)             -             -              -                 -       -        49,926                -
+        Non-financial
+ 060    corporations                 947,870       919,032        28,838          34,010          358            33,652              (9,618)       (7,522)         (2,095)    (11,640)            (64)           (11,576)       -        938,014          22,370
+
+ 070    Of which SMEs               864,893         840,161        24,733         18,775          358            18,417              (8,792)          (7,162)      (1,629)       (5,566)          (64)           (5,502)        -       855,863           13,209
+
+ 080    Households                  1,546,311     1,546,100            210        15,255          494            14,761               (620)            (616)           (4)   (12,208)              (38)          (12,170)       -       1,545,126          2,441
+
+ 090    Debt securities             1,881,415     1,871,699           9,716            -              -               -                 (37)            (35)           (2)             -              -                 -       -               -              -
+
+  100   Central banks                       -              -              -            -              -               -                    -                -            -             -              -                 -       -               -              -
+
+  110   General governments          162,268       162,268                -            -              -               -                  (3)              (3)            -             -              -                 -       -               -              -
+
+
+
+
+                                                                                                                                                                                                                                                               27
+                               a            b              c           d           e              f                g             h              i              j            k              l           m           n             o
+                                                                                                               Accumulated impairment, accumulated negative changes in fair value due                          Collateral and financial
+                                            Gross carrying amount/nominal amount                                                   to credit risk and provisions                                                guarantees received
+                                                                                                                                                      Non-performing exposures –
+                                                                                                                                                        accumulated impairment,           Accumulat
+                                                                                                               Performing exposures – accumulated accumulated negative changes in fair ed partial
+                                Performing exposures                   Non-performing exposures                     impairment and provisions     value due to credit risk and provisions write-off
+                                                                                                                                                                                                                   On      On non-
+                                         Of which       Of which                Of which       Of which                       Of which       Of which                    Of which       Of which               performing performing
+                                          stage 1        stage 2                 stage 2        stage 3                        stage 1        stage 2                     stage 2        stage 3               exposures exposures
+120   Credit institutions      95,346        95,346                -        -              -               -            (3)           (3)                 -          -              -              -       -                -             -
+      Other financial
+130   corporations           1,623,802     1,614,086           9,716        -              -               -           (31)          (28)               (2)          -              -              -       -                -             -
+      Non-financial
+140   corporations                   -              -              -        -              -               -              -              -                -          -              -              -       -                -             -
+      Off-balance-sheet
+150   exposures               186,158       186,158                -        -              -               -            14            14                  -          -              -              -                   83,116             -
+160   Central banks                  -              -              -        -              -               -              -              -                -          -              -              -                        -             -
+170   General governments            -              -              -        -              -               -              -              -                -          -              -              -                        -             -
+180   Credit institutions            -              -              -        -              -               -              -              -                -          -              -              -                        -             -
+      Other financial
+190   corporations             13,500        13,500                -        -              -               -              -              -                -          -              -              -                        -             -
+      Non-financial
+200   corporations             78,518        78,518                -        -              -               -              -              -                -          -              -              -                        -             -
+
+210   Households               94,140        94,140                -        -              -               -            14            14                  -          -              -              -                   83,116             -
+
+220   Total                 9,079,642     9,040,877        38,765      49,264          851            48,413       (10,436)      (8,334)            (2,102)   (23,848)          (102)      (23,746)        -      2,616,182       24,810
+
+
+
+
+                                                                                                                                                                                                                                          28
+EU CQ1: Credit quality of forborne exposures
+
+                                              a                  b                     c                   d                        e                   f                g                     h
+
+                                                                                                                            Accumulated impairment, accumulated       Collateral received and financial
+                                                                                                                             negative changes in fair value due to    guarantees received on forborne
+                                       Gross carrying amount/nominal amount of exposures with forbearance measures                credit risk and provisions                      exposures
+                                                                                                                                                                                        Of which collateral
+                                                                          Non-performing forborne
+                                                                                                                                                                                           and financial
+                                                                                                                                                                                       guarantees received
+                                                                                                                                                                                        on non-performing
+                                         Performing                                                                           On performing    On non-performing                          exposures with
+                                          forborne                             Of which defaulted   Of which impaired       forborne exposures forborne exposures                     forbearance measures
+
+      Cash balances at central banks
+005                                                    -                   -                    -                       -                    -                    -               -                       -
+      and other demand deposits
+
+010   Loans and advances                          3,408               3,799                 3,572               3,572                    (422)              (1,047)           5,739                   2,831
+
+020   Central banks                                    -                   -                    -                       -                    -                    -               -                       -
+
+030   General governments                              -                   -                    -                       -                    -                    -               -                       -
+
+040   Credit institutions                              -                   -                    -                       -                    -                    -               -                       -
+
+050   Other financial corporations                     -                   -                    -                       -                    -                    -               -                       -
+
+
+060   Non-financial corporations                   3,408               3,799                3,572                3,572                   (422)              (1,047)           5,739                   2,831
+
+070   Households                                       -                   -                    -                       -                    -                    -               -                       -
+
+080   Debt Securities                                  -                   -                    -                       -                    -                    -               -                       -
+
+090   Loan commitments given                           -                   -                    -                       -                    -                    -               -                       -
+
+100   Total                                       3,408               3,799                 3,572               3,572                    (422)              (1,047)           5,739                   2,831
+
+
+
+
+                                                                                                                                                                                                              29
+EU CQ7: Collateral obtained by taking possession and execution processes
+
+
+
+                                                                        a                          b
+
+
+                                                                   Collateral obtained by taking possession
+
+                                                                        Value at initial   Accumulated negative
+                                                                          recognition                  changes
+
+010            Property, plant and equipment (PP&E)                                 366                       -
+
+020            Other than PP&E                                                         -                      -
+
+030            Residential immovable property                                          -                      -
+
+040            Commercial Immovable property                                           -                      -
+
+050            Movable property (auto, shipping, etc.)                                 -                      -
+
+060            Equity and debt instruments                                             -                      -
+
+070            Other collateral                                                        -                      -
+
+080            Total                                                                366                       -
+
+
+
+
+                                                                                                                  30
+Disclosure of market risk
+EU MRA: Qualitative disclosure requirements related to market risk
+
+
+bunq presents its market risk exclusively within its banking book; the bank does not               The primary source of IRRBB is the maturity mismatch between long-dated fixed-rate
+maintain a trading book, and the disclosures under Article 445 CRR (Simplified or                  mortgage assets and on-demand customer deposit funding. Behavioural modelling, most
+Alternative Standardised Approach for trading-book positions) are therefore not applicable.        importantly the maturity profile of non-maturing deposits and their pass-through rate
+                                                                                                   (PTR), therefore drives the measurement. IRRBB is actively managed within the limit
+Market risk management for the banking book                                                        framework via micro-hedging (payer swaps) and the HQLA bond programme, with a target
+                                                                                                   Duration of Equity of ~2.5 years.
+Market risk in the banking book arises when movements in market variables - primarily
+interest rates, credit spreads, and to a lesser extent foreign exchange rates - adversely affect   Credit Spread Risk in the Banking Book (CSRBB)
+the bank's economic value or earnings. The banking book comprises all assets and liabilities
+                                                                                                   CSRBB arises from potential spread movements on the bank's interest-bearing securities:
+not held for trading, intended to be held over the long term.
+                                                                                                   SSA bonds, ABS and CLOs. bunq scopes CSRBB consistent with the EBF July 2023 paper:
+bunq's market risk management framework is designed to keep market risk consistent                 securities are in scope; loans and non-maturing deposits are out of scope. CSRBB is
+with the strategy and the Risk Appetite. ALCO oversees market risk management under                measured on both the EVE and NII metrics. The probability of CSRBB EVE losses
+delegated authority from the Management Board. Day-to-day execution sits with the                  materializing into realized losses is assessed as low, given the size and quality of bunq's
+Treasury department (1st line). The Risk department, including the Financial Risk function,        liquidity buffer and the established CFP pecking order, in which securitizations and
+provides independent measurement, monitoring and challenge (2nd line). Internal Audit              non-HQLA assets are monetized before HQLA bonds.
+provides independent assurance (3rd line).
+                                                                                                   Foreign Exchange Risk
+Risk appetite for market risk is articulated through quantitative limits on the sensitivity of
+the Economic Value of Equity (EVE) and Net Interest Income (NII) to standardised                   FX risk is managed centrally by Treasury. It primarily arises from the Local Currencies
+interest-rate shocks, plus dedicated limits for FX and credit-spread sensitivities. EVE and NII    product, which enables users to hold balances in foreign currencies. Open currency
+are benchmarked to CET-1 using the regulatory Supervisory Outlier Test (SOT); bunq has             positions are typically cleared intraday; FX risk crystallizes principally through weekend
+never been an outlier on either SOT.                                                               settlement-timing accumulation, since conversions executed over weekends cannot be
+                                                                                                   cleared until markets reopen.
+Hedging tools include pay-fixed interest rate swaps, used to reduce the asset-liability
+duration mismatch (EVE risk) driven by long-dated residential mortgages, and fixed-rate            Economic capital
+HQLA bonds to hedge NII Risk arising from stable savings deposits.
+                                                                                                   Pillar 2 economic capital for IRRBB is calculated using the worst combined EVE+NII
+Models used to measure market risk, in particular the behavioural NMD framework, are               regulatory scenario and is decomposed into Gap Risk, Option Risk, Basis Risk and Model
+independently validated, recalibrated semi-annually, formally reviewed annually, and               Risk add-ons. Pillar 2 economic capital for FX risk is set at EUR 266k for 2026 (rising to EUR
+approved by ALCO. Expert overlays remain subject to ALCO governance.                               358k in 2027 and EUR 434k in 2028), and scaled with projected FX conversion volume, using
+                                                                                                   the methodology described above.
+Market risk measurement for the banking book
+                                                                                                    EUR '000                       2025 SREP       2026 base       2027 base      2028 base
+Market risk in the banking book is composed of Interest Rate Risk in the Banking Book                                                              case            case           case
+(IRRBB), Credit Spread Risk in the Banking Book (CSRBB) and Foreign Exchange (FX)
+Risk. IRRBB is the most material sub-type given bunq's balance sheet structure (long-dated          IRRBB Pillar 2 capital               20,290          19,905          22,778         26,726
+Dutch mortgages funded mainly by on-demand savings).
+                                                                                                    FX Pillar 2 capital                     266             266             358            434
+Interest Rate Risk in the Banking Book (IRRBB)
+
+
+                                                                                                                                                                                                 31
+Qualitative information on interest rate risk in the banking book                             Interest rate risk of non-trading book activities
+Interest rate risk is the risk of losses in EVE or NII due to unfavourable yield-curve        The table below shows the change in EVE under each of the six EBA-prescribed supervisory
+movements. The main sources of IRRBB for bunq are:                                            shock scenarios and the change in NII under the two parallel supervisory shock scenarios
+                                                                                              (±200 bps instantaneous), as at 31 December 2025 vs. 31 December 2024. All exposures are
+    ●​   The maturity mismatch between fixed-rate mortgage assets and on-demand
+                                                                                              converted to EUR and subject to the EUR shock curve, EUR being the only material
+         customer deposit funding.
+                                                                                              currency (>99% of the balance sheet).
+    ●​   Client behaviour, which determines the maturity profile of non-maturing deposits
+         and the pass-through of rate changes to customer rates. Modelling client             The Parallel Up scenario (+200 bps instantaneous) is the worst-case EVE scenario at
+         behaviour exposes the bank to model risk.                                            year-end 2025; the increase in EVE sensitivity vs. year-end 2024 reflects the slight increase in
+    ●​   Embedded options on the asset side (mortgage prepayment, mortgage pipeline           Duration of Equity. The Parallel Down scenario is the worst-case NII scenario; the
+         drawdown / "dagrente optie").                                                        year-on-year change reflects the introduction of the behavioural Client Rate Model, which
+                                                                                              reduces the assumed pass-through of ECB rate cuts to depositors and therefore recognises
+Models and assumptions are subject to independent validation, periodic back-testing and
+                                                                                              bunq's net long exposure to short-rate cuts.
+ALCO approval. Recalibration is performed semi-annually and review is annual.
+                                                                                               EUR million                        Δ EVE            Δ EVE            Δ NII            Δ NII
+Risk measurement for interest rate risk                                                                                               31               31              31               31
+                                                                                                                              December         December         December         December
+IRRBB is measured both from an economic value perspective and an earnings perspective:
+                                                                                                                                   2025             2024            2025             2024
+    ●​   EVE-at-Risk measures the loss in the economic value of equity under the six
+         EBA-prescribed yield-curve shocks, on a run-off balance-sheet assumption, with        Parallel Up (+200 bps)              -40.48           -23.60           +19.92            +2.91
+         floor and 5-year stable-NMD cap as per the EBA Guidelines.
+                                                                                               Parallel Down (-200 bps)            +52.58           +29.54            -15.06           -7.28
+    ●​   NII-at-Risk measures the difference in net interest income between a base
+         scenario and a shocked scenario over a 1-year horizon, on a constant balance-sheet    Steepener                           -30.92            +6.79               —                —
+         assumption. For the regulatory NII SOT and the EU IRRBB1 disclosure, the two
+         parallel ±200 bps shocks are used; for internal capital purposes bunq computes NII    Flattener                           +14.57           -10.08               —                —
+         outcomes under all six SOT scenarios and identifies the worst combined EVE+NII
+                                                                                               Short Rates Up                       +0.20            -17.38              —                —
+         outcome as the leading scenario for Pillar 2 IRRBB capital determination.
+
+These metrics are complemented by stress testing and sensitivity analyses focused on the       Short Rates Down                      -7.37          +18.02               —                —
+stability and PTR of non-maturing deposits. The interest rate risk position is monitored
+monthly by ALCO and reported regularly to the Management Board.
+                                                                                              EVE figures are calculated on a run-off basis with the regulatory post-shock interest-rate
+                                                                                              floor and a 5-year cap on the average maturity of stable retail savings, in line with EBA RTS
+                                                                                              2022/10. NII figures are calculated on a constant balance sheet over 12 months. Both metrics
+                                                                                              remain comfortably below the regulatory SOT thresholds.
+
+
+
+
+                                                                                                                                                                                           32
+Disclosure of operational risk
+EU ORA - Qualitative information on operational risk
+
+Operational risk​                                                                                    ●​   key risk indicators and risk appetite monitoring;
+bunq defines operational risk as the risk of loss resulting from inadequate or failed internal       ●​   business continuity and disaster recovery testing;
+processes, people, systems, or from external events. As a fully digital bank, bunq’s                 ●​   audit and regulatory findings management; and
+operational resilience depends on the secure, resilient, and continuous operation of its             ●​   third-party oversight and contingency planning.
+technology, processes, and third-party ecosystem. bunq therefore maintains an integrated
+operational risk management framework designed to identify, assess, monitor, mitigate,           bunq maintains a unified impact assessment methodology across operational risks,
+and report operational risks across the organization.                                            incidents, remediation items, and continuity events. This enables consistent prioritization
+                                                                                                 and escalation based on customer impact, downtime, financial impact, data exposure, and
+The framework is aligned with the Digital Operational Resilience Act (DORA), the Dutch           reputational effects.
+Financial Supervision Act (Wft), EBA Guidelines, and related regulatory requirements.
+                                                                                                 Incident management processes are designed to ensure rapid escalation, coordinated
+bunq’s operational risk framework is built around a unified resilience approach that             response, and regulatory reporting where required. All incidents are managed by the
+connects risk management, incident management, business continuity, disaster recovery,           Business Continuity Officer (“BCO”) function through predefined escalation procedures and
+ICT risk management, and third-party risk oversight into one governance structure.               recovery playbooks. bunq continuously monitors systems, customer escalations, operational
+                                                                                                 metrics, and cybersecurity events to identify emerging threats and disruptions at an early
+Structure and Organization​                                                                      stage. bunq uses redundancy, automated failover mechanisms, point-in-time database
+Operational risk governance follows the three lines model:                                       recovery, and infrastructure-as-code deployment practices to support operational
+                                                                                                 continuity and resilience.
+    ●​   The first line (business and engineering teams) owns and manages operational
+         risks in day-to-day activities.                                                         bunq performs regular operational resilience, business continuity, and disaster recovery
+    ●​   The second line (Ground Control, including Operational Risk, Compliance, and            testing, including walkthroughs, tabletop exercises, simulations, and full recovery tests.
+         Security) defines frameworks, performs oversight, monitors risks, and challenges        These exercises simulate scenarios such as regional cloud outages, ransomware attacks,
+         the effectiveness of controls.                                                          third-party failures, and infrastructure disruptions to validate recovery capabilities against
+    ●​   The third line (Internal Audit / System Checkers) independently assesses the            defined RTO and RPO targets. Lessons learned from these exercises are translated into
+         effectiveness of governance, controls, and operational resilience arrangements.         remediation actions and framework improvements.
+The Management Board retains ultimate accountability for operational risk management,            Third-party risk management forms an integral part of the operational risk framework.
+ICT risk management, and digital operational resilience.                                         bunq applies risk-based due diligence, onboarding, monitoring, and exit planning
+                                                                                                 procedures for outsourced and ICT service providers. Critical third parties are subject to
+bunq applies a risk-based approach to operational resilience through its Business Impact
+                                                                                                 enhanced governance, periodic reviews, resilience assessments, and contingency planning
+Analysis (“BIA”) process. The BIA identifies critical and important functions, maps
+                                                                                                 requirements in line with DORA and EBA outsourcing expectations.
+supporting systems and third-party dependencies, and defines Recovery Time Objectives
+(“RTOs”) and Recovery Point Objectives (“RPOs”). Critical services such as payments,             Policies and Strategies for Risk Mitigation​
+onboarding, account access, cards, fraud prevention, and customer support are prioritized        To support operational resilience, bunq maintains policies and procedures governing:
+within continuity and recovery planning.
+                                                                                                     ●​   ICT risk management;
+Operational risks are monitored through a centralized risk governance structure which                ●​   change management;
+includes:                                                                                            ●​   cybersecurity;
+                                                                                                     ●​   backup and recovery;
+    ●​   risk assessments and control testing;
+                                                                                                     ●​   business continuity;
+    ●​   incident and problem management;
+                                                                                                     ●​   disaster recovery;
+    ●​   corrective action plans (“CAPs”);
+
+                                                                                                                                                                                                  33
+    ●​   incident management; and
+    ●​   third-party risk management.
+
+The ICT Change Management framework ensures that all technology changes are assessed,
+tested, approved, monitored, and recoverable through defined rollback procedures before
+implementation into production environments.
+
+bunq continuously evolves its operational risk framework to address emerging threats,
+increasing digital dependencies, evolving regulatory expectations, and the growing
+importance of operational resilience within the financial sector.
+
+
+
+
+                                                                                          34
+Disclosure of remuneration
+EU REMA - Remuneration policy
+
+
+
+General Logic and Aim of the Policy​
+The policy's purpose is to attract, retain, and motivate talented employees to drive the
+company's long-term success. It aligns employee rewards with the bank's strategic               Employees in non-operational teams may receive a profit-sharing incentive if quarterly
+objectives, values, and risk appetite, while ensuring fairness, transparency, and compliance    profit targets are met.
+with all relevant laws. The policy framework distinguishes between fixed pay, variable pay,
+                                                                                                At least 50% of any variable remuneration awarded to an employee must be based on
+and a Management Incentive Plan (MIP).Although MIP is not considered a form of
+                                                                                                non-financial performance criteria.
+remuneration, the policy mentions this for transparency reasons.
+                                                                                                The average variable remuneration across the company is not to exceed 20% of the total
+bunq's remuneration policy is designed to comply with the Dutch Financial Supervision Act
+                                                                                                fixed remuneration. Employees in control functions — including Finance, Risk, Compliance,
+(Wft), Capital Requirements Directive IV (CRD IV), EBA Guidelines on sound remuneration
+                                                                                                Legal, Internal Audit, Credit Risk and Regulatory — are independent from the business
+policies, the Dutch Corporate Governance Code, and the Regeling beheerst beloningsbeleid
+                                                                                                activities they supervise. Their variable remuneration is based exclusively on predetermined
+Wft 2021. The policy also takes into account CSRD and ESRS requirements.
+                                                                                                objectives tied to their own function, not to the results of the activities they oversee, and is
+                                                                                                capped at 20% of their fixed remuneration.
+
+                                                                                                Identified Staff are those employees whose professional activities have a material impact on
+Governance​
+                                                                                                bunq's risk profile. bunq does not apply a special variable remuneration policy for Identified
+The remuneration policy is governed by a clear structure of oversight and responsibility. The
+                                                                                                Staff; the general variable remuneration framework described above applies equally to
+Supervisory Board (SB), advised by the Remuneration Committee (RemCo), is ultimately
+                                                                                                them.
+overseeing the policy. The SB designs and evaluates the remuneration for the
+Management Board (MB) and approves the policy principles for all other employees.               Note: this variable pay was applicable until 20250802, and was abolished as of this date.
+RemCo assists by reviewing the policy annually, proposing changes, and preparing
+remuneration decisions for the SB to take. The Management Board (MB) is responsible for         Management Board (MB) Policy​
+the day-to-day implementation and execution of the policy. Finally, the remuneration for        Remuneration Structure: The remuneration for the Management Board consists exclusively
+the Supervisory Board members is determined by the general meeting of shareholders.             of a fixed component, which includes a base salary, pension contributions, and various
+                                                                                                allowances.
+Employee Policy​
+bunq ensures equal remuneration for equal work or work of equal value, regardless of            No Variable Pay: Members of the Management Board are not eligible for any form of
+gender. bunq annually assesses and monitors the gender pay gap across the organisation          variable remuneration like performance bonuses or profit-sharing.
+at a global level.
+                                                                                                Benchmarking: Their total compensation is benchmarked by external counsels annually
+Remuneration Structure: Compensation for general employees consists of a fixed salary           against the tech, media, and gaming industries, with the goal of staying competitive
+supplemented by potential variable remuneration.                                                against comparable roles within the relevant sectors.
+
+Fixed Pay: The fixed salary is determined by factors like education, experience, skills, and    Management Incentive Plan (MIP): bunq operates a share based payment incentive
+responsibilities. It is benchmarked by external consultants against market conditions,          scheme for management and other key personnel. MB members may be given the
+especially for specialized roles, to ensure competitiveness.                                    opportunity to participate in the MIP, but this is not considered a formal part of
+                                                                                                remuneration and is not tied to performance.
+Variable Pay: Employees in operational teams are eligible for a monthly performance
+bonus. These bonuses are limited to only top performers within the operational teams.
+
+                                                                                                                                                                                              35
+Supervisory Board (SB) Policy​                                                              The 2025 Annual Report contains further disclosure of bunq’s remuneration policy and
+The remuneration for Supervisory Board members is determined and approved by the            amounts.
+general meeting of shareholders. The Supervisory Board's primary role is oversight; it is
+responsible for designing, implementing, and evaluating the remuneration policy for the
+Management Board and for approving the remuneration principles for all other employees.
+
+
+
+
+                                                                                                                                                                                   36
+EU REM1 - Remuneration awarded for the financial year
+
+bunq has no variable remuneration.
+
+                                                                                                                           a                 b                 c                  d
+                                                                                                                                                  MB
+                                                                                                                     MB Supervisory                         Other senior    Other identified
+                                                                                                                                         Management
+                                                                                                                          function                         management                  staff
+                                                                                                                                             function
+1                                            Number of identified staff                                                             3                 3                6                  3
+2                                            Total fixed remuneration                                                          122,166           955,961        1,082,714         1,062,019
+3                                            Of which: cash-based                                                              122,166           955,961        1,082,714         1,062,019
+4                                            (Not applicable in the EU)
+EU-4a                                        Of which: shares or equivalent ownership interests                                      -                 -                -                 -
+               Fixed remuneration
+5                                            Of which: share-linked instruments or equivalent non-cash instruments                   -                 -                -                 -
+EU-5x                                        Of which: other instruments                                                             -                 -                -                 -
+6                                            (Not applicable in the EU)
+7                                            Of which: other forms                                                                   -                 -                -                 -
+8                                            (Not applicable in the EU)
+9                                            Number of identified staff                                                              -                 -                -                 4
+10                                           Total variable remuneration                                                             -                 -                -          340,000
+11                                           Of which: cash-based                                                                    -                 -                -          340,000
+12                                           Of which: deferred                                                                      -                 -                -                 -
+EU-13a                                       Of which: shares or equivalent ownership interests                                      -                 -                -                 -
+EU-14a                                       Of which: deferred                                                                      -                 -                -                 -
+               Variable remuneration
+EU-13b                                       Of which: share-linked instruments or equivalent non-cash instruments                   -                 -                -                 -
+EU-14b                                       Of which: deferred                                                                      -                 -                -                 -
+EU-14x                                       Of which: other instruments                                                             -                 -                -                 -
+EU-14y                                       Of which: deferred                                                                      -                 -                -                 -
+15                                           Of which: other forms                                                                   -                 -                -                 -
+16                                           Of which: deferred                                                                      -                 -                -                 -
+17             Total remuneration (2 + 10)                                                                                     122,166           955,961       1,082,714          1,402,019
+
+
+
+
+                                                                                                                                                                                         37
+EU REM2 - Special payments to staff whose professional activities have a material impact on institutions’ risk profile (identified staff)
+
+
+
+                                                                                                                          a                  b              c                       d
+                                                                                                                                          MB Management      Other senior
+                                                                                                                MB Supervisory function                                     Other identified staff
+                                                                                                                                                 function   management
+
+     Guaranteed variable remuneration awards
+
+1    Guaranteed variable remuneration awards - Number of identified staff                                                             -                 -               -                        -
+
+2    Guaranteed variable remuneration awards -Total amount                                                                            -                 -               -                        -
+     Of which guaranteed variable remuneration awards paid during the financial year, that are not taken into
+3                                                                                                                                     -                 -               -                        -
+     account in the bonus cap
+     Severance payments awarded in previous periods, that have been paid out during the financial year
+     Severance payments awarded in previous periods, that have been paid out during the financial year -
+4                                                                                                                                     -                 -               -                        -
+     Number of identified staff
+     Severance payments awarded in previous periods, that have been paid out during the financial year -
+5                                                                                                                                     -                 -               -                        -
+     Total amount
+     Severance payments awarded during the financial year
+
+6    Severance payments awarded during the financial year - Number of identified staff                                                -                 -               -                        -
+
+7    Severance payments awarded during the financial year - Total amount                                                              -                 -               -                        -
+
+8    Of which paid during the financial year                                                                                          -                 -               -                        -
+
+9    Of which deferred                                                                                                                -                 -               -                        -
+     Of which severance payments paid during the financial year, that are not taken into account in the bonus
+10                                                                                                                                    -                 -               -                        -
+     cap
+11   Of which highest payment that has been awarded to a single person                                                                -                 -               -                        -
+
+
+
+
+                                                                                                                                                                                               38
+

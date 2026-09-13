@@ -1,0 +1,75 @@
+{
+  "_meta": {
+    "file": "05_operations/critical_services.json",
+    "owner": "Person 3 - Operations and technology",
+    "purpose": "The five business functions Northstar itself designates as critical business services, per Bank_Context_Fictional_Digital_Bank.md (Digital Operational Resilience section). All five ARE formally designated - the document is explicit about that. The gap it describes is downstream, in dependency/subcontractor mapping, not in this designation register - see 05_operations/dependencies.json for that.",
+    "generated_at": "2026-09-03",
+    "as_of_date": "2026-09-03",
+    "entity_id": "ENT-NDB-PLC",
+    "design_references": [
+      "Bank_Context_Fictional_Digital_Bank.md — Digital Operational Resilience section"
+    ]
+  },
+  "critical_or_important_functions": [
+    {
+      "function_id": "CIF-LOGIN-ACCESS",
+      "name": "Customer Login and Account Access",
+      "designation_rationale": "Sole channel for all customer interaction - the bank has no branches, so this is the front door to every other service.",
+      "business_owner_department": "Technology Delivery",
+      "application_owner_department": "Technology Delivery",
+      "recovery_time_objective": "15_minutes",
+      "recovery_point_objective": "5_minutes",
+      "related_process_id": "PROC-LOGIN-ACCESS",
+      "designated_critical_or_important": true,
+      "last_reviewed_on": "2026-02-10"
+    },
+    {
+      "function_id": "CIF-PAYMENTS",
+      "name": "Payments",
+      "designation_rationale": "Continuity failure stops all outbound and inbound euro payments across mobile, web and API channels.",
+      "business_owner_department": "Payments Operations",
+      "application_owner_department": "Technology Delivery",
+      "recovery_time_objective": "30_minutes",
+      "recovery_point_objective": "5_minutes",
+      "related_process_id": "PROC-PAYMENT-INITIATION",
+      "designated_critical_or_important": true,
+      "last_reviewed_on": "2026-02-10"
+    },
+    {
+      "function_id": "CIF-ONBOARDING",
+      "name": "Customer Onboarding",
+      "designation_rationale": "Statutory KYC/CDD gateway control; failure blocks all new customer acquisition across six markets.",
+      "business_owner_department": "Financial Crime Operations",
+      "application_owner_department": "Technology Delivery",
+      "recovery_time_objective": "4_hours",
+      "recovery_point_objective": "1_hour",
+      "related_process_id": "PROC-ONBOARDING",
+      "designated_critical_or_important": true,
+      "last_reviewed_on": "2026-02-10"
+    },
+    {
+      "function_id": "CIF-LOAN-ORIGINATION",
+      "name": "Loan Origination",
+      "designation_rationale": "Automated decisioning affects access to credit for retail and SME customers across six markets.",
+      "business_owner_department": "Retail and SME Lending",
+      "application_owner_department": "Technology Delivery",
+      "recovery_time_objective": "8_hours",
+      "recovery_point_objective": "1_hour",
+      "related_process_id": "PROC-CREDIT-ORIGINATION",
+      "designated_critical_or_important": true,
+      "last_reviewed_on": "2026-02-10"
+    },
+    {
+      "function_id": "CIF-MORTGAGE-SERVICING",
+      "name": "Mortgage Servicing",
+      "designation_rationale": "Operated by a material third-party servicer; failure affects balance accuracy, arrears handling and vulnerable-customer protections for the entire Irish mortgage book.",
+      "business_owner_department": "Mortgage Operations",
+      "application_owner_department": "Mortgage Operations",
+      "recovery_time_objective": "24_hours",
+      "recovery_point_objective": "4_hours",
+      "related_process_id": "PROC-MORTGAGE-SERVICING",
+      "designated_critical_or_important": true,
+      "last_reviewed_on": "2026-02-10"
+    }
+  ]
+}

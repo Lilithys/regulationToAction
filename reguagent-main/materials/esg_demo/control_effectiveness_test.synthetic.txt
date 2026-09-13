@@ -1,0 +1,21 @@
+SYNTHETIC TEST-ONLY EVIDENCE ARTEFACT -- fictional Northstar bank, not a real test record.
+
+Control Effectiveness Test: Automated ESG Existing-Book Credit Monitoring
+Requirement addressed: REQ-ESG-CREDIT-MONITORING-001
+Test performed by: Second-line Risk (independent of Head of Lending)
+Test period: one monthly run cycle, pilot subset of the SME book.
+
+Test steps and results:
+1. Confirmed the monthly re-scoring job executed on schedule and logged a
+   complete input snapshot reference. PASS.
+2. Sampled 25 borrowers from the pilot subset; recomputed their scores manually
+   from the same inputs and compared to the automated output. All 25 matched. PASS.
+3. Confirmed borrowers above the review threshold were actually queued for
+   Chief Risk Officer review, with no borrower silently dropped. PASS.
+4. Confirmed the exception log retains the timestamp and input snapshot
+   reference required for audit trace-back. PASS.
+
+Result: control operated as designed for the tested pilot cycle. This is a
+single-cycle pilot test, not a statement that the control has operated
+continuously across the full remediation period, and does not itself confirm
+full-book rollout.
