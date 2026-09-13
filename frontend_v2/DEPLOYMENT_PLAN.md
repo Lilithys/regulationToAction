@@ -2,12 +2,17 @@
 
 The user authorized deployment with disposable storage on 2026-09-13.
 
+Deployment completed on 2026-09-13: Render reports the backend live and Sites
+reports frontend version 1 published successfully with owner-only access.
+The frontend requires signing in with the owner's ChatGPT account.
+
 ## Source and deployment branch
 
 - Original repository: https://github.com/Ruigithu/regulationToAction (read-only).
 - Personal fork: https://github.com/Lilithys/regulationToAction.
 - Deployment branch: `deploy/temporary-demo`.
 - Render backend: https://regulation-to-action-demo-api.onrender.com.
+- Render dashboard: https://dashboard.render.com/web/srv-daj5m2u7bikc73aqoal0.
 - Frontend: https://northstar-regulation-demo.yishanmai330.chatgpt.site.
 - Local remote `origin` still points to the original repository; `personal`
   points to the fork. Deployments use the personal branch.
@@ -56,6 +61,12 @@ English. Unknown user-supplied text remains verbatim. Live prompts request Engli
 but live model calls are disabled in this disposable deployment.
 
 ## Validation
+
+- Six frontend checks, five disposable-demo checks and 21 existing interface
+  tests passed locally.
+- The deployed backend passed health, two-case registry, 14 view projection,
+  English-content, CORS/preflight and replay-only enforcement checks.
+- Sites version 1 published the validated six frontend assets successfully.
 
 Run from the repository root:
 
