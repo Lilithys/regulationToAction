@@ -1,4 +1,4 @@
-"""Stage only public frontend assets for Sites hosting."""
+"""Stage only public frontend assets for static hosting."""
 from pathlib import Path
 from shutil import copyfile
 

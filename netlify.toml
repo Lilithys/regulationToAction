@@ -1,0 +1,4 @@
+[build]
+  base = "frontend_v2"
+  command = "python3 build_static.py"
+  publish = "dist"

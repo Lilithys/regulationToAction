@@ -6,6 +6,37 @@ Deployment completed on 2026-09-13: Render reports the backend live and Sites
 reports frontend version 1 published successfully with owner-only access.
 The frontend requires signing in with the owner's ChatGPT account.
 
+## Netlify migration
+
+The user requested migration to a public Netlify frontend on 2026-09-13 to remove
+the account and ChatGPT labels from the demo URL. The existing Render backend
+and disposable storage will be retained.
+
+The build configuration is ready in the repository-root `netlify.toml`:
+
+- Repository: `Lilithys/regulationToAction`.
+- Production branch: `deploy/temporary-demo`.
+- Base directory: `frontend_v2`.
+- Build command: `python3 build_static.py`.
+- Publish directory: `dist`, relative to the base directory.
+- Desired site name: `northstar-regulation-demo`, subject to availability.
+
+Only the six allowlisted frontend assets enter the publish directory. The
+Netlify build does not publish documentation, tests, the Sites hosting manifest,
+backend files or local databases. The existing Sites project is retained during
+migration; its hosting manifest does not control Netlify deployment.
+
+Migration is pending Netlify login. The GitHub OAuth screen requests read-only
+email-address access for Netlify Auth; automatic approval review blocked that
+grant pending explicit user authorization. No Netlify site has been created or
+published yet, and the existing Render CORS setting remains unchanged.
+
+After login, import the personal repository with the settings above, confirm
+the actual Netlify hostname, and update Render's `CORS_ALLOW_ORIGIN` and
+`render.yaml` to that origin. Verify the published static assets, API case list
+and POST preflight response before declaring migration complete. If GitHub
+repository integration requires additional access, scope it to this fork.
+
 ## Source and deployment branch
 
 - Original repository: https://github.com/Ruigithu/regulationToAction (read-only).
