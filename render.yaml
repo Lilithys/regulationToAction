@@ -18,4 +18,4 @@ services:
       - key: DEMO_STATE_DIR
         value: /tmp/regulation-to-action-demo
       - key: CORS_ALLOW_ORIGIN
-        value: https://northstar-regulation-demo.yishanmai330.chatgpt.site
+        value: https://regulation2action.netlify.app

@@ -2,41 +2,47 @@
 
 The user authorized deployment with disposable storage on 2026-09-13.
 
-Deployment completed on 2026-09-13: Render reports the backend live and Sites
-reports frontend version 1 published successfully with owner-only access.
-The frontend requires signing in with the owner's ChatGPT account.
+## Netlify deployment
 
-## Netlify migration
+The user selected a public Netlify frontend with disposable Render storage.
+The current frontend URL is https://regulation2action.netlify.app.
+The Netlify project dashboard is https://app.netlify.com/projects/regulation2action.
 
-The user requested migration to a public Netlify frontend on 2026-09-13 to remove
-the account and ChatGPT labels from the demo URL. The existing Render backend
-and disposable storage will be retained.
+The initial Netlify Drop deployment contained only `index.html`; the other five
+required assets returned HTTP 404. A complete six-file deployment archive is
+prepared locally, pending browser file-upload access. Do not treat this initial
+publication as a working demo.
 
-The build configuration is ready in the repository-root `netlify.toml`:
+Render now permits `https://regulation2action.netlify.app` through
+`CORS_ALLOW_ORIGIN`. Health and case-list requests returned HTTP 200, and POST
+preflight returned HTTP 204 with the correct origin and allowed methods.
+
+### Publishing updates
+
+The current Netlify project uses manual Netlify Drop uploads. GitHub integration
+is not connected because its authorization flow returned server errors. Code is
+preserved in the personal fork on `deploy/temporary-demo`; a Git push alone does
+not update this Netlify site.
+
+Run `python3 frontend_v2/build_static.py` from the repository root, then upload
+**the entire `frontend_v2/dist` folder** to the existing Netlify project's
+Production deploys area. Alternatively, upload a ZIP containing all six assets
+at its root. Uploading `index.html` alone omits the stylesheet and application.
+
+Only these files belong in the published output: `index.html`, `styles.css`,
+`icons.js`, `display_text.js`, `api.js` and `app.js`. Do not upload documentation,
+tests, backend files, databases or the Sites hosting manifest.
+
+For future Git-connected builds, the root `netlify.toml` defines:
 
 - Repository: `Lilithys/regulationToAction`.
-- Production branch: `deploy/temporary-demo`.
+- Production branch: `deploy/temporary-demo` (select in the Netlify dashboard).
 - Base directory: `frontend_v2`.
 - Build command: `python3 build_static.py`.
 - Publish directory: `dist`, relative to the base directory.
-- Desired site name: `northstar-regulation-demo`, subject to availability.
 
-Only the six allowlisted frontend assets enter the publish directory. The
-Netlify build does not publish documentation, tests, the Sites hosting manifest,
-backend files or local databases. The existing Sites project is retained during
-migration; its hosting manifest does not control Netlify deployment.
-
-Migration is pending Netlify login. The user explicitly authorized Netlify Auth
-to read the GitHub account's email addresses, but two authorization submissions
-returned GitHub HTTP 500 error pages. A Netlify login tab has been left open for
-the user to complete sign-in. No Netlify site has been created or published yet,
-and the existing Render CORS setting remains unchanged.
-
-After login, import the personal repository with the settings above, confirm
-the actual Netlify hostname, and update Render's `CORS_ALLOW_ORIGIN` and
-`render.yaml` to that origin. Verify the published static assets, API case list
-and POST preflight response before declaring migration complete. If GitHub
-repository integration requires additional access, scope it to this fork.
+The previous Sites project is retained privately as a historical deployment.
+It is no longer the demo entry point; the API's CORS origin now targets Netlify.
 
 ## Source and deployment branch
 
@@ -45,13 +51,13 @@ repository integration requires additional access, scope it to this fork.
 - Deployment branch: `deploy/temporary-demo`.
 - Render backend: https://regulation-to-action-demo-api.onrender.com.
 - Render dashboard: https://dashboard.render.com/web/srv-daj5m2u7bikc73aqoal0.
-- Frontend: https://northstar-regulation-demo.yishanmai330.chatgpt.site.
+- Frontend: https://regulation2action.netlify.app.
 - Local remote `origin` still points to the original repository; `personal`
-  points to the fork. Deployments use the personal branch.
+  points to the fork. Render uses the personal branch; Netlify currently uses manual uploads.
 
 ## Runtime
 
-- Frontend: static assets hosted through Sites. Publish only `index.html`,
+- Frontend: public static assets hosted through Netlify. Publish only `index.html`,
   `styles.css`, `icons.js`, `display_text.js`, `api.js` and `app.js`.
 - Backend: one Render Free Python web service, configured in `render.yaml`.
 - Start command: `python agent/serve_demo.py`, from `reguagent-main`.
@@ -79,7 +85,7 @@ sleep. The next wake-up takes about a minute. See
 3. Set the frontend's API URL to the actual Render HTTPS URL, publish its static
    assets, and set `CORS_ALLOW_ORIGIN` to the frontend origin if appropriate.
 4. Verify the health endpoint, seeded cases, queue operations and static assets.
-   Keep the frontend private by default. Backend data is disposable synthetic
+   The user authorized a public frontend. Backend data is disposable synthetic
    demo data; its API is not an authenticated multi-user production service.
 
 Redeployment can reset the hosted demo. Local historical case databases are not
